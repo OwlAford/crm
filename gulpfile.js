@@ -80,7 +80,7 @@ gulp.task('es:watch', () =>
 )
 
 gulp.task('file:watch', () => {
-  gulp.watch(['./css/*.dev.css', './js/*.dev.js', './images/**/*', './static/**/*'], ['reload'])
+  gulp.watch(['./css/*.dev.css', './js/*.dev.js', './images/**/*', './static/*.html'], ['reload'])
 })
 
 gulp.task('minifyjs', () =>
