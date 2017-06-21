@@ -165,7 +165,10 @@ body {
 
 .home-page .area.lineChart {
   padding: 0.2rem 0 0;
-  min-height: 2rem;
+}
+
+.home-page .area.lineChart #diffChart {
+  height: 2.885rem;
 }
 
 .home-page .area.lineChart .info {
@@ -204,10 +207,12 @@ body {
 
 .home-page .area.lineChart .swiper-wrap {
   padding-bottom: 0.5rem;
+  min-height: 77px;
 }
 
 .home-page .area.lineChart .swiper-wrap .swiper {
   border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 400%;
 }
 
 .home-page .area.lineChart .swiper-wrap .dotCon {
@@ -438,4 +443,81 @@ body {
 
 .mine-page .quitBtn {
   margin: 0.4rem 0;
+}
+
+.info-page .mcList .item {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 0.2rem;
+}
+
+.info-page .mcList .item .control {
+  position: absolute;
+  height: 100%;
+  left: 100%;
+  top: 0;
+  width: 0;
+  width: 140px;
+  overflow: hidden;
+}
+
+.info-page .mcList .item .control .inner {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+.info-page .mcList .item .control .inner div {
+  width: 64%;
+  height: 100%;
+  text-align: center;
+  display: table-cell;
+  background-color: rgba(125, 230, 255, 0.3);
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.info-page .mcList .item .control .inner div.del {
+  width: 36%;
+  background-color: #d30611;
+}
+
+.info-page .mcList .area {
+  padding: 0.32rem 0.2rem 0.32rem 0.64rem;
+  width: 100%;
+}
+
+.info-page .mcList .area .row {
+  padding: 0.1rem 0;
+  line-height: 24px;
+}
+
+.info-page .mcList .area .tit {
+  color: #7de6ff;
+  font-size: 15px;
+}
+
+.info-page .mcList .area .tit.read:after {
+  display: none;
+}
+
+.info-page .mcList .area .tit:after {
+  content: "";
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  left: -0.3rem;
+  top: 50%;
+  margin-top: -3px;
+  background-color: #7de6ff;
+}
+
+.info-page .mcList .area .time {
+  opacity: 0.6;
+}
+
+.info-page .mcList .area .detail {
+  color: #d0d2e2;
 }

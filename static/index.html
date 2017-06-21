@@ -181,6 +181,8 @@
 		</div>
 	</div>
 	<script type="text/javascript">
+	$(function () {	
+
 		// 实时滚动播放
 		var removeTimer, runTimer;
 		var apprvList = document.getElementById('apprvList');
@@ -333,17 +335,23 @@
 			[-6, -11, -2, 0, 3, 4, 6, 4, -1, -2, -3, -3]
 		]
 
-		renderChart(mockData[0]);
-
 		// 初始化轮播
+		var slider = document.getElementById('slider');
+		var slideTimer;
+		var rootSize = doc.clientWidth / 7.5;
+		slider.style.height = rootSize * 0.8 + 43 + 'px';
 		new Swiper({
-			container: document.getElementById('slider'),
+			container: slider,
 			item: '.item',
 			observer: true,
 			autoplay: false,
 			duration: 500,
 			onSwiped: function (i) {
-				renderChart(mockData[i])
+				slideTimer && clearTimeout(slideTimer);
+				slideTimer = setTimeout(function () {
+					renderChart(mockData[i]);
+					clearTimeout(slideTimer);
+				}, 100)
 			}
 		})
 
@@ -372,6 +380,8 @@
 		setCircle('#pie4', 0.42, colorsPanel[3])
 		setCircle('#pie5', 0.88, colorsPanel[0])
 		setCircle('#pie6', 0.52, colorsPanel[1])
+
+	})
 	</script>
 </body>
 </html>
