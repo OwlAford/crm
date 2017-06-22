@@ -16,6 +16,22 @@ body {
   font-size: 13px;
 }
 
+.ft16 {
+  font-size: 16px;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.fc-blue {
+  color: #7de6ff;
+}
+
+.fc-txt {
+  color: #d0d2e2;
+}
+
 .crm-wrap {
   overflow-x: hidden;
 }
@@ -520,4 +536,150 @@ body {
 
 .info-page .mcList .area .detail {
   color: #d0d2e2;
+  word-break: break-all;
+}
+
+.info-page .mcList .area .state {
+  color: #fee47a;
+}
+
+.info-page .timeoutPanel, .info-page .approvPanel {
+  text-align: center;
+  padding: 0.2rem 0;
+  margin-bottom: 0.2rem;
+}
+
+.info-page .timeoutPanel .cell i, .info-page .approvPanel .cell i {
+  display: block;
+  margin: 0 auto 0.2rem;
+  height: 0.84rem;
+  width: 0.84rem;
+  padding: 0.15rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.info-page .timeoutPanel .cell i:after, .info-page .approvPanel .cell i:after {
+  content: "";
+  display: block;
+  height: 0.54rem;
+  width: 0.54rem;
+  background: url(../images/timeout_ico.png) no-repeat;
+  background-size: 200% auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.info-page .timeoutPanel .cell i.b:after, .info-page .approvPanel .cell i.b:after {
+  background-position: 0 50%;
+}
+
+.info-page .timeoutPanel .cell i.c:after, .info-page .approvPanel .cell i.c:after {
+  background-position: 0 100%;
+}
+
+.info-page .timeoutPanel .cell.active i, .info-page .approvPanel .cell.active i {
+  background-color: rgba(125, 230, 255, 0.2);
+}
+
+.info-page .timeoutPanel .cell.active i:after, .info-page .approvPanel .cell.active i:after {
+  background-position: 100% 0;
+}
+
+.info-page .timeoutPanel .cell.active i.b:after, .info-page .approvPanel .cell.active i.b:after {
+  background-position: 100% 50%;
+}
+
+.info-page .timeoutPanel .cell.active i.c:after, .info-page .approvPanel .cell.active i.c:after {
+  background-position: 100% 100%;
+}
+
+.info-page .timeoutPanel .cell.active p, .info-page .approvPanel .cell.active p {
+  color: #7de6ff;
+}
+
+.info-page .approvPanel .cell i:after {
+  background-image: url(../images/approv_ico.png);
+}
+
+.info-page .approvPanel .cell i.b:after {
+  background-position: 0 33.33333%;
+}
+
+.info-page .approvPanel .cell i.c:after {
+  background-position: 0 66.66666%;
+}
+
+.info-page .approvPanel .cell i.d:after {
+  background-position: 0 100%;
+}
+
+.info-page .approvPanel .cell.active i.a:after {
+  background-position: 100% 0;
+}
+
+.info-page .approvPanel .cell.active i.b:after {
+  background-position: 100% 33.33333%;
+}
+
+.info-page .approvPanel .cell.active i.c:after {
+  background-position: 100% 66.66666%;
+}
+
+.info-page .approvPanel .cell.active i.d:after {
+  background-position: 100% 100%;
+}
+
+.info-page .infoList > .area {
+  padding: 0.3rem 0.3rem 0.3rem 1.74rem;
+}
+
+.info-page .infoList > .area i {
+  display: block;
+  height: 1.12rem;
+  width: 1.12rem;
+  border-radius: 50%;
+  position: absolute;
+  left: 0.28rem;
+  top: 50%;
+  margin-top: -0.56rem;
+  background: rgba(125, 230, 255, 0.2) url(../images/info_ico.png) no-repeat;
+  background-size: 100% auto;
+}
+
+.info-page .infoList > .area i.b {
+  background-position: 0 25%;
+}
+
+.info-page .infoList > .area i.c {
+  background-position: 0 50%;
+}
+
+.info-page .infoList > .area i.d {
+  background-position: 0 75%;
+}
+
+.info-page .infoList > .area i.e {
+  background-position: 0 100%;
+}
+
+.info-page .infoList > .area i .tip {
+  height: 0.84rem;
+  width: 0.84rem;
+  font-size: 0.44rem;
+  position: absolute;
+  right: -0.3rem;
+  top: -0.24rem;
+  text-align: center;
+  line-height: 0.84rem;
+  background-color: #e75a7f;
+  border-radius: 50%;
+  -webkit-transform: scale3d(0.5, 0.5, 0.5);
+  transform: scale3d(0.5, 0.5, 0.5);
+}
+
+.info-page .infoList > .area .row {
+  line-height: 32px;
 }

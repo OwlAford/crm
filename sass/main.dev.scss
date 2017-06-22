@@ -17,6 +17,22 @@ body {
   font-size: 13px;
 }
 
+.ft16 {
+  font-size: 16px;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.fc-blue {
+  color: #7de6ff;
+}
+
+.fc-txt {
+  color: #d0d2e2;
+}
+
 .crm-wrap {
   overflow-x: hidden;
 
@@ -527,6 +543,159 @@ body {
 
       .detail {
         color: #d0d2e2;
+        word-break: break-all;
+      }
+
+      .state {
+        color: #fee47a;
+      }
+    }
+  }
+
+  // timeout
+  .timeoutPanel, .approvPanel {
+    text-align: center;
+    padding: 0.2rem 0;
+    margin-bottom: 0.2rem;
+
+    .cell {
+      i {
+        display: block;
+        margin: 0 auto 0.2rem;
+        height: 0.84rem;
+        width: 0.84rem;
+        padding: 0.15rem;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        transition: all .3s;
+
+        &:after {
+          content: "";
+          display: block;
+          height: 0.54rem;
+          width: 0.54rem;
+          background: url(../images/timeout_ico.png) no-repeat;
+          background-size: 200% auto;
+          transition: all .3s;
+        }
+
+        &.b:after {
+          background-position: 0 50%;
+        }
+
+        &.c:after {
+          background-position: 0 100%;
+        }
+      }
+
+      &.active {
+        i {
+          background-color: rgba(125, 230, 255, 0.2);
+
+          &:after {
+            background-position: 100% 0;
+          }
+
+          &.b:after {
+            background-position: 100% 50%;
+          }
+
+          &.c:after {
+            background-position: 100% 100%;
+          }
+        }
+
+        p {
+          color: #7de6ff;
+        }
+      }
+    }
+  }
+  
+  // approval
+  .approvPanel {
+    .cell {
+      i {
+        &:after {
+          background-image: url(../images/approv_ico.png);
+        }
+        &.b:after {
+          background-position: 0 33.33333%;
+        }
+        &.c:after {
+          background-position: 0 66.66666%;
+        }
+        &.d:after {
+          background-position: 0 100%;
+        }
+      }
+
+      &.active i {
+        &.a:after {
+          background-position: 100% 0;
+        }
+        &.b:after {
+          background-position: 100% 33.33333%;
+        }
+        &.c:after {
+          background-position: 100% 66.66666%;
+        }
+        &.d:after {
+          background-position: 100% 100%;
+        }
+      }
+    }
+  }
+
+  .infoList {
+    > .area {
+      padding: 0.3rem 0.3rem 0.3rem 1.74rem;
+      
+      i {
+        display: block;
+        height: 1.12rem;
+        width: 1.12rem;
+        border-radius: 50%;
+        position: absolute;
+        left: 0.28rem;
+        top: 50%;
+        margin-top: -0.56rem;
+        background: rgba(125, 230, 255, 0.2) url(../images/info_ico.png) no-repeat;
+        background-size: 100% auto;
+
+        &.b {
+          background-position: 0 25%;
+        }
+
+        &.c {
+          background-position: 0 50%;
+        }
+
+        &.d {
+          background-position: 0 75%;
+        }
+
+        &.e {
+          background-position: 0 100%;
+        }
+
+        .tip {
+          height: 0.84rem;
+          width: 0.84rem;
+          font-size: 0.44rem;
+          position: absolute;
+          right: -0.3rem;
+          top: -0.24rem;
+          text-align: center;
+          line-height: 0.84rem;
+          background-color: #e75a7f;
+          border-radius: 50%;
+          transform: scale3d(.5, .5, .5);
+        }
+      }
+
+      .row {
+        line-height: 32px;
       }
     }
   }
