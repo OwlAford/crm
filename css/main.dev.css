@@ -80,13 +80,13 @@ body {
   padding: 0.3rem 0.36rem;
   font-size: 16px;
   margin: 0.4rem 0;
-  background: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   color: #fff;
   border-radius: 0.1rem;
 }
 
 .crm-wrap .base-btn:active {
-  background: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .home-page .menu {
@@ -346,8 +346,9 @@ body {
 
 .home-page .apprv .txt {
   width: 100%;
-  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
   color: #d0d2e2;
 }
 
@@ -682,4 +683,273 @@ body {
 
 .info-page .infoList > .area .row {
   line-height: 32px;
+}
+
+.rank-page {
+  min-height: 8rem;
+}
+
+.rank-page .tabs {
+  background-color: rgba(196, 198, 207, 0.16);
+}
+
+.rank-page .tabs .cell {
+  text-align: center;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+  overflow: hidden;
+}
+
+.rank-page .tabs .cell:after {
+  content: "";
+  display: block;
+  height: 0.04rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.rank-page .tabs .cell.active {
+  color: #7de6ff;
+}
+
+.rank-page .tabs .cell.active:after {
+  background-color: #7de6ff;
+}
+
+.rank-page .fnPanel {
+  line-height: 0.78rem;
+  height: 0.78rem;
+  padding: 0 0.24rem;
+}
+
+.rank-page .fnPanel .order, .rank-page .fnPanel .filter {
+  margin-right: 0.3rem;
+  opacity: .6;
+}
+
+.rank-page .fnPanel .order:before, .rank-page .fnPanel .filter:before {
+  content: "";
+  display: inline-block;
+  height: 0.36rem;
+  width: 0.36rem;
+  background: url(../images/rank_ico.png) no-repeat;
+  background-size: 100% auto;
+  vertical-align: middle;
+  margin-right: 0.1rem;
+}
+
+.rank-page .fnPanel .order.active, .rank-page .fnPanel .filter.active {
+  opacity: 1;
+}
+
+.rank-page .fnPanel .filter:before {
+  background-position: 0 100%;
+}
+
+.rank-page .rankList .item {
+  background-color: rgba(255, 255, 255, 0.04);
+  padding: 0.38rem 0.3rem 0.38rem 1.04rem;
+}
+
+.rank-page .rankList .item + .item {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.rank-page .rankList .item .name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-right: 0.2rem;
+}
+
+.rank-page .rankList .item .num {
+  position: absolute;
+  left: 0.24rem;
+  height: 0.6rem;
+  width: 0.6rem;
+  top: 50%;
+  margin-top: -0.3rem;
+  border-radius: 50%;
+  text-align: center;
+  color: #7de6ff;
+  line-height: 0.6rem;
+  background-color: rgba(125, 230, 255, 0.2);
+}
+
+.rank-page .rankList .item .num:after {
+  content: attr(data-num);
+}
+
+.rank-page .rankList .item:nth-child(1) .num, .rank-page .rankList .item:nth-child(2) .num, .rank-page .rankList .item:nth-child(3) .num {
+  background: url(../images/top_3.png) no-repeat;
+  background-size: 100% auto;
+}
+
+.rank-page .rankList .item:nth-child(1) .num:after, .rank-page .rankList .item:nth-child(2) .num:after, .rank-page .rankList .item:nth-child(3) .num:after {
+  display: none;
+}
+
+.rank-page .rankList .item:nth-child(2) .num {
+  background-position: 0 50%;
+}
+
+.rank-page .rankList .item:nth-child(3) {
+  margin-bottom: 0.3rem;
+}
+
+.rank-page .rankList .item:nth-child(3) .num {
+  background-position: 0 100%;
+}
+
+.rank-page .rankList .item:nth-child(4) {
+  border-top: none;
+}
+
+.rank-page .orderFilterGroup {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 1.66rem;
+  right: 0;
+  z-index: 999;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+  padding: 0 0.2rem;
+  overflow: hidden;
+  height: 0;
+}
+
+.rank-page .orderFilterGroup .itemsBox {
+  width: 100%;
+  background: -webkit-gradient(linear, 100% 0%, 0% 100%, from(#373469), to(#25486B));
+  border-radius: 0.08rem;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+  opacity: 0;
+  overflow: hidden;
+  height: 0;
+}
+
+.rank-page .orderFilterGroup .itemsBox.show {
+  opacity: 1;
+  overflow: visible;
+  height: auto;
+}
+
+.rank-page .orderFilterGroup .itemsBox .orderList {
+  padding: 0.1rem 0.3rem;
+}
+
+.rank-page .orderFilterGroup .itemsBox .orderList .item {
+  padding: 0.26rem 0;
+}
+
+.rank-page .orderFilterGroup .itemsBox .orderList .item + .item {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.rank-page .orderFilterGroup .itemsBox .orderList .item.active {
+  color: #7de6ff;
+}
+
+.rank-page .orderFilterGroup .itemsBox .orderList .item.active:after {
+  content: "";
+  display: block;
+  height: 0.34rem;
+  width: 0.34rem;
+  position: absolute;
+  right: 0.2rem;
+  top: 50%;
+  margin-top: -0.17rem;
+  background: url(../images/yes.png) no-repeat center center;
+  background-size: 100% auto;
+}
+
+.rank-page .orderFilterGroup .itemsBox .orderList:after, .rank-page .orderFilterGroup .itemsBox .filterList:after {
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  border: 0.1rem solid transparent;
+  border-bottom-color: #26476b;
+  position: absolute;
+  left: 0.6rem;
+  top: -0.19rem;
+}
+
+.rank-page .orderFilterGroup .itemsBox .filterList:after {
+  left: 1.8rem;
+}
+
+.rank-page .orderFilterGroup .itemsBox .filterList {
+  padding: 0.3rem 0.2rem 1.16rem 0.2rem;
+  border-radius: 0.08rem;
+  overflow: hidden;
+}
+
+.rank-page .orderFilterGroup .itemsBox .filterList .btnGrp {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0.86rem;
+  line-height: 0.86rem;
+  text-align: center;
+  width: 100%;
+}
+
+.rank-page .orderFilterGroup .itemsBox .filterList .btnGrp .resetBtn {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.rank-page .orderFilterGroup .itemsBox .filterList .btnGrp .resetBtn:active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.rank-page .orderFilterGroup .itemsBox .filterList .btnGrp .okBtn {
+  background-color: #4ac8e6;
+}
+
+.rank-page .orderFilterGroup .itemsBox .filterList .btnGrp .okBtn:active {
+  background-color: #2faddb;
+}
+
+.rank-page .orderFilterGroup .itemsBox .filterList ul {
+  font-size: 0;
+}
+
+.rank-page .orderFilterGroup .itemsBox .filterList ul + ul {
+  margin-top: 0.3rem;
+  padding-top: 0.3rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.rank-page .orderFilterGroup .itemsBox .filterList ul li {
+  font-size: 13px;
+  padding: 0.14rem 0;
+  text-align: center;
+  display: inline-block;
+  width: 30%;
+  margin: 1.64%;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.rank-page .orderFilterGroup .itemsBox .filterList ul li.active {
+  background-color: #2f577a;
+  color: #7de6ff;
+  border-color: #4daec5;
+}
+
+.rank-page .orderFilterGroup .itemsBox .filterList ul.col4 li {
+  width: 21.7%;
+  margin: 1.64%;
+}
+
+.rank-page .orderFilterGroup.show {
+  background-color: rgba(0, 0, 0, 0.38);
+  bottom: 0;
+  height: auto;
 }

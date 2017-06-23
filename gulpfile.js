@@ -20,7 +20,7 @@ const resolve = require('rollup-plugin-node-resolve')
 
 
 gulp.task('sass', () => 
-  gulp.src('./sass/**/*.scss')
+  gulp.src(['./sass/**/*.scss', '!./sass/**/*.pre.scss'])
   .pipe(sass({
     outputStyle: 'expanded'
   })
@@ -34,7 +34,7 @@ gulp.task('sass', () =>
 )
 
 gulp.task('es', () =>
-  gulp.src('./es/**/*.js')
+  gulp.src('./es/**/*.js', '!./es/**/*.pre.js')
   .pipe(gulpBabel({
     presets: ['es2015']
   }))
