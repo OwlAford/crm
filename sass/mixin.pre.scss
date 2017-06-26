@@ -5,6 +5,14 @@ $bgBlue: rgba(125, 230, 255, 0.2);
   background-color: rgba(255, 255, 255, $opacity / 100);
 }
 
+@mixin bgBlueOpacity($opacity) {
+  background-color: rgba(119, 225, 250, $opacity / 100);
+}
+
+@mixin bgPurpleOpacity($opacity) {
+  background-color: rgba(138, 149, 255, $opacity / 100);
+}
+
 @mixin opacityBorder($dir, $opacity) {
   @if $dir == all {
     border: 1px solid rgba(255, 255, 255, $opacity / 100);

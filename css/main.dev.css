@@ -720,14 +720,68 @@ body {
   background-color: #7de6ff;
 }
 
+.rank-page .allPanel {
+  width: 100%;
+  height: 0.98rem;
+}
+
+.rank-page .allPanel .inner {
+  padding: 0.1rem 0.2rem;
+  width: 100%;
+  background-color: rgba(196, 198, 207, 0.16);
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+}
+
+.rank-page .allPanel .inner .searchIpt {
+  padding: 0.09rem 0;
+}
+
+.rank-page .allPanel .inner .searchIpt .icon {
+  content: "";
+  display: block;
+  height: 0.32rem;
+  width: 0.32rem;
+  margin-top: -0.16rem;
+  background: url(../images/search.png) no-repeat;
+  background-size: 100% auto;
+  position: absolute;
+  right: 0.2rem;
+  top: 50%;
+}
+
+.rank-page .allPanel .inner .searchIpt input {
+  text-align: center;
+  height: 0.6rem;
+  width: 100%;
+  border-radius: 0.3rem;
+  line-height: 0.6rem;
+  padding: 0 0.3rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.rank-page .allPanel .inner .searchIpt input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.rank-page .allPanel .inner .searchIpt input:focus {
+  text-align: left;
+}
+
 .rank-page .fnPanel {
   line-height: 0.78rem;
   height: 0.78rem;
   padding: 0 0.24rem;
 }
 
-.rank-page .fnPanel .order, .rank-page .fnPanel .filter {
+.rank-page .fnPanel .order {
   margin-right: 0.3rem;
+}
+
+.rank-page .fnPanel .order, .rank-page .fnPanel .filter {
   opacity: .6;
 }
 
@@ -819,8 +873,23 @@ body {
   -webkit-transition: background-color .3s;
   transition: background-color .3s;
   padding: 0 0.2rem;
-  overflow: hidden;
   height: 0;
+  overflow: hidden;
+}
+
+.rank-page .orderFilterGroup.type2 {
+  top: 1.18rem;
+}
+
+.rank-page .orderFilterGroup.type2 .itemsBox .orderList:after, .rank-page .orderFilterGroup.type2 .itemsBox .filterList:after {
+  left: auto;
+  right: 1.8rem;
+  border-bottom-color: #333969;
+}
+
+.rank-page .orderFilterGroup.type2 .itemsBox .filterList:after {
+  right: 0.6rem;
+  border-bottom-color: #363569;
 }
 
 .rank-page .orderFilterGroup .itemsBox {
@@ -874,7 +943,7 @@ body {
   display: block;
   height: 0;
   width: 0;
-  border: 0.1rem solid transparent;
+  border: 0.12rem solid transparent;
   border-bottom-color: #26476b;
   position: absolute;
   left: 0.6rem;
@@ -883,12 +952,16 @@ body {
 
 .rank-page .orderFilterGroup .itemsBox .filterList:after {
   left: 1.8rem;
+  border-bottom-color: #2E3E6A;
 }
 
 .rank-page .orderFilterGroup .itemsBox .filterList {
   padding: 0.3rem 0.2rem 1.16rem 0.2rem;
   border-radius: 0.08rem;
-  overflow: hidden;
+}
+
+.rank-page .orderFilterGroup .itemsBox .filterList.type2 {
+  padding: 0.1rem 0.2rem 0.96rem 0.2rem;
 }
 
 .rank-page .orderFilterGroup .itemsBox .filterList .btnGrp {
@@ -899,6 +972,9 @@ body {
   line-height: 0.86rem;
   text-align: center;
   width: 100%;
+  overflow: hidden;
+  border-bottom-right-radius: 0.08rem;
+  border-bottom-left-radius: 0.08rem;
 }
 
 .rank-page .orderFilterGroup .itemsBox .filterList .btnGrp .resetBtn {
@@ -915,6 +991,18 @@ body {
 
 .rank-page .orderFilterGroup .itemsBox .filterList .btnGrp .okBtn:active {
   background-color: #2faddb;
+}
+
+.rank-page .orderFilterGroup .itemsBox .filterList .typeGroup {
+  padding: 0.08rem 0;
+}
+
+.rank-page .orderFilterGroup .itemsBox .filterList .typeGroup .tt {
+  padding: 0.08rem 0.1rem;
+}
+
+.rank-page .orderFilterGroup .itemsBox .filterList .typeGroup + .typeGroup {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .rank-page .orderFilterGroup .itemsBox .filterList ul {
@@ -952,4 +1040,31 @@ body {
   background-color: rgba(0, 0, 0, 0.38);
   bottom: 0;
   height: auto;
+  overflow: visible;
+}
+
+.rank-page .customerList {
+  padding: 0.24rem 0.3rem;
+}
+
+.rank-page .customerList .card {
+  background-color: rgba(119, 225, 250, 0.26);
+  margin-bottom: 0.24rem;
+}
+
+.rank-page .customerList .card.type2 {
+  background-color: rgba(138, 149, 255, 0.26);
+}
+
+.rank-page .customerList .card.type2 .tt {
+  background-color: rgba(138, 149, 255, 0.2);
+}
+
+.rank-page .customerList .card .tt {
+  background-color: rgba(119, 225, 250, 0.2);
+  padding: 0.24rem;
+}
+
+.rank-page .customerList .card .row div {
+  padding: 0.24rem;
 }
