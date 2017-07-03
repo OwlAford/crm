@@ -121,6 +121,20 @@
     }
   }
 
+  .base-textarea {
+    textarea {
+      width: 100%;
+      border: none;
+      @include bgWhiteOpacity(10);
+      padding: 0.2rem;
+      color: #fff;
+
+      &::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, .6);
+      }
+    }
+  }
+
 }
 
 .filterList ul {
@@ -140,7 +154,7 @@
     display: inline-block;
     width: 30%;
     margin: 1.64%;
-    @include opacityBorder(all, 6);
+    @include opacityBorder(all, 10);
 
     &.active {
       background-color: #2f577a;
@@ -152,5 +166,53 @@
   &.col4 li {
     width: 21.7%;
     margin: 1.64%;
+  }
+}
+
+.mcList {
+
+  .area {
+    padding: 0.32rem 0.2rem 0.32rem 0.64rem;
+    width: 100%;
+
+    .row {
+      padding: 0.1rem 0;
+      line-height: 24px;
+    }
+
+    .tit {
+      color: $fcBlue;
+      font-size: 15px;
+      
+      &.read:after {
+        display: none;
+      }
+
+      &:after {
+        content: "";
+        height: 6px;
+        width: 6px;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        left: -0.3rem;
+        top: 50%;
+        margin-top: -3px;
+        background-color: $fcBlue;
+      }
+    }
+
+    .time {
+      opacity: 0.6;
+    }
+
+    .detail {
+      color: #d0d2e2;
+      word-break: break-all;
+    }
+
+    .state {
+      color: #fee47a;
+    }
   }
 }

@@ -57,7 +57,7 @@ ins {
   text-decoration: none
 }
 
-body {
+body, textarea {
   font-family: PingFang SC, Helvetica Neue, Hiragino Sans GB, Helvetica, Microsoft YaHei, Arial;
   font-size: .32rem;
 }

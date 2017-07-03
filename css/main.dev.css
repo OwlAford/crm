@@ -180,6 +180,18 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
+.crm-wrap .base-textarea textarea {
+  width: 100%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.2rem;
+  color: #fff;
+}
+
+.crm-wrap .base-textarea textarea::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .filterList ul {
   font-size: 0;
 }
@@ -197,7 +209,7 @@ body {
   display: inline-block;
   width: 30%;
   margin: 1.64%;
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .filterList ul li.active {
@@ -209,6 +221,51 @@ body {
 .filterList ul.col4 li {
   width: 21.7%;
   margin: 1.64%;
+}
+
+.mcList .area {
+  padding: 0.32rem 0.2rem 0.32rem 0.64rem;
+  width: 100%;
+}
+
+.mcList .area .row {
+  padding: 0.1rem 0;
+  line-height: 24px;
+}
+
+.mcList .area .tit {
+  color: #7de6ff;
+  font-size: 15px;
+}
+
+.mcList .area .tit.read:after {
+  display: none;
+}
+
+.mcList .area .tit:after {
+  content: "";
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  left: -0.3rem;
+  top: 50%;
+  margin-top: -3px;
+  background-color: #7de6ff;
+}
+
+.mcList .area .time {
+  opacity: 0.6;
+}
+
+.mcList .area .detail {
+  color: #d0d2e2;
+  word-break: break-all;
+}
+
+.mcList .area .state {
+  color: #fee47a;
 }
 
 .home-page .menu {
@@ -576,51 +633,6 @@ body {
 .info-page .mcList .item .control .inner div.del {
   width: 36%;
   background-color: #d30611;
-}
-
-.info-page .mcList .area {
-  padding: 0.32rem 0.2rem 0.32rem 0.64rem;
-  width: 100%;
-}
-
-.info-page .mcList .area .row {
-  padding: 0.1rem 0;
-  line-height: 24px;
-}
-
-.info-page .mcList .area .tit {
-  color: #7de6ff;
-  font-size: 15px;
-}
-
-.info-page .mcList .area .tit.read:after {
-  display: none;
-}
-
-.info-page .mcList .area .tit:after {
-  content: "";
-  height: 6px;
-  width: 6px;
-  border-radius: 50%;
-  display: block;
-  position: absolute;
-  left: -0.3rem;
-  top: 50%;
-  margin-top: -3px;
-  background-color: #7de6ff;
-}
-
-.info-page .mcList .area .time {
-  opacity: 0.6;
-}
-
-.info-page .mcList .area .detail {
-  color: #d0d2e2;
-  word-break: break-all;
-}
-
-.info-page .mcList .area .state {
-  color: #fee47a;
 }
 
 .info-page .timeoutPanel, .info-page .approvPanel {
@@ -1528,4 +1540,46 @@ body {
   border-radius: 50%;
   background: #6b7096;
   margin-left: 5px;
+}
+
+.feedback-page .title {
+  padding: 0.14rem 0;
+}
+
+.feedback-page .filterList {
+  padding: 0.2rem;
+}
+
+.feedback-page .filterList .title {
+  padding-left: 0.14rem;
+}
+
+.feedback-page .filterList ul li {
+  font-size: 12px;
+}
+
+.feedback-page .descCnt {
+  padding: 0 0.34rem;
+}
+
+.feedback-page .screenShot {
+  width: 2.2rem;
+  height: 2.2rem;
+  overflow: hidden;
+  margin: 0.3rem auto;
+  border: 0.06rem solid #8d8fbf;
+}
+
+.feedback-page .screenShot img {
+  width: 100%;
+}
+
+.feedback-page .screenShot + .btn-wrap {
+  padding: 0 0.3rem;
+}
+
+.feedback-page .mcList .screenShot {
+  margin: 0.1rem;
+  height: 1.26rem;
+  width: 1.26rem;
 }
