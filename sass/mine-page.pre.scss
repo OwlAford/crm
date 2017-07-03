@@ -1,0 +1,73 @@
+.mine-page {
+  
+  .area.user {
+    padding: 0.4rem 0 0.4rem 1.8rem;
+
+    .base {
+      color: #77e1fa;
+      font-size: 16px;
+      margin-bottom: 0.2rem;
+
+      .sex {
+        &:before {
+          content: "";
+          display: inline-block;
+          height: 0.32rem;
+          width: 0.32rem;
+          background: url(../images/sex.png) no-repeat;
+          background-size: 100% auto;
+          margin-right: 0.05rem;
+          vertical-align: middle;
+          margin-top: -2px;
+        }
+
+        &.female {
+          color: #f35cb0;
+          
+          &:before {
+            background-position: 0 100%;
+          }
+        }
+      }
+
+      .name {
+        margin-right: 0.2rem;
+        
+      }
+    }
+  }
+
+  .list {
+    .item {
+      padding: 0.32rem 0.32rem 0.32rem 0.86rem;
+
+      i {
+        display: block;
+        height: 0.44rem;
+        width: 0.4rem;
+        background: url(../images/user_ico.png) no-repeat;
+        background-size: 100% auto;
+        vertical-align: middle;
+        position: absolute;
+        left: 0.3rem;
+        top: 0.22rem;
+
+        &.b {
+          background-position: 0 33.3333%;
+        }
+
+        &.c {
+          background-position: 0 66.6666%;
+        }
+
+        &.d {
+          background-position: 0 100%;
+        }
+      }
+    }
+  }
+
+  .quitBtn {
+    margin: 0.4rem 0;
+  }
+}

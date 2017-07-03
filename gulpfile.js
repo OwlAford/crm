@@ -19,7 +19,7 @@ const rollupUglify = require('rollup-plugin-uglify')
 const resolve = require('rollup-plugin-node-resolve')
 
 
-gulp.task('sass', () => 
+gulp.task('sass', () => {
   gulp.src(['./sass/**/*.scss', '!./sass/**/*.pre.scss'])
   .pipe(sass({
     outputStyle: 'expanded'
@@ -30,8 +30,7 @@ gulp.task('sass', () =>
     cascade: false
   }))
   .pipe(gulp.dest('./css'))
-  // .pipe(connect.reload())
-)
+})
 
 gulp.task('es', () =>
   gulp.src('./es/**/*.js', '!./es/**/*.pre.js')
@@ -72,7 +71,7 @@ gulp.task('reload', () => {
 })
 
 gulp.task('sass:watch', () =>
-  gulp.watch('./sass/**/*.scss', ['sass'])
+  gulp.watch('./sass/**/*.scss', ['reload', 'sass'])
 )
 
 gulp.task('es:watch', () =>

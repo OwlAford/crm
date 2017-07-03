@@ -1,0 +1,156 @@
+.crm-wrap {
+  overflow-x: hidden;
+
+  .toTop {
+    height: 0.8rem;
+    width: 0.8rem;
+    position: fixed;
+    z-index: 999;
+    right: 0.24rem;
+    bottom: 0.24rem;
+    background: url(../images/totop.png) no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .avatar {
+    width: 1.05rem;
+    height: 1.05rem;
+    position: absolute;
+    left: 0.4rem;
+    top: 50%;
+    margin-top: -0.5rem;
+    background-color: rgba(124, 155, 193, 0.2);
+    padding: 0.05rem;
+  }
+
+  * {
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  .area {
+    @include bgWhiteOpacity(4);
+
+    & + .area {
+      margin-top: 0.26rem;
+    }
+  }
+
+  .row {
+    display: flex;
+
+    .cell {
+      flex: 1;
+    }
+  }
+
+  .avatar {
+    border-radius: 50%;
+
+    img {
+      display: block;
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .btn-wrap {
+    padding: 0.4rem 0.3rem;
+  }
+
+  .base-btn {
+    width: 100%;
+    padding: 0.3rem 0.36rem;
+    font-size: 16px;
+    margin: 0.4rem 0;
+    @include bgWhiteOpacity(20);
+    color: #fff;
+    border-radius: 0.1rem;
+
+    &:active {
+      @include bgWhiteOpacity(40);
+    }
+  }
+
+  .ipt {
+    input {
+      width: 100%;
+      background: none;
+      color: #fff;
+
+      &::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, .6);
+      }
+    }
+  }
+
+  .list {
+    .item {
+      padding: 0.3rem;
+      
+      &.fold {
+        padding-right: 0.62rem;
+        @include textEllipsis;
+
+        &.open {
+          white-space: normal;
+
+          &:after {
+            transform: rotate(180deg);
+          }
+        }
+
+        &:after {
+          content: "";
+          display: block;
+          height: 0.32rem;
+          width: 0.32rem;
+          background: url(../images/fold.png) no-repeat center center;
+          background-size: 90% auto;
+          position: absolute;
+          right: 0.2rem;
+          top: 50%;
+          margin-top: -0.16rem;
+        }
+      }
+
+      & + .item {
+        @include opacityBorder(top, 6);
+      }
+    }
+  }
+
+}
+
+.filterList ul {
+  font-size: 0;
+
+  & + ul {
+    margin-top: 0.3rem;
+    padding-top: 0.3rem;
+    @include opacityBorder(top, 8);
+
+  }
+
+  li {
+    font-size: 13px;
+    padding: 0.14rem 0;
+    text-align: center;
+    display: inline-block;
+    width: 30%;
+    margin: 1.64%;
+    @include opacityBorder(all, 6);
+
+    &.active {
+      background-color: #2f577a;
+      color: $fcBlue;
+      border-color: #4daec5;
+    }
+  }
+
+  &.col4 li {
+    width: 21.7%;
+    margin: 1.64%;
+  }
+}
