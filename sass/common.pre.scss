@@ -1,6 +1,31 @@
 .crm-wrap {
   overflow-x: hidden;
 
+  .empty-blank {
+    width: 100%;
+    text-align: center;
+    height: 7.5rem;
+    display: table;
+
+    .content {
+      vertical-align: middle;
+      display: table-cell;
+    }
+
+    i.wallet, i.box {
+      display: block;
+      height: 1.3rem;
+      width: 1.3rem;
+      margin: 0 auto 0.3rem;
+      background: url(../images/wallet.png) center center no-repeat;
+      background-size: auto 100%;
+    }
+
+    i.box {
+      background-image: url(../images/box.png);
+    }
+  }
+
   .toTop {
     height: 0.8rem;
     width: 0.8rem;
@@ -213,6 +238,72 @@
 
     .state {
       color: #fee47a;
+    }
+  }
+}
+
+.rank-page, .task-page {
+  .tabs {
+    background-color: rgba(196, 198, 207, 0.16);  
+
+    .cell {
+      text-align: center;
+      height: 0.88rem;
+      line-height: 0.88rem;
+      transition: color .3s;
+      overflow: hidden;
+
+      &:after {
+        content: "";
+        display: block;
+        height: 0.04rem;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+
+      &.active {
+        color: $fcBlue;
+        &:after {
+          background-color: $fcBlue;
+        }
+      }
+    }
+  }
+}
+
+.crm-table {
+  table {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(78, 78, 124, .3);
+    font-size: 13px;
+
+    tr {
+      & + tr {
+        td {
+          @include opacityBorder(top, 4);
+        }
+      }
+    }
+
+    td, th {
+      padding: 0.28rem 0.2rem;
+    }
+
+    th {
+      font-weight: normal;
+      background-color: rgba(78, 78, 124, .4);
+      & + th {
+        @include opacityBorder(left, 7);
+      }
+    }
+
+    td {
+      & + td {
+        @include opacityBorder(left, 4);
+      }
     }
   }
 }

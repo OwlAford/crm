@@ -1,0 +1,28 @@
+.task-page {
+  .switch-content {
+    padding-top: 0.1rem;
+
+    .switch-item {
+      display: none;
+    }
+  }
+
+  .bank-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .item {
+      width: 3.3rem;
+      margin: 0.1rem 0.1rem;
+      padding: 0.28rem 0;
+      text-align: center;
+      background: #25476d url(../images/wave.png) no-repeat 0 bottom;
+      background-size: 100% auto;
+
+      &:active {
+        color: $fcBlue;
+      }
+    }
+  }
+}

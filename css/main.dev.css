@@ -52,8 +52,45 @@ body {
   text-align: right;
 }
 
+.ta-c {
+  text-align: center;
+}
+
+.round-pd20 {
+  padding: 0.2rem;
+}
+
+.round-pd30 {
+  padding: 0.3rem;
+}
+
 .crm-wrap {
   overflow-x: hidden;
+}
+
+.crm-wrap .empty-blank {
+  width: 100%;
+  text-align: center;
+  height: 7.5rem;
+  display: table;
+}
+
+.crm-wrap .empty-blank .content {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.crm-wrap .empty-blank i.wallet, .crm-wrap .empty-blank i.box {
+  display: block;
+  height: 1.3rem;
+  width: 1.3rem;
+  margin: 0 auto 0.3rem;
+  background: url(../images/wallet.png) center center no-repeat;
+  background-size: auto 100%;
+}
+
+.crm-wrap .empty-blank i.box {
+  background-image: url(../images/box.png);
 }
 
 .crm-wrap .toTop {
@@ -266,6 +303,65 @@ body {
 
 .mcList .area .state {
   color: #fee47a;
+}
+
+.rank-page .tabs, .task-page .tabs {
+  background-color: rgba(196, 198, 207, 0.16);
+}
+
+.rank-page .tabs .cell, .task-page .tabs .cell {
+  text-align: center;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+  overflow: hidden;
+}
+
+.rank-page .tabs .cell:after, .task-page .tabs .cell:after {
+  content: "";
+  display: block;
+  height: 0.04rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.rank-page .tabs .cell.active, .task-page .tabs .cell.active {
+  color: #7de6ff;
+}
+
+.rank-page .tabs .cell.active:after, .task-page .tabs .cell.active:after {
+  background-color: #7de6ff;
+}
+
+.crm-table table {
+  width: 100%;
+  text-align: center;
+  background-color: rgba(78, 78, 124, 0.3);
+  font-size: 13px;
+}
+
+.crm-table table tr + tr td {
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.crm-table table td, .crm-table table th {
+  padding: 0.28rem 0.2rem;
+}
+
+.crm-table table th {
+  font-weight: normal;
+  background-color: rgba(78, 78, 124, 0.4);
+}
+
+.crm-table table th + th {
+  border-left: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.crm-table table td + td {
+  border-left: 1px solid rgba(255, 255, 255, 0.04);
 }
 
 .home-page .menu {
@@ -1089,37 +1185,6 @@ body {
   margin-top: 0.14rem;
 }
 
-.rank-page .tabs {
-  background-color: rgba(196, 198, 207, 0.16);
-}
-
-.rank-page .tabs .cell {
-  text-align: center;
-  height: 0.88rem;
-  line-height: 0.88rem;
-  -webkit-transition: color .3s;
-  transition: color .3s;
-  overflow: hidden;
-}
-
-.rank-page .tabs .cell:after {
-  content: "";
-  display: block;
-  height: 0.04rem;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.rank-page .tabs .cell.active {
-  color: #7de6ff;
-}
-
-.rank-page .tabs .cell.active:after {
-  background-color: #7de6ff;
-}
-
 .rank-page .allPanel {
   width: 100%;
   height: 0.98rem;
@@ -1582,4 +1647,36 @@ body {
   margin: 0.1rem;
   height: 1.26rem;
   width: 1.26rem;
+}
+
+.task-page .switch-content {
+  padding-top: 0.1rem;
+}
+
+.task-page .switch-content .switch-item {
+  display: none;
+}
+
+.task-page .bank-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.task-page .bank-list .item {
+  width: 3.3rem;
+  margin: 0.1rem 0.1rem;
+  padding: 0.28rem 0;
+  text-align: center;
+  background: #25476d url(../images/wave.png) no-repeat 0 bottom;
+  background-size: 100% auto;
+}
+
+.task-page .bank-list .item:active {
+  color: #7de6ff;
 }
