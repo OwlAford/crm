@@ -173,8 +173,8 @@
 
           .inner {
             @include bgWhiteOpacity(8);
-            height: 1.5rem;
-            padding: 0.2rem 0 0 1.5rem;
+            min-height: 1.5rem;
+            padding: 0.2rem 0 0.2rem 1.5rem;
 
             .t {
               opacity: .8;
@@ -190,7 +190,8 @@
               width: 1.5rem;
               position: absolute;
               left: 0;
-              top: 0;
+              top: 50%;
+              margin-top: -0.75rem;
               padding: 0.15rem;
 
               span {

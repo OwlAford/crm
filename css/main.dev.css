@@ -548,8 +548,8 @@ body {
 
 .home-page .area.pieChart .row .cell .inner {
   background-color: rgba(255, 255, 255, 0.08);
-  height: 1.5rem;
-  padding: 0.2rem 0 0 1.5rem;
+  min-height: 1.5rem;
+  padding: 0.2rem 0 0.2rem 1.5rem;
 }
 
 .home-page .area.pieChart .row .cell .inner .t {
@@ -566,7 +566,8 @@ body {
   width: 1.5rem;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 50%;
+  margin-top: -0.75rem;
   padding: 0.15rem;
 }
 
@@ -1647,6 +1648,19 @@ body {
   margin: 0.1rem;
   height: 1.26rem;
   width: 1.26rem;
+}
+
+.task-page .tabFixedWrap {
+  height: 0.88rem;
+}
+
+.task-page .tabFixedWrap .tabs {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  background-color: rgba(41, 50, 97, 0.8);
 }
 
 .task-page .switch-content {
