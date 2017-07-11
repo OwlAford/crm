@@ -1,6 +1,51 @@
 .crm-wrap {
   overflow-x: hidden;
 
+  .searchIpt {
+    padding: 0.09rem 0;
+
+    .icon {
+      content: "";
+      display: block;
+      height: 0.32rem;
+      width: 0.32rem;
+      margin-top: -0.16rem;
+      background: url(../images/search.png) no-repeat;
+      background-size: 100% auto;
+      position: absolute;
+      right: 0.2rem;
+      top: 50%;
+    }
+
+    input {
+      text-align: center;
+      height: 0.6rem;
+      width: 100%;
+      border-radius: 0.3rem;
+      line-height: 0.6rem;
+      padding: 0 0.3rem;
+      @include bgWhiteOpacity(20);
+      color: #fff;
+      
+      &::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, .6);
+      }
+
+      &:focus {
+        text-align: left;
+      }
+    }
+  }
+
+  i.ico-date {
+    height: 22px;
+    width: 22px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../images/ml-ico.png) 0 100% no-repeat;
+    background-size: 100% auto;
+  }
+
   .empty-blank {
     width: 100%;
     text-align: center;
@@ -114,7 +159,7 @@
     .item {
       padding: 0.3rem;
       
-      &.fold {
+      &.fold, &.arr {
         padding-right: 0.62rem;
         @include textEllipsis;
 
@@ -138,6 +183,10 @@
           top: 50%;
           margin-top: -0.16rem;
         }
+      }
+
+      &.arr:after {
+        transform: rotate(-90deg);
       }
 
       & + .item {
@@ -242,7 +291,7 @@
   }
 }
 
-.rank-page, .task-page {
+.rank-page, .task-page, .machine-page {
   .tabs {
     background-color: rgba(196, 198, 207, 0.16);  
 

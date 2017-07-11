@@ -1,18 +1,5 @@
 .task-page {
   
-  .tabFixedWrap {
-    height: 0.88rem;
-
-    .tabs {
-      width: 100%;
-      position: fixed;
-      left: 0;
-      top: 0;
-      z-index: 99;
-      background-color: rgba(41, 50, 97, .8);
-    }
-  }
-
   .switch-content {
     padding-top: 0.1rem;
 
@@ -37,6 +24,21 @@
       &:active {
         color: $fcBlue;
       }
+    }
+  }
+}
+
+.task-page, .machine-page {
+  .tabFixedWrap {
+    height: 0.88rem;
+
+    .tabs {
+      width: 100%;
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 99;
+      background-color: rgba(41, 50, 97, .8);
     }
   }
 }

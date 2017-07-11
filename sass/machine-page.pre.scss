@@ -1,0 +1,144 @@
+.machine-page {
+  .switch-item {
+    display: none;
+    padding: 0.3rem 0;
+  }
+
+  .mcList {
+    .area {
+      padding: 0.24rem 1.72rem 0.24rem 0.64rem;
+    }
+
+    .roundBtn {
+      height: 64px;
+      width: 64px;
+      position: absolute;
+      right: 0.2rem;
+      top: 50%;
+      margin-top: -32px;
+      padding: 4px;
+      border-radius: 100%;
+      @include bgWhiteOpacity(10);
+
+      &:after {
+        content: "未签到";
+        display: block;
+        text-align: center;
+        line-height: 56px;
+        font-size: 12px;
+        border-radius: 100%;
+        @include bgWhiteOpacity(10);
+      }
+
+      &.active {
+        &:after {
+          content: "已签到";
+          background-color: #38d1f5;
+        }
+      }
+    }
+  }
+
+  .setPanel {
+    padding: 0.2rem 0.3rem;
+
+    .mlBtn {
+      color: #77e1fa;
+      display: inline-block;
+      @include bgBlueOpacity(10);
+      padding: 0.1rem;
+      border: 1px solid rgba(119, 225, 250, .2);
+      font-size: 13px;
+
+      &:before {
+        content: "";
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        font-size: 13px;
+        vertical-align: middle;
+        background: url(../images/ml-ico.png) no-repeat;
+        background-size: 100% auto;
+        margin: -2px 4px 0 0;
+      }
+    }
+
+    i.ico-date {
+      margin: 0 0.1rem 0 0.12rem;
+    }
+    .gap {
+      margin: 0 0.1rem;
+    }
+
+    .ipt, .gap {
+      display: inline-block;
+    }
+
+    .ipt {
+      width: 1.74rem;
+      padding: 0.1rem;
+      border: 1px solid rgba(119, 225, 250, .1);
+
+      input {
+        text-align: center;
+        line-height: 20px;
+        color: rgba(255, 255, 255, .6);
+      }
+    }
+  }
+
+  .timeTitle {
+    font-size: 15px;
+    color: $fcBlue;
+    padding: 0.2rem;
+  }
+
+  .timeLine {
+    padding-left: 1.5rem;
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 1.3rem;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      @include bgWhiteOpacity(8);
+    }
+
+    .item {
+      padding: 0.3rem 0.2rem;
+
+      &:after {
+        content: "";
+        display: block;
+        height: 8px;
+        width: 8px;
+        background-color: #38d1f5;
+        border-radius: 50%;
+        position: absolute;
+        left: -0.2rem;
+        top: 50%;
+        margin: -4px 0 0 -4px;
+      }
+
+      .t2 {
+        padding-top: 0.2rem;
+        opacity: .8;
+        font-size: 12px;
+      }
+
+      .time {
+        height: 20px;
+        line-height: 20px;
+        width: 1.2rem;
+        position: absolute;
+        text-align: center;
+        left: -1.5rem;
+        top: 50%;
+        margin-top: -10px;
+      }
+    }
+  }
+}

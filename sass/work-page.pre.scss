@@ -47,17 +47,6 @@
       opacity: .8;
       font-size: 12px;
 
-      &:before {
-        content: "";
-        display: inline-block;
-        height: 18px;
-        width: 18px;
-        vertical-align: middle;
-        background: url(../images/pin.png) no-repeat center center;
-        background-size: 13px auto;
-        margin: -2px 5px 0 0;
-      }
-
       .del {
         display: inline-block;
         height: 20px;
@@ -70,4 +59,15 @@
       }
     }
   }
+}
+
+.work-page .userDtail .local:before, i.ico-local {
+  content: "";
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  vertical-align: middle;
+  background: url(../images/pin.png) no-repeat center center;
+  background-size: 13px auto;
+  margin: -2px 5px 0 0;
 }

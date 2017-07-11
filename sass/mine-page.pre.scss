@@ -47,20 +47,24 @@
         width: 0.4rem;
         background: url(../images/user_ico.png) no-repeat;
         background-size: 100% auto;
-        vertical-align: middle;
         position: absolute;
         left: 0.3rem;
-        top: 0.22rem;
+        top: 50%;
+        margin-top: -0.22rem;
 
         &.b {
-          background-position: 0 33.3333%;
+          background-position: 0 25%;
         }
 
         &.c {
-          background-position: 0 66.6666%;
+          background-position: 0 50%;
         }
 
         &.d {
+          background-position: 0 75%;
+        }
+
+        &.e {
           background-position: 0 100%;
         }
       }
