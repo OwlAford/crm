@@ -1685,6 +1685,10 @@ body {
   width: 1.26rem;
 }
 
+.task-page .filterList {
+  margin-bottom: 0.1rem;
+}
+
 .task-page .switch-content {
   padding-top: 0.1rem;
 }
