@@ -81,36 +81,6 @@
 
   .rankList {
     .item {
-      @include bgWhiteOpacity(4);
-      padding: 0.38rem 0.3rem 0.38rem 1.04rem;
-
-      & + .item {
-        @include opacityBorder(top, 6);
-      }
-
-      .name {
-        @include textEllipsis;
-        margin-right: 0.2rem;
-      }
-
-      .num {
-        position: absolute;
-        left: 0.24rem;
-        height: 0.6rem;
-        width: 0.6rem;
-        top: 50%;
-        margin-top: -0.3rem;
-        border-radius: 50%;
-        text-align: center;
-        color: $fcBlue;
-        line-height: 0.6rem;
-        background-color: $bgBlue;
-
-        &:after {
-          content: attr(data-num);
-        }
-      }
-
       &:nth-child(1),  &:nth-child(2),  &:nth-child(3) {
         .num {
           background: url(../images/top_3.png) no-repeat;

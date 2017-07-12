@@ -65,8 +65,22 @@ body {
   padding: 0.3rem;
 }
 
+.round-pd20-30 {
+  padding: 0.2rem 0.3rem;
+}
+
 .crm-wrap {
   overflow-x: hidden;
+}
+
+.crm-wrap .full-mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
 }
 
 .crm-wrap .searchIpt {
@@ -354,6 +368,40 @@ body {
 
 .mcList .area .state {
   color: #fee47a;
+}
+
+.rankList .item {
+  background-color: rgba(255, 255, 255, 0.04);
+  padding: 0.38rem 0.3rem 0.38rem 1.04rem;
+}
+
+.rankList .item + .item {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.rankList .item .name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-right: 0.2rem;
+}
+
+.rankList .item .num {
+  position: absolute;
+  left: 0.24rem;
+  height: 0.6rem;
+  width: 0.6rem;
+  top: 50%;
+  margin-top: -0.3rem;
+  border-radius: 50%;
+  text-align: center;
+  color: #7de6ff;
+  line-height: 0.6rem;
+  background-color: rgba(125, 230, 255, 0.2);
+}
+
+.rankList .item .num:after {
+  content: attr(data-num);
 }
 
 .rank-page .tabs, .task-page .tabs, .machine-page .tabs {
@@ -1291,40 +1339,6 @@ body {
   background-position: 0 100%;
 }
 
-.rank-page .rankList .item {
-  background-color: rgba(255, 255, 255, 0.04);
-  padding: 0.38rem 0.3rem 0.38rem 1.04rem;
-}
-
-.rank-page .rankList .item + .item {
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-.rank-page .rankList .item .name {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  margin-right: 0.2rem;
-}
-
-.rank-page .rankList .item .num {
-  position: absolute;
-  left: 0.24rem;
-  height: 0.6rem;
-  width: 0.6rem;
-  top: 50%;
-  margin-top: -0.3rem;
-  border-radius: 50%;
-  text-align: center;
-  color: #7de6ff;
-  line-height: 0.6rem;
-  background-color: rgba(125, 230, 255, 0.2);
-}
-
-.rank-page .rankList .item .num:after {
-  content: attr(data-num);
-}
-
 .rank-page .rankList .item:nth-child(1) .num, .rank-page .rankList .item:nth-child(2) .num, .rank-page .rankList .item:nth-child(3) .num {
   background: url(../images/top_3.png) no-repeat;
   background-size: 100% auto;
@@ -1765,6 +1779,10 @@ body {
   font-size: 13px;
 }
 
+.machine-page .setPanel .mlBtn:active {
+  background-color: rgba(119, 225, 250, 0.2);
+}
+
 .machine-page .setPanel .mlBtn:before {
   content: "";
   display: inline-block;
@@ -1854,4 +1872,56 @@ body {
   left: -1.5rem;
   top: 50%;
   margin-top: -10px;
+}
+
+.machine-page .full-mask {
+  left: 200%;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-transition: opacity ease .3s;
+  transition: opacity ease .3s;
+}
+
+.machine-page .full-mask.show {
+  left: 0;
+  opacity: 1;
+}
+
+.machine-page .full-mask.show .sidebar {
+  -webkit-transition: left ease .3s .2s;
+  transition: left ease .3s .2s;
+  visibility: visible;
+  left: 0;
+}
+
+.machine-page .full-mask .backLayer {
+  width: 100%;
+  height: 100%;
+}
+
+.machine-page .full-mask .sidebar {
+  left: -6.18rem;
+  visibility: hidden;
+  width: 6.18rem;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: #2f3d6a;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#373469), to(#25486b));
+}
+
+.machine-page .full-mask .sidebar .scroller {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 1.18rem;
+  bottom: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.machine-page .full-mask .sidebar .rankList .item {
+  background: none;
+  padding: 0.3rem 0.2rem 0.3rem 1rem;
 }
