@@ -15,7 +15,14 @@
 <body>
 	<div class="crm-wrap">
 		<div class="task-page">
-			<div class="round-pd20">
+			<div class="tabFixedWrap">
+				<div class="row tabs">
+					<div class="cell active">业务信息</div>
+					<div class="cell">网点信息</div>
+				</div>
+			</div>
+			<div class="switch-content">
+		<div class="switch-item round-pd20" style="display: block;">
 				<div class="filterList">
 					<div class="typeGroup">
 						<ul class="col4">
@@ -96,7 +103,39 @@
 				</div>
 				<div class="round-pd20 ta-c">图示：指标明细</div>
 			</div>
+				<div class="switch-item round-pd20">
+					<div class="bank-list">
+						<div class="item">温岭支行</div>
+						<div class="item">温岭支行</div>
+						<div class="item">温岭支行</div>
+						<div class="item">温岭支行</div>
+						<div class="item">温岭支行</div>
+						<div class="item">温岭支行</div>
+						<div class="item">温岭支行</div>
+						<div class="item">温岭支行</div>
+						<div class="item">温岭支行</div>
+						<div class="item">温岭支行</div>
+						<div class="item">温岭支行</div>
+						<div class="item">温岭支行</div>
+						<div class="item">温岭支行</div>
+						<div class="item">温岭支行</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="task-page">
+			
 		</div>
 	</div>
+	<script type="text/javascript">
+		$(function () {
+			var allItem = $('.switch-content .switch-item');
+			$('.task-page .tabs .cell').on('click', function () {
+				$(this).addClass('active').siblings().removeClass('active');
+				allItem.hide();
+				allItem.eq($(this).index()).show();
+			});
+		})
+	</script>
 </body>
 </html>
