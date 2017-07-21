@@ -1043,12 +1043,17 @@ body {
   font-size: 15px;
 }
 
-.info-page .mayLike .proList .row {
+.info-page .mayLike .proList .item {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 0.2rem 0 0.2rem 0.96rem;
+  padding: 0.3rem 0 0.3rem 0.96rem;
+  font-size: 12px;
 }
 
-.info-page .mayLike .proList .row .ico {
+.info-page .mayLike .proList .item .row + .row {
+  padding-top: 0.2rem;
+}
+
+.info-page .mayLike .proList .item .ico {
   content: "";
   display: block;
   height: 0.76rem;
@@ -1062,7 +1067,7 @@ body {
   border-radius: 0.06rem;
 }
 
-.info-page .mayLike .proList .row .ico:after {
+.info-page .mayLike .proList .item .ico:after {
   content: "";
   display: block;
   height: 100%;
@@ -1071,28 +1076,20 @@ body {
   background-size: 100% auto;
 }
 
-.info-page .mayLike .proList .row .ico.b:after {
+.info-page .mayLike .proList .item .ico.b:after {
   background-position: 0 33.333%;
 }
 
-.info-page .mayLike .proList .row .ico.c:after {
+.info-page .mayLike .proList .item .ico.c:after {
   background-position: 0 66.666%;
 }
 
-.info-page .mayLike .proList .row .ico.d:after {
+.info-page .mayLike .proList .item .ico.d:after {
   background-position: 0 100%;
 }
 
-.info-page .mayLike .proList .row .cell {
+.info-page .mayLike .proList .item .cell {
   padding-right: 0.2rem;
-}
-
-.info-page .mayLike .proList .row p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-size: 12px;
-  padding: 0.1rem 0;
 }
 
 .info-page .assets {
@@ -1181,7 +1178,7 @@ body {
 }
 
 .info-page .trend .userInfoList .row {
-  padding: 0.2rem 0;
+  padding: 0.2rem 0.5rem 0.2rem 0;
   font-size: 13px;
 }
 

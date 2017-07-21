@@ -257,9 +257,14 @@
     }
 
     .proList {
-      .row {
+      .item {
         @include opacityBorder(top, 8);
-        padding: 0.2rem 0 0.2rem 0.96rem;
+        padding: 0.3rem 0 0.3rem 0.96rem;
+        font-size: 12px;
+
+        .row + .row {
+          padding-top: 0.2rem;
+        }
 
         .ico {
           content: "";
@@ -298,12 +303,6 @@
 
         .cell {
           padding-right: 0.2rem;
-        }
-
-        p {
-          @include textEllipsis;
-          font-size: 12px;
-          padding: 0.1rem 0;
         }
       }
     }
@@ -397,7 +396,7 @@
       padding: 0 0.28rem;
 
       .row {
-        padding: 0.2rem 0;
+        padding: 0.2rem 0.5rem 0.2rem 0;
         font-size: 13px;
       }
 
