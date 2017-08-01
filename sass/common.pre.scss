@@ -400,3 +400,68 @@
     }
   }
 }
+
+.feedback-page, .work-page {
+  .screenShot {
+    width: 2.2rem;
+    height: 2.2rem;
+    overflow: hidden;
+    margin: 0.3rem auto;
+    border: 0.06rem solid #8d8fbf;
+
+    img {
+      width: 100%;
+    }
+
+    & + .btn-wrap {
+      padding: 0 0.3rem;
+    }
+  }
+
+  .shot-add {
+    padding: 0.2rem;
+
+    ul {
+      display: inline;
+    }
+
+    .screenShot, .addBtn {
+      border: 2px solid #9da1c1;
+      margin: 0.1rem;
+      display: inline-block;
+      vertical-align: middle;
+      width: 1.38rem;
+      height: 1.38rem;
+    }
+
+    .addBtn {
+      &:after, &:before {
+        content: "";
+        display: block;
+        height: 0.06rem;
+        width: 0.76rem;
+        background-color: #9da1c1;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -0.03rem 0 0 -0.38rem;
+      }
+
+      &:before {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  .pic-gallery {
+    display: flex;
+    // justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0.2rem 0.2rem;
+
+    .screenShot {
+      border: none;
+      margin: 0.08rem;
+    }
+  }
+}

@@ -463,6 +463,70 @@ body {
   border-left: 1px solid rgba(255, 255, 255, 0.04);
 }
 
+.feedback-page .screenShot, .work-page .screenShot {
+  width: 2.2rem;
+  height: 2.2rem;
+  overflow: hidden;
+  margin: 0.3rem auto;
+  border: 0.06rem solid #8d8fbf;
+}
+
+.feedback-page .screenShot img, .work-page .screenShot img {
+  width: 100%;
+}
+
+.feedback-page .screenShot + .btn-wrap, .work-page .screenShot + .btn-wrap {
+  padding: 0 0.3rem;
+}
+
+.feedback-page .shot-add, .work-page .shot-add {
+  padding: 0.2rem;
+}
+
+.feedback-page .shot-add ul, .work-page .shot-add ul {
+  display: inline;
+}
+
+.feedback-page .shot-add .screenShot, .feedback-page .shot-add .addBtn, .work-page .shot-add .screenShot, .work-page .shot-add .addBtn {
+  border: 2px solid #9da1c1;
+  margin: 0.1rem;
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.38rem;
+  height: 1.38rem;
+}
+
+.feedback-page .shot-add .addBtn:after, .feedback-page .shot-add .addBtn:before, .work-page .shot-add .addBtn:after, .work-page .shot-add .addBtn:before {
+  content: "";
+  display: block;
+  height: 0.06rem;
+  width: 0.76rem;
+  background-color: #9da1c1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -0.03rem 0 0 -0.38rem;
+}
+
+.feedback-page .shot-add .addBtn:before, .work-page .shot-add .addBtn:before {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.feedback-page .pic-gallery, .work-page .pic-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0.2rem 0.2rem;
+}
+
+.feedback-page .pic-gallery .screenShot, .work-page .pic-gallery .screenShot {
+  border: none;
+  margin: 0.08rem;
+}
+
 .home-page .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1658,22 +1722,6 @@ body {
 
 .feedback-page .descCnt {
   padding: 0 0.34rem;
-}
-
-.feedback-page .screenShot {
-  width: 2.2rem;
-  height: 2.2rem;
-  overflow: hidden;
-  margin: 0.3rem auto;
-  border: 0.06rem solid #8d8fbf;
-}
-
-.feedback-page .screenShot img {
-  width: 100%;
-}
-
-.feedback-page .screenShot + .btn-wrap {
-  padding: 0 0.3rem;
 }
 
 .feedback-page .mcList .screenShot {
