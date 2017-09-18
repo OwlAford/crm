@@ -635,6 +635,10 @@ body {
   margin-bottom: .1rem;
 }
 
+.home-page .area.lineChart .info .comp span {
+  margin-right: 0.2rem;
+}
+
 .home-page .area.lineChart .info .diff {
   font-size: 26px;
 }
@@ -1375,6 +1379,11 @@ body {
 
 .rank-page .fnPanel .order {
   margin-right: 0.3rem;
+}
+
+.rank-page .fnPanel .time {
+  text-align: right;
+  opacity: .6;
 }
 
 .rank-page .fnPanel .order, .rank-page .fnPanel .filter {
