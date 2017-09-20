@@ -294,6 +294,19 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.crm-wrap .fmList {
+  color: #d0d2e2;
+}
+
+.crm-wrap .fmList .row {
+  background-color: rgba(255, 255, 255, 0.04);
+  padding: 0.28rem;
+}
+
+.crm-wrap .fmList .row + .row {
+  border-top: 1px solid #324672;
+}
+
 .filterList ul {
   font-size: 0;
 }
@@ -960,19 +973,42 @@ body {
   color: #7de6ff;
 }
 
+.info-page .approvPanel.inline {
+  text-align: center;
+  padding: 0.2rem;
+}
+
+.info-page .approvPanel.inline .cell i {
+  display: inline-block;
+  margin: 0 0.2rem 0 0;
+  vertical-align: middle;
+}
+
+.info-page .approvPanel.inline .cell.active {
+  color: #7de6ff;
+}
+
 .info-page .approvPanel .cell i:after {
   background-image: url(../images/approv_ico.png);
 }
 
 .info-page .approvPanel .cell i.b:after {
-  background-position: 0 33.33333%;
+  background-position: 0 20%;
 }
 
 .info-page .approvPanel .cell i.c:after {
-  background-position: 0 66.66666%;
+  background-position: 0 40%;
 }
 
 .info-page .approvPanel .cell i.d:after {
+  background-position: 0 60%;
+}
+
+.info-page .approvPanel .cell i.e:after {
+  background-position: 0 80%;
+}
+
+.info-page .approvPanel .cell i.f:after {
   background-position: 0 100%;
 }
 
@@ -981,14 +1017,22 @@ body {
 }
 
 .info-page .approvPanel .cell.active i.b:after {
-  background-position: 100% 33.33333%;
+  background-position: 100% 20%;
 }
 
 .info-page .approvPanel .cell.active i.c:after {
-  background-position: 100% 66.66666%;
+  background-position: 100% 40%;
 }
 
 .info-page .approvPanel .cell.active i.d:after {
+  background-position: 100% 60%;
+}
+
+.info-page .approvPanel .cell.active i.e:after {
+  background-position: 100% 80%;
+}
+
+.info-page .approvPanel .cell.active i.f:after {
   background-position: 100% 100%;
 }
 
@@ -1773,6 +1817,119 @@ body {
 
 .task-page .bank-list .item:active {
   color: #7de6ff;
+}
+
+.task-page .fmList, .task-page .mcList {
+  padding: 0.1rem 0 0.2rem;
+}
+
+.task-page .mcList .item {
+  color: #d0d2e2;
+}
+
+.task-page .mcList .item + .item {
+  margin-top: 0.2rem;
+}
+
+.task-page .mcList .item .area {
+  padding: 0.2rem 0.4rem;
+}
+
+.task-page .mcList .item .area.timeLine {
+  padding: 0.2rem 0.2rem 0.2rem 1.9rem;
+}
+
+.task-page .mcList .item .area.timeLine:after {
+  content: "";
+  display: block;
+  width: 1px;
+  background-color: #dcdcdc;
+  opacity: .1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 1.58rem;
+  -z-index: 9;
+}
+
+.task-page .mcList .item .area.timeLine .card {
+  background-color: rgba(66, 87, 133, 0.4);
+  padding: 0.2rem;
+}
+
+.task-page .mcList .item .area.timeLine .card + .card {
+  margin-top: 0.2rem;
+}
+
+.task-page .mcList .item .area.timeLine .card:before {
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  border: 6px solid transparent;
+  border-color: transparent rgba(66, 87, 133, 0.4) transparent transparent;
+  position: absolute;
+  left: -12px;
+  margin-top: -6px;
+  top: 0.6rem;
+}
+
+.task-page .mcList .item .area.timeLine .card:after {
+  content: "";
+  display: block;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #38d1f5;
+  position: absolute;
+  margin-top: -4px;
+  margin-left: -4px;
+  left: -0.32rem;
+  top: 0.6rem;
+}
+
+.task-page .mcList .item .area.timeLine .card .editor {
+  text-align: center;
+  height: 1.2rem;
+  width: 1.2rem;
+  line-height: 1.2rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 14px;
+  position: absolute;
+  margin-top: -0.6rem;
+  top: 0.6rem;
+  left: -1.8rem;
+}
+
+.task-page .mcList .item .area.timeLine .card .editor .ago {
+  line-height: 2;
+  position: absolute;
+  left: 0;
+  top: 1.2rem;
+  width: 100%;
+}
+
+.task-page .control-fixed {
+  height: 0.98rem;
+  width: 100%;
+}
+
+.task-page .control-fixed .inner {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.98rem;
+  line-height: 0.98rem;
+  text-align: center;
+  background-color: #324672;
+  color: #77e1fa;
+}
+
+.task-page .control-fixed .inner .allow {
+  background-color: #11b7de;
+  color: #fff;
 }
 
 .task-page .tabFixedWrap, .machine-page .tabFixedWrap {

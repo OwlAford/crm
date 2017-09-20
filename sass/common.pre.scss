@@ -219,6 +219,19 @@
     }
   }
 
+  .fmList {
+    color: #d0d2e2;
+
+    .row {
+      background-color: rgba(255, 255, 255, .04);
+      padding: 0.28rem;
+
+      & + .row {
+        border-top: 1px solid #324672;
+      }
+    }
+  }
+
 }
 
 .filterList ul {

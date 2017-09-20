@@ -101,18 +101,41 @@
   
   // approval
   .approvPanel {
+    &.inline {
+      text-align: center;
+      padding: 0.2rem;
+
+      .cell {
+        i {
+          display: inline-block;
+          margin: 0 0.2rem 0 0;
+          vertical-align: middle;
+        }
+
+        &.active {
+          color: #7de6ff;
+        }
+      }
+    }
+
     .cell {
       i {
         &:after {
           background-image: url(../images/approv_ico.png);
         }
         &.b:after {
-          background-position: 0 33.33333%;
+          background-position: 0 20%;
         }
         &.c:after {
-          background-position: 0 66.66666%;
+          background-position: 0 40%;
         }
         &.d:after {
+          background-position: 0 60%;
+        }
+        &.e:after {
+          background-position: 0 80%;
+        }
+        &.f:after {
           background-position: 0 100%;
         }
       }
@@ -122,12 +145,18 @@
           background-position: 100% 0;
         }
         &.b:after {
-          background-position: 100% 33.33333%;
+          background-position: 100% 20%;
         }
         &.c:after {
-          background-position: 100% 66.66666%;
+          background-position: 100% 40%;
         }
         &.d:after {
+          background-position: 100% 60%;
+        }
+        &.e:after {
+          background-position: 100% 80%;
+        }
+        &.f:after {
           background-position: 100% 100%;
         }
       }
