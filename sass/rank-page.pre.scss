@@ -111,6 +111,26 @@
       &:nth-child(4) {
         border-top: none;
       }
+
+      &.average {
+        color: #fff66e;
+        font-size: 16px;
+        padding: 0.2rem 0.3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .flash {
+          width: 1.58rem;
+          height: 0.6rem;
+          background: url(../images/flash_l.png) no-repeat;
+          background-size: 100% auto;
+
+          &.right {
+            background-image: url(../images/flash_r.png);
+          }
+        }
+      }
     }
   }
 

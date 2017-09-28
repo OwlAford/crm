@@ -1486,6 +1486,32 @@ body, .crm-wrap {
   border-top: none;
 }
 
+.rank-page .rankList .item.average {
+  color: #fff66e;
+  font-size: 16px;
+  padding: 0.2rem 0.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.rank-page .rankList .item.average .flash {
+  width: 1.58rem;
+  height: 0.6rem;
+  background: url(../images/flash_l.png) no-repeat;
+  background-size: 100% auto;
+}
+
+.rank-page .rankList .item.average .flash.right {
+  background-image: url(../images/flash_r.png);
+}
+
 .rank-page .orderFilterGroup {
   width: 100%;
   position: absolute;
