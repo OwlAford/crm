@@ -14,6 +14,7 @@ body {
   background-size: 100% 200%;
   color: #fff;
   font-size: 13px;
+  line-height: 1.5;
 }
 
 body, .crm-wrap {
@@ -46,6 +47,10 @@ body, .crm-wrap {
 
 .fc-blue {
   color: $fcBlue;
+}
+
+.fc-light-dark {
+  color: #c5c4d5;
 }
 
 .fc-yellow {

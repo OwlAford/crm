@@ -1,42 +1,5 @@
 .mine-page {
   
-  .area.user {
-    padding: 0.4rem 0 0.4rem 1.8rem;
-
-    .base {
-      color: #77e1fa;
-      font-size: 16px;
-      margin-bottom: 0.2rem;
-
-      .sex {
-        &:before {
-          content: "";
-          display: inline-block;
-          height: 0.32rem;
-          width: 0.32rem;
-          background: url(../images/sex.png) no-repeat;
-          background-size: 100% auto;
-          margin-right: 0.05rem;
-          vertical-align: middle;
-          margin-top: -2px;
-        }
-
-        &.female {
-          color: #f35cb0;
-          
-          &:before {
-            background-position: 0 100%;
-          }
-        }
-      }
-
-      .name {
-        margin-right: 0.2rem;
-        
-      }
-    }
-  }
-
   .list {
     .item {
       padding: 0.32rem 0.32rem 0.32rem 0.86rem;
@@ -73,5 +36,44 @@
 
   .quitBtn {
     margin: 0.4rem 0;
+  }
+}
+
+.mine-page, .visit-page {
+  .area.user {
+    padding: 0.4rem 0 0.4rem 1.8rem;
+
+    .base {
+      color: #77e1fa;
+      font-size: 16px;
+      margin-bottom: 0.2rem;
+
+      .sex {
+        &:before {
+          content: "";
+          display: inline-block;
+          height: 0.32rem;
+          width: 0.32rem;
+          background: url(../images/sex.png) no-repeat;
+          background-size: 100% auto;
+          margin-right: 0.05rem;
+          vertical-align: middle;
+          margin-top: -2px;
+        }
+
+        &.female {
+          color: #f35cb0;
+          
+          &:before {
+            background-position: 0 100%;
+          }
+        }
+      }
+
+      .name {
+        margin-right: 0.2rem;
+        
+      }
+    }
   }
 }

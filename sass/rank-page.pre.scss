@@ -133,7 +133,9 @@
       }
     }
   }
+}
 
+.rank-page, .visit-page {
   .orderFilterGroup {
     width: 100%;
     position: absolute;
@@ -305,9 +307,14 @@
       .tt {
         @include bgBlueOpacity(20);
         padding: 0.24rem;
+
+        .state {
+          color: #71eef0;
+          padding-left: 0.1rem;
+        }
       }
 
-      .row {
+      .row:not(.tt) {
         div {
           padding: 0.24rem;
         }

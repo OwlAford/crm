@@ -111,6 +111,10 @@
   .area {
     @include bgWhiteOpacity(4);
 
+    &.area-theme-blue {
+      @include bgBlueOpacity(14);
+    }
+
     & + .area {
       margin-top: 0.26rem;
     }
@@ -150,6 +154,14 @@
 
     &:active {
       @include bgWhiteOpacity(40);
+    }
+
+    &.blue {
+      background-color: #11b7de;
+
+      &:active {
+        background-color: #0b9bbd;
+      }
     }
   }
 
@@ -225,6 +237,7 @@
     .row {
       background-color: rgba(255, 255, 255, .04);
       padding: 0.28rem;
+      line-height: 1.2;
 
       & + .row {
         border-top: 1px solid #324672;
@@ -348,7 +361,7 @@
   }
 }
 
-.rank-page, .task-page, .machine-page {
+.rank-page, .task-page, .machine-page, .visit-page {
   .tabs {
     background-color: rgba(196, 198, 207, 0.16);  
 
@@ -414,7 +427,7 @@
   }
 }
 
-.feedback-page, .work-page {
+.feedback-page, .work-page, .visit-page {
   .screenShot {
     width: 2.2rem;
     height: 2.2rem;
@@ -477,4 +490,41 @@
       margin: 0.08rem;
     }
   }
+
+  .visit-type-ico {
+    width: 0.78rem;
+    height: 0.78rem;
+    padding: 0.13rem;
+    background-color: rgba(255, 255, 255, .1);
+    display: block;
+    position: absolute;
+    left: 0.2rem;
+    top: 50%;
+    margin-top: -0.39rem;
+    border-radius: 0.06rem;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: url(../images/visit-ico.png) no-repeat;
+      background-size: 100% auto;
+    }
+
+    &.b:after {
+      background-position: 0 100%;
+    }
+  }
+}
+
+
+.to-visit {
+  width: 0.5rem;
+  height: 0.5rem;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../images/visit-to.png) no-repeat center center;
+  background-size: 0.4rem;
+  margin-top: -0.04rem;
 }

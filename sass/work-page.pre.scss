@@ -1,4 +1,4 @@
-.work-page {
+.work-page, .visit-page {
   .userDtail {
     .baseInfo {
       padding: 0.3rem 0.3rem 0.3rem 1.56rem;
@@ -38,6 +38,7 @@
 
         &::-webkit-input-placeholder {
           color: rgba(255, 255, 255, .6);
+          font-size: 14px;
         }
       }
     }
@@ -61,7 +62,9 @@
   }
 }
 
-.work-page .userDtail .local:before, i.ico-local {
+.work-page .userDtail .local:before,
+.visit-page .userDtail .local:before,
+i.ico-local {
   content: "";
   display: inline-block;
   height: 18px;
