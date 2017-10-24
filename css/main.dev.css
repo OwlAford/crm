@@ -26,12 +26,20 @@ body, .crm-wrap {
   background-size: 1.6rem auto;
 }
 
+.ft12 {
+  font-size: 12px;
+}
+
 .ft15 {
   font-size: 15px;
 }
 
 .ft16 {
   font-size: 16px;
+}
+
+.ft18 {
+  font-size: 18px;
 }
 
 .lh18 {
@@ -94,6 +102,62 @@ body, .crm-wrap {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 9999;
+}
+
+.crm-wrap .switchRadio {
+  width: 0.78rem;
+  height: 0.44rem;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -0.22rem;
+  background: url(../images/radio.png) no-repeat;
+  background-size: 100% auto;
+  background-position: 0 100%;
+}
+
+.crm-wrap .switchRadio.checked {
+  background-position: 0 0;
+}
+
+.crm-wrap .rangeInput {
+  padding: 0.1rem 0;
+  margin: 0 0.2rem;
+}
+
+.crm-wrap .rangeInput b {
+  display: inline-block;
+  vertical-align: middle;
+  height: 0.44rem;
+  width: 0.44rem;
+  border: 1px solid #7f8cab;
+  background-color: rgba(255, 255, 255, 0.1);
+  line-height: 0.44rem;
+  text-align: center;
+}
+
+.crm-wrap .rangeInput b:after {
+  content: "+";
+}
+
+.crm-wrap .rangeInput b.sub:after {
+  content: "-";
+}
+
+.crm-wrap .rangeInput .ipt {
+  display: inline-block;
+  vertical-align: middle;
+  height: 0.44rem;
+  line-height: 0.44rem;
+  border: 1px solid #7f8cab;
+  margin: 0 0.08rem;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.crm-wrap .rangeInput .ipt input {
+  color: #fee47a;
+  width: 2.1rem;
+  text-align: center;
 }
 
 .crm-wrap .searchIpt {
@@ -186,6 +250,55 @@ body, .crm-wrap {
   margin-top: -0.5rem;
   background-color: rgba(124, 155, 193, 0.2);
   padding: 0.05rem;
+}
+
+.crm-wrap .lnkIco {
+  display: inline-block;
+  vertical-align: middle;
+  margin: -0.04rem 0 0 0;
+  height: 0.48rem;
+  width: 0.48rem;
+  background: url(../images/lnk.png) no-repeat;
+  background-size: 100% auto;
+}
+
+.crm-wrap .proIco {
+  height: 0.4rem;
+  width: 0.4rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin: -0.04rem 0.1rem 0 0.1rem;
+}
+
+.crm-wrap .amazeIco {
+  height: 0.34rem;
+  width: 0.34rem;
+  background: url(../images/amaze.png) no-repeat;
+  background-size: 100% auto;
+  display: inline-block;
+  vertical-align: middle;
+  margin: -0.04rem 0.04rem 0;
+}
+
+.crm-wrap .proIco:after, .crm-wrap .info-page .mayLike .proList .item .ico:after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: url(../images/prod.png) no-repeat;
+  background-size: 100% auto;
+}
+
+.crm-wrap .proIco.b:after, .crm-wrap .info-page .mayLike .proList .item .ico.b:after {
+  background-position: 0 33.333%;
+}
+
+.crm-wrap .proIco.c:after, .crm-wrap .info-page .mayLike .proList .item .ico.c:after {
+  background-position: 0 66.666%;
+}
+
+.crm-wrap .proIco.d:after, .crm-wrap .info-page .mayLike .proList .item .ico.d:after {
+  background-position: 0 100%;
 }
 
 .crm-wrap * {
@@ -888,19 +1001,66 @@ body, .crm-wrap {
 }
 
 .mine-page .list .item i.b {
-  background-position: 0 25%;
+  background-position: 0 11.1111%;
 }
 
 .mine-page .list .item i.c {
-  background-position: 0 50%;
+  background-position: 0 22.2222%;
 }
 
 .mine-page .list .item i.d {
-  background-position: 0 75%;
+  background-position: 0 33.3333%;
 }
 
 .mine-page .list .item i.e {
+  background-position: 0 44.4444%;
+}
+
+.mine-page .list .item i.f {
+  background-position: 0 55.5555%;
+}
+
+.mine-page .list .item i.g {
+  background-position: 0 66.6666%;
+}
+
+.mine-page .list .item i.h {
+  background-position: 0 77.9%;
+}
+
+.mine-page .list .item i.i {
+  background-position: 0 88.8888%;
+}
+
+.mine-page .list .item i.j {
   background-position: 0 100%;
+}
+
+.mine-page .list .item .grpTitle {
+  position: relative;
+}
+
+.mine-page .list .item .rangeMount {
+  margin-top: 0.1rem;
+}
+
+.mine-page .list .item .rangeMount .label {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.mine-page .list .item .rangeMount .rangeInput {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.mine-page .list .item .list.sub .item {
+  padding: 0.16rem 0.6rem 0.16rem 0;
+  border: none;
+}
+
+.mine-page .list .item .list.sub .item.arr:after {
+  right: 0;
 }
 
 .mine-page .quitBtn {
@@ -1203,6 +1363,10 @@ body, .crm-wrap {
   font-size: 13px;
 }
 
+.info-page .userItemsPanel .cnt {
+  padding: 0.3rem 0.3rem 0.2rem;
+}
+
 .info-page .userItemsPanel .timeoutPanel {
   padding: 0.3rem 0;
   width: 100%;
@@ -1239,27 +1403,6 @@ body, .crm-wrap {
   margin-top: -0.38rem;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 0.06rem;
-}
-
-.info-page .mayLike .proList .item .ico:after {
-  content: "";
-  display: block;
-  height: 100%;
-  width: 100%;
-  background: url(../images/prod.png) no-repeat;
-  background-size: 100% auto;
-}
-
-.info-page .mayLike .proList .item .ico.b:after {
-  background-position: 0 33.333%;
-}
-
-.info-page .mayLike .proList .item .ico.c:after {
-  background-position: 0 66.666%;
-}
-
-.info-page .mayLike .proList .item .ico.d:after {
-  background-position: 0 100%;
 }
 
 .info-page .mayLike .proList .item .cell {
@@ -1427,6 +1570,85 @@ body, .crm-wrap {
 
 .info-page .trend .debtList .detailList .group + .group {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.info-page .detailCnt {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.info-page .detailCnt .detailTbl {
+  padding: 0.2rem 0;
+}
+
+.info-page .detailCnt .detailTbl td {
+  padding: 0.1rem;
+}
+
+.info-page .detailCnt .cycle {
+  padding: 0.4rem 0.6rem 1.2rem;
+}
+
+.info-page .detailCnt .cycle.step2 .line:after, .info-page .detailCnt .cycle.step3 .line:after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 50%;
+  background-color: #c4b778;
+}
+
+.info-page .detailCnt .cycle.step2 .line .point:nth-child(1), .info-page .detailCnt .cycle.step2 .line .point:nth-child(2), .info-page .detailCnt .cycle.step3 .line .point:nth-child(1), .info-page .detailCnt .cycle.step3 .line .point:nth-child(2) {
+  background-color: #fee47a;
+  color: #fee47a;
+}
+
+.info-page .detailCnt .cycle.step3 .line:after {
+  width: 100%;
+}
+
+.info-page .detailCnt .cycle.step3 .line .point:nth-child(3) {
+  background-color: #fee47a;
+  color: #fee47a;
+}
+
+.info-page .detailCnt .cycle .line {
+  width: 100%;
+  height: 1px;
+  background-color: #454b78;
+}
+
+.info-page .detailCnt .cycle .line .point {
+  background-color: #5f7193;
+  height: 0.24rem;
+  width: 0.24rem;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  margin: -0.12rem 0 0 -0.12rem;
+  top: 50%;
+  left: 0;
+}
+
+.info-page .detailCnt .cycle .line .point .t {
+  position: absolute;
+  width: 1.7rem;
+  text-align: center;
+  left: 50%;
+  top: 0.4rem;
+  margin: 0 0 0 -0.85rem;
+  font-size: 12px;
+}
+
+.info-page .detailCnt .cycle .line .point .t:nth-child(2) {
+  top: 0.76rem;
+  opacity: .8;
+}
+
+.info-page .detailCnt .cycle .line .point:nth-child(2) {
+  left: 50%;
+}
+
+.info-page .detailCnt .cycle .line .point:nth-child(3) {
+  left: 100%;
 }
 
 .rank-page {
@@ -1744,6 +1966,51 @@ body, .crm-wrap {
 
 .rank-page .customerList .card .row:not(.tt) div, .visit-page .customerList .card .row:not(.tt) div {
   padding: 0.24rem;
+}
+
+.rank-page .proList, .visit-page .proList {
+  padding: 0.2rem 0;
+}
+
+.rank-page .proList .proItem, .visit-page .proList .proItem {
+  background-color: rgba(138, 149, 255, 0.2);
+  border-top: 0.1rem solid #41569d;
+  padding: 0 0.3rem;
+}
+
+.rank-page .proList .proItem + .proItem, .visit-page .proList .proItem + .proItem {
+  margin-top: 0.2rem;
+}
+
+.rank-page .proList .proItem:nth-child(1), .visit-page .proList .proItem:nth-child(1) {
+  border-top-color: #d6c674;
+  background-color: rgba(254, 228, 122, 0.2);
+}
+
+.rank-page .proList .proItem:nth-child(1):after, .visit-page .proList .proItem:nth-child(1):after {
+  content: "";
+  display: block;
+  height: 0.8rem;
+  width: 0.8rem;
+  background: url(../images/first.png) no-repeat;
+  background-size: 100% auto;
+  position: absolute;
+  top: -0.1rem;
+  left: 0;
+}
+
+.rank-page .proList .proItem:nth-child(2), .visit-page .proList .proItem:nth-child(2) {
+  border-top-color: #36849c;
+  background-color: rgba(119, 225, 250, 0.2);
+}
+
+.rank-page .proList .proItem .title, .visit-page .proList .proItem .title {
+  padding: 0.28rem 0;
+  border-bottom: 1px solid rgba(119, 225, 250, 0.1);
+}
+
+.rank-page .proList .proItem .cnt, .visit-page .proList .proItem .cnt {
+  padding: 0.2rem 0.3rem;
 }
 
 .search-page .filterList, .visit-page .filterList {
@@ -2369,8 +2636,4 @@ i.ico-local {
 
 .visit-page .orderFilterGroup.show {
   top: 2.12rem;
-}
-
-.visit-page .customerList .card .row div {
-  padding: 0;
 }

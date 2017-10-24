@@ -11,6 +11,62 @@
     z-index: 9999;
   }
 
+  .switchRadio {
+    width: 0.78rem;
+    height: 0.44rem;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -0.22rem;
+    background: url(../images/radio.png) no-repeat;
+    background-size: 100% auto;
+    background-position: 0 100%;
+
+    &.checked {
+      background-position: 0 0;
+    }
+  }
+
+  .rangeInput {
+    padding: 0.1rem 0;
+    margin: 0 0.2rem;
+
+    b {
+      display: inline-block;
+      vertical-align: middle;
+      height: 0.44rem;
+      width: 0.44rem;
+      border: 1px solid #7f8cab;
+      background-color: rgba(255, 255, 255, .1);
+      line-height: 0.44rem;
+      text-align: center;
+
+      &:after {
+        content: "+"
+      }
+
+      &.sub:after {
+        content: "-"
+      }
+    }
+
+    .ipt {
+      display: inline-block;
+      vertical-align: middle;
+      height: 0.44rem;
+      line-height: 0.44rem;
+      border: 1px solid #7f8cab;
+      margin: 0 0.08rem;
+      background-color: rgba(255, 255, 255, .1);
+
+      input {
+        color: #fee47a;
+        width: 2.1rem;
+        text-align: center;
+      }
+    }
+  }
+
   .searchIpt {
     padding: 0.09rem 0;
 
@@ -101,6 +157,57 @@
     margin-top: -0.5rem;
     background-color: rgba(124, 155, 193, 0.2);
     padding: 0.05rem;
+  }
+
+  .lnkIco {
+    display: inline-block;
+    vertical-align: middle;
+    margin: -0.04rem 0 0 0;
+    height: 0.48rem;
+    width: 0.48rem;
+    background: url(../images/lnk.png) no-repeat;
+    background-size: 100% auto;
+  }
+
+  .proIco {
+    height: 0.4rem;
+    width: 0.4rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin: -0.04rem 0.1rem 0 0.1rem;
+  }
+
+  .amazeIco {
+    height: 0.34rem;
+    width: 0.34rem;
+    background: url(../images/amaze.png) no-repeat;
+    background-size: 100% auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin: -0.04rem 0.04rem 0;
+  }
+
+  .proIco, .info-page .mayLike .proList .item .ico {
+    &:after {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      background: url(../images/prod.png) no-repeat;
+      background-size: 100% auto;
+    }
+
+    &.b:after {
+      background-position: 0 33.333%; 
+    }
+
+    &.c:after {
+      background-position: 0 66.666%; 
+    }
+
+    &.d:after {
+      background-position: 0 100%; 
+    }
   }
 
   * {

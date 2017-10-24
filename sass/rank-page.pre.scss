@@ -321,4 +321,49 @@
       }
     }
   }
+
+  .proList {
+    padding: 0.2rem 0;
+
+    .proItem {
+      @include bgPurpleOpacity(20);
+      border-top: 0.1rem solid #41569d;
+      padding: 0 0.3rem;
+
+      & + .proItem {
+        margin-top: 0.2rem;
+      }
+
+      &:nth-child(1) {
+        border-top-color: #d6c674;
+        @include bgYellowOpacity(20);
+
+        &:after {
+          content: "";
+          display: block;
+          height: 0.8rem;
+          width: 0.8rem;
+          background: url(../images/first.png) no-repeat;
+          background-size: 100% auto;
+          position: absolute;
+          top: -0.1rem;
+          left: 0;
+        }
+      }
+
+      &:nth-child(2) {
+        border-top-color: #36849c;
+      @include bgBlueOpacity(20);
+      }
+
+      .title {
+        padding: 0.28rem 0;
+        border-bottom: 1px solid rgba(119, 225, 250, .1);
+      }
+
+      .cnt {
+        padding: 0.2rem 0.3rem;
+      }
+    }
+  }
 }

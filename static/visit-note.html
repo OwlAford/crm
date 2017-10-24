@@ -27,7 +27,7 @@
 			</div>
 			<div class="userDtail">
 				<div class="area textDesc">
-					<textarea rows="10" placeholder="记录今日工作 400字以内"></textarea>
+					<textarea rows="10" placeholder="记录今日工作 400字以内" id="userText"></textarea>
 				</div>
 				<div class="area shot-add">
 					<ul>
@@ -75,6 +75,11 @@
 		$(function () {
 			$('.filterList li').on('click', function () {
 				$(this).addClass('active').siblings().removeClass('active')
+				if ($(this).text() === '贷后') {
+					$('#userText').attr('placeholder', '现场走访后请在PC端完成全部贷后检查作业')
+				} else {
+					$('#userText').attr('placeholder', '记录今日工作 400字以内')
+				}
 			})
 		})
 	</script>

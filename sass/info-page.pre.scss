@@ -271,6 +271,10 @@
       }
     }
 
+    .cnt {
+      padding: 0.3rem 0.3rem 0.2rem;
+    }
+
     .timeoutPanel {
       padding: 0.3rem 0;
       width: 100%;
@@ -308,26 +312,26 @@
           @include bgWhiteOpacity(10);
           border-radius: 0.06rem;
 
-          &:after {
-            content: "";
-            display: block;
-            height: 100%;
-            width: 100%;
-            background: url(../images/prod.png) no-repeat;
-            background-size: 100% auto;
-          }
+          // &:after {
+          //   content: "";
+          //   display: block;
+          //   height: 100%;
+          //   width: 100%;
+          //   background: url(../images/prod.png) no-repeat;
+          //   background-size: 100% auto;
+          // }
 
-          &.b:after {
-            background-position: 0 33.333%; 
-          }
+          // &.b:after {
+          //   background-position: 0 33.333%; 
+          // }
 
-          &.c:after {
-            background-position: 0 66.666%; 
-          }
+          // &.c:after {
+          //   background-position: 0 66.666%; 
+          // }
 
-          &.d:after {
-            background-position: 0 100%; 
-          }
+          // &.d:after {
+          //   background-position: 0 100%; 
+          // }
         }
 
         .cell {
@@ -504,5 +508,96 @@
       }
     }
   }
-  
+
+  .detailCnt {
+    @include opacityBorder(top, 8);
+
+    .detailTbl {
+      padding: 0.2rem 0;
+
+      td {
+        padding: 0.1rem;
+      }
+    }
+
+    .cycle {
+      padding: 0.4rem 0.6rem 1.2rem;
+
+      &.step2, &.step3 {
+        .line {
+          &:after {
+            content: "";
+            display: block;
+            height: 100%;
+            width: 50%;
+            background-color: #c4b778;
+          }
+
+          .point {
+            &:nth-child(1),
+            &:nth-child(2) {
+              background-color: #fee47a;
+              color: #fee47a;
+            }
+          }
+        }
+      }
+
+      &.step3 {
+        .line {
+          &:after {
+            width: 100%;
+          }
+          
+          .point {
+            &:nth-child(3) {
+              background-color: #fee47a;
+              color: #fee47a;
+            }
+          }
+        }
+      }
+
+      .line {
+        width: 100%;
+        height: 1px;
+        background-color: #454b78;
+
+        .point {
+          background-color: #5f7193;
+          height: 0.24rem;
+          width: 0.24rem;
+          border-radius: 50%;
+          display: block;
+          position: absolute;
+          margin: -0.12rem 0 0 -0.12rem;
+          top: 50%;
+          left: 0;
+
+          .t {
+            position: absolute;
+            width: 1.7rem;
+            text-align: center;
+            left: 50%;
+            top: 0.4rem;
+            margin: 0 0 0 -0.85rem;
+            font-size: 12px;
+
+            &:nth-child(2) {
+              top: 0.76rem;
+              opacity: .8;
+            }
+          }
+
+          &:nth-child(2) {
+            left: 50%;
+          }
+
+          &:nth-child(3) {
+            left: 100%;
+          }
+        }
+      }
+    }
+  }
 }
