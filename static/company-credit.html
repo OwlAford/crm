@@ -296,6 +296,19 @@
 					<div class="cell allow">同意准入</div>
 				</div>
 			</div>
+			<!-- 新增审批窗口 -->
+			<div class="full-mask">
+				<div class="approvalBox">
+					<div class="title">审批意见</div>
+					<div class="textArea">
+						<textarea placeholder="输入审批意见"></textarea>
+					</div>
+					<div class="ctrBtnGrp">
+						<button class="base-btn">同意准入</button>
+					</div>
+					<i class="close"></i>
+				</div>
+			</div>
 		</div>
 	</div>
 	<script type="text/javascript">
@@ -306,6 +319,9 @@
 				allItem.hide();
 				allItem.eq($(this).index()).show();
 			});
+			$('.close').on('click', function () {
+				$('.full-mask').addClass('hide');
+			})
 		})
 	</script>
 </body>
