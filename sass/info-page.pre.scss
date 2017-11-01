@@ -180,18 +180,24 @@
         background-size: 100% auto;
 
         &.b {
-          background-position: 0 25%;
+          background-position: 0 16.66666%;
         }
 
         &.c {
-          background-position: 0 50%;
+          background-position: 0 33.33333%;
         }
 
         &.d {
-          background-position: 0 75%;
+          background-position: 0 50%;
         }
 
         &.e {
+          background-position: 0 66.66666%;
+        }
+        &.f {
+          background-position: 0 83.33333%;
+        }
+        &.g {
           background-position: 0 100%;
         }
 
