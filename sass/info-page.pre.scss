@@ -36,7 +36,6 @@
         }
       }
     }
-
   }
 
   // timeout
@@ -75,6 +74,42 @@
         }
       }
 
+      h1 {
+        display: block;
+        margin:0 0 0 .57rem;
+        height: 0.84rem;
+        width: 0.84rem;
+        padding: 0.15rem;
+        @include bgWhiteOpacity(20);
+        border-radius: 50%;
+        transition: all .3s;
+
+        &:after {
+          content: "";
+          display: block;
+          height: 0.54rem;
+          width: 0.54rem;
+          background: url(../images/tack-ico.png) no-repeat;
+          background-size: 200% auto;
+          transition: all .3s;
+        }
+        
+        &:after {
+          background-position: 100% 0;
+        }
+
+        &.b:after {
+          background-position: 100% 100%;
+        }
+      }
+
+      .loanTitle {
+        position:absolute;
+        top:0.23rem;
+        left:1.7rem;
+        font-size:0.28rem;
+      }
+
       &.active {
         i {
           background-color: $bgBlue;
@@ -96,6 +131,24 @@
           color: $fcBlue;
         }
       }
+
+      &.active2 {
+        h1 {
+          background-color: $bgBlue;
+
+          &.a:after {
+            background-position: 0 0;
+          }
+
+          &.b:after {
+            background-position: 0 100%;
+          }
+        }
+
+        div {
+          color: $fcBlue;
+        }   
+      }    
     }
   }
   
@@ -179,7 +232,7 @@
         background: $bgBlue url(../images/info_ico.png) no-repeat;
         background-size: 100% auto;
 
-        &.b {
+       &.b {
           background-position: 0 16.66666%;
         }
 
@@ -284,6 +337,30 @@
     .timeoutPanel {
       padding: 0.3rem 0;
       width: 100%;
+    }
+ // ******************************11-1zbw********************
+    .product-tips {
+       position:absolute;
+       bottom: -0.6rem;
+       left: -0.33rem;
+       display:none;
+       opacity: 0.7;
+       background-color:#415a7e;
+       color:#fee47a;
+       border-radius: 5px;
+       border: none;
+
+        .em {
+          display:block; 
+          border-width:5px; 
+          position:absolute; top:-0.17rem; left:1.38rem;
+          border-style:solid dashed dashed; 
+          border-color: transparent transparent #415a7e;
+          font-size:0; line-height:0;
+        }
+        p {
+          margin:0.1rem 0.39rem;
+        }
     }
   }
 
@@ -517,9 +594,15 @@
 
   .detailCnt {
     @include opacityBorder(top, 8);
-
+ // **********************************11.1-zbwer*****************
     .detailTbl {
       padding: 0.2rem 0;
+      .fullTable {
+        width: 100%;
+          .elmRight {
+            text-align:right;
+          }
+      }
 
       td {
         padding: 0.1rem;
@@ -529,13 +612,13 @@
     .cycle {
       padding: 0.4rem 0.6rem 1.2rem;
 
-      &.step2, &.step3 {
+      &.step2, &.step3, &.step4{
         .line {
           &:after {
             content: "";
             display: block;
             height: 100%;
-            width: 50%;
+            width: 33.333%;
             background-color: #c4b778;
           }
 
@@ -544,7 +627,7 @@
             &:nth-child(2) {
               background-color: #fee47a;
               color: #fee47a;
-            }
+            }      
           }
         }
       }
@@ -552,11 +635,31 @@
       &.step3 {
         .line {
           &:after {
+            width: 66.666%;
+          }
+          
+          .point {
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3) {
+              background-color: #fee47a;
+              color: #fee47a;
+            }
+          }
+        }
+      }
+
+      &.step4 {
+        .line {
+          &:after {
             width: 100%;
           }
           
           .point {
-            &:nth-child(3) {
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4) {
               background-color: #fee47a;
               color: #fee47a;
             }
@@ -596,10 +699,13 @@
           }
 
           &:nth-child(2) {
-            left: 50%;
+            left: 33.333%;
           }
 
           &:nth-child(3) {
+            left: 66.666%;
+          }
+          &:nth-child(4) {
             left: 100%;
           }
         }

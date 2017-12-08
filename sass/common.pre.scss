@@ -28,7 +28,7 @@
   }
 
   .rangeInput {
-    padding: 0.1rem 0;
+    padding: 0.25rem 0;
     margin: 0 0.2rem;
 
     b {
@@ -67,6 +67,16 @@
     }
   }
 
+  .refresh-ico {
+    width: 0.3rem;
+    height: 0.3rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin: -0.04rem 0.1rem 0 0;
+    background: url(../images/refresh-cio.png) no-repeat;
+    background-size: 100% auto;
+  }
+
   .searchIpt {
     padding: 0.09rem 0;
 
@@ -82,7 +92,12 @@
       right: 0.2rem;
       top: 50%;
     }
-
+    .adjust-l {
+      right:5.5rem;
+    }
+    .adjust-ll {
+      right:6.5rem;
+    }
     input {
       text-align: center;
       height: 0.6rem;
@@ -100,6 +115,11 @@
       &:focus {
         text-align: left;
       }
+    }
+
+    .adjust-txt {
+      text-align:left;
+      padding-left:0.7rem;
     }
   }
 
@@ -227,11 +247,25 @@
     }
   }
 
+  .area2 {
+    background-color: rgba(255, 255, 255, 0.04);
+    opacity:0.9;
+
+    & + .area2 {
+      margin-top: 1px;
+    }
+  }
+
   .row {
     display: flex;
 
     .cell {
       flex: 1;
+    }
+ 
+    .mid {
+       text-align:center;
+       opacity:0.9;
     }
   }
 
@@ -322,6 +356,9 @@
         @include opacityBorder(top, 6);
       }
     }
+    .pd20 {
+      padding:0.2rem 0.3rem;
+    }
   }
 
   .base-textarea {
@@ -395,6 +432,13 @@
     .row {
       padding: 0.1rem 0;
       line-height: 24px;
+      width: 100%;
+
+      .timeTips {
+        opacity:0.7;
+        color: #d0d2e2;
+       }
+
     }
 
     .tit {
@@ -416,6 +460,49 @@
         top: 50%;
         margin-top: -3px;
         background-color: $fcBlue;
+      }
+      .remind {
+        font-family: ﻿PingFang-SC-Bold;
+        font-size: 15px;
+        font-weight: normal;
+        letter-spacing: 0px;
+        color: #fee47a;
+        margin-left:0.45rem;
+      }
+    }
+    //新增不带圆点的tit
+    .tit2 {
+      color: $fcBlue;
+      font-size: 15px;
+      margin-left:0.35rem;
+      line-height:0.9rem;
+
+      i {
+         display: block;
+         height: 0.6rem;
+         width: 0.6rem;
+         background: url(../images/actives_ico.png) no-repeat;
+         background-size: 100% auto;
+         position: absolute;
+         left: -0.7rem;
+         top: 50%;
+         margin-top: -0.3rem;
+
+         &.b {
+           background-position:0 11.111111%;
+         }
+         
+         &.c {
+           background-position:0 22.222222%;
+         }
+
+         &.d {
+           background-position:0 33.333333%;
+         }
+
+         &.e {
+           background-position:0 55%;
+         }
       }
     }
 
@@ -584,6 +671,24 @@
         transform: rotate(90deg);
       }
     }
+
+    .close {
+      height: 0.46rem;
+      width: 0.46rem;
+      background: rgba(255, 255, 255, .1) url(../images/close.png) no-repeat center center;
+      background-size: 0.2rem auto;
+      display: block;
+      position: absolute;
+      right: -0.1rem;
+      top: -0.1rem;
+      border-radius: 50%;
+    } 
+
+    .inlineBox {
+      li {
+        display:inline-block;
+      }
+    }
   }
 
   .pic-gallery {
@@ -624,7 +729,6 @@
     }
   }
 }
-
 
 .to-visit {
   width: 0.5rem;

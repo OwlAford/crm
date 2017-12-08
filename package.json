@@ -14,6 +14,7 @@
     "dev": "gulp devServer"
   },
   "dependencies": {
+    "gulp-cli": "^1.4.0",
     "lodash": "^4.17.4",
     "underscore": "^1.8.3"
   },

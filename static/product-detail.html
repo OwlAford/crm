@@ -33,6 +33,11 @@
 					<div class="cell">
 						<div class="ft12 fc-light-dark">起购金额</div>
 						<div class="ft18 lh20">5万元 <i class="amazeIco"></i></div>
+						<!-- *************************************************** -->
+						<div class="product-tips">
+                            <div class="em"></div>
+							<p>万元的整数倍追加</p>						 
+						</div>
 					</div>
 					<div>
 						<div class="ft12 fc-light-dark">风险程度</div>
@@ -46,18 +51,44 @@
 					<div class="cycle step2">
 						<div class="line">
 							<i class="point">
-								<div class="t">认购期</div>
-								<div class="t">09.23-09.26</div>
+								<div class="t">起售</div>
+								<div class="t">09-23</div>
 							</i>
 							<i class="point">
-								<div class="t">产品成立日</div>
+								<div class="t">截止</div>
 								<div class="t">10-09</div>
 							</i>
 							<i class="point">
-								<div class="t">产品结束日</div>
+								<div class="t">起息</div>
+								<div class="t">10-10</div>
+							</i>
+							<i class="point">
+								<div class="t">到期</div>
 								<div class="t">11-09</div>
 							</i>
 						</div>
+					</div>
+				</div>
+			</div>
+			<!-- **************************************** -->
+			<div class="area mayLike">
+				<div class="tt">预期年化收益率</div>
+				<div class="detailCnt">
+					<div class="detailTbl">
+						<table class="fullTable">
+							<tr>
+								<td>a-b(万)</td>
+								<td class="elmRight">4.65%</td>
+							</tr>
+							<tr>
+								<td>b-c(万)</td>
+								<td class="elmRight">4.75%</td>
+							</tr>
+							<tr>
+								<td>c(万)以上</td>
+								<td class="elmRight">4.90%</td>
+							</tr>
+						</table>
 					</div>
 				</div>
 			</div>
@@ -103,8 +134,16 @@
 	</div>
 	<script type="text/javascript">
 	$(function () {
+        $(".amazeIco").click(function(event){
+        	 event.stopPropagation();
+        	 $(".product-tips").toggle();      	 
+        });
+        $(document).click(function(){
+                    $(".product-tips").hide();
+        });
+        	
+    });
 
-	})
 	</script>
 </body>
 </html>

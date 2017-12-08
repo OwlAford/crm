@@ -76,6 +76,43 @@
 				</div>
 			</div>
 			<div class="customerList">
+			    <div class="backSearchPane2">
+				    <div id="replace" class="inner" style="display: none">
+					   <p>展开查看新增客户数</p>
+					   <div class="arrow"></div>
+				    </div>
+				         <!-- 查看新增客户数 -->
+				    <div id="page">					
+						<table>
+							<tr class="ttt">
+								<th>客户数(人)</th>
+								<th>总数</th>
+								<th><i class="a"></i>比上年</th>
+								<th><i class="b"></i>比上日</th>
+							</tr>
+
+							<tr>
+								<td>存款</td>
+								<td>1008</td>
+								<td>69</td>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>贷款</td>
+								<td>9808</td>
+								<td>82</td>
+								<td>6</td>
+							</tr>
+							<tr>
+								<td>理财</td>
+								<td>3608</td>
+								<td>25</td>
+								<td>0</td>
+							</tr>
+						</table>								
+			        </div>
+			    </div>
+			
 				<div class="card">
 					<div class="tt">杭州高盛文化用品有限公司</div>
 					<div class="row">
@@ -171,6 +208,38 @@
 			console.log('点击了确定！');
 			hideOrderFilter();
 		})
+		// 点击展开新增客户数
+		// $('.inner').on('click',function () {
+		// 	if($("#page").css("display")=="none"){
+		// 	// $(this).fadeIn();
+		// 	// $(this).prev().slideDown();
+		// 	// $(this).next().fadeIn();
+		// 	$(this).hide().next().slideDown();
+		// }else{
+		// 	// $(this).next().fadeOut();
+		// 	$(this).next().slideUp();
+		// }
+		// 	// $(this).next().fadeIn();
+		// 	// $(this).slideDown();
+			
+		// })
+		// $('#page').on('click',function () {
+		// 	if($("#replace").css("display")=="none"){
+		// 	  $("#page").replaceWith($('#replace'));
+		// 	  $("#replace").css("display","block");
+		// 	}
+		// })
+		
+		$('#page').on('click',function () {
+			$('#replace').show();
+			$('#page').hide();
+		})
+        
+        $('#replace').on('click',function () {
+			$('#page').show();
+			$('#replace').hide();
+		})
+
 
 	})
 	</script>

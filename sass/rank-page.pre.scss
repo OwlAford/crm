@@ -1,4 +1,4 @@
-.rank-page {
+.rank-page, .helper-page {
   min-height: 8rem;
 
   .backSearchPanel {
@@ -27,7 +27,9 @@
         background-size: 0.24rem auto;
         margin-top: 0.14rem;
       }
+
     }
+
   }
 
   .allPanel {
@@ -43,6 +45,11 @@
       left: 0;
       top: 0;
     }
+    
+    .round-pdb {
+      padding-bottom:0.58rem;
+    }
+
   }
 
   .fnPanel {
@@ -133,16 +140,42 @@
       }
     }
   }
+
+  .departByLine {
+    .cell {
+      line-height: 2;
+      text-align:center;
+    }
+
+    .pdlf20 {
+      text-align:left;
+      padding-left:0.2rem;
+    }
+
+    
+    .cell + .cell {
+      &:after {
+        content: "";
+        display: block;
+        height: 60%;
+        width: 1px;
+        @include bgWhiteOpacity(10);
+        position: absolute;
+        left: 0;
+        top: 20%;
+      }
+    }
+  }
 }
 
-.rank-page, .visit-page {
+.rank-page, .visit-page, .helper-page {
   .orderFilterGroup {
     width: 100%;
     position: absolute;
     left: 0;
     top: 1.66rem;
     right: 0;
-    z-index: 999;
+    z-index: 900;
     transition: background-color .3s;
     padding: 0 0.2rem;
     height: 0;
@@ -321,6 +354,9 @@
       }
     }
   }
+  .qaz {
+    padding:0;
+  }
 
   .proList {
     padding: 0.2rem 0;
@@ -367,3 +403,57 @@
     }
   }
 }
+  .backSearchPane2 {
+    width: 100%;
+    margin-bottom:0.2rem;
+
+    .inner {
+      background-color: rgba(42, 101, 138, .8);
+      text-align: center;
+      padding: 0.2rem;
+      padding-bottom:0;
+      width: 100%;      
+        p {
+        line-height: 0.48rem;
+        }
+
+      .arrow {
+        display: inline-block;
+        height: 0.28rem;
+        width: 0.28rem;
+        background: url(../images/arrow.png) center center no-repeat;
+        background-size: 0.24rem auto;
+        margin-top: 0.14rem;
+      }
+    }
+    table {
+      text-align: center;
+      width:100%; 
+      background-color: rgba(254,228,122, 0.3);
+      td {
+         padding:0.13rem;
+      }
+      .ttt {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08); 
+        th {
+           padding:.28rem .35rem .27rem .26rem;
+
+          i {
+            background:url(../images/usershow_ico.png);
+            display: inline-block;
+            height: 0.4rem;
+            width: 0.4rem;
+            background-size: 200% auto;
+            position: absolute;
+            left: -0.01rem;
+            top: 50%;
+            margin-top: -0.2rem;
+
+             &.b {
+              background-position: 100% 0; 
+            }
+          }
+        }       
+      }
+    }   
+  }

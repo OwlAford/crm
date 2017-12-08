@@ -37,10 +37,10 @@
 				<div class="item"><i class="d"></i>13989565236</div>
 			</div>
 			<div class="area list">
-				<div class="item arr"><i class="e"></i>总行营业部零售团队</div>
+				<div class="item arr"><i class="e"></i>机具管理</div>
 			</div>
       <div class="area list">
-        <div class="item arr"><i class="f"></i>自定义设置</div>
+        <div class="item arr activeIco"><i class="f" style="background:url(../images/zbw.png) no-repeat; background-size: 100% auto; opacity: 0.8"></i>活动券</div>
       </div>
 			<div class="btn-wrap">
 				<button class="base-btn quitBtn">退出登录</button>
@@ -49,7 +49,7 @@
 	</div>
 	<script type="text/javascript">
 		$(function () {
-			$('.item.fold').on('click', function () {
+            $('.item.fold').on('click', function () {
 				var isOpen = $(this).hasClass('open');
 				isOpen ? $(this).removeClass('open') : $(this).addClass('open')
 			})

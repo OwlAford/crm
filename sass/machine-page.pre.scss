@@ -6,8 +6,58 @@
 
   .mcList {
     .area {
-      padding: 0.24rem 1.72rem 0.24rem 0.64rem;
+      padding: 0 0.2rem 0 0.64rem;
     }
+
+    table {
+      width: 100%;
+
+      td {
+        padding:0.3rem 0;
+        opacity:0.9;
+      }
+
+      td.toR {
+        text-align:right;
+      }
+    }
+
+    .calendar {
+        line-height: 0.6rem;
+        padding: 1px 1px 1px 0.76rem;
+        background: url(../images/calendar.png) no-repeat 0.16rem center;
+        background-size: 0.42rem;
+        overflow: hidden;
+        width: 4.56rem;
+        transition: width .3s linear;
+  
+        .gap {
+          width: 0.3rem;
+          text-align: center;
+          display: block;
+        }
+  
+        .ipt {
+          @include opacityBorder(all, 10);
+          font-size: 12px;
+          padding: 0 0.08rem;
+          transition: opacity .3s;
+  
+          input {
+            text-align: center;
+            width: 1.5rem;
+            height: 0.6rem;
+          }
+        }
+  
+        &.ellipsis {
+          width: 0.76rem;
+  
+          .ipt {
+            opacity: 0;
+          }        
+        }
+      }
 
     .roundBtn {
       height: 64px;
@@ -197,5 +247,4 @@
       }
     }
   }
-
 }
