@@ -172,23 +172,30 @@
     }
 
     .cell {
+      .tabName {
+        padding: 0.2rem;
+        margin-right: 0.2rem;
+      }
       i {
         &:after {
-          background-image: url(../images/approv_ico.png);
+          background-image: url(../images/approv1_ico.png);
         }
         &.b:after {
-          background-position: 0 20%;
+          background-position: 0 16.666%;
         }
         &.c:after {
-          background-position: 0 40%;
+          background-position: 0 33.333%;
         }
         &.d:after {
-          background-position: 0 60%;
+          background-position: 0 50%;
         }
         &.e:after {
-          background-position: 0 80%;
+          background-position: 0 66.666%;
         }
         &.f:after {
+          background-position: 0 83.333%;
+        }
+        &.g:after {
           background-position: 0 100%;
         }
       }
@@ -198,18 +205,21 @@
           background-position: 100% 0;
         }
         &.b:after {
-          background-position: 100% 20%;
+          background-position: 100% 16.666%;
         }
         &.c:after {
-          background-position: 100% 40%;
+          background-position: 100% 33.333%;
         }
         &.d:after {
-          background-position: 100% 60%;
+          background-position: 100% 50%;
         }
         &.e:after {
-          background-position: 100% 80%;
+          background-position: 100% 66.666%;
         }
         &.f:after {
+          background-position: 100% 83.333%;
+        }
+        &.g:after {
           background-position: 100% 100%;
         }
       }
