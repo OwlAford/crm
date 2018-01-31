@@ -37,7 +37,7 @@
       height: 0.44rem;
       width: 0.44rem;
       border: 1px solid #7f8cab;
-      background-color: rgba(255, 255, 255, .1);
+      color: #7f8cab;
       line-height: 0.44rem;
       text-align: center;
 
@@ -60,7 +60,7 @@
       background-color: rgba(255, 255, 255, .1);
 
       input {
-        color: #fee47a;
+        color: #ffa552;
         width: 2.1rem;
         text-align: center;
       }
@@ -86,7 +86,7 @@
       height: 0.32rem;
       width: 0.32rem;
       margin-top: -0.16rem;
-      background: url(../images/search.png) no-repeat;
+      background: url(../images/search_light.png) no-repeat;
       background-size: 100% auto;
       position: absolute;
       right: 0.2rem;
@@ -95,9 +95,11 @@
     .adjust-l {
       right:5.5rem;
     }
+
     .adjust-ll {
       right:6.5rem;
     }
+
     input {
       text-align: center;
       height: 0.6rem;
@@ -105,11 +107,11 @@
       border-radius: 0.3rem;
       line-height: 0.6rem;
       padding: 0 0.3rem;
-      @include bgWhiteOpacity(20);
-      color: #fff;
+      background-color: rgba(228, 228, 228, .8);
+      color: #454545;
       
       &::-webkit-input-placeholder {
-        color: rgba(255, 255, 255, .6);
+        color: rgba(69, 69, 69, .6);
       }
 
       &:focus {
@@ -164,7 +166,7 @@
     z-index: 999;
     right: 0.24rem;
     bottom: 0.24rem;
-    background: url(../images/totop.png) no-repeat;
+    background: url(../images/totop_light.png) no-repeat;
     background-size: 100% 100%;
   }
 
@@ -200,7 +202,7 @@
   .amazeIco {
     height: 0.34rem;
     width: 0.34rem;
-    background: url(../images/amaze.png) no-repeat;
+    background: url(../images/amaze_light.png) no-repeat;
     background-size: 100% auto;
     display: inline-block;
     vertical-align: middle;
@@ -213,7 +215,7 @@
       display: block;
       height: 100%;
       width: 100%;
-      background: url(../images/prod.png) no-repeat;
+      background: url(../images/prod_light.png) no-repeat;
       background-size: 100% auto;
     }
 
@@ -289,12 +291,14 @@
     padding: 0.3rem 0.36rem;
     font-size: 16px;
     margin: 0.4rem 0;
-    @include bgWhiteOpacity(20);
+    background-color: #3e7ce3;
+    background-image: -webkit-linear-gradient(180deg, #3e7ce3, #66cbf4);
     color: #fff;
     border-radius: 0.1rem;
 
     &:active {
-      @include bgWhiteOpacity(40);
+      background-color: #66cbf4;
+      background-image: -webkit-linear-gradient(180deg, #66cbf4, #3e7ce3);
     }
 
     &.blue {
@@ -310,7 +314,7 @@
     input {
       width: 100%;
       background: none;
-      color: #fff;
+      color: #757575;
 
       &::-webkit-input-placeholder {
         color: rgba(255, 255, 255, .6);
@@ -481,7 +485,7 @@
          display: block;
          height: 0.6rem;
          width: 0.6rem;
-         background: url(../images/actives_ico.png) no-repeat;
+         background: url(../images/actives_ico_light.png) no-repeat;
          background-size: 100% auto;
          position: absolute;
          left: -0.7rem;
@@ -720,7 +724,7 @@
       display: block;
       width: 100%;
       height: 100%;
-      background: url(../images/visit-ico.png) no-repeat;
+      background: url(../images/visit-ico_light.png) no-repeat;
       background-size: 100% auto;
     }
 
@@ -735,7 +739,7 @@
   height: 0.5rem;
   display: inline-block;
   vertical-align: middle;
-  background: url(../images/visit-to.png) no-repeat center center;
+  background: url(../images/visit-to_light.png) no-repeat center center;
   background-size: 0.4rem;
   margin-top: -0.04rem;
 }

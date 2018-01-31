@@ -114,6 +114,8 @@
 					<ul class="labels" id="labels-circle1">
 						<li><i></i>存款余额：20,000.00 (万)</li>
 						<li><i></i>理财余额：9,567.00 (万)</li>
+						<li><i></i>大额存单,567.00 (万)</li>
+						<li><i></i>结构性存款,567.00 (万)</li>
 					</ul>
 					<div class="circle" id="circle1"></div>
 				</div>
@@ -135,7 +137,7 @@
 					<p class="tt">总资产趋势</p>
 				<div class="lineChart" id="lineChart"></div>
 				<div class="lineLabels">
-					<div class="item"><i style="background-color: #6ffffd;"></i>存款余额</div>
+					<div class="item"><i style="background-color: #00dfdc;"></i>存款余额</div>
 					<div class="item"><i style="background-color: #69b0ff;"></i>理财余额</div>
 					<div class="item"><i style="background-color: #ffdc52;"></i>贷款余额</div>
 				</div>
@@ -228,6 +230,9 @@
 	</div>
 	<script type="text/javascript">
 	$(function () {
+		// 切换皮肤
+		changeTheme()
+
 		// 初始化轮播
 		var slider = document.getElementById('slider');
 		new Swiper({
@@ -286,11 +291,17 @@
 		}
 		// 初始化环形1
 		setCircle(document.getElementById('circle1'), document.querySelectorAll('#labels-circle1 i'), [{
-			color: '#6ffffd',
-			value: 935
+			color: '#fff66e',
+			value: 335
+		}, {
+			color: '#8e94ff',
+			value: 310
+		}, {
+			color: '#4d56ff',
+			value: 310
 		}, {
 			color: '#69b0ff',
-			value: 310
+			value: 1240
 		}])
 
 		// 初始化环形2
@@ -384,7 +395,7 @@
 				lineStyle:{
 					normal: {
 						width: 1,
-						color: '#6ffffd'
+						color: '#00dfdc'
 					}
 				},
 				data: [10, 20, 18, 15, 19, 22, 21]
@@ -406,7 +417,7 @@
 				lineStyle:{
 					normal: {
 						width: 1,
-						color: '#ffdc52'
+						color: '#ffa452'
 					}
 				},
 				data: [13, 12, 11, 10, 9, 8, 6]

@@ -39,7 +39,7 @@
     .inner {
       padding: 0.1rem 0.2rem;
       width: 100%;
-      background-color: rgba(196, 198, 207, 0.16);
+      background-color: rgba(248, 248, 248, 0.8);
       position: fixed;
       z-index: 99;
       left: 0;
@@ -74,7 +74,7 @@
         display: inline-block;
         height: 0.36rem;
         width: 0.36rem;
-        background: url(../images/rank_ico.png) no-repeat;
+        background: url(../images/rank_ico_light.png) no-repeat;
         background-size: 100% auto;
         vertical-align: middle;
         margin-right: 0.1rem;
@@ -362,24 +362,31 @@
     padding: 0.2rem 0;
 
     .proItem {
-      @include bgPurpleOpacity(20);
-      border-top: 0.1rem solid #41569d;
+      background-color: #fff;
+      border-top: 0.1rem solid #c5caff;
       padding: 0 0.3rem;
+
+      .cell .ft18.lh20 {
+        color: #ffa552;
+      }
 
       & + .proItem {
         margin-top: 0.2rem;
       }
 
       &:nth-child(1) {
-        border-top-color: #d6c674;
-        @include bgYellowOpacity(20);
+        border-top-color: #ffb775;
+
+        .proIco:after {
+          background-image: url(../images/prod_yellow_light.png);
+        }
 
         &:after {
           content: "";
           display: block;
           height: 0.8rem;
           width: 0.8rem;
-          background: url(../images/first.png) no-repeat;
+          background: url(../images/first_light.png) no-repeat;
           background-size: 100% auto;
           position: absolute;
           top: -0.1rem;
@@ -388,8 +395,7 @@
       }
 
       &:nth-child(2) {
-        border-top-color: #36849c;
-      @include bgBlueOpacity(20);
+        border-top-color: #c6e6ff;
       }
 
       .title {

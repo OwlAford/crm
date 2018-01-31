@@ -25,7 +25,7 @@
     .calendar {
         line-height: 0.6rem;
         padding: 1px 1px 1px 0.76rem;
-        background: url(../images/calendar.png) no-repeat 0.16rem center;
+        background: url(../images/calendar_light.png) no-repeat 0.16rem center;
         background-size: 0.42rem;
         overflow: hidden;
         width: 4.56rem;
@@ -38,7 +38,7 @@
         }
   
         .ipt {
-          @include opacityBorder(all, 10);
+          border: 1px solid #dcdcdc;
           font-size: 12px;
           padding: 0 0.08rem;
           transition: opacity .3s;

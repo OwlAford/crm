@@ -19,6 +19,7 @@
           width: 100%;
           height: 100%;
           display: table;
+        
           div {
             width: 64%;
             height: 100%;
@@ -51,7 +52,7 @@
         height: 0.84rem;
         width: 0.84rem;
         padding: 0.15rem;
-        @include bgWhiteOpacity(20);
+        background-color: #ddecff;
         border-radius: 50%;
         transition: all .3s;
 
@@ -287,8 +288,8 @@
   
   // detail personal
   .userItemsPanel {
-    @include bgBlueOpacity(10);
     margin-bottom: 0.28rem;
+    background-color: #fff;
     
     .swiper {
       width: 300%;
@@ -297,7 +298,7 @@
     .timeoutPanel .cell i {
 
       &:after {
-        background-image: url(../images/user_label.png);
+        background-image: url(../images/user_label_light.png);
         background-size: 100% auto;
       }
 
@@ -315,27 +316,41 @@
 
     }
 
-    .swiper-wrap .dotCon {
-      padding: 0;
+    .swiper-wrap {
+      background-color: #fff;
 
-      i:after {
-        width: 6px;
-        height: 6px;
-        border-radius: 50%;
+      .dotCon {
+        padding: 0;
+  
+        i:after {
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+        }
       }
     }
 
     .tt {
-      @include bgBlueOpacity(20);
+      background-color: #5ba6ff;
       padding: 0.3rem;
-
+      margin-bottom: 0.2rem;
+      
       .cell {
         padding-right: 0.2rem;
         @include textEllipsis;
+        color: #fff;
+
+        .proIco:after {
+          background-image: url(../images/prod_white_light.png);
+        }
+
+        .ft13 {
+          color: #757575;
+        }
       }
 
       .level {
-        color: #eaeced;
+        color: #5ba6ff;
         font-size: 13px;
       }
     }
@@ -348,7 +363,8 @@
       padding: 0.3rem 0;
       width: 100%;
     }
- // ******************************11-1zbw********************
+
+    // ************************ 11-1zbw **********************
     .product-tips {
        position:absolute;
        bottom: -0.6rem;
@@ -356,7 +372,7 @@
        display:none;
        opacity: 0.7;
        background-color:#415a7e;
-       color:#fee47a;
+       color:#ffa552;
        border-radius: 5px;
        border: none;
 
@@ -366,7 +382,8 @@
           position:absolute; top:-0.17rem; left:1.38rem;
           border-style:solid dashed dashed; 
           border-color: transparent transparent #415a7e;
-          font-size:0; line-height:0;
+          font-size:0;
+          line-height:0;
         }
         p {
           margin:0.1rem 0.39rem;
@@ -384,7 +401,7 @@
 
     .proList {
       .item {
-        @include opacityBorder(top, 8);
+        border-top: 1px solid #ececec;
         padding: 0.3rem 0 0.3rem 0.96rem;
         font-size: 12px;
 
@@ -402,7 +419,7 @@
           left: 0;
           top: 50%;
           margin-top: -0.38rem;
-          @include bgWhiteOpacity(10);
+          background-color: #eef6ff;
           border-radius: 0.06rem;
 
           // &:after {
@@ -439,7 +456,7 @@
 
     .scan {
       padding: 0.2rem 0;
-      @include opacityBorder(bottom, 10);
+      border-bottom: 1px solid #ececec;
 
       .tt {
         font-size: 15px;
@@ -488,10 +505,14 @@
 
   .trend {
     .tt {
-      padding: 0.3rem 0;
+      padding: 0.25rem 0 0.2rem;
       margin: 0 0.3rem;
       font-size: 15px;
-      @include opacityBorder(bottom, 8);
+      border-bottom: 1px solid #ececec;
+    }
+
+    .fc-blue {
+      color: #ffa452;
     }
 
     .lineChart {
@@ -519,7 +540,7 @@
     }
 
     .userInfoList {
-      padding: 0 0.28rem;
+      padding: 0 0.28rem 0.2rem;
 
       .row {
         padding: 0.2rem 0.5rem 0.2rem 0;
@@ -534,7 +555,7 @@
         top: 50%;
         position: absolute;
         margin-top: -0.22rem;
-        background: url(../images/cus_info_ico.png) no-repeat;
+        background: url(../images/cus_info_ico_light.png) no-repeat;
         background-size: 100% auto;
 
         &.phone {
@@ -547,11 +568,11 @@
       padding: 0.2rem 0.3rem;
 
       .item {
-        @include bgBlueOpacity(10);
+        background-color: #f5f5f5;
         margin-bottom: 0.2rem;
 
         .tit {
-          @include bgBlueOpacity(10);
+          background-color: #eee;
           padding: 0.24rem;
 
           &:after {
@@ -595,7 +616,7 @@
           }
 
           & + .group {
-            @include opacityBorder(top, 8);
+            border-top: 1px solid #ececec;
           }
         }
       }
@@ -603,8 +624,8 @@
   }
 
   .detailCnt {
-    @include opacityBorder(top, 8);
- // **********************************11.1-zbwer*****************
+    border-top: 1px solid #ececec;
+
     .detailTbl {
       padding: 0.2rem 0;
       .fullTable {
@@ -622,21 +643,21 @@
     .cycle {
       padding: 0.4rem 0.6rem 1.2rem;
 
-      &.step2, &.step3, &.step4{
+      &.step2, &.step3, &.step4 {
         .line {
           &:after {
             content: "";
             display: block;
             height: 100%;
             width: 33.333%;
-            background-color: #c4b778;
+            background-color: #ffa552;
           }
 
           .point {
             &:nth-child(1),
             &:nth-child(2) {
-              background-color: #fee47a;
-              color: #fee47a;
+              background-color: #ffa552;
+              color: #ffa552;
             }      
           }
         }
@@ -652,8 +673,8 @@
             &:nth-child(1),
             &:nth-child(2),
             &:nth-child(3) {
-              background-color: #fee47a;
-              color: #fee47a;
+              background-color: #ffa552;
+              color: #ffa552;
             }
           }
         }
@@ -670,8 +691,8 @@
             &:nth-child(2),
             &:nth-child(3),
             &:nth-child(4) {
-              background-color: #fee47a;
-              color: #fee47a;
+              background-color: #ffa552;
+              color: #ffa552;
             }
           }
         }
@@ -680,10 +701,10 @@
       .line {
         width: 100%;
         height: 1px;
-        background-color: #454b78;
+        background-color: #dcdcdc;
 
         .point {
-          background-color: #5f7193;
+          background-color: #dcdcdc;
           height: 0.24rem;
           width: 0.24rem;
           border-radius: 50%;

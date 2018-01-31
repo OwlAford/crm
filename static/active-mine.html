@@ -33,21 +33,21 @@
 			
 			<div class="area list2">
 				<div class="item2 arr">
-				    <div class="row"><i class="a sdf"></i>
-					    <div class="cell">资产查询</div>
-					    <button class="btn1">查询</button>
-				    </div>
-				    <div class="bt1show" style="display: none; padding: 0.2rem 0 ;" >
-                    <div class="row" style="margin:0.2rem 0;">
-				        <div class=" cell">活动期储蓄增量</div>
-				        <div>100.000.00（张）</div>
-			        </div>
-			        <div class="row">
-				        <div class=" cell">活动期储蓄增量</div>
-				        <div>100.000.00（张）</div>
-			        </div>
-			        </div>
-			    </div>	
+					<div class="row"><i class="a sdf"></i>
+						<div class="cell">资产查询</div>
+						<button class="btn1">查询</button>
+					</div>
+					<div class="bt1show" style="display: none; padding: 0.2rem 0 ;" >
+						<div class="row" style="margin:0.2rem 0;">
+							<div class=" cell">活动期储蓄增量</div>
+							<div>100.000.00（张）</div>
+						</div>
+						<div class="row">
+							<div class=" cell">活动期储蓄增量</div>
+							<div>100.000.00（张）</div>
+						</div>
+					</div>
+				</div>	
 			</div>
 			<div class="area list2 row">
 				<div class="item2 arr cell"><i class="b"></i>累计已送券</div>
@@ -59,16 +59,16 @@
 			</div>
 			<div class="area list2 row">
 				<div class="item2 arr cell"><i class="d"></i>剩余可送券</div>
-				<div class="btn2">20（张）</div>
+				<div class="btn2 fc-blue">20（张）</div>
 			</div>
-            <div class="area list2 row">
-                <div class="item2 arr cell"><i class="e"></i>本次送券</div>
-                <div class="rangeInput adjust">
-                   <b class="sub"></b>
-                   <div class="ipt"><input type="text" value="20" style="width: 0.6rem"></div>
-                   <b class="add"></b>
-                </div>
-            </div>
+				<div class="area list2 row">
+					<div class="item2 arr cell"><i class="e"></i>本次送券</div>
+					<div class="rangeInput adjust">
+						<b class="sub"></b>
+						<div class="ipt"><input type="text" value="20" style="width: 0.6rem"></div>
+						<b class="add"></b>
+					</div>
+				</div>
 			<div class="btn-wrap">
 				<button class="base-btn quitBtn">退出登录</button>
 			</div>
@@ -76,7 +76,10 @@
 	</div>
 	<script type="text/javascript">
 		$(function () {
-			$(".btn1").click(function(){
+			// 切换皮肤
+			changeTheme()
+
+			$(".btn1").click(function () {
 				$(".bt1show").show();
 			})
 		})

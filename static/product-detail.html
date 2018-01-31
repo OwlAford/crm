@@ -33,9 +33,8 @@
 					<div class="cell">
 						<div class="ft12 fc-light-dark">起购金额</div>
 						<div class="ft18 lh20">5万元 <i class="amazeIco"></i></div>
-						<!-- *************************************************** -->
 						<div class="product-tips">
-                            <div class="em"></div>
+              <div class="em"></div>
 							<p>万元的整数倍追加</p>						 
 						</div>
 					</div>
@@ -70,7 +69,6 @@
 					</div>
 				</div>
 			</div>
-			<!-- **************************************** -->
 			<div class="area mayLike">
 				<div class="tt">预期年化收益率</div>
 				<div class="detailCnt">
@@ -134,16 +132,19 @@
 	</div>
 	<script type="text/javascript">
 	$(function () {
-        $(".amazeIco").click(function(event){
-        	 event.stopPropagation();
-        	 $(".product-tips").toggle();      	 
-        });
-        $(document).click(function(){
-                    $(".product-tips").hide();
-        });
-        	
-    });
+		// 切换皮肤
+		changeTheme()
+	
+		$(".amazeIco").click(function (event) {
+			event.stopPropagation();
+			$(".product-tips").toggle();      	 
+		})
 
+		$(document).click(function () {
+			$(".product-tips").hide();
+		})
+        	
+  })
 	</script>
 </body>
 </html>
