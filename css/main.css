@@ -394,7 +394,7 @@ body, .crm-wrap {
 .crm-wrap * {
   position: relative;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .crm-wrap .area {
@@ -426,8 +426,8 @@ body, .crm-wrap {
 
 .crm-wrap .row .cell {
   -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .crm-wrap .row .mid {
@@ -499,7 +499,7 @@ body, .crm-wrap {
 
 .crm-wrap .list .item.fold.open:after, .crm-wrap .list .item.arr.open:after {
   -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .crm-wrap .list .item.fold:after, .crm-wrap .list .item.arr:after {
@@ -517,7 +517,7 @@ body, .crm-wrap {
 
 .crm-wrap .list .item.arr:after {
   -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .crm-wrap .list .item + .item {
@@ -820,7 +820,7 @@ body, .crm-wrap {
 
 .feedback-page .shot-add .addBtn:before, .work-page .shot-add .addBtn:before, .visit-page .shot-add .addBtn:before {
   -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .feedback-page .shot-add .close, .work-page .shot-add .close, .visit-page .shot-add .close {
@@ -844,7 +844,7 @@ body, .crm-wrap {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 0.2rem 0.2rem;
 }
 
@@ -928,7 +928,7 @@ body, .crm-wrap {
   top: -0.2rem;
   overflow: hidden;
   -webkit-transform: scale3d(0.6666, 0.6666, 0.6666);
-  transform: scale3d(0.6666, 0.6666, 0.6666);
+          transform: scale3d(0.6666, 0.6666, 0.6666);
 }
 
 .home-page .menu .item .ico:active {
@@ -1288,7 +1288,7 @@ body, .crm-wrap {
   width: 0.5rem;
   background-size: 70% auto;
   -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg);
+          transform: rotate(-90deg);
   position: relative;
   top: 0.25rem;
 }
@@ -1680,7 +1680,7 @@ body, .crm-wrap {
   background-color: #e75a7f;
   border-radius: 50%;
   -webkit-transform: scale3d(0.5, 0.5, 0.5);
-  transform: scale3d(0.5, 0.5, 0.5);
+          transform: scale3d(0.5, 0.5, 0.5);
 }
 
 .info-page .infoList > .area .row {
@@ -1951,7 +1951,7 @@ body, .crm-wrap {
 
 .info-page .trend .debtList .item.active .tit:after {
   -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .info-page .trend .debtList .item.active .detailWrap {
@@ -2200,11 +2200,11 @@ body, .crm-wrap {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .rank-page .rankList .item.average .flash, .helper-page .rankList .item.average .flash {
@@ -2678,10 +2678,10 @@ i.ico-local {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .task-page .bank-list .item {
@@ -3554,7 +3554,7 @@ i.ico-local {
 
 .company-page .zsj {
   -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .company-page .helperMathI .cell i {
@@ -4045,3 +4045,4 @@ i.ico-local {
   background-color: #10b7de;
   color: white;
 }
+/*# sourceMappingURL=main.css.map */

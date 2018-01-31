@@ -7,9 +7,9 @@
 <meta name="renderer" content="webkit"/>
 <title>CRM2.0</title>
 <script src="../js/init.min.js"></script>
-<link rel="stylesheet" href="../css/reset.min.css">
-<link rel="stylesheet" href="../css/swiper.min.css">
-<link rel="stylesheet" href="../css/main.dev.css">
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/swiper.css">
+<link rel="stylesheet" href="../css/main.css" id="profile">
 <script src="../js/jquery.min.js"></script>
 <script src="../js/echarts.simple.min.js"></script>
 <script src="../js/circle-progress.min.js"></script>
@@ -184,7 +184,10 @@
 		</div>
 	</div>
 	<script type="text/javascript">
-	$(function () {	
+	$(function () {
+		// 切换皮肤
+		changeTheme()
+		var isLight = window.globalThemeType === 'light'
 
 		// 实时滚动播放
 		var removeTimer, runTimer;
@@ -230,13 +233,13 @@
 						axisLine: {
 							onZero: false,
 							lineStyle: {
-								color: 'rgba(113, 244, 255, 0.1)'
+								color: isLight ? '#d6e4f4' : 'rgba(113, 244, 255, 0.1)'
 							}
 						},
 						splitLine: {
 							show: true,
 							lineStyle: {
-								color: 'rgba(113, 244, 255, 0.06)'
+								color: isLight ? '#eff4fb' : 'rgba(113, 244, 255, 0.06)'
 							}
 						},
 						axisTick: {
@@ -245,7 +248,7 @@
 						axisLabel: {
 							formatter: '{value} 天',
 							textStyle: {
-								color: 'rgba(255, 255, 255, 0.6)',
+								color: isLight ? '#587c9f' : 'rgba(255, 255, 255, 0.6)',
 								fontSize: 10
 							}
 						},
@@ -260,7 +263,7 @@
 						type: 'value',
 						axisLine: {
 							lineStyle: {
-								color: 'rgba(113, 244, 255, 0.1)'
+								color: isLight ? '#d6e4f4' : 'rgba(113, 244, 255, 0.1)'
 							}
 						},
 						splitLine: {
@@ -271,7 +274,7 @@
 						},
 						axisLabel: {
 							textStyle: {
-								color: 'rgba(255, 255, 255, 0.6)',
+								color: isLight ? '#587c9f' : 'rgba(255, 255, 255, 0.6)',
 								fontSize: 10
 							}
 						}
