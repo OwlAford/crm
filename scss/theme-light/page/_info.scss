@@ -25,13 +25,14 @@
             height: 100%;
             text-align: center;
             display: table-cell;
-            background-color: rgba(125, 230, 255, 0.3);
+            background-color: #d2d2d2;
             white-space: nowrap;
             vertical-align: middle;
 
             &.del {
               width: 36%;
-              background-color: #d30611;
+              background-color: #ff3333;
+              color: #fff;
             }
           }
         }
@@ -52,7 +53,7 @@
         height: 0.84rem;
         width: 0.84rem;
         padding: 0.15rem;
-        background-color: #ddecff;
+        background-color: #eee;
         border-radius: 50%;
         transition: all .3s;
 
@@ -113,7 +114,7 @@
 
       &.active {
         i {
-          background-color: $bgBlue;
+          background-color: #deedff;
 
           &:after {
             background-position: 100% 0;
@@ -179,7 +180,7 @@
       }
       i {
         &:after {
-          background-image: url(../images/approv1_ico.png);
+          background-image: url(../images/approv1_ico_light.png);
         }
         &.b:after {
           background-position: 0 16.666%;

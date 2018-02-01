@@ -889,6 +889,37 @@ body, .crm-wrap {
   margin-top: -0.04rem;
 }
 
+.fixed-btn-grp {
+  height: 0.96rem;
+  width: 100%;
+}
+
+.fixed-btn-grp .inner {
+  width: 100%;
+  height: 0.96rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.fixed-btn-grp .inner .btn {
+  text-align: center;
+  height: 0.96rem;
+  line-height: 0.96rem;
+  width: 50%;
+  font-size: 15px;
+  background-color: #289DC5;
+  color: #fff;
+}
+
+.fixed-btn-grp .inner .btn.hollow {
+  color: #7de6ff;
+  background-color: #394F75;
+}
+
 .home-page .menu {
   display: -webkit-box;
   display: -ms-flexbox;

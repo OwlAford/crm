@@ -157,7 +157,7 @@
       top: 0;
       bottom: 0;
       width: 1px;
-      @include bgWhiteOpacity(8);
+      background-color: #80bbff;
     }
 
     .item {
@@ -168,12 +168,13 @@
         display: block;
         height: 8px;
         width: 8px;
-        background-color: #38d1f5;
+        background-color: #2c8dff;
         border-radius: 50%;
         position: absolute;
         left: 0.1rem;
         top: 35%;
         margin: -4px 0 0 -4px;
+        z-index: 9;
       }
 
       .t2 {
@@ -183,7 +184,7 @@
       }
 
       .rgCon {
-        background-color: rgba(133, 133, 211, .3); 
+        background-color: #eef6ff;
         padding: 0.2rem;
         margin: 0.11rem 0 0.11rem 0.11rem;
       }
@@ -193,13 +194,14 @@
         width: 0;
         height: 0;
         border-bottom: 6px solid transparent;
-        border-right: 6px solid rgba(133, 133, 211, .3);
+        border-right: 6px solid #eef6ff;
         border-top: 6px solid transparent;
         position: relative;
         top: .95rem;
       }
       .lfCon {
-        background-color: rgba(133, 133, 211, .3); 
+        background-color: #d5e8ff;
+        color: #2c8dff;
         line-height: 1.2rem;
         border-radius: 50%;
       }

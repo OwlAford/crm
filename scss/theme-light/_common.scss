@@ -357,7 +357,7 @@
       }
 
       & + .item {
-        @include opacityBorder(top, 6);
+        border-top: 1px solid #ececec;
       }
     }
     .pd20 {
@@ -380,7 +380,7 @@
   }
 
   .fmList {
-    color: #d0d2e2;
+    color: #bcbcbc;
 
     .row {
       background-color: rgba(255, 255, 255, .04);
@@ -440,7 +440,7 @@
 
       .timeTips {
         opacity:0.7;
-        color: #d0d2e2;
+        color: #bcbcbc;
        }
 
     }
@@ -470,7 +470,7 @@
         font-size: 15px;
         font-weight: normal;
         letter-spacing: 0px;
-        color: #fee47a;
+        color: #ff9936;
         margin-left:0.45rem;
       }
     }
@@ -515,12 +515,12 @@
     }
 
     .detail {
-      color: #d0d2e2;
+      color: #757575;
       word-break: break-all;
     }
 
     .state {
-      color: #fee47a;
+      color: #ff9936;
     }
   }
 }
@@ -561,7 +561,7 @@
 
 .rank-page, .task-page, .machine-page, .visit-page {
   .tabs {
-    background-color: rgba(196, 198, 207, 0.16);  
+    background-color: #fff;  
 
     .cell {
       text-align: center;
@@ -742,4 +742,32 @@
   background: url(../images/visit-to_light.png) no-repeat center center;
   background-size: 0.4rem;
   margin-top: -0.04rem;
+}
+
+.fixed-btn-grp {
+  height: 0.96rem;
+  width: 100%;
+  .inner {
+    width: 100%;
+    height: 0.96rem;
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    .btn {
+      text-align: center;
+      height: 0.96rem;
+      line-height: 0.96rem;
+      width: 50%;
+      font-size: 15px;
+      background-color: #006cd1;
+      background-image: -webkit-linear-gradient(180deg, #29bdf1, #006cd1);
+      color: #fff;
+      &.hollow {
+        background-color: #e5e5e5;
+        background-image: none;
+        color: #757575;
+      }
+    }
+  }
 }

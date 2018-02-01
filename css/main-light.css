@@ -522,7 +522,7 @@ body, .crm-wrap {
 }
 
 .crm-wrap .list .item + .item {
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-top: 1px solid #ececec;
 }
 
 .crm-wrap .list .pd20 {
@@ -542,7 +542,7 @@ body, .crm-wrap {
 }
 
 .crm-wrap .fmList {
-  color: #d0d2e2;
+  color: #bcbcbc;
 }
 
 .crm-wrap .fmList .row {
@@ -599,7 +599,7 @@ body, .crm-wrap {
 
 .mcList .area .row .timeTips {
   opacity: 0.7;
-  color: #d0d2e2;
+  color: #bcbcbc;
 }
 
 .mcList .area .tit {
@@ -629,7 +629,7 @@ body, .crm-wrap {
   font-size: 15px;
   font-weight: normal;
   letter-spacing: 0px;
-  color: #fee47a;
+  color: #ff9936;
   margin-left: 0.45rem;
 }
 
@@ -673,12 +673,12 @@ body, .crm-wrap {
 }
 
 .mcList .area .detail {
-  color: #d0d2e2;
+  color: #757575;
   word-break: break-all;
 }
 
 .mcList .area .state {
-  color: #fee47a;
+  color: #ff9936;
 }
 
 .rankList .item {
@@ -716,7 +716,7 @@ body, .crm-wrap {
 }
 
 .rank-page .tabs, .task-page .tabs, .machine-page .tabs, .visit-page .tabs {
-  background-color: rgba(196, 198, 207, 0.16);
+  background-color: #fff;
 }
 
 .rank-page .tabs .cell, .task-page .tabs .cell, .machine-page .tabs .cell, .visit-page .tabs .cell {
@@ -888,6 +888,39 @@ body, .crm-wrap {
   background: url(../images/visit-to_light.png) no-repeat center center;
   background-size: 0.4rem;
   margin-top: -0.04rem;
+}
+
+.fixed-btn-grp {
+  height: 0.96rem;
+  width: 100%;
+}
+
+.fixed-btn-grp .inner {
+  width: 100%;
+  height: 0.96rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.fixed-btn-grp .inner .btn {
+  text-align: center;
+  height: 0.96rem;
+  line-height: 0.96rem;
+  width: 50%;
+  font-size: 15px;
+  background-color: #006cd1;
+  background-image: -webkit-linear-gradient(180deg, #29bdf1, #006cd1);
+  color: #fff;
+}
+
+.fixed-btn-grp .inner .btn.hollow {
+  background-color: #e5e5e5;
+  background-image: none;
+  color: #757575;
 }
 
 .home-page .menu {
@@ -1453,14 +1486,15 @@ body, .crm-wrap {
   height: 100%;
   text-align: center;
   display: table-cell;
-  background-color: rgba(125, 230, 255, 0.3);
+  background-color: #d2d2d2;
   white-space: nowrap;
   vertical-align: middle;
 }
 
 .info-page .mcList .item .control .inner div.del {
   width: 36%;
-  background-color: #d30611;
+  background-color: #ff3333;
+  color: #fff;
 }
 
 .info-page .timeoutPanel, .info-page .approvPanel {
@@ -1475,7 +1509,7 @@ body, .crm-wrap {
   height: 0.84rem;
   width: 0.84rem;
   padding: 0.15rem;
-  background-color: #ddecff;
+  background-color: #eee;
   border-radius: 50%;
   -webkit-transition: all .3s;
   transition: all .3s;
@@ -1539,7 +1573,7 @@ body, .crm-wrap {
 }
 
 .info-page .timeoutPanel .cell.active i, .info-page .approvPanel .cell.active i {
-  background-color: rgba(125, 230, 255, 0.2);
+  background-color: #deedff;
 }
 
 .info-page .timeoutPanel .cell.active i:after, .info-page .approvPanel .cell.active i:after {
@@ -1595,7 +1629,7 @@ body, .crm-wrap {
 }
 
 .info-page .approvPanel .cell i:after {
-  background-image: url(../images/approv1_ico.png);
+  background-image: url(../images/approv1_ico_light.png);
 }
 
 .info-page .approvPanel .cell i.b:after {
@@ -3967,7 +4001,7 @@ i.ico-local {
   top: 0;
   bottom: 0;
   width: 1px;
-  background-color: rgba(255, 255, 255, 0.08);
+  background-color: #80bbff;
 }
 
 .cardLimit-page .timeLine2 .item {
@@ -3979,12 +4013,13 @@ i.ico-local {
   display: block;
   height: 8px;
   width: 8px;
-  background-color: #38d1f5;
+  background-color: #2c8dff;
   border-radius: 50%;
   position: absolute;
   left: 0.1rem;
   top: 35%;
   margin: -4px 0 0 -4px;
+  z-index: 9;
 }
 
 .cardLimit-page .timeLine2 .item .t2 {
@@ -3994,7 +4029,7 @@ i.ico-local {
 }
 
 .cardLimit-page .timeLine2 .item .rgCon {
-  background-color: rgba(133, 133, 211, 0.3);
+  background-color: #eef6ff;
   padding: 0.2rem;
   margin: 0.11rem 0 0.11rem 0.11rem;
 }
@@ -4004,14 +4039,15 @@ i.ico-local {
   width: 0;
   height: 0;
   border-bottom: 6px solid transparent;
-  border-right: 6px solid rgba(133, 133, 211, 0.3);
+  border-right: 6px solid #eef6ff;
   border-top: 6px solid transparent;
   position: relative;
   top: .95rem;
 }
 
 .cardLimit-page .timeLine2 .item .lfCon {
-  background-color: rgba(133, 133, 211, 0.3);
+  background-color: #d5e8ff;
+  color: #2c8dff;
   line-height: 1.2rem;
   border-radius: 50%;
 }
