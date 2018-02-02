@@ -31,9 +31,9 @@
 				</div>
 				<div class="area shot-add">
 					<ul class="inlineBox">
-                        <li><div class="screenShot"><img src="../images/screenShot.png" alt=""></div> <span class="close"></span></li>
-                        <li><div class="screenShot"><img src="../images/screenShot.png" alt=""></div> <span class="close"></span></li>
-                        <li><div class="screenShot"><img src="../images/screenShot.png" alt=""></div> <span class="close"></span></li>
+						<li><div class="screenShot"><img src="../images/screenShot.png" alt=""></div> <span class="close"></span></li>
+						<li><div class="screenShot"><img src="../images/screenShot.png" alt=""></div> <span class="close"></span></li>
+						<li><div class="screenShot"><img src="../images/screenShot.png" alt=""></div> <span class="close"></span></li>
 					</ul>
 					<div class="addBtn"></div>
 				</div>
@@ -73,6 +73,9 @@
 	</div>
 	<script type="text/javascript">
 		$(function () {
+			// 切换皮肤 
+			changeTheme()
+			
 			$('.filterList li').on('click', function () {
 				$(this).addClass('active').siblings().removeClass('active')
 				if ($(this).text() === '贷后') {

@@ -68,7 +68,7 @@
       margin-top: -32px;
       padding: 4px;
       border-radius: 100%;
-      @include bgWhiteOpacity(10);
+      background-color: #deedff;
 
       &:after {
         content: "未签到";
@@ -77,13 +77,14 @@
         line-height: 56px;
         font-size: 12px;
         border-radius: 100%;
-        @include bgWhiteOpacity(10);
+        background-color: #aad1ff;
+        color: #fff;
       }
 
       &.active {
         &:after {
           content: "已签到";
-          background-color: #38d1f5;
+          background-color: #5ba6ff;
         }
       }
     }
@@ -93,16 +94,12 @@
     padding: 0.2rem 0.3rem;
 
     .mlBtn {
-      color: #77e1fa;
+      color: #fff;
       display: inline-block;
-      @include bgBlueOpacity(10);
+      background-color: #5ba6ff;
       padding: 0.1rem;
-      border: 1px solid rgba(119, 225, 250, .2);
       font-size: 13px;
-
-      &:active {
-        @include bgBlueOpacity(20);
-      }
+      border-radius: 3px;
 
       &:before {
         content: "";
@@ -111,7 +108,7 @@
         width: 20px;
         font-size: 13px;
         vertical-align: middle;
-        background: url(../images/ml-ico.png) no-repeat;
+        background: url(../images/ml-ico_light.png) no-repeat;
         background-size: 100% auto;
         margin: -2px 4px 0 0;
       }
@@ -131,12 +128,11 @@
     .ipt {
       width: 1.74rem;
       padding: 0.1rem;
-      border: 1px solid rgba(119, 225, 250, .1);
+      border: 1px solid #e5e5e5;
 
       input {
         text-align: center;
         line-height: 20px;
-        color: rgba(255, 255, 255, .6);
       }
     }
   }
@@ -158,7 +154,7 @@
       top: 0;
       bottom: 0;
       width: 1px;
-      @include bgWhiteOpacity(8);
+      background-color: #bddbff;
     }
 
     .item {
@@ -169,12 +165,13 @@
         display: block;
         height: 8px;
         width: 8px;
-        background-color: #38d1f5;
+        background-color: #5ba6ff;
         border-radius: 50%;
         position: absolute;
         left: -0.2rem;
         top: 50%;
         margin: -4px 0 0 -4px;
+        z-index: 9;
       }
 
       .t2 {

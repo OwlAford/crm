@@ -114,14 +114,17 @@
 		</div>
 	</div>
 	<script type="text/javascript">
-         $(function(){
-             var allItem = $('.switch-content .switch-item');
+    $(function(){
+			// 切换皮肤 
+			changeTheme()
+
+      var allItem = $('.switch-content .switch-item');
 			$('.timeoutPanel .cell').on('click', function () {
 				$(this).addClass('active2').siblings().removeClass('active2');
 				allItem.hide();
 				allItem.eq($(this).index()).show();
 			});
-         })
+    })
 	</script>
 </body>
 </html>

@@ -28,7 +28,7 @@
       <div class="customerList goldIco" style="padding:0">
         <div class="card">
           <div class="row tt">
-            <div class="cell fc-blue">01 裁判文书</div>
+            <div class="cell">01 裁判文书</div>
             <div><span class="dsj zsj"></span></div>
           </div>
           <div>
@@ -45,7 +45,7 @@
         </div>
         <div class="card">
           <div class="row tt">
-            <div class="cell fc-blue">02 裁判文书</div>
+            <div class="cell">02 裁判文书</div>
             <div><span class="dsj"></span></div>
           </div>
           <div class="hide">
@@ -62,7 +62,7 @@
         </div>
         <div class="card">
           <div class="row tt">
-            <div class="cell fc-blue">03 裁判文书</div>
+            <div class="cell">03 裁判文书</div>
             <div><span class="dsj"></span></div>
           </div>
           <div class="hide">
@@ -79,7 +79,7 @@
         </div>
         <div class="card">
           <div class="row tt">
-            <div class="cell fc-blue">04 裁判文书</div>
+            <div class="cell">04 裁判文书</div>
             <div><span class="dsj arr"></span></div>
           </div>
           <div class="hide">
@@ -96,7 +96,7 @@
         </div>
         <div class="card">
           <div class="row tt">
-            <div class="cell fc-blue">05 裁判文书</div>
+            <div class="cell">05 裁判文书</div>
             <div><span class="dsj"></span></div>
           </div>
           <div class="hide">
@@ -115,18 +115,24 @@
     </div>
   </div>
   <script type="text/javascript">
-    $("span.dsj").each(function(index){
-             $(this).click(function(){
-                $(this).parents("div.row").next("div").slideToggle(100);
-     })
+    $(function () {
+      // 切换皮肤 
+      changeTheme()
+      
+      $("span.dsj").each(function (index) {
+        $(this).click(function(){
+          $(this).parents("div.row").next("div").slideToggle(100);
+        })
+      })
+      
+      $("span.dsj").click(function () {
+        if ($(this).hasClass('zsj')){
+          $(this).removeClass('zsj');
+        } else {
+          $(this).addClass('zsj');
+        }
+      });
     })
-    $("span.dsj").click(function(){
-       if ($(this).hasClass('zsj')){
-        $(this).removeClass('zsj');
-       } else {
-        $(this).addClass('zsj');
-       }
-    });
   </script>
 </body>
 </html>

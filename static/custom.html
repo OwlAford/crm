@@ -74,6 +74,9 @@
 	</div>
 	<script type="text/javascript">
 		$(function () {
+      // 切换皮肤 
+      changeTheme()
+
 			$('.item.fold').on('click', function () {
 				var isOpen = $(this).hasClass('open');
 				isOpen ? $(this).removeClass('open') : $(this).addClass('open')

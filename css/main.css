@@ -1211,38 +1211,42 @@ body, .crm-wrap {
 }
 
 .mine-page .list .item i.b {
-  background-position: 0 11.1111%;
+  background-position: 0 10%;
 }
 
 .mine-page .list .item i.c {
-  background-position: 0 22.2222%;
+  background-position: 0 20%;
 }
 
 .mine-page .list .item i.d {
-  background-position: 0 33.3333%;
+  background-position: 0 30%;
 }
 
 .mine-page .list .item i.e {
-  background-position: 0 44.4444%;
+  background-position: 0 40%;
 }
 
 .mine-page .list .item i.f {
-  background-position: 0 55.5555%;
+  background-position: 0 50%;
 }
 
 .mine-page .list .item i.g {
-  background-position: 0 66.6666%;
+  background-position: 0 60%;
 }
 
 .mine-page .list .item i.h {
-  background-position: 0 77.9%;
+  background-position: 0 70%;
 }
 
 .mine-page .list .item i.i {
-  background-position: 0 88.8888%;
+  background-position: 0 80%;
 }
 
 .mine-page .list .item i.j {
+  background-position: 0 90%;
+}
+
+.mine-page .list .item i.k {
   background-position: 0 100%;
 }
 
@@ -3396,149 +3400,153 @@ i.ico-local {
   padding: 0;
 }
 
-.company-page .helperContent i {
+.company-page .helperContent .cell {
+  color: #6E6D6A;
+}
+
+.company-page .helperContent .cell i {
   background: url(../images/helpernew_ico.png) no-repeat;
   background-size: 800% auto;
 }
 
-.company-page .helperContent i.b1 {
+.company-page .helperContent .cell i.b1 {
   background-position: 57.142857% 0;
 }
 
-.company-page .helperContent i.b2 {
+.company-page .helperContent .cell i.b2 {
   background-position: 71.428571% 0;
 }
 
-.company-page .helperContent i.b3 {
+.company-page .helperContent .cell i.b3 {
   background-position: 85.714286% 0;
 }
 
-.company-page .helperContent i.b4 {
+.company-page .helperContent .cell i.b4 {
   background-position: 100% 0;
 }
 
-.company-page .helperContent i.b5 {
+.company-page .helperContent .cell i.b5 {
   background-position: 57.142857% 25%;
 }
 
-.company-page .helperContent i.b6 {
+.company-page .helperContent .cell i.b6 {
   background-position: 71.428571% 25%;
 }
 
-.company-page .helperContent i.b7 {
+.company-page .helperContent .cell i.b7 {
   background-position: 85.714286% 25%;
 }
 
-.company-page .helperContent i.b8 {
+.company-page .helperContent .cell i.b8 {
   background-position: 100% 25%;
 }
 
-.company-page .helperContent i.b9 {
+.company-page .helperContent .cell i.b9 {
   background-position: 57.142857% 50%;
 }
 
-.company-page .helperContent i.b10 {
+.company-page .helperContent .cell i.b10 {
   background-position: 71.428571% 50%;
 }
 
-.company-page .helperContent i.b11 {
+.company-page .helperContent .cell i.b11 {
   background-position: 85.714286% 50%;
 }
 
-.company-page .helperContent i.b12 {
+.company-page .helperContent .cell i.b12 {
   background-position: 100% 50%;
 }
 
-.company-page .helperContent i.b13 {
+.company-page .helperContent .cell i.b13 {
   background-position: 57.142857% 75%;
 }
 
-.company-page .helperContent i.b14 {
+.company-page .helperContent .cell i.b14 {
   background-position: 71.428571% 75%;
 }
 
-.company-page .helperContent i.b15 {
+.company-page .helperContent .cell i.b15 {
   background-position: 85.714286% 75%;
 }
 
-.company-page .helperContent i.b16 {
+.company-page .helperContent .cell i.b16 {
   background-position: 100% 75%;
 }
 
-.company-page .helperContent i.b17 {
+.company-page .helperContent .cell i.b17 {
   background-position: 57.142857% 100%;
 }
 
-.company-page .helperContent i.a1 {
+.company-page .helperContent .cell.active {
+  color: #fff;
+}
+
+.company-page .helperContent .cell.active i.b1 {
   background-position: 0 0;
 }
 
-.company-page .helperContent i.a2 {
+.company-page .helperContent .cell.active i.b2 {
   background-position: 14.285714% 0;
 }
 
-.company-page .helperContent i.a3 {
+.company-page .helperContent .cell.active i.b3 {
   background-position: 28.571429% 0;
 }
 
-.company-page .helperContent i.a4 {
+.company-page .helperContent .cell.active i.b4 {
   background-position: 42.857143% 0;
 }
 
-.company-page .helperContent i.a5 {
+.company-page .helperContent .cell.active i.b5 {
   background-position: 0 25%;
 }
 
-.company-page .helperContent i.a6 {
+.company-page .helperContent .cell.active i.b6 {
   background-position: 14.285714% 25%;
 }
 
-.company-page .helperContent i.a7 {
+.company-page .helperContent .cell.active i.b7 {
   background-position: 28.571429% 25%;
 }
 
-.company-page .helperContent i.a8 {
+.company-page .helperContent .cell.active i.b8 {
   background-position: 42.857143% 25%;
 }
 
-.company-page .helperContent i.a9 {
+.company-page .helperContent .cell.active i.b9 {
   background-position: 0 50%;
 }
 
-.company-page .helperContent i.a10 {
+.company-page .helperContent .cell.active i.b10 {
   background-position: 14.285714% 50%;
 }
 
-.company-page .helperContent i.a11 {
+.company-page .helperContent .cell.active i.b11 {
   background-position: 28.571429% 50%;
 }
 
-.company-page .helperContent i.a12 {
+.company-page .helperContent .cell.active i.b12 {
   background-position: 42.857143% 50%;
 }
 
-.company-page .helperContent i.a13 {
+.company-page .helperContent .cell.active i.b13 {
   background-position: 0 75%;
 }
 
-.company-page .helperContent i.a14 {
+.company-page .helperContent .cell.active i.b14 {
   background-position: 14.285714% 75%;
 }
 
-.company-page .helperContent i.a15 {
+.company-page .helperContent .cell.active i.b15 {
   background-position: 28.571429% 75%;
 }
 
-.company-page .helperContent i.a16 {
+.company-page .helperContent .cell.active i.b16 {
   background-position: 42.857143% 75%;
 }
 
-.company-page .helperContent i.a17 {
+.company-page .helperContent .cell.active i.b17 {
   background-position: 0 100%;
-}
-
-.company-page .helperContent i.active {
-  background-image: url(../images/helper_icon.png);
 }
 
 .company-page .phone i {

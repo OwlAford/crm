@@ -19,7 +19,8 @@
     background-size: 100% auto;
   }
 </style>
- --></head>
+ -->
+</head>
 
 <body>
   <div class="crm-wrap">
@@ -38,14 +39,14 @@
         <div class="card">
           <div class="row tt">
             <div class="cell">FTP净收入基金奖</div>
-            <div class="fc-yellow">100.000.00(元) <span class="dsj"></span></div>
+            <div>100.000.00(元) <span class="dsj"></span></div>
           </div>
           <div class="round-pd24" style="display: none;">100.000.00*2%=2000(元)</div>
         </div>
         <div class="card">
           <div class="row tt">
             <div class="cell">FTP净收入基金奖</div>
-            <div class="fc-yellow">100.000.00(元) <span class="dsj"></span></div>
+            <div>100.000.00(元) <span class="dsj"></span></div>
           </div>
           <div style="display: none; padding-bottom: 0.24rem;">
           <div class="round-pd24 txtMid">十万元以下</div>
@@ -83,14 +84,14 @@
         <div class="card">
           <div class="row tt">
             <div class="cell">存量客户管户奖</div>
-            <div class="fc-yellow">100.000.00(元) <span class="dsj"></span></div>
+            <div>100.000.00(元) <span class="dsj"></span></div>
           </div>
           <div class="round-pd24" style="display: none;">100.000.00*2%=2000(元)</div>
         </div>
         <div class="card">
           <div class="row tt">
             <div class="cell">存款规模加价奖</div>
-            <div class="fc-yellow">100.000.00(元) <span class="dsj"></span></div>
+            <div>100.000.00(元) <span class="dsj"></span></div>
           </div>
           <div class="round-pd24" style="display: none;">100.000.00*2%=2000(元)</div>
         </div>
@@ -98,18 +99,25 @@
     </div>
   </div>
   <script type="text/javascript">
-    $("span.dsj").each(function(index){
-             $(this).click(function(){
-                $(this).parents("div.row").next("div").slideToggle(100);
-     })
+    $(function () {
+      // 切换皮肤 
+      changeTheme()
+
+      $("span.dsj").each(function (index) {
+        $(this).click(function () {
+          $(this).parents("div.row").next("div").slideToggle(100);
+        })
+      })
+
+      $("span.dsj").click(function () {
+        if ($(this).hasClass('zsj')) {
+          $(this).removeClass('zsj');
+        } else {
+          $(this).addClass('zsj');
+        }
+      })
+
     })
-    $("span.dsj").click(function(){
-       if ($(this).hasClass('zsj')){
-        $(this).removeClass('zsj');
-       } else {
-        $(this).addClass('zsj');
-       }
-    });
   </script>
 </body>
 </html>

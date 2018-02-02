@@ -18,7 +18,7 @@
     right: 0;
     top: 50%;
     margin-top: -0.22rem;
-    background: url(../images/radio.png) no-repeat;
+    background: url(../images/radio_light.png) no-repeat;
     background-size: 100% auto;
     background-position: 0 100%;
 
@@ -36,7 +36,7 @@
       vertical-align: middle;
       height: 0.44rem;
       width: 0.44rem;
-      border: 1px solid #7f8cab;
+      border: 1px solid #d2d2d2;
       color: #7f8cab;
       line-height: 0.44rem;
       text-align: center;
@@ -55,7 +55,7 @@
       vertical-align: middle;
       height: 0.44rem;
       line-height: 0.44rem;
-      border: 1px solid #7f8cab;
+      border: 1px solid #d2d2d2;
       margin: 0 0.08rem;
       background-color: rgba(255, 255, 255, .1);
 
@@ -73,7 +73,7 @@
     display: inline-block;
     vertical-align: middle;
     margin: -0.04rem 0.1rem 0 0;
-    background: url(../images/refresh-cio.png) no-repeat;
+    background: url(../images/refresh-cio_light.png) no-repeat;
     background-size: 100% auto;
   }
 
@@ -130,7 +130,7 @@
     width: 22px;
     display: inline-block;
     vertical-align: middle;
-    background: url(../images/ml-ico.png) 0 100% no-repeat;
+    background: url(../images/ml-ico_light.png) 0 100% no-repeat;
     background-size: 100% auto;
   }
 
@@ -150,12 +150,12 @@
       height: 1.3rem;
       width: 1.3rem;
       margin: 0 auto 0.3rem;
-      background: url(../images/wallet.png) center center no-repeat;
+      background: url(../images/wallet_light.png) center center no-repeat;
       background-size: auto 100%;
     }
 
     i.box {
-      background-image: url(../images/box.png);
+      background-image: url(../images/box_light.png);
     }
   }
 
@@ -240,10 +240,6 @@
   .area {
     background-color: #fff;
 
-    &.area-theme-blue {
-      @include bgBlueOpacity(14);
-    }
-
     & + .area {
       margin-top: 0.26rem;
     }
@@ -266,8 +262,8 @@
     }
  
     .mid {
-       text-align:center;
-       opacity:0.9;
+      text-align:center;
+      opacity:0.9;
     }
   }
 
@@ -317,7 +313,7 @@
       color: #757575;
 
       &::-webkit-input-placeholder {
-        color: rgba(255, 255, 255, .6);
+        color: #999;
       }
     }
   }
@@ -369,18 +365,19 @@
     textarea {
       width: 100%;
       border: none;
-      @include bgWhiteOpacity(10);
+      background-color: #f5f5f5;
       padding: 0.2rem;
-      color: #fff;
+      color: #757575;
+      font-size: 14px;
 
       &::-webkit-input-placeholder {
-        color: rgba(255, 255, 255, .6);
+        color: #999;
       }
     }
   }
 
   .fmList {
-    color: #bcbcbc;
+    background-color: #fff;
 
     .row {
       background-color: rgba(255, 255, 255, .04);
@@ -388,7 +385,7 @@
       line-height: 1.2;
 
       & + .row {
-        border-top: 1px solid #324672;
+        border-top: 1px solid #ececec;
       }
     }
   }
@@ -412,12 +409,13 @@
     display: inline-block;
     width: 30%;
     margin: 1.64%;
-    @include opacityBorder(all, 10);
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
 
     &.active {
-      background-color: #2f577a;
-      color: $fcBlue;
-      border-color: #4daec5;
+      background-color: #5ba6ff;
+      color: #fff;
+      border-color: #5ba6ff;
     }
   }
 
@@ -466,7 +464,6 @@
         background-color: $fcBlue;
       }
       .remind {
-        font-family: ﻿PingFang-SC-Bold;
         font-size: 15px;
         font-weight: normal;
         letter-spacing: 0px;
@@ -526,12 +523,13 @@
 }
 
 .rankList {
+  background-color: #fff;
+
   .item {
-    @include bgWhiteOpacity(4);
     padding: 0.38rem 0.3rem 0.38rem 1.04rem;
 
     & + .item {
-      @include opacityBorder(top, 6);
+      border-top: 1px solid #f2f2f2;
     }
 
     .name {
@@ -594,13 +592,13 @@
   table {
     width: 100%;
     text-align: center;
-    background-color: rgba(78, 78, 124, .3);
+    background-color: #fff;
     font-size: 13px;
 
     tr {
       & + tr {
         td {
-          @include opacityBorder(top, 4);
+          border-top: 1px solid #f2f2f2;
         }
       }
     }
@@ -611,15 +609,17 @@
 
     th {
       font-weight: normal;
-      background-color: rgba(78, 78, 124, .4);
+      background-color: #abd6f6;
+      color: #fff;
+    
       & + th {
-        @include opacityBorder(left, 7);
+        border-left: 1px solid #e3f2fd;
       }
     }
 
     td {
       & + td {
-        @include opacityBorder(left, 4);
+        border-left: 1px solid #f2f2f2;
       }
     }
   }
@@ -631,7 +631,7 @@
     height: 2.2rem;
     overflow: hidden;
     margin: 0.3rem auto;
-    border: 0.06rem solid #8d8fbf;
+    border: 0.06rem solid #C9E2FF;
 
     img {
       width: 100%;
@@ -650,7 +650,7 @@
     }
 
     .screenShot, .addBtn {
-      border: 2px solid #9da1c1;
+      border: 2px solid #bfbfbf;
       margin: 0.1rem;
       display: inline-block;
       vertical-align: middle;
@@ -664,7 +664,7 @@
         display: block;
         height: 0.06rem;
         width: 0.76rem;
-        background-color: #9da1c1;
+        background-color: #bfbfbf;
         position: absolute;
         left: 50%;
         top: 50%;
@@ -677,10 +677,10 @@
     }
 
     .close {
-      height: 0.46rem;
-      width: 0.46rem;
-      background: rgba(255, 255, 255, .1) url(../images/close.png) no-repeat center center;
-      background-size: 0.2rem auto;
+      height: 0.4rem;
+      width: 0.4rem;
+      background: #9dcaff url(../images/close.png) no-repeat center center;
+      background-size: 0.16rem auto;
       display: block;
       position: absolute;
       right: -0.1rem;

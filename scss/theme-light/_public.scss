@@ -10,7 +10,7 @@ button, input {
 
 body {
   min-height: 100%;
-  background-color: #eef6f6;
+  background-color: #f5f5f5;
   color: #454f56;
   font-size: 13px;
   line-height: 1.5;
@@ -72,7 +72,8 @@ body, .crm-wrap {
 }
 
 .fc-txt {
-  color: #d0d2e2;
+  font-size: 13px;
+  color: #999;
 }
 
 .ta-r {
@@ -108,7 +109,7 @@ body, .crm-wrap {
 }
 .round-pd40 {
   padding: 0.4rem;
-  color:#77e1fa;
+  color:#5ba6ff;
   text-align:center;
 }
 .round-pdb24 {
@@ -116,7 +117,7 @@ body, .crm-wrap {
 }
 .round-mg10 {
   margin:0 0.2rem;
-  background-color:rgba(255, 255, 255, .06);
+  background-color:#eee;
 }
 .round-mgb20 {
   margin-bottom:0.2rem;
@@ -130,8 +131,9 @@ body, .crm-wrap {
 .opacity21 {
   background-color:rgba(125, 230, 255, .21);
 }
-.bd1{
-  border: 1px solid #6e8797;
+.bd1 {
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
 }
 .hide {
   display: none;

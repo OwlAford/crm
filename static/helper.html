@@ -70,23 +70,29 @@
         <div class="ta-c round-pd20">扫描二维码面对面邀请</div>
       </div>
   </div> 
-  <script type="text/javascript">      
-        $('.mask2').click(function(){
-            $(".mask2,.qaq").hide();
-        });
-       var allQaq = $(".qaq");
-       var $qrC = $(".qrC");
-            len = $qrC.length;
-            for(var i = 0; i<len; i++){
-               $(".qrC").eq(i).attr("data-index",i);
-            }
-       
-            $qrC.click(function(){
-                console.log(this.dataset.index);
-                $('.mask2').show();
-                allQaq.eq(this.dataset.index).show();
-                console.log(allQaq.eq(this.dataset.index));
-            });
+  <script type="text/javascript">    
+  $(function () {
+    // 切换皮肤 
+    changeTheme()
+
+    $('.mask2').click(function () {
+        $(".mask2,.qaq").hide();
+    })
+    
+    var allQaq = $(".qaq");
+    var $qrC = $(".qrC");
+    len = $qrC.length;
+    for (var i = 0; i<len; i++) {
+      $(".qrC").eq(i).attr("data-index", i);
+    }
+
+    $qrC.click(function () {
+      console.log(this.dataset.index);
+      $('.mask2').show();
+      allQaq.eq(this.dataset.index).show();
+      console.log(allQaq.eq(this.dataset.index));
+    })
+  })  
   </script>
 </body>
 </html>

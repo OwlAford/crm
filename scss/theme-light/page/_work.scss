@@ -20,24 +20,24 @@
 
     .desc {
       padding: 0.24rem 0.3rem;
-      @include opacityBorder(all, 8);
+      border-top: 1px solid #e5e5e5;
     }
 
     .textDesc {
       padding: 0.3rem 0.4rem;
 
       & + .local {
-        @include opacityBorder(top, 8);
+        border-top: 1px solid #e5e5e5;
       }
 
       textarea {
         width: 100%;
-        color: #fff;
+        color: #757575;
         background: none;
         border: none;
 
         &::-webkit-input-placeholder {
-          color: rgba(255, 255, 255, .6);
+          color: #999;
           font-size: 14px;
         }
       }
@@ -55,7 +55,7 @@
         text-align: center;
         line-height: 20px;
         border-radius: 50%;
-        background: #6b7096;
+        background: #ddd;
         margin-left: 5px;
       }
     }
@@ -70,7 +70,7 @@ i.ico-local {
   height: 18px;
   width: 18px;
   vertical-align: middle;
-  background: url(../images/pin.png) no-repeat center center;
+  background: url(../images/pin_light.png) no-repeat center center;
   background-size: 13px auto;
   margin: -2px 5px 0 0;
 }

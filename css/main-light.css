@@ -11,7 +11,7 @@ button, input {
 
 body {
   min-height: 100%;
-  background-color: #eef6f6;
+  background-color: #f5f5f5;
   color: #454f56;
   font-size: 13px;
   line-height: 1.5;
@@ -74,7 +74,8 @@ body, .crm-wrap {
 }
 
 .fc-txt {
-  color: #d0d2e2;
+  font-size: 13px;
+  color: #999;
 }
 
 .ta-r {
@@ -119,7 +120,7 @@ body, .crm-wrap {
 
 .round-pd40 {
   padding: 0.4rem;
-  color: #77e1fa;
+  color: #5ba6ff;
   text-align: center;
 }
 
@@ -129,7 +130,7 @@ body, .crm-wrap {
 
 .round-mg10 {
   margin: 0 0.2rem;
-  background-color: rgba(255, 255, 255, 0.06);
+  background-color: #eee;
 }
 
 .round-mgb20 {
@@ -149,7 +150,8 @@ body, .crm-wrap {
 }
 
 .bd1 {
-  border: 1px solid #6e8797;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
 }
 
 .hide {
@@ -177,7 +179,7 @@ body, .crm-wrap {
   right: 0;
   top: 50%;
   margin-top: -0.22rem;
-  background: url(../images/radio.png) no-repeat;
+  background: url(../images/radio_light.png) no-repeat;
   background-size: 100% auto;
   background-position: 0 100%;
 }
@@ -196,7 +198,7 @@ body, .crm-wrap {
   vertical-align: middle;
   height: 0.44rem;
   width: 0.44rem;
-  border: 1px solid #7f8cab;
+  border: 1px solid #d2d2d2;
   color: #7f8cab;
   line-height: 0.44rem;
   text-align: center;
@@ -215,7 +217,7 @@ body, .crm-wrap {
   vertical-align: middle;
   height: 0.44rem;
   line-height: 0.44rem;
-  border: 1px solid #7f8cab;
+  border: 1px solid #d2d2d2;
   margin: 0 0.08rem;
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -232,7 +234,7 @@ body, .crm-wrap {
   display: inline-block;
   vertical-align: middle;
   margin: -0.04rem 0.1rem 0 0;
-  background: url(../images/refresh-cio.png) no-repeat;
+  background: url(../images/refresh-cio_light.png) no-repeat;
   background-size: 100% auto;
 }
 
@@ -290,7 +292,7 @@ body, .crm-wrap {
   width: 22px;
   display: inline-block;
   vertical-align: middle;
-  background: url(../images/ml-ico.png) 0 100% no-repeat;
+  background: url(../images/ml-ico_light.png) 0 100% no-repeat;
   background-size: 100% auto;
 }
 
@@ -311,12 +313,12 @@ body, .crm-wrap {
   height: 1.3rem;
   width: 1.3rem;
   margin: 0 auto 0.3rem;
-  background: url(../images/wallet.png) center center no-repeat;
+  background: url(../images/wallet_light.png) center center no-repeat;
   background-size: auto 100%;
 }
 
 .crm-wrap .empty-blank i.box {
-  background-image: url(../images/box.png);
+  background-image: url(../images/box_light.png);
 }
 
 .crm-wrap .toTop {
@@ -400,10 +402,6 @@ body, .crm-wrap {
   background-color: #fff;
 }
 
-.crm-wrap .area.area-theme-blue {
-  background-color: rgba(119, 225, 250, 0.14);
-}
-
 .crm-wrap .area + .area {
   margin-top: 0.26rem;
 }
@@ -480,7 +478,7 @@ body, .crm-wrap {
 }
 
 .crm-wrap .ipt input::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  color: #999;
 }
 
 .crm-wrap .list .item {
@@ -532,17 +530,18 @@ body, .crm-wrap {
 .crm-wrap .base-textarea textarea {
   width: 100%;
   border: none;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #f5f5f5;
   padding: 0.2rem;
-  color: #fff;
+  color: #757575;
+  font-size: 14px;
 }
 
 .crm-wrap .base-textarea textarea::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  color: #999;
 }
 
 .crm-wrap .fmList {
-  color: #bcbcbc;
+  background-color: #fff;
 }
 
 .crm-wrap .fmList .row {
@@ -552,7 +551,7 @@ body, .crm-wrap {
 }
 
 .crm-wrap .fmList .row + .row {
-  border-top: 1px solid #324672;
+  border-top: 1px solid #ececec;
 }
 
 .filterList ul {
@@ -572,13 +571,14 @@ body, .crm-wrap {
   display: inline-block;
   width: 30%;
   margin: 1.64%;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
 }
 
 .filterList ul li.active {
-  background-color: #2f577a;
-  color: #2e98e8;
-  border-color: #4daec5;
+  background-color: #5ba6ff;
+  color: #fff;
+  border-color: #5ba6ff;
 }
 
 .filterList ul.col4 li {
@@ -625,7 +625,6 @@ body, .crm-wrap {
 }
 
 .mcList .area .tit .remind {
-  font-family: ﻿PingFang-SC-Bold;
   font-size: 15px;
   font-weight: normal;
   letter-spacing: 0px;
@@ -681,13 +680,16 @@ body, .crm-wrap {
   color: #ff9936;
 }
 
+.rankList {
+  background-color: #fff;
+}
+
 .rankList .item {
-  background-color: rgba(255, 255, 255, 0.04);
   padding: 0.38rem 0.3rem 0.38rem 1.04rem;
 }
 
 .rankList .item + .item {
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-top: 1px solid #f2f2f2;
 }
 
 .rankList .item .name {
@@ -749,12 +751,12 @@ body, .crm-wrap {
 .crm-table table {
   width: 100%;
   text-align: center;
-  background-color: rgba(78, 78, 124, 0.3);
+  background-color: #fff;
   font-size: 13px;
 }
 
 .crm-table table tr + tr td {
-  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  border-top: 1px solid #f2f2f2;
 }
 
 .crm-table table td, .crm-table table th {
@@ -763,15 +765,16 @@ body, .crm-wrap {
 
 .crm-table table th {
   font-weight: normal;
-  background-color: rgba(78, 78, 124, 0.4);
+  background-color: #abd6f6;
+  color: #fff;
 }
 
 .crm-table table th + th {
-  border-left: 1px solid rgba(255, 255, 255, 0.07);
+  border-left: 1px solid #e3f2fd;
 }
 
 .crm-table table td + td {
-  border-left: 1px solid rgba(255, 255, 255, 0.04);
+  border-left: 1px solid #f2f2f2;
 }
 
 .feedback-page .screenShot, .work-page .screenShot, .visit-page .screenShot {
@@ -779,7 +782,7 @@ body, .crm-wrap {
   height: 2.2rem;
   overflow: hidden;
   margin: 0.3rem auto;
-  border: 0.06rem solid #8d8fbf;
+  border: 0.06rem solid #C9E2FF;
 }
 
 .feedback-page .screenShot img, .work-page .screenShot img, .visit-page .screenShot img {
@@ -799,7 +802,7 @@ body, .crm-wrap {
 }
 
 .feedback-page .shot-add .screenShot, .feedback-page .shot-add .addBtn, .work-page .shot-add .screenShot, .work-page .shot-add .addBtn, .visit-page .shot-add .screenShot, .visit-page .shot-add .addBtn {
-  border: 2px solid #9da1c1;
+  border: 2px solid #bfbfbf;
   margin: 0.1rem;
   display: inline-block;
   vertical-align: middle;
@@ -812,7 +815,7 @@ body, .crm-wrap {
   display: block;
   height: 0.06rem;
   width: 0.76rem;
-  background-color: #9da1c1;
+  background-color: #bfbfbf;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -825,10 +828,10 @@ body, .crm-wrap {
 }
 
 .feedback-page .shot-add .close, .work-page .shot-add .close, .visit-page .shot-add .close {
-  height: 0.46rem;
-  width: 0.46rem;
-  background: rgba(255, 255, 255, 0.1) url(../images/close.png) no-repeat center center;
-  background-size: 0.2rem auto;
+  height: 0.4rem;
+  width: 0.4rem;
+  background: #9dcaff url(../images/close.png) no-repeat center center;
+  background-size: 0.16rem auto;
   display: block;
   position: absolute;
   right: -0.1rem;
@@ -1215,7 +1218,7 @@ body, .crm-wrap {
   display: block;
   height: 0.44rem;
   width: 0.4rem;
-  background: url(../images/user_ico.png) no-repeat;
+  background: url(../images/user_ico_light.png) no-repeat;
   background-size: 100% auto;
   position: absolute;
   left: 0.3rem;
@@ -1224,38 +1227,42 @@ body, .crm-wrap {
 }
 
 .mine-page .list .item i.b {
-  background-position: 0 11.1111%;
+  background-position: 0 10%;
 }
 
 .mine-page .list .item i.c {
-  background-position: 0 22.2222%;
+  background-position: 0 20%;
 }
 
 .mine-page .list .item i.d {
-  background-position: 0 33.3333%;
+  background-position: 0 30%;
 }
 
 .mine-page .list .item i.e {
-  background-position: 0 44.4444%;
+  background-position: 0 40%;
 }
 
 .mine-page .list .item i.f {
-  background-position: 0 55.5555%;
+  background-position: 0 50%;
 }
 
 .mine-page .list .item i.g {
-  background-position: 0 66.6666%;
+  background-position: 0 60%;
 }
 
 .mine-page .list .item i.h {
-  background-position: 0 77.9%;
+  background-position: 0 70%;
 }
 
 .mine-page .list .item i.i {
-  background-position: 0 88.8888%;
+  background-position: 0 80%;
 }
 
 .mine-page .list .item i.j {
+  background-position: 0 90%;
+}
+
+.mine-page .list .item i.k {
   background-position: 0 100%;
 }
 
@@ -1520,7 +1527,7 @@ body, .crm-wrap {
   display: block;
   height: 0.54rem;
   width: 0.54rem;
-  background: url(../images/timeout_ico.png) no-repeat;
+  background: url(../images/timeout_ico_light.png) no-repeat;
   background-size: 200% auto;
   -webkit-transition: all .3s;
   transition: all .3s;
@@ -1540,7 +1547,7 @@ body, .crm-wrap {
   height: 0.84rem;
   width: 0.84rem;
   padding: 0.15rem;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #e5e5e5;
   border-radius: 50%;
   -webkit-transition: all .3s;
   transition: all .3s;
@@ -1551,7 +1558,7 @@ body, .crm-wrap {
   display: block;
   height: 0.54rem;
   width: 0.54rem;
-  background: url(../images/tack-ico.png) no-repeat;
+  background: url(../images/tack-ico_light.png) no-repeat;
   background-size: 200% auto;
   -webkit-transition: all .3s;
   transition: all .3s;
@@ -1573,7 +1580,7 @@ body, .crm-wrap {
 }
 
 .info-page .timeoutPanel .cell.active i, .info-page .approvPanel .cell.active i {
-  background-color: #deedff;
+  background-color: #d5e8ff;
 }
 
 .info-page .timeoutPanel .cell.active i:after, .info-page .approvPanel .cell.active i:after {
@@ -1697,7 +1704,7 @@ body, .crm-wrap {
   left: 0.28rem;
   top: 50%;
   margin-top: -0.56rem;
-  background: rgba(125, 230, 255, 0.2) url(../images/info_ico.png) no-repeat;
+  background: #deedff url(../images/info_ico_light.png) no-repeat;
   background-size: 100% auto;
 }
 
@@ -1726,6 +1733,7 @@ body, .crm-wrap {
 }
 
 .info-page .infoList > .area i .tip {
+  color: #fff;
   height: 0.84rem;
   width: 0.84rem;
   font-size: 0.44rem;
@@ -1734,7 +1742,7 @@ body, .crm-wrap {
   top: -0.24rem;
   text-align: center;
   line-height: 0.84rem;
-  background-color: #e75a7f;
+  background-color: #fb5f63;
   border-radius: 50%;
   -webkit-transform: scale3d(0.5, 0.5, 0.5);
           transform: scale3d(0.5, 0.5, 0.5);
@@ -2162,7 +2170,7 @@ body, .crm-wrap {
 }
 
 .rank-page .backSearchPanel .inner, .helper-page .backSearchPanel .inner {
-  background-color: rgba(18, 46, 88, 0.8);
+  background-color: #fff;
   text-align: center;
   padding: 0.2rem;
   width: 100%;
@@ -2170,9 +2178,12 @@ body, .crm-wrap {
   left: 0;
   top: 0;
   z-index: 99;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .rank-page .backSearchPanel .inner p, .helper-page .backSearchPanel .inner p {
+  color: #2e98e8;
   line-height: 0.48rem;
 }
 
@@ -2180,7 +2191,7 @@ body, .crm-wrap {
   display: inline-block;
   height: 0.28rem;
   width: 0.28rem;
-  background: url(../images/arrow.png) center center no-repeat;
+  background: url(../images/arrow_light.png) center center no-repeat;
   background-size: 0.24rem auto;
   margin-top: 0.14rem;
 }
@@ -2193,7 +2204,7 @@ body, .crm-wrap {
 .rank-page .allPanel .inner, .helper-page .allPanel .inner {
   padding: 0.1rem 0.2rem;
   width: 100%;
-  background-color: rgba(248, 248, 248, 0.8);
+  background-color: #fff;
   position: fixed;
   z-index: 99;
   left: 0;
@@ -2268,7 +2279,7 @@ body, .crm-wrap {
 }
 
 .rank-page .rankList .item.average, .helper-page .rankList .item.average {
-  color: #fff66e;
+  color: #ffa552;
   font-size: 16px;
   padding: 0.2rem 0.3rem;
   display: -webkit-box;
@@ -2285,12 +2296,12 @@ body, .crm-wrap {
 .rank-page .rankList .item.average .flash, .helper-page .rankList .item.average .flash {
   width: 1.58rem;
   height: 0.6rem;
-  background: url(../images/flash_l.png) no-repeat;
+  background: url(../images/flash_l_light.png) no-repeat;
   background-size: 100% auto;
 }
 
 .rank-page .rankList .item.average .flash.right, .helper-page .rankList .item.average .flash.right {
-  background-image: url(../images/flash_r.png);
+  background-image: url(../images/flash_r_light.png);
 }
 
 .rank-page .departByLine .cell, .helper-page .departByLine .cell {
@@ -2308,7 +2319,7 @@ body, .crm-wrap {
   display: block;
   height: 60%;
   width: 1px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #e5e5e5;
   position: absolute;
   left: 0;
   top: 20%;
@@ -2316,7 +2327,7 @@ body, .crm-wrap {
 
 .rank-page .orderFilterGroup, .visit-page .orderFilterGroup, .helper-page .orderFilterGroup {
   width: 100%;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 1.66rem;
   right: 0;
@@ -2335,17 +2346,17 @@ body, .crm-wrap {
 .rank-page .orderFilterGroup.type2 .itemsBox .orderList:after, .rank-page .orderFilterGroup.type2 .itemsBox .filterList:after, .visit-page .orderFilterGroup.type2 .itemsBox .orderList:after, .visit-page .orderFilterGroup.type2 .itemsBox .filterList:after, .helper-page .orderFilterGroup.type2 .itemsBox .orderList:after, .helper-page .orderFilterGroup.type2 .itemsBox .filterList:after {
   left: auto;
   right: 1.8rem;
-  border-bottom-color: #333969;
+  border-bottom-color: #fff;
 }
 
 .rank-page .orderFilterGroup.type2 .itemsBox .filterList:after, .visit-page .orderFilterGroup.type2 .itemsBox .filterList:after, .helper-page .orderFilterGroup.type2 .itemsBox .filterList:after {
   right: 0.6rem;
-  border-bottom-color: #363569;
+  border-bottom-color: #fff;
 }
 
 .rank-page .orderFilterGroup .itemsBox, .visit-page .orderFilterGroup .itemsBox, .helper-page .orderFilterGroup .itemsBox {
   width: 100%;
-  background: -webkit-gradient(linear, 100% 0%, 0% 100%, from(#373469), to(#25486B));
+  background: #fff;
   border-radius: 0.08rem;
   -webkit-transition: opacity .3s;
   transition: opacity .3s;
@@ -2385,7 +2396,7 @@ body, .crm-wrap {
   right: 0.2rem;
   top: 50%;
   margin-top: -0.17rem;
-  background: url(../images/yes.png) no-repeat center center;
+  background: url(../images/yes_light.png) no-repeat center center;
   background-size: 100% auto;
 }
 
@@ -2395,7 +2406,7 @@ body, .crm-wrap {
   height: 0;
   width: 0;
   border: 0.12rem solid transparent;
-  border-bottom-color: #26476b;
+  border-bottom-color: #fff;
   position: absolute;
   left: 0.6rem;
   top: -0.19rem;
@@ -2403,7 +2414,7 @@ body, .crm-wrap {
 
 .rank-page .orderFilterGroup .itemsBox .filterList:after, .visit-page .orderFilterGroup .itemsBox .filterList:after, .helper-page .orderFilterGroup .itemsBox .filterList:after {
   left: 1.8rem;
-  border-bottom-color: #2E3E6A;
+  border-bottom-color: #fff;
 }
 
 .rank-page .orderFilterGroup .itemsBox .filterList, .visit-page .orderFilterGroup .itemsBox .filterList, .helper-page .orderFilterGroup .itemsBox .filterList {
@@ -2429,19 +2440,13 @@ body, .crm-wrap {
 }
 
 .rank-page .orderFilterGroup .itemsBox .filterList .btnGrp .resetBtn, .visit-page .orderFilterGroup .itemsBox .filterList .btnGrp .resetBtn, .helper-page .orderFilterGroup .itemsBox .filterList .btnGrp .resetBtn {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.rank-page .orderFilterGroup .itemsBox .filterList .btnGrp .resetBtn:active, .visit-page .orderFilterGroup .itemsBox .filterList .btnGrp .resetBtn:active, .helper-page .orderFilterGroup .itemsBox .filterList .btnGrp .resetBtn:active {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #eee;
 }
 
 .rank-page .orderFilterGroup .itemsBox .filterList .btnGrp .okBtn, .visit-page .orderFilterGroup .itemsBox .filterList .btnGrp .okBtn, .helper-page .orderFilterGroup .itemsBox .filterList .btnGrp .okBtn {
-  background-color: #4ac8e6;
-}
-
-.rank-page .orderFilterGroup .itemsBox .filterList .btnGrp .okBtn:active, .visit-page .orderFilterGroup .itemsBox .filterList .btnGrp .okBtn:active, .helper-page .orderFilterGroup .itemsBox .filterList .btnGrp .okBtn:active {
-  background-color: #2faddb;
+  color: #fff;
+  background-color: #006cd1;
+  background-image: -webkit-linear-gradient(180deg, #29bdf1, #006cd1);
 }
 
 .rank-page .orderFilterGroup .itemsBox .filterList .typeGroup, .visit-page .orderFilterGroup .itemsBox .filterList .typeGroup, .helper-page .orderFilterGroup .itemsBox .filterList .typeGroup {
@@ -2468,25 +2473,24 @@ body, .crm-wrap {
 }
 
 .rank-page .customerList .card, .visit-page .customerList .card, .helper-page .customerList .card {
-  background-color: rgba(119, 225, 250, 0.26);
+  background-color: #fff;
   margin-bottom: 0.24rem;
 }
 
-.rank-page .customerList .card.type2, .visit-page .customerList .card.type2, .helper-page .customerList .card.type2 {
-  background-color: rgba(138, 149, 255, 0.26);
-}
-
 .rank-page .customerList .card.type2 .tt, .visit-page .customerList .card.type2 .tt, .helper-page .customerList .card.type2 .tt {
-  background-color: rgba(138, 149, 255, 0.2);
+  border-top: 3px solid #c5caff;
+  color: #707dfe;
 }
 
 .rank-page .customerList .card .tt, .visit-page .customerList .card .tt, .helper-page .customerList .card .tt {
-  background-color: rgba(119, 225, 250, 0.2);
+  color: #2e98e8;
   padding: 0.24rem;
+  border-bottom: 1px solid #ececec;
+  border-top: 3px solid #c6e6ff;
 }
 
 .rank-page .customerList .card .tt .state, .visit-page .customerList .card .tt .state, .helper-page .customerList .card .tt .state {
-  color: #71eef0;
+  color: #2e98e8;
   padding-left: 0.1rem;
 }
 
@@ -2578,7 +2582,9 @@ body, .crm-wrap {
 .backSearchPane2 table {
   text-align: center;
   width: 100%;
-  background-color: rgba(254, 228, 122, 0.3);
+  background-color: #59a3ff;
+  background-image: -webkit-linear-gradient(270deg, #7fc8ff, #59a3ff);
+  color: #fff;
 }
 
 .backSearchPane2 table td {
@@ -2594,7 +2600,7 @@ body, .crm-wrap {
 }
 
 .backSearchPane2 table .ttt th i {
-  background: url(../images/usershow_ico.png);
+  background: url(../images/usershow_ico_light.png);
   display: inline-block;
   height: 0.4rem;
   width: 0.4rem;
@@ -2622,7 +2628,7 @@ body, .crm-wrap {
   height: 20px;
   width: 20px;
   vertical-align: middle;
-  background: url(../images/search_ico.png) no-repeat 100% 0;
+  background: url(../images/search_ico_light.png) no-repeat 100% 0;
   background-size: 200% auto;
   margin: -2px 5px 0 0;
 }
@@ -2663,7 +2669,7 @@ body, .crm-wrap {
 
 .work-page .userDtail .desc, .visit-page .userDtail .desc {
   padding: 0.24rem 0.3rem;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid #e5e5e5;
 }
 
 .work-page .userDtail .textDesc, .visit-page .userDtail .textDesc {
@@ -2671,18 +2677,18 @@ body, .crm-wrap {
 }
 
 .work-page .userDtail .textDesc + .local, .visit-page .userDtail .textDesc + .local {
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid #e5e5e5;
 }
 
 .work-page .userDtail .textDesc textarea, .visit-page .userDtail .textDesc textarea {
   width: 100%;
-  color: #fff;
+  color: #757575;
   background: none;
   border: none;
 }
 
 .work-page .userDtail .textDesc textarea::-webkit-input-placeholder, .visit-page .userDtail .textDesc textarea::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  color: #999;
   font-size: 14px;
 }
 
@@ -2699,7 +2705,7 @@ body, .crm-wrap {
   text-align: center;
   line-height: 20px;
   border-radius: 50%;
-  background: #6b7096;
+  background: #ddd;
   margin-left: 5px;
 }
 
@@ -2711,7 +2717,7 @@ i.ico-local {
   height: 18px;
   width: 18px;
   vertical-align: middle;
-  background: url(../images/pin.png) no-repeat center center;
+  background: url(../images/pin_light.png) no-repeat center center;
   background-size: 13px auto;
   margin: -2px 5px 0 0;
 }
@@ -2722,6 +2728,8 @@ i.ico-local {
 
 .feedback-page .filterList, .visit-page .filterList {
   padding: 0.2rem;
+  background-color: #fff;
+  margin-bottom: 0.2rem;
 }
 
 .feedback-page .filterList .title, .visit-page .filterList .title {
@@ -2733,7 +2741,8 @@ i.ico-local {
 }
 
 .feedback-page .descCnt, .visit-page .descCnt {
-  padding: 0 0.34rem;
+  padding: 0 0.34rem 0.2rem;
+  background-color: #fff;
 }
 
 .feedback-page .mcList .screenShot, .visit-page .mcList .screenShot {
@@ -2770,8 +2779,9 @@ i.ico-local {
   margin: 0.1rem 0.1rem;
   padding: 0.28rem 0;
   text-align: center;
-  background: #25476d url(../images/wave.png) no-repeat 0 bottom;
+  background: #5ba6ff url(../images/wave_light.png) no-repeat 0 bottom;
   background-size: 100% auto;
+  color: #fff;
 }
 
 .task-page .bank-list .item:active {
@@ -2783,7 +2793,7 @@ i.ico-local {
 }
 
 .task-page .mcList .item {
-  color: #d0d2e2;
+  color: #757575;
 }
 
 .task-page .mcList .item + .item {
@@ -2802,8 +2812,8 @@ i.ico-local {
   content: "";
   display: block;
   width: 1px;
-  background-color: #dcdcdc;
-  opacity: .1;
+  background-color: #5ba6ff;
+  opacity: .8;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -2812,7 +2822,7 @@ i.ico-local {
 }
 
 .task-page .mcList .item .area.timeLine .card {
-  background-color: rgba(66, 87, 133, 0.4);
+  background-color: #eef6ff;
   padding: 0.2rem;
 }
 
@@ -2826,7 +2836,7 @@ i.ico-local {
   height: 0;
   width: 0;
   border: 6px solid transparent;
-  border-color: transparent rgba(66, 87, 133, 0.4) transparent transparent;
+  border-color: transparent #eef6ff transparent transparent;
   position: absolute;
   left: -12px;
   margin-top: -6px;
@@ -2839,7 +2849,7 @@ i.ico-local {
   height: 8px;
   width: 8px;
   border-radius: 50%;
-  background-color: #38d1f5;
+  background-color: #5ba6ff;
   position: absolute;
   margin-top: -4px;
   margin-left: -4px;
@@ -2853,12 +2863,13 @@ i.ico-local {
   width: 1.2rem;
   line-height: 1.2rem;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #eef6ff;
   font-size: 14px;
   position: absolute;
   margin-top: -0.6rem;
   top: 0.6rem;
   left: -1.8rem;
+  color: #5ba6ff;
 }
 
 .task-page .mcList .item .area.timeLine .card .editor .ago {
@@ -2882,12 +2893,14 @@ i.ico-local {
   height: 0.98rem;
   line-height: 0.98rem;
   text-align: center;
-  background-color: #324672;
-  color: #77e1fa;
+  background-color: #e5e5e5;
+  background-image: none;
+  color: #757575;
 }
 
 .task-page .control-fixed .inner .allow {
-  background-color: #11b7de;
+  background-color: #006cd1;
+  background-image: -webkit-linear-gradient(180deg, #29bdf1, #006cd1);
   color: #fff;
 }
 
@@ -2898,7 +2911,7 @@ i.ico-local {
   left: 50%;
   top: 50%;
   margin: -2.34rem 0 0 -3.2rem;
-  background-image: -webkit-linear-gradient(135deg, #373469, #25486b);
+  background-color: #fff;
   border-radius: 0.08rem;
   padding: 0.2rem;
 }
@@ -2910,7 +2923,7 @@ i.ico-local {
 
 .task-page .approvalBox .textArea {
   padding: 0.1rem;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #eee;
 }
 
 .task-page .approvalBox .textArea textarea {
@@ -2918,12 +2931,12 @@ i.ico-local {
   height: 1.86rem;
   background: none;
   border: none;
-  color: #fff;
+  color: #757575;
   font-size: 13px;
 }
 
 .task-page .approvalBox .textArea textarea::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.3);
+  color: 999;
 }
 
 .task-page .approvalBox .ctrBtnGrp {
@@ -2942,7 +2955,7 @@ i.ico-local {
 .task-page .approvalBox i.close {
   height: 0.46rem;
   width: 0.46rem;
-  background: rgba(255, 255, 255, 0.1) url(../images/close.png) no-repeat center center;
+  background: rgba(0, 0, 0, 0.2) url(../images/close.png) no-repeat center center;
   background-size: 0.2rem auto;
   display: block;
   position: absolute;
@@ -2961,7 +2974,6 @@ i.ico-local {
   left: 0;
   top: 0;
   z-index: 99;
-  background-color: rgba(41, 50, 97, 0.8);
 }
 
 .machine-page .switch-item {
@@ -3034,7 +3046,7 @@ i.ico-local {
   margin-top: -32px;
   padding: 4px;
   border-radius: 100%;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #deedff;
 }
 
 .machine-page .mcList .roundBtn:after {
@@ -3044,12 +3056,13 @@ i.ico-local {
   line-height: 56px;
   font-size: 12px;
   border-radius: 100%;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #aad1ff;
+  color: #fff;
 }
 
 .machine-page .mcList .roundBtn.active:after {
   content: "已签到";
-  background-color: #38d1f5;
+  background-color: #5ba6ff;
 }
 
 .machine-page .setPanel {
@@ -3057,16 +3070,12 @@ i.ico-local {
 }
 
 .machine-page .setPanel .mlBtn {
-  color: #77e1fa;
+  color: #fff;
   display: inline-block;
-  background-color: rgba(119, 225, 250, 0.1);
+  background-color: #5ba6ff;
   padding: 0.1rem;
-  border: 1px solid rgba(119, 225, 250, 0.2);
   font-size: 13px;
-}
-
-.machine-page .setPanel .mlBtn:active {
-  background-color: rgba(119, 225, 250, 0.2);
+  border-radius: 3px;
 }
 
 .machine-page .setPanel .mlBtn:before {
@@ -3076,7 +3085,7 @@ i.ico-local {
   width: 20px;
   font-size: 13px;
   vertical-align: middle;
-  background: url(../images/ml-ico.png) no-repeat;
+  background: url(../images/ml-ico_light.png) no-repeat;
   background-size: 100% auto;
   margin: -2px 4px 0 0;
 }
@@ -3096,13 +3105,12 @@ i.ico-local {
 .machine-page .setPanel .ipt {
   width: 1.74rem;
   padding: 0.1rem;
-  border: 1px solid rgba(119, 225, 250, 0.1);
+  border: 1px solid #e5e5e5;
 }
 
 .machine-page .setPanel .ipt input {
   text-align: center;
   line-height: 20px;
-  color: rgba(255, 255, 255, 0.6);
 }
 
 .machine-page .timeTitle {
@@ -3123,7 +3131,7 @@ i.ico-local {
   top: 0;
   bottom: 0;
   width: 1px;
-  background-color: rgba(255, 255, 255, 0.08);
+  background-color: #bddbff;
 }
 
 .machine-page .timeLine .item {
@@ -3135,12 +3143,13 @@ i.ico-local {
   display: block;
   height: 8px;
   width: 8px;
-  background-color: #38d1f5;
+  background-color: #5ba6ff;
   border-radius: 50%;
   position: absolute;
   left: -0.2rem;
   top: 50%;
   margin: -4px 0 0 -4px;
+  z-index: 9;
 }
 
 .machine-page .timeLine .item .t2 {
@@ -3226,19 +3235,19 @@ i.ico-local {
 }
 
 .visit-page .card-title {
-  background-color: rgba(119, 225, 250, 0.14);
+  background-color: #fff;
+  color: #5ba6ff;
 }
 
 .visit-page .card-title .level {
-  opacity: .6;
   font-size: 13px;
 }
 
 .visit-page .card-title .visit-label {
-  color: #71eef0;
+  color: #5ba6ff;
   font-size: 0.12rem;
   padding: 0.06rem 0.1rem;
-  border: 1px solid #71eef0;
+  border: 1px solid #5ba6ff;
   margin: 0 0.08rem;
 }
 
@@ -3256,7 +3265,7 @@ i.ico-local {
 
 .visit-page .visit-type-title {
   padding: 0.4rem 0.3rem 0.4rem 1.2rem;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #fff;
 }
 
 .visit-page .userList {
@@ -3273,7 +3282,7 @@ i.ico-local {
   position: fixed;
   left: 0;
   top: 0.88rem;
-  background-color: rgba(10, 24, 75, 0.96);
+  background-color: #f5f5f5;
   z-index: 99;
 }
 
@@ -3286,7 +3295,7 @@ i.ico-local {
 }
 
 .visit-page .searchFilter .inner .searchIpt input::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.3);
+  color: #999;
 }
 
 .visit-page .searchFilter .inner .cancel {
@@ -3298,7 +3307,7 @@ i.ico-local {
 .visit-page .searchFilter .inner .calendar {
   line-height: 0.6rem;
   padding: 1px 1px 1px 0.76rem;
-  background: url(../images/calendar.png) no-repeat 0.16rem center;
+  background: url(../images/calendar_light.png) no-repeat 0.16rem center;
   background-size: 0.42rem;
   overflow: hidden;
   width: 4.56rem;
@@ -3313,7 +3322,7 @@ i.ico-local {
 }
 
 .visit-page .searchFilter .inner .calendar .ipt {
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid #e5e5e5;
   font-size: 12px;
   padding: 0 0.08rem;
   -webkit-transition: opacity .3s;
@@ -3355,12 +3364,12 @@ i.ico-local {
 }
 
 .company-page .plana {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid #ececec;
   font-size: 16px;
 }
 
 .company-page .bianju {
-  padding: 0.34rem 0 0.34rem 0.27rem;
+  padding: 0.3rem;
 }
 
 .company-page .searchLabels {
@@ -3373,7 +3382,7 @@ i.ico-local {
 
 .company-page .findk {
   display: inline-block;
-  background-color: #38406e;
+  background-color: #eee;
   line-height: 0.5rem;
   padding: 0.1rem 0.2rem;
 }
@@ -3389,7 +3398,7 @@ i.ico-local {
 .company-page .helperI i {
   height: 0.5rem;
   width: 0.5rem;
-  background: url(../images/helper1_ico.png) no-repeat;
+  background: url(../images/helper1_ico_light.png) no-repeat;
   background-size: 200% auto;
   vertical-align: middle;
   margin-right: 0.1rem;
@@ -3430,7 +3439,11 @@ i.ico-local {
 
 .company-page .helperCode {
   padding: 0.2rem 0 0.2rem 0.2rem;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #eef6ff;
+}
+
+.company-page .helperCode i.f {
+  background-color: #dfe7f0;
 }
 
 .company-page .helperTable {
@@ -3446,153 +3459,157 @@ i.ico-local {
   padding: 0;
 }
 
-.company-page .helperContent i {
-  background: url(../images/helpernew_ico.png) no-repeat;
+.company-page .helperContent .cell {
+  color: #bfbfbf;
+}
+
+.company-page .helperContent .cell i {
+  background: url(../images/helpernew_ico_light.png) no-repeat;
   background-size: 800% auto;
 }
 
-.company-page .helperContent i.b1 {
+.company-page .helperContent .cell i.b1 {
   background-position: 57.142857% 0;
 }
 
-.company-page .helperContent i.b2 {
+.company-page .helperContent .cell i.b2 {
   background-position: 71.428571% 0;
 }
 
-.company-page .helperContent i.b3 {
+.company-page .helperContent .cell i.b3 {
   background-position: 85.714286% 0;
 }
 
-.company-page .helperContent i.b4 {
+.company-page .helperContent .cell i.b4 {
   background-position: 100% 0;
 }
 
-.company-page .helperContent i.b5 {
+.company-page .helperContent .cell i.b5 {
   background-position: 57.142857% 25%;
 }
 
-.company-page .helperContent i.b6 {
+.company-page .helperContent .cell i.b6 {
   background-position: 71.428571% 25%;
 }
 
-.company-page .helperContent i.b7 {
+.company-page .helperContent .cell i.b7 {
   background-position: 85.714286% 25%;
 }
 
-.company-page .helperContent i.b8 {
+.company-page .helperContent .cell i.b8 {
   background-position: 100% 25%;
 }
 
-.company-page .helperContent i.b9 {
+.company-page .helperContent .cell i.b9 {
   background-position: 57.142857% 50%;
 }
 
-.company-page .helperContent i.b10 {
+.company-page .helperContent .cell i.b10 {
   background-position: 71.428571% 50%;
 }
 
-.company-page .helperContent i.b11 {
+.company-page .helperContent .cell i.b11 {
   background-position: 85.714286% 50%;
 }
 
-.company-page .helperContent i.b12 {
+.company-page .helperContent .cell i.b12 {
   background-position: 100% 50%;
 }
 
-.company-page .helperContent i.b13 {
+.company-page .helperContent .cell i.b13 {
   background-position: 57.142857% 75%;
 }
 
-.company-page .helperContent i.b14 {
+.company-page .helperContent .cell i.b14 {
   background-position: 71.428571% 75%;
 }
 
-.company-page .helperContent i.b15 {
+.company-page .helperContent .cell i.b15 {
   background-position: 85.714286% 75%;
 }
 
-.company-page .helperContent i.b16 {
+.company-page .helperContent .cell i.b16 {
   background-position: 100% 75%;
 }
 
-.company-page .helperContent i.b17 {
+.company-page .helperContent .cell i.b17 {
   background-position: 57.142857% 100%;
 }
 
-.company-page .helperContent i.a1 {
+.company-page .helperContent .cell.active {
+  color: #757575;
+}
+
+.company-page .helperContent .cell.active i.b1 {
   background-position: 0 0;
 }
 
-.company-page .helperContent i.a2 {
+.company-page .helperContent .cell.active i.b2 {
   background-position: 14.285714% 0;
 }
 
-.company-page .helperContent i.a3 {
+.company-page .helperContent .cell.active i.b3 {
   background-position: 28.571429% 0;
 }
 
-.company-page .helperContent i.a4 {
+.company-page .helperContent .cell.active i.b4 {
   background-position: 42.857143% 0;
 }
 
-.company-page .helperContent i.a5 {
+.company-page .helperContent .cell.active i.b5 {
   background-position: 0 25%;
 }
 
-.company-page .helperContent i.a6 {
+.company-page .helperContent .cell.active i.b6 {
   background-position: 14.285714% 25%;
 }
 
-.company-page .helperContent i.a7 {
+.company-page .helperContent .cell.active i.b7 {
   background-position: 28.571429% 25%;
 }
 
-.company-page .helperContent i.a8 {
+.company-page .helperContent .cell.active i.b8 {
   background-position: 42.857143% 25%;
 }
 
-.company-page .helperContent i.a9 {
+.company-page .helperContent .cell.active i.b9 {
   background-position: 0 50%;
 }
 
-.company-page .helperContent i.a10 {
+.company-page .helperContent .cell.active i.b10 {
   background-position: 14.285714% 50%;
 }
 
-.company-page .helperContent i.a11 {
+.company-page .helperContent .cell.active i.b11 {
   background-position: 28.571429% 50%;
 }
 
-.company-page .helperContent i.a12 {
+.company-page .helperContent .cell.active i.b12 {
   background-position: 42.857143% 50%;
 }
 
-.company-page .helperContent i.a13 {
+.company-page .helperContent .cell.active i.b13 {
   background-position: 0 75%;
 }
 
-.company-page .helperContent i.a14 {
+.company-page .helperContent .cell.active i.b14 {
   background-position: 14.285714% 75%;
 }
 
-.company-page .helperContent i.a15 {
+.company-page .helperContent .cell.active i.b15 {
   background-position: 28.571429% 75%;
 }
 
-.company-page .helperContent i.a16 {
+.company-page .helperContent .cell.active i.b16 {
   background-position: 42.857143% 75%;
 }
 
-.company-page .helperContent i.a17 {
+.company-page .helperContent .cell.active i.b17 {
   background-position: 0 100%;
 }
 
-.company-page .helperContent i.active {
-  background-image: url(../images/helper_icon.png);
-}
-
 .company-page .phone i {
-  background: url(../images/cus_info_ico.png) no-repeat;
+  background: url(../images/cus_info_ico_light.png) no-repeat;
   background-size: 100% auto;
   vertical-align: middle;
 }
@@ -3605,18 +3622,18 @@ i.ico-local {
   display: inline-block;
   height: 0.4rem;
   width: 0.4rem;
-  background: url(../images/calendar.png) no-repeat;
+  background: url(../images/calendar_light.png) no-repeat;
   background-size: 100% auto;
   vertical-align: sub;
 }
 
 .company-page .goldIco i.b {
-  background: url(../images/calendar_right.png) center center no-repeat;
+  background: url(../images/calendar_right_light.png) center center no-repeat;
   background-size: 150% auto;
 }
 
 .company-page .goldIco i.c {
-  background: url(../images/gold.png) center center no-repeat;
+  background: url(../images/gold_light.png) center center no-repeat;
   background-size: 100% auto;
   margin-right: 0.1rem;
 }
@@ -3627,7 +3644,7 @@ i.ico-local {
   height: 0;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  border-top: 6px solid white;
+  border-top: 6px solid #c9c9c9;
   margin-left: 0.1rem;
   -webkit-transition: all .1s;
   transition: all .1s;
@@ -3639,7 +3656,7 @@ i.ico-local {
 }
 
 .company-page .helperMathI .cell i {
-  background: url(../images/helper-taxMath.png) no-repeat;
+  background: url(../images/helper-taxMath_light.png) no-repeat;
   background-size: 200% auto;
   width: 0.8rem;
   height: 0.8rem;
@@ -3666,7 +3683,7 @@ i.ico-local {
 }
 
 .company-page .helperMathI .active p {
-  color: #ffa452;
+  color: #5ba6ff;
 }
 
 .company-page .inbk {
@@ -3678,7 +3695,8 @@ i.ico-local {
 }
 
 .company-page .active2 {
-  background-color: #6fc2e1;
+  background-color: #7CB8FF;
+  color: #fff;
 }
 
 .company-page .mathTip {
@@ -3697,6 +3715,7 @@ i.ico-local {
   background: rgba(0, 0, 0, 0.4);
   -webkit-transition: background-color .3s;
   transition: background-color .3s;
+  z-index: 99;
 }
 
 .company-page .popDiv {
@@ -3709,7 +3728,7 @@ i.ico-local {
 
 .company-page .popDiv .popover {
   width: 100%;
-  background: -webkit-gradient(linear, 100% 0%, 0% 100%, from(#373469), to(#25486B));
+  background: #fff;
   border-radius: 0.08rem;
   -webkit-transition: opacity .3s;
   transition: opacity .3s;
@@ -3731,11 +3750,13 @@ i.ico-local {
 }
 
 .company-page .popDiv .popover table td .llTip {
-  background-color: #3b6689;
+  background-color: #89ccff;
+  color: #fff;
+  border-color: #89ccff;
 }
 
 .company-page .popDiv .year {
-  background: -webkit-gradient(linear, 100% 0%, 0% 100%, from(#373469), to(#25486B));
+  background: #fff;
   border-radius: 0.08rem;
   -webkit-transition: opacity .3s;
   transition: opacity .3s;
@@ -3759,6 +3780,7 @@ i.ico-local {
   display: none;
   left: 1.7rem;
   top: 2.0rem;
+  z-index: 120;
 }
 
 .company-page .qaq .qrCode {
