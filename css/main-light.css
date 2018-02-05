@@ -1266,6 +1266,10 @@ body, .crm-wrap {
   background-position: 0 100%;
 }
 
+.mine-page .list .item i.l {
+  background-image: url(../images/theme-ico.png);
+}
+
 .mine-page .list .item .grpTitle {
   position: relative;
 }
@@ -3798,10 +3802,10 @@ i.ico-local {
   margin: 0 auto 0.2rem;
   padding: 0.21rem;
   border-radius: 50%;
-  background-color: #6977ff;
+  background-color: #ff6587;
+  background-image: -webkit-linear-gradient(135deg, #ff6587, #ff989e);
   -webkit-transition: background-color .3s;
   transition: background-color .3s;
-  background-image: none;
 }
 
 .company-page .ico:active {
@@ -3818,51 +3822,48 @@ i.ico-local {
 }
 
 .company-page .ico.b {
-  background-color: #4798ff;
+  background-color: #5ca6ff;
+  background-image: -webkit-linear-gradient(135deg, #5ca6ff, #92dbff);
 }
 
 .company-page .ico.b:after {
   background-position: 0 33.333%;
 }
 
-.company-page .ico.b:active {
-  background-color: #3485ee;
-}
-
 .company-page .ico.c {
-  background-color: #14c29b;
+  background-color: #7b7eff;
+  background-image: -webkit-linear-gradient(135deg, #7b7eff, #a0c0fe);
 }
 
 .company-page .ico.c:after {
   background-position: 0 66.666%;
 }
 
-.company-page .ico.c:active {
-  background-color: #0ab58f;
-}
-
 .company-page .ico.e {
-  background-color: #ffca6f;
+  background-color: #fcb260;
+  background-image: -webkit-linear-gradient(135deg, #fcb260, #fdb25f);
 }
 
 .company-page .ico.e:after {
   background-position: 100% 0;
 }
 
-.company-page .ico.e:active {
-  background-color: #feb944;
-}
-
 .company-page .ico.f {
-  background-color: #fe8f79;
+  background-color: #ff8a73;
+  background-image: -webkit-linear-gradient(135deg, #ff8a73, #ffb2a3);
 }
 
 .company-page .ico.f:after {
   background-position: 100% 33.333%;
 }
 
-.company-page .ico.f:active {
-  background-color: #ff8168;
+.company-page .ico.g {
+  background-color: #ff9434;
+  background-image: -webkit-linear-gradient(135deg, #ff9434, #feb871);
+}
+
+.company-page .ico.g:after {
+  background-position: 100% 66.666%;
 }
 
 .cardLimit-page .switch-item {

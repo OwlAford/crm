@@ -382,12 +382,6 @@
       height: 4rem;
       width: 4rem;
       background-size: 100% auto;
-
-      &.b {
-      }
-      &.c {
-      }
-
     }
 
   }
@@ -413,7 +407,8 @@
       background: url(../images/index_menu2_ico.png) no-repeat;
       background-size: 200% auto;
     }
-     &.b {
+
+    &.b {
       background-color: #4798ff;
       &:after {
         background-position: 0 33.333%;
@@ -423,7 +418,8 @@
         background-color: #3485ee;
       }
     } 
-     &.c {
+
+    &.c {
       background-color: #14c29b;
       &:after {
         background-position: 0 66.666%;
@@ -432,7 +428,8 @@
         background-color: #0ab58f;
       }
     }
-     &.e {
+
+    &.e {
       background-color: #ffca6f;
       &:after {
         background-position: 100% 0;
@@ -441,13 +438,24 @@
         background-color: #feb944;
       }
     }
-     &.f {
+
+    &.f {
       background-color: #fe8f79;
       &:after {
         background-position: 100% 33.333%;
       }
       &:active {
         background-color: #ff8168;
+      }
+    }
+
+    &.g {
+      background-color: #ffb36f;
+      &:after {
+        background-position: 100% 66.666%;
+      }
+      &:active {
+        background-color: #faa65c;
       }
     }
   }

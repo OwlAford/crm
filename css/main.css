@@ -1250,6 +1250,10 @@ body, .crm-wrap {
   background-position: 0 100%;
 }
 
+.mine-page .list .item i.l {
+  background-image: url(../images/theme-ico.png);
+}
+
 .mine-page .list .item .grpTitle {
   position: relative;
 }
@@ -3799,6 +3803,18 @@ i.ico-local {
 
 .company-page .ico.f:active {
   background-color: #ff8168;
+}
+
+.company-page .ico.g {
+  background-color: #ffb36f;
+}
+
+.company-page .ico.g:after {
+  background-position: 100% 66.666%;
+}
+
+.company-page .ico.g:active {
+  background-color: #faa65c;
 }
 
 .cardLimit-page .switch-item {
