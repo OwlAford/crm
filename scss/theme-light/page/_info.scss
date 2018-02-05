@@ -168,7 +168,7 @@
         }
 
         &.active {
-          color: #7de6ff;
+          color: #2e98e8;
         }
       }
     }
@@ -335,14 +335,14 @@
     }
 
     .tt {
-      background-color: #5ba6ff;
+      background-color: #fff;
+      border-bottom: 1px solid #ececec;
       padding: 0.3rem;
       margin-bottom: 0.2rem;
       
       .cell {
         padding-right: 0.2rem;
         @include textEllipsis;
-        color: #fff;
 
         .proIco:after {
           background-image: url(../images/prod_white_light.png);

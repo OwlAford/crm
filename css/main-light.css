@@ -1627,7 +1627,7 @@ body, .crm-wrap {
 }
 
 .info-page .approvPanel.inline .cell.active {
-  color: #7de6ff;
+  color: #2e98e8;
 }
 
 .info-page .approvPanel .cell .tabName {
@@ -1793,7 +1793,8 @@ body, .crm-wrap {
 }
 
 .info-page .userItemsPanel .tt {
-  background-color: #5ba6ff;
+  background-color: #fff;
+  border-bottom: 1px solid #ececec;
   padding: 0.3rem;
   margin-bottom: 0.2rem;
 }
@@ -1803,7 +1804,6 @@ body, .crm-wrap {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  color: #fff;
 }
 
 .info-page .userItemsPanel .tt .cell .proIco:after {
