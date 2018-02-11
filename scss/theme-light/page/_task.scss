@@ -126,31 +126,24 @@
       }
     }
   }
+}
 
-  .control-fixed {
-    height: 0.98rem;
-    width: 100%;
+.task-page, .machine-page, .visit-page {
+  .tabFixedWrap {
+    height: 0.88rem;
 
-    .inner {
+    .tabs {
+      width: 100%;
       position: fixed;
       left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 0.98rem;
-      line-height: 0.98rem;
-      text-align: center;
-      background-color: #e5e5e5;
-      background-image: none;
-      color: #757575;
-      
-      .allow {
-        background-color: #006cd1;
-        background-image: -webkit-linear-gradient(180deg, #29bdf1, #006cd1);
-        color: #fff;
-      }
+      top: 0;
+      z-index: 99;
     }
   }
+}
 
+.task-page,
+.visit-page {
   .approvalBox {
     width: 6.4rem;
     height: 4.68rem;
@@ -161,6 +154,7 @@
     background-color: #fff;
     border-radius: 0.08rem;
     padding: 0.2rem;
+    overflow: hidden;
 
     .title {
       text-align: center;
@@ -170,7 +164,6 @@
     .textArea {
       padding: 0.1rem;
       background-color: #eee;
-
       textarea {
         width: 100%;
         height: 1.86rem;
@@ -178,17 +171,28 @@
         border: none;
         color: #757575;
         font-size: 13px;
-
         &::-webkit-input-placeholder {
           color: 999;
         }
       }
     }
 
+    .form {
+      .row {
+        padding: 0.2rem;
+        display: flex;
+        align-items: center;
+      }
+      .ipt {
+        padding: 0.16rem 0.2rem;
+        border-radius: 0.06rem;
+        border: 1px solid #eee;
+      }
+    }
+
     .ctrBtnGrp {
       text-align: center;
       padding: 0.4rem 0;
-
       .base-btn {
         display: inline-block;
         margin: 0;
@@ -209,19 +213,36 @@
       top: 0.2rem;
       border-radius: 50%;
     }
+
+    .control-fixed {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      .inner {
+        position: relative;
+      }
+    }
   }
-}
 
-.task-page, .machine-page, .visit-page {
-  .tabFixedWrap {
-    height: 0.88rem;
-
-    .tabs {
-      width: 100%;
+  .control-fixed {
+    height: 0.98rem;
+    width: 100%;
+    .inner {
       position: fixed;
       left: 0;
-      top: 0;
-      z-index: 99;
+      bottom: 0;
+      width: 100%;
+      height: 0.98rem;
+      line-height: 0.98rem;
+      text-align: center;
+      background-color: #e5e5e5;
+      background-image: none;
+      color: #757575;
+      .allow {
+        background-color: #006cd1;
+        background-image: -webkit-linear-gradient(180deg, #29bdf1, #006cd1);
+        color: #fff;
+      }
     }
   }
 }

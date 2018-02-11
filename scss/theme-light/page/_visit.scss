@@ -135,4 +135,86 @@
   .refreshBtn {
     padding: 0 0.3rem 0;
   }
+
+  .preclaimList {
+    .card {
+      .row {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.24rem;
+
+        div.item {
+          padding: 0;
+          opacity: .8;
+          font-size: 13px;
+        }
+      }
+
+      .tt {
+        display: flex;
+        padding: 0 0.24rem;
+        height: 0.86rem;
+        line-height: 0.86rem;
+        border: none;
+        background-color: #9dcaff;
+        color: #fff;
+
+        .name {
+          font-size: 15px;
+        }
+
+        .subname {
+          font-size: 12px;
+          opacity: .7;
+          flex-grow: 1;
+          padding: 0 5px;
+        }
+
+        .btnGrp {
+          .cus-btn {
+            padding: 0.14rem 0.22rem;
+            color: #5ba6ff;
+            background-color: #fff;
+            border-radius: 0.06rem;
+
+            &+.cus-btn {
+              margin-left: 0.08rem;
+            }
+
+            &.yellow {
+              color: #fff;
+              background-color: #ffd839;
+            }
+
+            &.disabled {
+              color: #fff;
+              background-color: #5ba6ff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .area.assets {
+    margin: 0.2rem 0;
+  }
+
+  .pre-order-list {
+    .row {
+      padding: 0.3rem;
+      justify-content: space-between;
+      align-items: center;
+
+      .item {
+        font-size: 12px;
+        opacity: 0.8;
+      }
+
+      .item.name {
+        font-size: 14px;
+        opacity: 1;
+      }
+    }
+  }
 }

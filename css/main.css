@@ -2827,88 +2827,6 @@ i.ico-local {
   width: 100%;
 }
 
-.task-page .control-fixed {
-  height: 0.98rem;
-  width: 100%;
-}
-
-.task-page .control-fixed .inner {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 0.98rem;
-  line-height: 0.98rem;
-  text-align: center;
-  background-color: #324672;
-  color: #77e1fa;
-}
-
-.task-page .control-fixed .inner .allow {
-  background-color: #11b7de;
-  color: #fff;
-}
-
-.task-page .approvalBox {
-  width: 6.4rem;
-  height: 4.68rem;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin: -2.34rem 0 0 -3.2rem;
-  background-image: -webkit-linear-gradient(135deg, #373469, #25486b);
-  border-radius: 0.08rem;
-  padding: 0.2rem;
-}
-
-.task-page .approvalBox .title {
-  text-align: center;
-  padding: 0.1rem 0 0.2rem;
-}
-
-.task-page .approvalBox .textArea {
-  padding: 0.1rem;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.task-page .approvalBox .textArea textarea {
-  width: 100%;
-  height: 1.86rem;
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 13px;
-}
-
-.task-page .approvalBox .textArea textarea::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.task-page .approvalBox .ctrBtnGrp {
-  text-align: center;
-  padding: 0.4rem 0;
-}
-
-.task-page .approvalBox .ctrBtnGrp .base-btn {
-  display: inline-block;
-  margin: 0;
-  width: auto;
-  font-size: 14px;
-  padding: 0.24rem 0.5rem;
-}
-
-.task-page .approvalBox i.close {
-  height: 0.46rem;
-  width: 0.46rem;
-  background: rgba(255, 255, 255, 0.1) url(../images/close.png) no-repeat center center;
-  background-size: 0.2rem auto;
-  display: block;
-  position: absolute;
-  right: 0.2rem;
-  top: 0.2rem;
-  border-radius: 50%;
-}
-
 .task-page .tabFixedWrap, .machine-page .tabFixedWrap, .visit-page .tabFixedWrap {
   height: 0.88rem;
 }
@@ -2920,6 +2838,132 @@ i.ico-local {
   top: 0;
   z-index: 99;
   background-color: rgba(41, 50, 97, 0.8);
+}
+
+.task-page .approvalBox,
+.visit-page .approvalBox {
+  width: 6.4rem;
+  height: 4.68rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -2.34rem 0 0 -3.2rem;
+  background-image: -webkit-linear-gradient(135deg, #373469, #25486b);
+  border-radius: 0.08rem;
+  padding: 0.2rem;
+  overflow: hidden;
+}
+
+.task-page .approvalBox .title,
+.visit-page .approvalBox .title {
+  text-align: center;
+  padding: 0.1rem 0 0.2rem;
+}
+
+.task-page .approvalBox .textArea,
+.visit-page .approvalBox .textArea {
+  padding: 0.1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.task-page .approvalBox .textArea textarea,
+.visit-page .approvalBox .textArea textarea {
+  width: 100%;
+  height: 1.86rem;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 13px;
+}
+
+.task-page .approvalBox .textArea textarea::-webkit-input-placeholder,
+.visit-page .approvalBox .textArea textarea::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.task-page .approvalBox .form .row,
+.visit-page .approvalBox .form .row {
+  padding: 0.2rem;
+  color: #d4dae1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.task-page .approvalBox .form .ipt,
+.visit-page .approvalBox .form .ipt {
+  padding: 0.16rem 0.2rem;
+  border-radius: 0.06rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.task-page .approvalBox .ctrBtnGrp,
+.visit-page .approvalBox .ctrBtnGrp {
+  text-align: center;
+  padding: 0.4rem 0;
+}
+
+.task-page .approvalBox .ctrBtnGrp .base-btn,
+.visit-page .approvalBox .ctrBtnGrp .base-btn {
+  display: inline-block;
+  margin: 0;
+  width: auto;
+  font-size: 14px;
+  padding: 0.24rem 0.5rem;
+}
+
+.task-page .approvalBox i.close,
+.visit-page .approvalBox i.close {
+  height: 0.46rem;
+  width: 0.46rem;
+  background: rgba(255, 255, 255, 0.1) url(../images/close.png) no-repeat center center;
+  background-size: 0.2rem auto;
+  display: block;
+  position: absolute;
+  right: 0.2rem;
+  top: 0.2rem;
+  border-radius: 50%;
+}
+
+.task-page .approvalBox .control-fixed,
+.visit-page .approvalBox .control-fixed {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.task-page .approvalBox .control-fixed .inner,
+.visit-page .approvalBox .control-fixed .inner {
+  position: relative;
+}
+
+.task-page .control-fixed,
+.visit-page .control-fixed {
+  height: 0.98rem;
+  width: 100%;
+}
+
+.task-page .control-fixed .inner,
+.visit-page .control-fixed .inner {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.98rem;
+  line-height: 0.98rem;
+  text-align: center;
+  background-color: #324672;
+  color: #77e1fa;
+}
+
+.task-page .control-fixed .inner .allow,
+.visit-page .control-fixed .inner .allow {
+  background-color: #11b7de;
+  color: #fff;
 }
 
 .machine-page .switch-item {
@@ -3306,6 +3350,88 @@ i.ico-local {
 
 .visit-page .refreshBtn {
   padding: 0 0.3rem 0;
+}
+
+.visit-page .preclaimList .card .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.24rem;
+}
+
+.visit-page .preclaimList .card .row div.item {
+  padding: 0;
+  opacity: .8;
+  font-size: 13px;
+}
+
+.visit-page .preclaimList .card .tt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0.24rem;
+  height: 0.86rem;
+  line-height: 0.86rem;
+}
+
+.visit-page .preclaimList .card .tt .name {
+  font-size: 15px;
+}
+
+.visit-page .preclaimList .card .tt .subname {
+  font-size: 12px;
+  opacity: .7;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 0 5px;
+}
+
+.visit-page .preclaimList .card .tt .btnGrp .cus-btn {
+  padding: 0.14rem 0.22rem;
+  color: #fff;
+  background-color: #11b7de;
+  border-radius: 0.06rem;
+}
+
+.visit-page .preclaimList .card .tt .btnGrp .cus-btn + .cus-btn {
+  margin-left: 0.08rem;
+}
+
+.visit-page .preclaimList .card .tt .btnGrp .cus-btn.yellow {
+  background-color: #ffd839;
+}
+
+.visit-page .preclaimList .card .tt .btnGrp .cus-btn.disabled {
+  color: #304c7b;
+  background-color: #8c96b3;
+}
+
+.visit-page .area.assets {
+  margin: 0.2rem 0;
+}
+
+.visit-page .pre-order-list .row {
+  padding: 0.3rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.visit-page .pre-order-list .row .item {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.visit-page .pre-order-list .row .item.name {
+  font-size: 14px;
+  opacity: 1;
 }
 
 .company-page {

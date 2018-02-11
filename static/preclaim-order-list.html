@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="zh-CN" xml:lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="renderer" content="webkit"/>
+<title>CRM2.0</title>
+<script src="../js/init.min.js"></script>
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/main.css" id="profile">
+<script src="../js/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="crm-wrap">
+		<div class="visit-page info-page">
+			<div class="tabFixedWrap">
+				<div class="row tabs">
+					<div class="cell active">今日订单</div>
+					<div class="cell">七日订单</div>
+					<div class="cell">本月订单</div>
+				</div>
+			</div>
+			<div class="switch-content">
+				<div class="switch-item">
+					<div class="searchFilter">
+						<div class="inner row">
+							<div class="searchIpt cell">
+								<input type="text" placeholder="输入搜索条件">
+								<div class="icon"></div>
+							</div>
+							<!-- mask -->
+							<div class="orderFilterGroup">
+								<div class="itemsBox show">
+									<div class="filterList">
+											<div class="tt">选择标签搜索</div>
+										<div class="typeGroup">
+											<ul class="col4">
+												<li class="active">陌生拜访</li>
+												<li>意向</li>
+												<li>转化</li>
+												<li>日常</li>
+												<li>贷后</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- mask -->
+							<div class="cancel">取消</div>
+							<div class="calendar row">
+								<div class="ipt cell"><input type="text" readonly value="2017/09/11"></div>
+								<span class="gap">-</span>
+								<div class="ipt cell"><input type="text" readonly value="2017/09/11"></div>
+							</div>
+						</div>
+					</div>
+          <div class="fmList pre-order-list">
+            <div class="row">
+              <div class="item name">赵红静</div>
+              <div class="item">2018-01-28 11:23:20</div>
+              <div class="item">杭州市滴滴科技有限公司</div>
+            </div>
+            <div class="row">
+              <div class="item name">赵红静</div>
+              <div class="item">2018-01-28 11:23:20</div>
+              <div class="item">杭州市滴滴科技有限公司</div>
+            </div>
+            <div class="row">
+              <div class="item name">赵红静</div>
+              <div class="item">2018-01-28 11:23:20</div>
+              <div class="item">杭州市滴滴科技有限公司</div>
+            </div>
+            <div class="row">
+              <div class="item name">赵红静</div>
+              <div class="item">2018-01-28 11:23:20</div>
+              <div class="item">杭州市滴滴科技有限公司</div>
+            </div>
+            <div class="row">
+              <div class="item name">赵红静</div>
+              <div class="item">2018-01-28 11:23:20</div>
+              <div class="item">杭州市滴滴科技有限公司</div>
+            </div>
+            <div class="row">
+              <div class="item name">赵红静</div>
+              <div class="item">2018-01-28 11:23:20</div>
+              <div class="item">杭州市滴滴科技有限公司</div>
+            </div>
+          </div>
+				</div>
+				<!-- /////////////////////////////////////////////////// -->
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function () {
+			// 切换皮肤 
+			changeTheme()
+
+			$('.cus-btn').on('click', function () {
+				$('.full-mask').show()
+			})
+
+			$('.full-mask .close').on('click', function() {
+				$('.full-mask').hide()
+			})
+
+			var allItem = $('.switch-content .switch-item');
+			$('.visit-page .tabs .cell').on('click', function () {
+				var index = $(this).index();
+				$(this).addClass('active').siblings().removeClass('active');
+				allItem.hide();
+				allItem.eq(index).show();
+			});
+
+			$('.searchIpt input').on('focus', function () {
+				var par = $(this).parent();
+				var calendar = par.siblings('.calendar');
+				var cancel = par.siblings('.cancel');
+				var filter = par.siblings('.orderFilterGroup');
+				calendar.addClass('ellipsis');
+				filter.addClass('show');
+				cancel.show();
+			});
+			
+			$('.searchFilter .cancel').on('click', function () {
+				var me = $(this);
+				var calendar = me.siblings('.calendar');
+				var filter = me.siblings('.orderFilterGroup');
+				calendar.removeClass('ellipsis');
+				filter.removeClass('show');
+				me.hide();
+			})
+
+			$('.orderFilterGroup .col4 li').on('click', function () {
+				var cur = $(this);
+				var par = cur.parents('.searchFilter');
+				var calendar = par.find('.calendar');
+				var cancel = par.find('.cancel');
+				var filter = par.find('.orderFilterGroup');
+				cur.addClass('active').siblings().removeClass('active');
+				var ipt = par.find('.searchIpt input');
+				ipt.val(cur.text());
+				calendar.removeClass('ellipsis');
+				filter.removeClass('show');
+				cancel.hide();
+			})
+		})
+	</script>
+</body>
+</html>
