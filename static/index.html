@@ -189,6 +189,17 @@
 		changeTheme()
 		var isLight = window.globalThemeType === 'light'
 
+		// 手动给多个元素动态添加水印
+		function autoAdd(els, lnk) {
+			els.forEach(function (el, i) {
+				$(el).attr('style', 'background-image: url(' + lnk + '); background-size: 1.6rem auto;')
+			})
+		}
+		autoAdd([
+			'.menu',
+			'.area'
+		], '../images/fage1.png')
+
 		// 实时滚动播放
 		var removeTimer, runTimer;
 		var apprvList = document.getElementById('apprvList');

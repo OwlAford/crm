@@ -233,6 +233,18 @@
 		// 切换皮肤
 		changeTheme()
 
+		// 手动给多个元素动态添加水印
+		function autoAdd (els, lnk) {
+			els.forEach(function (el, i) {
+				$(el).attr('style', 'background-image: url(' + lnk + '); background-size: 1.6rem auto;')
+			})
+		}
+		autoAdd([
+			'.userItemsPanel .timeoutPanel',
+			'.area',
+			'.detailList'
+		], '../images/fage1.png')
+
 		// 初始化轮播
 		var slider = document.getElementById('slider');
 		new Swiper({
