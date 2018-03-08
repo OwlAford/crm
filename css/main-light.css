@@ -1729,26 +1729,30 @@ body, .crm-wrap {
 }
 
 .info-page .infoList > .area i.b {
-  background-position: 0 16.66666%;
+  background-position: 0 14.2857%;
 }
 
 .info-page .infoList > .area i.c {
-  background-position: 0 33.33333%;
+  background-position: 0 28.5714%;
 }
 
 .info-page .infoList > .area i.d {
-  background-position: 0 50%;
+  background-position: 0 42.8571%;
 }
 
 .info-page .infoList > .area i.e {
-  background-position: 0 66.66666%;
+  background-position: 0 57.1428%;
 }
 
 .info-page .infoList > .area i.f {
-  background-position: 0 83.33333%;
+  background-position: 0 71.4285%;
 }
 
 .info-page .infoList > .area i.g {
+  background-position: 0 85.7142%;
+}
+
+.info-page .infoList > .area i.h {
   background-position: 0 100%;
 }
 
