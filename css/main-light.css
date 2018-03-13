@@ -1646,6 +1646,10 @@ body, .crm-wrap {
   vertical-align: middle;
 }
 
+.info-page .approvPanel.inline .cell p {
+  display: inline;
+}
+
 .info-page .approvPanel.inline .cell.active {
   color: #2e98e8;
 }
@@ -1660,26 +1664,30 @@ body, .crm-wrap {
 }
 
 .info-page .approvPanel .cell i.b:after {
-  background-position: 0 16.666%;
+  background-position: 0 14.2857%;
 }
 
 .info-page .approvPanel .cell i.c:after {
-  background-position: 0 33.333%;
+  background-position: 0 28.5714%;
 }
 
 .info-page .approvPanel .cell i.d:after {
-  background-position: 0 50%;
+  background-position: 0 42.8571%;
 }
 
 .info-page .approvPanel .cell i.e:after {
-  background-position: 0 66.666%;
+  background-position: 0 57.1428%;
 }
 
 .info-page .approvPanel .cell i.f:after {
-  background-position: 0 83.333%;
+  background-position: 0 71.4285%;
 }
 
 .info-page .approvPanel .cell i.g:after {
+  background-position: 0 85.7142%;
+}
+
+.info-page .approvPanel .cell i.h:after {
   background-position: 0 100%;
 }
 
@@ -1688,26 +1696,30 @@ body, .crm-wrap {
 }
 
 .info-page .approvPanel .cell.active i.b:after {
-  background-position: 100% 16.666%;
+  background-position: 100% 14.2857%;
 }
 
 .info-page .approvPanel .cell.active i.c:after {
-  background-position: 100% 33.333%;
+  background-position: 100% 28.5714%;
 }
 
 .info-page .approvPanel .cell.active i.d:after {
-  background-position: 100% 50%;
+  background-position: 100% 42.8571%;
 }
 
 .info-page .approvPanel .cell.active i.e:after {
-  background-position: 100% 66.666%;
+  background-position: 100% 57.1428%;
 }
 
 .info-page .approvPanel .cell.active i.f:after {
-  background-position: 100% 83.333%;
+  background-position: 100% 71.4285%;
 }
 
 .info-page .approvPanel .cell.active i.g:after {
+  background-position: 100% 85.7142%;
+}
+
+.info-page .approvPanel .cell.active i.h:after {
   background-position: 100% 100%;
 }
 

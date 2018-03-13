@@ -167,6 +167,10 @@
           vertical-align: middle;
         }
 
+        p {
+          display: inline;
+        }
+
         &.active {
           color: #2e98e8;
         }
@@ -182,22 +186,32 @@
         &:after {
           background-image: url(../images/approv1_ico_light.png);
         }
+
         &.b:after {
-          background-position: 0 16.666%;
+          background-position: 0 14.2857% * 1;
         }
+
         &.c:after {
-          background-position: 0 33.333%;
+          background-position: 0 14.2857% * 2;
         }
+
         &.d:after {
-          background-position: 0 50%;
+          background-position: 0 14.2857% * 3;
         }
+
         &.e:after {
-          background-position: 0 66.666%;
+          background-position: 0 14.2857% * 4;
         }
+
         &.f:after {
-          background-position: 0 83.333%;
+          background-position: 0 14.2857% * 5;
         }
+
         &.g:after {
+          background-position: 0 14.2857% * 6;
+        }
+
+        &.h:after {
           background-position: 0 100%;
         }
       }
@@ -206,22 +220,32 @@
         &.a:after {
           background-position: 100% 0;
         }
+
         &.b:after {
-          background-position: 100% 16.666%;
+          background-position: 100% 14.2857% * 1;
         }
+
         &.c:after {
-          background-position: 100% 33.333%;
+          background-position: 100% 14.2857% * 2;
         }
+
         &.d:after {
-          background-position: 100% 50%;
+          background-position: 100% 14.2857% * 3;
         }
+
         &.e:after {
-          background-position: 100% 66.666%;
+          background-position: 100% 14.2857% * 4;
         }
+
         &.f:after {
-          background-position: 100% 83.333%;
+          background-position: 100% 14.2857% * 5;
         }
+
         &.g:after {
+          background-position: 100% 14.2857% * 6;
+        }
+
+        &.h:after {
           background-position: 100% 100%;
         }
       }
