@@ -773,6 +773,18 @@ body, .crm-wrap {
   border-left: 1px solid rgba(255, 255, 255, 0.04);
 }
 
+.app-close {
+  display: block;
+  position: absolute;
+  right: 0.2rem;
+  top: 0.2rem;
+  height: 0.48rem;
+  width: 0.48rem;
+  background: #d4d4d4 url(../images/close.png) no-repeat center center;
+  background-size: 0.2rem;
+  border-radius: 50%;
+}
+
 .feedback-page .screenShot, .work-page .screenShot, .visit-page .screenShot {
   width: 2.2rem;
   height: 2.2rem;
