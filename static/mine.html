@@ -16,10 +16,11 @@
 	<div class="crm-wrap">
 		<div class="mine-page">
 			<div class="area user">
-				<div class="avatar">
+				<div class="avatar" id="changeUser">
 					<!-- <img src="../images/human.png" alt="avatar"> -->
 					<!-- <img src="../images/man.png" alt="avatar"> -->
 					<img src="../images/woman.png" alt="avatar">
+					<div class="tip">点击切换身份</div>
 				</div>
 				<div class="info">
 					<div class="base">
@@ -48,12 +49,58 @@
 			<div class="btn-wrap">
 				<button class="base-btn quitBtn">退出登录</button>
 			</div>
+			<div class="full-mask" style="display: none">
+				<div class="clickLayer"></div>
+				<div class="select-box">
+					<div class="inner">
+						<div class="optItem active">
+							<div class="avatar">
+								<img src="../images/man.png" alt="avatar">
+							</div>
+							<div class="desc">
+								<div class="row name">
+									<div>杭小航</div>
+									<div class="cell">♂ 男</div>
+								</div>
+								<div class="row num">操作员号：098332</div>
+							</div>
+						</div>
+						<div class="optItem">
+							<div class="avatar">
+								<img src="../images/woman.png" alt="avatar">
+							</div>
+							<div class="desc">
+								<div class="row name">
+									<div>杭小航</div>
+									<div class="cell">♀ 女</div>
+								</div>
+								<div class="row num">操作员号：098332</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<script type="text/javascript">
 		$(function () {
 			// 切换皮肤 
 			changeTheme()
+
+			$('#changeUser').on('click', function () {
+				$('.full-mask').show();
+			})
+
+			$('.select-box .optItem').on('click', function () {
+				$(this).addClass('active').siblings().removeClass('active');
+				setTimeout(function () {
+					$('.full-mask').hide();
+				}, 300);
+			})
+
+			$('.clickLayer').on('click', function (e) {
+				$('.full-mask').hide();
+			})
 
 			$('.item.fold').on('click', function () {
 				var isOpen = $(this).hasClass('open');
