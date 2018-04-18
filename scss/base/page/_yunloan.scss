@@ -1,0 +1,66 @@
+.yunloan-page {
+  .banner {
+    height: 3.74rem;
+    width: 100%;
+    background: url(../images/yunloan_banner.jpg) no-repeat;
+    background-size: 100% 100%;
+    padding-top: 1.1rem;
+
+    .local {
+      @include bgWhiteOpacity(20);
+      position: absolute;
+      left: 0.2rem;
+      top: 0.3rem;
+      font-size: 13px;
+      padding: 0.1rem 0.3rem 0.1rem 0.6rem;
+      border-radius: 0.5rem;
+      background-image: url(../images/local.png);
+      background-repeat: no-repeat;
+      background-position: 0.2rem center;
+      background-size: 0.28rem auto;
+    }
+
+    .result {
+      height: 2.2rem;
+      width: 4rem;
+      margin: 0 auto;
+      text-align: center;
+      opacity: .9;
+      border: 0.1rem solid rgba(255, 255, 255, 0.2);
+      
+      .inner {
+        height: 100%;
+        padding-top: 0.2rem;
+        background-image: -webkit-linear-gradient(180deg, #9384ef, #3e59ed);
+
+        .num {
+          line-height: 0.84rem;
+          font-size: 16px;
+
+          span {
+            font-size: 28px;
+            margin-right: 0.1rem;
+          }
+        }
+      }
+    }
+  }
+
+  .filterArea {
+    padding: 0.2rem 0.3rem !important;
+    align-items: center;
+
+    .fold {
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 0;
+      height: 0.6rem;
+      line-height: 0.6rem;
+      color: #77e1fa;
+    }
+  }
+
+  .ipt {
+    padding: 0 0.2rem;
+  }
+}

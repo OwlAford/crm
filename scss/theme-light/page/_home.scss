@@ -170,6 +170,68 @@
       }
     }
 
+    &.previewInfo {
+      height: 6.2rem;
+
+      .numCenter {
+        line-height: 3rem;
+        text-align: center;
+        color: #5ba6ff;
+        
+        .num {
+          font-size: 32px;
+          margin-right: 0.1rem;
+        }
+      }
+
+      .listDot {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 0.2rem 0.2rem;
+
+        .dotItem {
+          text-align: center;
+          
+          .dot {
+            color: #fff;
+            height: 0.76rem;
+            width: 0.76rem;
+            background-color: #deedff;
+            line-height: 0.76rem;
+            font-size: 0.42rem;
+            border-radius: 50%;
+          }
+
+          .txt {
+            padding-top: 0.2rem;
+          }
+          
+          &.active {
+            .dot {
+              background-color: #5ba6ff;
+            }
+
+            .txt {
+              color: #5ba6ff;
+            }
+          }
+        }
+      }
+
+      .total {
+        height: 0.94rem;
+        line-height: 0.94rem;
+        padding: 0 0.3rem;
+        border: 1px solid #eee;
+        border-width: 1px 0;
+
+        .cell {
+          font-size: 18px;
+          color: #ff8787;
+        }
+      }
+    }
+
     &.pieChart {
       padding: 0.3rem 0;
 

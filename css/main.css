@@ -259,12 +259,8 @@ body, .crm-wrap {
   top: 50%;
 }
 
-.crm-wrap .searchIpt .adjust-l {
-  right: 5.5rem;
-}
-
-.crm-wrap .searchIpt .adjust-ll {
-  right: 6.5rem;
+.crm-wrap .searchIpt .adjust-l, .crm-wrap .searchIpt .adjust-ll {
+  left: 0.2rem;
 }
 
 .crm-wrap .searchIpt input {
@@ -1172,6 +1168,66 @@ body, .crm-wrap {
 
 .home-page .area.lineChart .row .cell + .cell {
   border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.home-page .area.previewInfo {
+  height: 6.2rem;
+}
+
+.home-page .area.previewInfo .numCenter {
+  line-height: 3rem;
+  text-align: center;
+}
+
+.home-page .area.previewInfo .numCenter .num {
+  font-size: 32px;
+  margin-right: 0.1rem;
+}
+
+.home-page .area.previewInfo .listDot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 0.2rem 0.2rem;
+}
+
+.home-page .area.previewInfo .listDot .dotItem {
+  text-align: center;
+}
+
+.home-page .area.previewInfo .listDot .dotItem .dot {
+  height: 0.76rem;
+  width: 0.76rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  line-height: 0.76rem;
+  font-size: 0.42rem;
+  border-radius: 50%;
+}
+
+.home-page .area.previewInfo .listDot .dotItem .txt {
+  padding-top: 0.2rem;
+}
+
+.home-page .area.previewInfo .listDot .dotItem.active .dot {
+  background-color: #77e1fa;
+}
+
+.home-page .area.previewInfo .listDot .dotItem.active .txt {
+  color: #77e1fa;
+}
+
+.home-page .area.previewInfo .total {
+  height: 0.94rem;
+  line-height: 0.94rem;
+  padding: 0 0.3rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-width: 1px 0;
+}
+
+.home-page .area.previewInfo .total .cell {
+  font-size: 18px;
 }
 
 .home-page .area.pieChart {
@@ -4342,5 +4398,72 @@ i.ico-local {
 .cardLimit-page .btnn.active {
   background-color: #10b7de;
   color: white;
+}
+
+.yunloan-page .banner {
+  height: 3.74rem;
+  width: 100%;
+  background: url(../images/yunloan_banner.jpg) no-repeat;
+  background-size: 100% 100%;
+  padding-top: 1.1rem;
+}
+
+.yunloan-page .banner .local {
+  background-color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  left: 0.2rem;
+  top: 0.3rem;
+  font-size: 13px;
+  padding: 0.1rem 0.3rem 0.1rem 0.6rem;
+  border-radius: 0.5rem;
+  background-image: url(../images/local.png);
+  background-repeat: no-repeat;
+  background-position: 0.2rem center;
+  background-size: 0.28rem auto;
+}
+
+.yunloan-page .banner .result {
+  height: 2.2rem;
+  width: 4rem;
+  margin: 0 auto;
+  text-align: center;
+  opacity: .9;
+  border: 0.1rem solid rgba(255, 255, 255, 0.2);
+}
+
+.yunloan-page .banner .result .inner {
+  height: 100%;
+  padding-top: 0.2rem;
+  background-image: -webkit-linear-gradient(180deg, #9384ef, #3e59ed);
+}
+
+.yunloan-page .banner .result .inner .num {
+  line-height: 0.84rem;
+  font-size: 16px;
+}
+
+.yunloan-page .banner .result .inner .num span {
+  font-size: 28px;
+  margin-right: 0.1rem;
+}
+
+.yunloan-page .filterArea {
+  padding: 0.2rem 0.3rem !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.yunloan-page .filterArea .fold {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  color: #77e1fa;
+}
+
+.yunloan-page .ipt {
+  padding: 0 0.2rem;
 }
 /*# sourceMappingURL=main.css.map */

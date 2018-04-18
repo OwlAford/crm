@@ -162,6 +162,65 @@
       }
     }
 
+    &.previewInfo {
+      height: 6.2rem;
+
+      .numCenter {
+        line-height: 3rem;
+        text-align: center;
+        
+        .num {
+          font-size: 32px;
+          margin-right: 0.1rem;
+        }
+      }
+
+      .listDot {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 0.2rem 0.2rem;
+
+        .dotItem {
+          text-align: center;
+
+          .dot {
+            height: 0.76rem;
+            width: 0.76rem;
+            background-color: rgba(255, 255, 255, 0.2);
+            line-height: 0.76rem;
+            font-size: 0.42rem;
+            border-radius: 50%;
+          }
+
+          .txt {
+            padding-top: 0.2rem;
+          }
+          
+          &.active {
+            .dot {
+              background-color: #77e1fa;
+            }
+
+            .txt {
+              color: #77e1fa;
+            }
+          }
+        }
+      }
+
+      .total {
+        height: 0.94rem;
+        line-height: 0.94rem;
+        padding: 0 0.3rem;
+        @include opacityBorder(all, 10);
+        border-width: 1px 0;
+
+        .cell {
+          font-size: 18px;
+        }
+      }
+    }
+
     &.pieChart {
       padding: 0.3rem 0;
 

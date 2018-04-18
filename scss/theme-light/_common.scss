@@ -97,12 +97,9 @@
       right: 0.2rem;
       top: 50%;
     }
-    .adjust-l {
-      right:5.5rem;
-    }
 
-    .adjust-ll {
-      right:6.5rem;
+    .adjust-l, .adjust-ll {
+      left: 0.2rem;
     }
 
     input {

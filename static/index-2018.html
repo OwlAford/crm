@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="zh-CN" xml:lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="renderer" content="webkit"/>
+<title>CRM2.0</title>
+<script src="../js/init.min.js"></script>
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/swiper.css">
+<link rel="stylesheet" href="../css/main.css" id="profile">
+<script src="../js/jquery.min.js"></script>
+<script src="../js/echarts.simple.min.js"></script>
+<script src="../js/circle-progress.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+</head>
+
+<body>
+	<div class="crm-wrap">
+		<div class="home-page">
+			<div class="menu">
+				<div class="item">
+					<i class="ico a">
+						<span class="unread">N+</span>
+					</i>
+					<span>重要信息</span>
+				</div>
+				<div class="item">
+					<i class="ico b"></i>
+					<span>机构任务</span>
+				</div>
+				<div class="item">
+					<i class="ico c"></i>
+					<span>机构排名</span>
+				</div>
+				<div class="item">
+					<i class="ico d"></i>
+					<span>更多</span>
+				</div>
+			</div>
+			<div class="area apprv">
+				<div class="scroller" id="apprvList">
+					<div class="item">
+						<div class="tt">进入审批</div>
+						<div class="txt">主办客户李小龙[608190]名下开的合同[068452231645]</div>
+					</div>
+					<div class="item">
+						<div class="tt">进入审批</div>
+						<div class="txt">主办客户朱玲玲[608990]名下开的合同[068956231545]</div>
+					</div>
+					<div class="item">
+						<div class="tt">进入审批</div>
+						<div class="txt">主办客户马玉玉[608910]名下开的合同[068452231645]</div>
+					</div>
+				</div>
+			</div>
+			<div class="area previewInfo">
+				<div class="swiper-wrap">
+					<div class="swiper" id="slider">
+						<div class="item">
+							<div class="numCenter"><span class="num">+1,689.00</span>万元</div>
+							<div class="listDot">
+								<div class="dotItem active">
+									<div class="dot">T</div>
+									<div class="txt">今日</div>
+								</div>
+								<div class="dotItem">
+									<div class="dot">D</div>
+									<div class="txt">比上日</div>
+								</div>
+								<div class="dotItem">
+									<div class="dot">W</div>
+									<div class="txt">比上周</div>
+								</div>
+								<div class="dotItem">
+									<div class="dot">M</div>
+									<div class="txt">比上月</div>
+								</div>
+								<div class="dotItem">
+									<div class="dot">Y</div>
+									<div class="txt">比去年</div>
+								</div>
+							</div>
+							<div class="total row">
+								<div class="tt">总贷款 (万)：</div>
+								<div class="cell">36,698,456.00</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="numCenter"><span class="num">+1,689.00</span>万元</div>
+							<div class="listDot">
+								<div class="dotItem active">
+									<div class="dot">T</div>
+									<div class="txt">今日</div>
+								</div>
+								<div class="dotItem">
+									<div class="dot">D</div>
+									<div class="txt">比上日</div>
+								</div>
+								<div class="dotItem">
+									<div class="dot">W</div>
+									<div class="txt">比上周</div>
+								</div>
+								<div class="dotItem">
+									<div class="dot">M</div>
+									<div class="txt">比上月</div>
+								</div>
+								<div class="dotItem">
+									<div class="dot">Y</div>
+									<div class="txt">比去年</div>
+								</div>
+							</div>
+							<div class="total row">
+								<div class="tt">个人贷款 (万)：</div>
+								<div class="cell">36,698,456.00</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="area pieChart">
+				<div class="tt">机构任务 (全部)</div>
+				<div class="row">
+					<div class="cell">
+						<div class="inner">
+							<div class="t">第一营业部存款余额 (万)</div>
+							<div class="num">6,289</div>
+							<div class="pie" id="pie1">
+								<span><b></b>%</span>
+							</div>
+						</div>
+					</div>
+					<div class="cell">
+						<div class="inner">
+							<div class="t">第一营业部存款日均 (万)</div>
+							<div class="num">1,230</div>
+							<div class="pie" id="pie2">
+								<span><b></b>%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="cell">
+						<div class="inner">
+							<div class="t">第一营业部贷款余额 (万)</div>
+							<div class="num">2,089</div>
+							<div class="pie" id="pie3">
+								<span><b></b>%</span>
+							</div>
+						</div>
+					</div>
+					<div class="cell">
+						<div class="inner">
+							<div class="t">第一营业部贷款日均 (万)</div>
+							<div class="num">1,230</div>
+							<div class="pie" id="pie4">
+								<span><b></b>%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="cell">
+						<div class="inner">
+							<div class="t">第一营业部理财余额 (万)</div>
+							<div class="num">8,221</div>
+							<div class="pie" id="pie5">
+								<span><b></b>%</span>
+							</div>
+						</div>
+					</div>
+					<div class="cell">
+						<div class="inner">
+							<div class="t">第一营业部理财日均 (万)</div>
+							<div class="num">2,210</div>
+							<div class="pie" id="pie6">
+								<span><b></b>%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	$(function () {
+		// 切换皮肤
+		changeTheme()
+		var isLight = window.globalThemeType === 'light'
+
+		// 手动给多个元素动态添加水印
+		function autoAdd(els, lnk) {
+			els.forEach(function (el, i) {
+				$(el).attr('style', 'background-image: url(' + lnk + '); background-size: 1.6rem auto;')
+			})
+		}
+		isLight
+			? autoAdd([
+				'.menu',
+				'.area'
+			], '../images/fage1.png')
+			: autoAdd([
+				'.menu',
+				'.area'
+			], '../images/fage.png')
+
+		// 实时滚动播放
+		var doc = document.documentElement;
+		var removeTimer, runTimer;
+		var apprvList = document.getElementById('apprvList');
+		var refreshList = function () {
+			var apprvItem = apprvList.getElementsByClassName('item')[0];
+			apprvItem.style.height = 0;
+			removeTimer && clearTimeout(removeTimer);
+			removeTimer = setTimeout(function () {
+				apprvItem.removeAttribute('style');
+				apprvList.appendChild(apprvItem);
+				clearTimeout(removeTimer);
+				runner();
+			}, 300)
+		}
+		var runner = function () {
+			runTimer && clearTimeout(runTimer);
+			runTimer = setTimeout(function () {
+				refreshList();
+				runTimer && clearTimeout(runTimer);
+			}, 5000)
+		}
+		runner()
+
+
+		// 初始化轮播
+		var slider = document.getElementById('slider');
+		var slideTimer;
+		var rootSize = document.clientWidth / 7.5;
+		slider.style.height = rootSize * 0.8 + 43 + 'px';
+		new Swiper({
+			container: slider,
+			item: '.item',
+			observer: true,
+			autoplay: false,
+			duration: 500,
+			onSwiped: function (i) {
+			}
+		})
+
+		// 切换显示贷款条目
+		$('.listDot .dotItem').on('click', function () {
+			$(this).addClass('active').siblings().removeClass('active');
+		})
+
+		// 初始化圆环
+		var setCircle = function (el, val, colors) {
+			$(el).circleProgress({
+				value: val,
+				size: doc.clientWidth / 750 * 150 * 0.8,
+				lineCap: 'round',
+				fill: {
+					gradient: colors
+				}
+			}).on('circle-animation-progress', function (event, progress, stepValue) {
+				$(this).find('span b').text(parseInt(stepValue * 100));
+			});
+		}
+		var colorsPanel = [
+			['#2a98ed', '#72ddf8'],
+			['#e75a9f', '#e68851'],
+			['#ef7699', '#a978ec'],
+			['#51e8b1', '#1dddd4']
+		]
+		setCircle('#pie1', 0.39, colorsPanel[0])
+		setCircle('#pie2', 0.52, colorsPanel[1])
+		setCircle('#pie3', 0.22, colorsPanel[2])
+		setCircle('#pie4', 0.42, colorsPanel[3])
+		setCircle('#pie5', 0.88, colorsPanel[0])
+		setCircle('#pie6', 0.52, colorsPanel[1])
+
+	})
+	</script>
+</body>
+</html>
