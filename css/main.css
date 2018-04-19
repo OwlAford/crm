@@ -464,6 +464,36 @@ body, .crm-wrap {
   padding: 0.4rem 0.3rem;
 }
 
+.crm-wrap .btn-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.2rem 0;
+}
+
+.crm-wrap .btn-flex .base-btn {
+  width: auto;
+}
+
+.crm-wrap .btn-flex .base-btn + .base-btn {
+  margin-left: 0.3rem;
+}
+
+.crm-wrap .btn-flex.center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.crm-wrap .btn-flex.right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .crm-wrap .base-btn {
   width: 100%;
   padding: 0.3rem 0.36rem;
@@ -472,6 +502,13 @@ body, .crm-wrap {
   background-color: rgba(255, 255, 255, 0.2);
   color: #fff;
   border-radius: 0.1rem;
+}
+
+.crm-wrap .base-btn.small {
+  font-size: 13px;
+  padding: 0.2rem 0.36rem;
+  min-width: 1.8rem;
+  margin: 0;
 }
 
 .crm-wrap .base-btn:active {
@@ -548,9 +585,11 @@ body, .crm-wrap {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 0.2rem;
   color: #fff;
+  min-height: 6em;
 }
 
 .crm-wrap .base-textarea textarea::-webkit-input-placeholder {
+  font-size: 13px;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -2330,7 +2369,7 @@ body, .crm-wrap {
 .rank-page .allPanel .inner, .helper-page .allPanel .inner {
   padding: 0.1rem 0.2rem;
   width: 100%;
-  background-color: rgba(196, 198, 207, 0.16);
+  background-color: rgba(29, 41, 93, 0.83);
   position: fixed;
   z-index: 99;
   left: 0;
@@ -3607,8 +3646,46 @@ i.ico-local {
   opacity: 1;
 }
 
-.company-page {
-  opacity: 0.8;
+.company-page .selectList .selectItem {
+  padding: 0.14rem 0.14rem 0.14rem 0.68rem;
+  line-height: 1.5;
+  margin: 0.1rem 0;
+}
+
+.company-page .selectList .selectItem:after {
+  content: attr(data-order);
+  display: block;
+  height: 0.42rem;
+  width: 0.42rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  line-height: 0.42rem;
+  position: absolute;
+  left: 0.14rem;
+  top: 0.12rem;
+}
+
+.company-page .selectList .selectItem.active {
+  background-color: rgba(119, 225, 250, 0.2);
+}
+
+.company-page .selectList .selectItem.active:after {
+  background-color: rgba(119, 225, 250, 0.4);
+}
+
+.company-page .selectList.inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.company-page .selectList.inline .selectItem {
+  width: 50%;
+}
+
+.company-page .selectList.inline .selectItem + .selectItem {
+  margin-left: 0.3rem;
 }
 
 .company-page .plana {
@@ -3670,6 +3747,14 @@ i.ico-local {
 
 .company-page .helperI i.f {
   background-position: 100% 50%;
+}
+
+.company-page .helperI i.g {
+  background-position: 0 75%;
+}
+
+.company-page .helperI i.h {
+  background-position: 100% 75%;
 }
 
 .company-page .adjust-cell {

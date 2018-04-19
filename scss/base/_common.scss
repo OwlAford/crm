@@ -300,6 +300,28 @@
     padding: 0.4rem 0.3rem;
   }
 
+  .btn-flex {
+    display: flex;
+    align-items: center;
+    padding: 0.2rem 0;
+
+    .base-btn {
+      width: auto;
+
+      & + .base-btn {
+        margin-left: 0.3rem;
+      }
+    }
+    
+    &.center {
+      justify-content: center;
+    }
+
+    &.right {
+      justify-content: flex-end;
+    }
+  }
+
   .base-btn {
     width: 100%;
     padding: 0.3rem 0.36rem;
@@ -308,6 +330,13 @@
     @include bgWhiteOpacity(20);
     color: #fff;
     border-radius: 0.1rem;
+
+    &.small {
+      font-size: 13px;
+      padding: 0.2rem 0.36rem;
+      min-width: 1.8rem;
+      margin: 0;
+    }
 
     &:active {
       @include bgWhiteOpacity(40);
@@ -384,9 +413,11 @@
       @include bgWhiteOpacity(10);
       padding: 0.2rem;
       color: #fff;
+      min-height: 6em;
 
       &::-webkit-input-placeholder {
-        color: rgba(255, 255, 255, .6);
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.6);
       }
     }
   }
