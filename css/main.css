@@ -607,6 +607,45 @@ body, .crm-wrap {
   border-top: 1px solid #324672;
 }
 
+.crm-wrap .gridList .tit {
+  padding: 0 0.16rem 0.04rem;
+}
+
+.crm-wrap .gridList .grp {
+  padding-top: 0.1rem;
+}
+
+.crm-wrap .gridList .grp + .grp {
+  padding-top: 0.2rem;
+}
+
+.crm-wrap .gridList .ls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.crm-wrap .gridList .ls .lt {
+  padding: 0.16rem 0.3rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 0.16rem;
+  min-width: 1.44rem;
+  text-align: center;
+}
+
+.crm-wrap .gridList .ls .lt.active {
+  background-color: rgba(119, 225, 250, 0.1);
+  color: #77e1fa;
+}
+
 .filterList ul {
   font-size: 0;
 }

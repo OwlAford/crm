@@ -436,6 +436,40 @@
     }
   }
 
+  .gridList {
+    .tit {
+      padding: 0 0.16rem 0.04rem;
+    }
+
+    .grp {
+      padding-top: 0.1rem;
+    }
+
+    .grp + .grp {
+      padding-top: 0.2rem;
+    }
+
+    .ls {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .lt {
+        padding: 0.16rem 0.3rem;
+        @include bgWhiteOpacity(10);
+        margin: 0.16rem;
+        min-width: 1.44rem;
+        text-align: center;
+        
+        &.active {
+          @include bgBlueOpacity(10);
+          color: #77e1fa;
+        }
+      }
+    }
+  }
+
 }
 
 .filterList ul {
