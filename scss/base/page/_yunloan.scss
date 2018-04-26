@@ -64,9 +64,12 @@
     padding: 0 0.2rem;
   }
 
-  .customerList {
+   .customerList {
     padding: 0;
-    margin-bottom: 0.1rem;
+
+    .card {
+      margin-bottom: 0.2rem;
+    }
   }
 
   .subGrp {

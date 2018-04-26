@@ -4661,7 +4661,10 @@ i.ico-local {
 
 .yunloan-page .customerList {
   padding: 0;
-  margin-bottom: 0.1rem;
+}
+
+.yunloan-page .customerList .card {
+  margin-bottom: 0.2rem;
 }
 
 .yunloan-page .subGrp {
