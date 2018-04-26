@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="zh-CN" xml:lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="renderer" content="webkit"/>
+<title>CRM2.0</title>
+<script src="../js/init.min.js"></script>
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/main.css" id="profile">
+<script src="../js/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="crm-wrap">
+		<div class="yunloan-page">
+			<div class="customerList">
+				<div class="card">
+					<div class="row tt">
+						<div class="cell">
+							<span>高盛文</span>
+						</div>
+						<div>手机号码：1234566789</div>
+					</div>
+				</div>
+			</div>
+			<div class="list">
+				<div class="grp">
+					<div class="area item arr row">
+						<div>融资投向</div>
+						<div class="cell detail fc-blue ft12 ta-r"></div>
+					</div>
+					<div class="ctxList hide">
+						<div class="subGrp show" data-level="0" data-selected="">
+							<div class="item">生产</div>
+							<div class="item">服务</div>
+							<div class="item">贸易</div>
+						</div>
+						<div class="subGrp" data-level="1" data-selected="">
+							<div class="item">二级菜单1</div>
+							<div class="item">二级菜单2</div>
+							<div class="item">二级菜单3</div>
+						</div>
+						<div class="subGrp" data-level="2" data-selected="">
+							<div class="item">三级菜单1</div>
+							<div class="item">三级菜单2</div>
+							<div class="item">三级菜单3</div>
+						</div>
+						<div class="subGrp" data-level="3" data-selected="">
+							<div class="item">四级菜单1</div>
+							<div class="item">四级菜单2</div>
+							<div class="item">四级菜单3</div>
+						</div>
+						<div class="btn-flex center hide">
+							<button class="base-btn small back">返回</button>
+							<button class="base-btn small blue submit hide">确定</button>
+						</div>
+					</div>
+				</div>
+				<!-- /////////////////////////////////////////////////// -->
+				<div class="grp">
+					<div class="area item row arr">
+						<div>行业</div>
+						<div class="cell detail fc-blue ft12 ta-r"></div>
+					</div>
+					<div class="ctxList hide">
+						<div class="subGrp show" data-level="0" data-selected="">
+							<div class="item">采矿</div>
+							<div class="item">服务</div>
+							<div class="item">贸易</div>
+						</div>
+						<div class="subGrp" data-level="1" data-selected="">
+							<div class="item">二级菜单1</div>
+							<div class="item">二级菜单2</div>
+							<div class="item">二级菜单3</div>
+						</div>
+						<div class="subGrp" data-level="2" data-selected="">
+							<div class="item">三级菜单1</div>
+							<div class="item">三级菜单2</div>
+							<div class="item">三级菜单3</div>
+						</div>
+						<div class="subGrp" data-level="3" data-selected="">
+							<div class="item">四级菜单1</div>
+							<div class="item">四级菜单2</div>
+							<div class="item">四级菜单3</div>
+						</div>
+						<div class="btn-flex center hide">
+							<button class="base-btn small back">返回</button>
+							<button class="base-btn small blue submit hide">确定</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	$(function () {
+			// 切换皮肤 
+			changeTheme()
+
+		$('.list .grp').each(function () {
+			var list = $(this);
+			var detail = list.find('.detail');
+			var ctrBtnWrp = list.find('.btn-flex');
+			var allSubGrp = list.find('.subGrp');
+			var subGrpNum = allSubGrp.length;
+			var curLevel = -1;
+			var timer = null;
+			var backBtn = list.find('.base-btn.back');
+			var submitBtn = list.find('.base-btn.submit');
+
+			var getAllParams = function () {
+				var arr = [];
+				allSubGrp.each(function (i, e) {
+					var info = $(e).attr('data-selected');
+					info && arr.push(info);
+					detail.text(arr.join('＞'));
+				})
+				return arr
+			}
+
+			allSubGrp.each(function () {
+				var curGrp = $(this);
+				var allItem = curGrp.find('.item');
+
+				allItem.on('click', function () {
+					clearTimeout(timer);
+					var curItem = $(this);
+					curLevel = curGrp.data('level') * 1 + 1;
+					curItem.addClass('active').siblings().removeClass('active');
+					curGrp.attr('data-selected', curItem.text());
+					
+					curLevel + 1 === 0 ? ctrBtnWrp.addClass('hide') : ctrBtnWrp.removeClass('hide');
+				
+					if (curLevel < subGrpNum) {
+						timer = setTimeout(() => {
+							curGrp.removeClass('show');
+							list.find(`[data-level="${curLevel}"]`).addClass('show');
+							clearTimeout(timer);
+						}, 300);
+						submitBtn.addClass('hide');
+					} else {
+						submitBtn.removeClass('hide');
+					}
+					getAllParams();
+					// console.log(curLevel);
+				})
+			})
+
+			backBtn.on('click', function () {
+				submitBtn.addClass('hide');
+				if (curLevel > 0) {
+					if (curLevel === subGrpNum) {
+						curLevel--
+					}
+					var curGrp = list.find(`[data-level="${curLevel}"]`);
+					var curSub = curGrp.find('.item');
+					allSubGrp.removeClass('show');
+					curSub.removeClass('active');
+					curGrp.attr('data-selected', '');
+
+					var prevGrp = list.find(`[data-level="${curLevel - 1}"]`);
+					var prevSub = prevGrp.find('.item');
+					prevGrp.addClass('show');
+					prevSub.removeClass('active');
+					prevGrp.attr('data-selected', '');
+					curLevel --;
+					getAllParams();
+					// console.log(curLevel);
+				}
+			})
+				
+			submitBtn.on('click', function () {
+				console.log(getAllParams());
+				list.find('.ctxList').addClass('hide');
+			})
+		})
+
+		$('.grp .item.arr').on('click', function () {
+			var next = $(this).next();
+			next.hasClass('hide') ? next.removeClass('hide') : next.addClass('hide');
+		})
+
+	})
+	</script>
+</body>
+</html>

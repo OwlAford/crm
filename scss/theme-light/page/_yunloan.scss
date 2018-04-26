@@ -66,4 +66,53 @@
   .ipt {
     padding: 0 0.2rem;
   }
+
+  .customerList {
+    padding: 0;
+    margin-bottom: 0.1rem;
+  }
+
+  .subGrp {
+    padding-left: 0.2rem;
+    border: 1px solid #ececec;
+    border-width: 1px 0;
+    display: none;
+    background-color: #fff;
+
+    &.show {
+      display: block;
+    }
+
+    .sublist {
+      padding-left: 0.2rem;
+      border: 1px solid #ececec;
+      border-width: 1px 0;
+      font-size: 12px;
+    }
+  }
+  
+  .list {
+    .grp + .grp {
+      margin-top: 0.2rem;
+    }
+
+    .item {
+      &.active {
+        color: $fcBlue;
+
+        &:after {
+          content: "";
+          display: block;
+          height: 0.3rem;
+          width: 0.3rem;
+          position: absolute;
+          right: 0.3rem;
+          top: 50%;
+          margin-top: -0.15rem;
+          background: url(../images/yes_light.png) no-repeat center center;
+          background-size: 100% auto;
+        }
+      }
+    }
+  }
 }
