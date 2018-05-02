@@ -39,7 +39,7 @@
   }
 
   // timeout
-  .timeoutPanel, .approvPanel {
+  .timeoutPanel, .approvPanel, .changePanel {
     text-align: center;
     padding: 0.2rem 0;
     margin-bottom: 0.2rem;
@@ -149,6 +149,12 @@
           color: $fcBlue;
         }   
       }    
+    }
+  }
+
+  .changePanel {
+    .cell i:after {
+      background-image: url(../images/change_ico.png);
     }
   }
   

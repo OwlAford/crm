@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-CN" xml:lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="renderer" content="webkit"/>
+<title>CRM2.0</title>
+<script src="../js/init.min.js"></script>
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/main.css" id="profile">
+<script src="../js/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="crm-wrap">
+		<div class="info-page">
+			<div class="row area changePanel">
+				<div class="cell active">
+					<i class="a"></i>
+					<p>大额变动</p>
+				</div>
+				<div class="cell">
+					<i class="b"></i>
+					<p>额度放款</p>
+				</div>
+				<div class="cell">
+					<i class="c"></i>
+					<p>扣款不足</p>
+				</div>
+			</div>
+			<div class="mcList">
+				<div class="item">
+					<div class="area">
+						<div class="row">
+							<div class="cell tit">扣款不足</div>
+							<div class="time">2017-02-03 08:26</div>
+						</div>
+            <div class="detail round-mgb20">陈澍书 [668089290] 将于2017年11月08日扣款人民币：<span class="fc-yellow">8,569.00万元</span>，现账号[6680]余额不足，请提醒客户 及时存入足够资金。</div>
+            <div class="btn-flex">
+              <div class="base-btn small">账户同步</div>
+              <div class="fc-yellow round-pd20">足够扣款</div> <!-- 点击按钮后出现 -->
+            </div>
+						<div class="control">
+							<div class="inner">
+								<div class="read">标记为已读</div>
+								<div class="del">删除</div>
+							</div>
+						</div>
+					</div>
+        </div>
+        <div class="item">
+          <div class="area">
+            <div class="row">
+              <div class="cell tit">扣款不足</div>
+              <div class="time">2017-02-03 08:26</div>
+            </div>
+            <div class="detail round-mgb20">陈澍书 [668089290] 将于2017年11月08日扣款人民币：
+              <span class="fc-yellow">8,569.00万元</span>，现账号[6680]余额不足，请提醒客户 及时存入足够资金。</div>
+            <div class="btn-flex">
+              <div class="base-btn small">账户同步</div>
+              <div class="fc-yellow round-pd20">不足扣款</div>
+            </div>
+            <div class="control">
+              <div class="inner">
+                <div class="read">标记为已读</div>
+                <div class="del">删除</div>
+              </div>
+            </div>
+          </div>
+        </div>
+			</div>
+		</div>
+	</div>
+	<script src="../js/slide-deleter.min.js"></script>
+	<script type="text/javascript">
+	$(function () {
+ 		// 切换皮肤 
+ 		changeTheme()
+
+		var config = {
+			sliderName: '.area',
+			controlName: '.control',
+			fnButtonName: '.read',
+			delButtonName: '.del'
+		}
+		$('.mcList .item').each(function (i, el) {
+			new slideDeleter(el, $.extend({}, config, {
+				fn: function (btn, item) {
+					var titClassList = item.querySelector('.tit').classList;
+					if (titClassList.contains('read')) {
+						titClassList.remove('read');
+						btn.innerText = '标记为已读';
+					} else {
+						titClassList.add('read');
+						btn.innerText = '标记为未读';
+					}
+				},
+				delete: function () {
+					alert(`删除了第${i+1}个节点`)
+				}
+			}))
+		})
+
+		// 菜单切换
+		$('.changePanel .cell').on('click', function () {
+			$(this).addClass('active').siblings().removeClass('active')
+		})
+
+	})
+	</script>
+</body>
+</html>
