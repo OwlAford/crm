@@ -136,6 +136,13 @@
     background-size: 100% auto;
   }
 
+  i.ico-calendar {
+    @extend i.ico-date;
+    height: 20px;
+    width: 20px;
+    background-image: url(../images/calendar.png);
+  }
+
   .empty-blank {
     width: 100%;
     text-align: center;

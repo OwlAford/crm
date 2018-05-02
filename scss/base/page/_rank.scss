@@ -63,7 +63,7 @@
     
     .time {
       text-align: right;
-      opacity: .6;
+      // opacity: .6;
     }
 
     .order, .filter {
@@ -261,6 +261,12 @@
       .filterList:after {
         left: 1.8rem;
         border-bottom-color: #2E3E6A;
+      }
+
+      .orderList.al-r:after {
+        left: auto;
+        right: 0.2rem;
+        border-bottom-color: #353669;
       }
 
       .filterList {

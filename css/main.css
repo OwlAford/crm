@@ -287,13 +287,19 @@ body, .crm-wrap {
   padding-left: 0.7rem;
 }
 
-.crm-wrap i.ico-date {
+.crm-wrap i.ico-date, .crm-wrap i.ico-calendar {
   height: 22px;
   width: 22px;
   display: inline-block;
   vertical-align: middle;
   background: url(../images/ml-ico.png) 0 100% no-repeat;
   background-size: 100% auto;
+}
+
+.crm-wrap i.ico-calendar {
+  height: 20px;
+  width: 20px;
+  background-image: url(../images/calendar.png);
 }
 
 .crm-wrap .empty-blank {
@@ -2431,7 +2437,6 @@ body, .crm-wrap {
 
 .rank-page .fnPanel .time, .helper-page .fnPanel .time {
   text-align: right;
-  opacity: .6;
 }
 
 .rank-page .fnPanel .order, .rank-page .fnPanel .filter, .helper-page .fnPanel .order, .helper-page .fnPanel .filter {
@@ -2619,6 +2624,12 @@ body, .crm-wrap {
 .rank-page .orderFilterGroup .itemsBox .filterList:after, .visit-page .orderFilterGroup .itemsBox .filterList:after, .helper-page .orderFilterGroup .itemsBox .filterList:after, .yunloan-page .orderFilterGroup .itemsBox .filterList:after {
   left: 1.8rem;
   border-bottom-color: #2E3E6A;
+}
+
+.rank-page .orderFilterGroup .itemsBox .orderList.al-r:after, .visit-page .orderFilterGroup .itemsBox .orderList.al-r:after, .helper-page .orderFilterGroup .itemsBox .orderList.al-r:after, .yunloan-page .orderFilterGroup .itemsBox .orderList.al-r:after {
+  left: auto;
+  right: 0.2rem;
+  border-bottom-color: #353669;
 }
 
 .rank-page .orderFilterGroup .itemsBox .filterList, .visit-page .orderFilterGroup .itemsBox .filterList, .helper-page .orderFilterGroup .itemsBox .filterList, .yunloan-page .orderFilterGroup .itemsBox .filterList {
@@ -3334,7 +3345,7 @@ i.ico-local {
   margin: -2px 4px 0 0;
 }
 
-.machine-page .setPanel i.ico-date {
+.machine-page .setPanel i.ico-date, .machine-page .setPanel .crm-wrap i.ico-calendar, .crm-wrap .machine-page .setPanel i.ico-calendar {
   margin: 0 0.1rem 0 0.12rem;
 }
 
@@ -4356,7 +4367,7 @@ i.ico-local {
   margin: -2px 4px 0 0;
 }
 
-.cardLimit-page .setPanel i.ico-date {
+.cardLimit-page .setPanel i.ico-date, .cardLimit-page .setPanel .crm-wrap i.ico-calendar, .crm-wrap .cardLimit-page .setPanel i.ico-calendar {
   margin: 0 0.1rem 0 0.12rem;
 }
 

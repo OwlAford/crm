@@ -288,13 +288,19 @@ body, .crm-wrap {
   padding-left: 0.7rem;
 }
 
-.crm-wrap i.ico-date {
+.crm-wrap i.ico-date, .crm-wrap i.ico-calendar {
   height: 22px;
   width: 22px;
   display: inline-block;
   vertical-align: middle;
   background: url(../images/ml-ico_light.png) 0 100% no-repeat;
   background-size: 100% auto;
+}
+
+.crm-wrap i.ico-calendar {
+  height: 20px;
+  width: 20px;
+  background-image: url(../images/calendar_light.png);
 }
 
 .crm-wrap .empty-blank {
@@ -2682,6 +2688,11 @@ body, .crm-wrap {
   border-bottom-color: #fff;
 }
 
+.rank-page .orderFilterGroup .itemsBox .orderList.al-r:after, .visit-page .orderFilterGroup .itemsBox .orderList.al-r:after, .helper-page .orderFilterGroup .itemsBox .orderList.al-r:after, .yunloan-page .orderFilterGroup .itemsBox .orderList.al-r:after {
+  left: auto;
+  right: 0.2rem;
+}
+
 .rank-page .orderFilterGroup .itemsBox .filterList, .visit-page .orderFilterGroup .itemsBox .filterList, .helper-page .orderFilterGroup .itemsBox .filterList, .yunloan-page .orderFilterGroup .itemsBox .filterList {
   padding: 0.3rem 0.2rem 1.16rem 0.2rem;
   border-radius: 0.08rem;
@@ -3397,7 +3408,7 @@ i.ico-local {
   margin: -2px 4px 0 0;
 }
 
-.machine-page .setPanel i.ico-date {
+.machine-page .setPanel i.ico-date, .machine-page .setPanel .crm-wrap i.ico-calendar, .crm-wrap .machine-page .setPanel i.ico-calendar {
   margin: 0 0.1rem 0 0.12rem;
 }
 
@@ -4419,7 +4430,7 @@ i.ico-local {
   margin: -2px 4px 0 0;
 }
 
-.cardLimit-page .setPanel i.ico-date {
+.cardLimit-page .setPanel i.ico-date, .cardLimit-page .setPanel .crm-wrap i.ico-calendar, .crm-wrap .cardLimit-page .setPanel i.ico-calendar {
   margin: 0 0.1rem 0 0.12rem;
 }
 

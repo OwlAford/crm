@@ -23,7 +23,9 @@
 			<div class="fnPanel row">
 				<div class="order">排序</div>
 				<div class="filter">筛选</div>
-				<div class="time cell">2017-08-23 12:30</div>
+				<div class="time cell">
+					<i class="ico-calendar"></i>
+				</div>
 			</div>
 			<div class="orderFilterGroup">
 				<div class="itemsBox">
@@ -54,6 +56,13 @@
 							<div class="cell resetBtn">重置</div>
 							<div class="cell okBtn">确定</div>
 						</div>
+					</div>
+				</div>
+				<div class="itemsBox">
+					<div class="orderList al-r">
+						<div class="item active">2018-04-16</div>
+						<div class="item">比上年</div>
+						<div class="item">比上月</div>
 					</div>
 				</div>
 			</div>
@@ -119,7 +128,7 @@
 	<script type="text/javascript">
 	$(function () {
 		// 切换皮肤 
-		changeTheme()
+		// changeTheme()
 
 		document.getElementById('rankPage').style.minHeight = document.documentElement.clientHeight + 'px';
 
