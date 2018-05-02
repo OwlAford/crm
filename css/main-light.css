@@ -868,8 +868,16 @@ body, .crm-wrap {
   border-left: 1px solid #e3f2fd;
 }
 
+.crm-table table th + th {
+  border-left: none;
+}
+
 .crm-table table td + td {
   border-left: 1px solid #f2f2f2;
+}
+
+.crm-table.dir-x td + td {
+  border-left: none;
 }
 
 .app-close {

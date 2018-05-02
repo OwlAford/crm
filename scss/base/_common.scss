@@ -701,9 +701,23 @@
       }
     }
 
+    th {
+      &+th {
+        border-left: none;
+      }
+    }
+
     td {
       & + td {
         @include opacityBorder(left, 4);
+      }
+    }
+  }
+
+  &.dir-x {
+    td {
+      & + td {
+        border-left: none;
       }
     }
   }
