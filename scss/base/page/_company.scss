@@ -539,9 +539,14 @@
 
     .sub {
       flex-grow: 1;
+      background-color: #11b7de;
+
+      &:active {
+        background-color: #0b9bbd;
+      }
     }
 
-    .del {
+    .del, .edit {
       &:before {
         content: "";
         display: inline-block;
@@ -552,6 +557,11 @@
         background-size: 18px;
         margin: -2px 4px 0 0;
       }
+    }
+    
+    .edit:before {
+      background: url(../images/pen.png) no-repeat center center;
+      background-size: 18px;
     }
   }
 }

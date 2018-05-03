@@ -579,7 +579,7 @@
       flex-grow: 1;
     }
 
-    .del {
+    .del, .edit {
       &:before {
         content: "";
         display: inline-block;
@@ -589,6 +589,21 @@
         background: url(../images/del_light.png) no-repeat center center;
         background-size: 18px;
         margin: -2px 4px 0 0;
+      }
+    }
+
+    .edit {
+      background-image: none;
+      background-color: #5a96e2;
+      
+      &:active {
+        background-image: none;
+        background-color: #467ec7;
+      }
+
+      &:before {
+        background: url(../images/pen.png) no-repeat center center;
+        background-size: 18px;
       }
     }
   }
