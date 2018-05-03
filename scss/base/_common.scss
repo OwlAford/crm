@@ -349,6 +349,14 @@
       @include bgWhiteOpacity(40);
     }
 
+    &.gray {
+      background-color: #3d3e4a;
+
+      &:active {
+        background-color: #282931;
+      }
+    }
+
     &.blue {
       background-color: #11b7de;
 

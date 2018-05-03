@@ -144,7 +144,7 @@
   .departByLine {
     .cell {
       line-height: 2;
-      text-align:center;
+      // text-align:center;
     }
 
     .pdlf20 {
@@ -326,6 +326,11 @@
       height: auto;
       overflow: visible;
     }
+  }
+
+  .customerList.area {
+    margin-top: 0;
+    @include opacityBorder(top, 8);
   }
 
   .customerList {

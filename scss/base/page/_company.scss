@@ -513,4 +513,45 @@
       }
     }
   }
+
+  .addItemInfo {
+    color: #fee47a;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      height: 20px;
+      width: 20px;
+      background: url(../images/add.png) no-repeat center center;
+      background-size: 18px;
+      margin: -2px 4px 0 0;
+    }
+  }
+
+  .btn-flex.subDel {
+    padding: 0.2rem;
+
+    .base-btn {
+      padding: 0.3rem;
+      font-size: 14px;
+    }
+
+    .sub {
+      flex-grow: 1;
+    }
+
+    .del {
+      &:before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        height: 20px;
+        width: 20px;
+        background: url(../images/del.png) no-repeat center center;
+        background-size: 18px;
+        margin: -2px 4px 0 0;
+      }
+    }
+  }
 }
