@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-CN" xml:lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="renderer" content="webkit"/>
+<title>CRM2.0</title>
+<script src="../js/init.min.js"></script>
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/main.css" id="profile">
+<script src="../js/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="crm-wrap bg-deduct">
+		<div class="deduct-page">
+			<div class="coords-wrap">
+                <span class="coords">北京支行 > 朝阳支行北京支行</span>
+            </div>
+            <div class="deduct-main">
+                <div class="nums-wrap">
+                    <div class="bg-wrap">
+                        <img src="../images/nums_bg_light.png" alt="">
+                        <span>341,689<i>笔</i></span>
+                    </div>
+                    <div class="deduct-items four-items">
+                        <div class="list-item">
+                            <div class="cir-item">6789</div>
+                            <span>分行营业部</span>
+                        </div>
+                        <div class="list-item cur">
+                            <div class="cir-item">6789</div>
+                            <span>分行营业部</span>
+                        </div>
+                        <div class="list-item">
+                            <div class="cir-item">6789</div>
+                            <span>分行营业部</span>
+                        </div>
+                        <div class="list-item">
+                            <div class="cir-item">6789</div>
+                            <span>分行营业部</span>
+                        </div>
+                        <div class="list-item">
+                            <div class="cir-item">6789</div>
+                            <span>分行营业部</span>
+                        </div>
+                        <div class="list-item">
+                            <div class="cir-item">6789</div>
+                            <span>分行营业部</span>
+                        </div>
+                    </div>
+
+                    <div class="deduct-items three-items">
+                        <div class="list-item">
+                            <div class="cir-item">6789</div>
+                            <span>分行营业部</span>
+                        </div>
+                        <div class="list-item cur">
+                            <div class="cir-item">6789</div>
+                            <span>分行营业部</span>
+                        </div>
+                        <div class="list-item">
+                            <div class="cir-item">6789</div>
+                            <span>分行营业部</span>
+                        </div>
+                        <div class="list-item">
+                            <div class="cir-item">6789</div>
+                            <span>分行营业部</span>
+                        </div>
+                        <div class="list-item">
+                            <div class="cir-item">6789</div>
+                            <span>分行营业部</span>
+                        </div>
+                        <div class="list-item">
+                            <div class="cir-item">6789</div>
+                            <span>分行营业部</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="detail-wrap">
+                <div class="detail-main">
+                    <div class="detail-item">
+                        <div class="tit"><span>预计扣款不足(4)</span><i class=""></i></div>
+                        <div class="txt">
+                            <p>田云[1198372839]将于本月20日扣款金额：831.72元，目前账户[3429]金额不足，请提醒客户及时存入足够资金。</p>
+                            <p>田云[1198372839]将于本月20日扣款金额：831.72元，目前账户[3429]金额不足，请提醒客户及时存入足够资金。</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="tit"><span>本月扣款失败(3)</span><i class=""></i></div>
+                        <div class="txt">
+                            <p>田云[1198372839]将于本月20日扣款金额：831.72元，目前账户[3429]金额不足，请提醒客户及时存入足够资金。</p>
+                            
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="tit"><span>本月逾期7天(1)</span><i class=""></i></div>
+                        <div class="txt">
+                            <p>田云[1198372839]将于本月20日扣款金额：831.72元，目前账户[3429]金额不足，请提醒客户及时存入足够资金。</p>
+                            <p>田云[1198372839]将于本月20日扣款金额：831.72元，目前账户[3429]金额不足，请提醒客户及时存入足够资金。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	$(function () {
+		// 切换皮肤 
+        changeTheme();
+        $('.tit').on('click',function(){
+            $(this).find('i').toggleClass('active');
+            $(this).parent().find('.txt').slideToggle();
+        })
+	})
+	</script>
+</body>
+</html>

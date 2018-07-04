@@ -366,6 +366,104 @@
     }
   }
 
+  .result-list {
+    padding:0.1rem 0.3rem;
+    
+    .btn-change-wrap {
+      width: 100%;
+      overflow: hidden;
+      padding: .2rem 0;
+      .btn-change {
+        display: inline-block;
+        padding-left: .4rem;
+        color: #fee47a;
+        background: url(../../images/btn_change.png) no-repeat 0 2px;
+        background-size: 14px 14px;
+        float: right
+      }
+    }
+    .result-wrap {
+      .result-items {
+        padding: .3rem;
+        background: rgba(255, 255, 255, 0.2);
+        .company-name {
+          display: inline-block;
+          width: 70%;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+        .statue {
+          float: right;
+          color: #77e1fa;
+        }
+      }
+      .date {
+        padding: .3rem;
+        background: rgba(255, 255, 255, 0.04);
+      }
+    }
+  }
+
+  .search-detail-page {
+    .filterList {
+      padding: 0;
+      + .filterList {
+        padding: 0rem 0.3rem 0rem;
+      }
+      .result-items {
+        padding: .3rem;
+        background: rgba(255, 255, 255, 0.2);
+        .company-name {
+          display: inline-block;
+          width: 70%;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          font-weight: bold;
+          color: #fff;
+        }
+        .statue {
+          float: right;
+          color: #77e1fa;
+        }
+      }
+      .date {
+        padding: .3rem;
+        background: rgba(255, 255, 255, 0.04);
+      }
+
+      .detail-tit {
+        padding: .3rem 0;
+        border-bottom: 1px solid #1c476f;
+        overflow: hidden;
+        font-weight: bold;
+      }
+      .datail-list {
+        // padding: .3rem 0;
+        .list-item {
+          padding: .3rem 0;
+          overflow: hidden;
+          .item-tit,.item-detail{
+            float: left;
+          }
+          .item-detail{
+            float: left;
+            .pad {
+              padding: .1rem .2rem;
+              background:#2f577a;
+              color: #fff;
+              line-height: 1.5;
+              margin-right: .1rem;
+              display: inline-block;
+              margin-top: .1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
   .ipt {
     input {
       width: 100%;
@@ -499,10 +597,10 @@
 
   li {
     font-size: 13px;
-    padding: 0.14rem 0;
+    padding: 0.1rem 0.4rem;
     text-align: center;
     display: inline-block;
-    width: 30%;
+    // width: 30%;
     margin: 1.64%;
     @include opacityBorder(all, 10);
 

@@ -16,21 +16,29 @@
 	<div class="crm-wrap">
 		<div class="search-page">
 			<div class="area filterList">
-				<div class="tt">客户类型</div>
+				<div class="tt">业务类型</div>
 				<ul>
-					<li class="active"><i class="a"></i>个人</li>
-					<li><i class="b"></i>对公</li>
+					<li class="active gjd">公鸡贷单位白名单</li>
+					<li>拜访</li>
 				</ul>
 			</div>
+			<div class="area filterList">
+				<div class="tt">客户类型</div>
+				<ul>
+					<li class="active person"><i class="a"></i>个人</li>
+					<li class="dg"><i class="b"></i>对公</li>
+				</ul>
+			</div>
+			
 			<div class="area">
 				<div class="list">
 					<div class="item row">
-						<div class="label">客户编号：</div>
+						<div class="label">单位名称：</div>
 						<div class="ipt cell">
-							<input type="text" value="" placeholder="请输入客户编号">
+							<input type="text" value="" placeholder="请输入单位名称">
 						</div>
 					</div>
-					<div class="item row">
+					<!-- <div class="item row">
 						<div class="label">客户户名：</div>
 						<div class="ipt cell">
 							<input type="text" value="" placeholder="请输入客户户名">
@@ -41,11 +49,21 @@
 						<div class="ipt cell">
 							<input type="text" value="" placeholder="请输入证件号码">
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 			<div class="btn-wrap">
 				<button class="base-btn">搜索</button>
+			</div>
+			<div class="result-list">
+				<div class="btn-change-wrap"><span class="btn-change">换一批</span></div>
+				<div class="result-wrap">
+					<div class="result-items">
+						<span class="company-name">杭州市中医院</span>
+						<span class="statue">生效</span>
+					</div>
+					<div class="date">到期日：<span>2018-09-09</span></div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -55,7 +73,19 @@
 			changeTheme()
 
 			$('.filterList li').on('click', function () {
-				$(this).addClass('active').siblings().removeClass('active')
+				if ($(this).hasClass('gjd')){
+					$(this).addClass('active').siblings().removeClass('active');
+					$('.person').addClass('active');
+					$('.dg').removeClass('active');
+				} else if ($(this).hasClass('dg')){
+					if($('.gjd').hasClass('active')){
+						return;
+					} else {
+						$(this).addClass('active').siblings().removeClass('active');
+					}
+				} else {
+					$(this).addClass('active').siblings().removeClass('active');
+				}
 			})
 		})
 	</script>

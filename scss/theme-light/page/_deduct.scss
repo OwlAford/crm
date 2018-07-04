@@ -1,0 +1,141 @@
+.bg-deduct {
+    background-color: #eef6f6;
+}
+.deduct-page {
+    & .coords-wrap {
+        padding: 15px 10px;
+        & .coords {
+            font-size: 13px;
+            line-height: 34px;
+            color: #5ba6ff;
+            background: #d1e6f8 url(../images/coords.png) no-repeat;
+            padding:5px 15px;
+            border-radius: 36px;
+            padding-left: 26px;
+            background-size: 22px 66px;
+            background-position: 5px -36px;
+        }
+    }
+
+    & .deduct-main {
+        background:#fff;
+        & .nums-wrap {
+            padding: 20px 0;
+            margin: 0 auto;
+            & .bg-wrap {
+                width: 42%;
+                margin: 0 auto 15px;
+                position: relative;
+                background: url(../images/nums_bg_light.png) no-repeat;
+                background-size: 100%;
+                & img {
+                    width: 100%;
+                    opacity: 0;
+                }
+                & span {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    -webkit-transform: translate(-50%,-50%)!important;
+                    transform: translate(-50%,-50%)!important;
+                    font-size: 22px;
+                    color: #81b8ff;
+                    & i {
+                        font-style: normal;
+                        font-size: 13px;
+                    }
+                }
+            }
+            & .deduct-items {
+                overflow: hidden;
+                
+                & .list-item {
+                    width: 25%;
+                    text-align: center;
+                    font-size: 14px;
+                    float: left;
+                    & .cir-item {
+                        width: 60px;
+                        height:60px;
+                        line-height: 60px;
+                        text-align: center;
+                        border-radius: 50%;
+                        margin:12px auto;
+                        background:#eef6ff;
+                        color: #81b8ff;
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+                    &.cur {
+                        color: #85baff;
+                        & .cir-item {
+                            background:#add2ff;
+                            color: #fff;
+                        }
+                    }
+                }
+                &.four-items {
+                    & .list-item {
+                        width: 25%; 
+                    }  
+                }
+                &.three-items {
+                    & .list-item {
+                        width: 33.33%; 
+                    }  
+                }
+            }
+        }
+    }
+    & .detail-wrap {
+        background:#fff;
+        margin-top: 10px;
+        & .detail-main {
+            margin:0 6px;
+            padding:10px 0;
+            & .detail-item {
+                width: 100%;
+                margin-bottom: 8px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                & .tit {
+                    background:#d8eaff;
+                    color: #5ba6ff;
+                    padding:10px;
+                    font-size: 15px;
+                    font-weight: bold;
+                    position: relative;
+                    & i {
+                        width: 8px;
+                        height: 4.5px;
+                        position: absolute;
+                        top: 50%;
+                        right: 17px;
+                        background:url(../images/deduct_arrow.png) no-repeat 0px -27px;
+                        background-size: 8px 40px;
+                        &.active {
+                            background:url(../images/deduct_arrow.png) no-repeat 0px -8px;
+                            background-size: 8px 40px;
+                        }
+                    }
+                }
+                & .txt {
+                    display: none;
+                    background:#f7fbff;
+                    color: #454545;
+                    padding:0 10px;
+                    & p {
+                        line-height: 2;
+                        border-bottom: 1px solid #e5e8ec;
+                        padding: 10px;
+                        font-size: 13px;
+                        &:last-child {
+                            border-bottom: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

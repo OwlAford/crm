@@ -47,9 +47,19 @@
           </tr>
           <tr>
             <td class="qrC"><div class="helperCode"><i class="e"></i>杭州银行手机银行</div></td>
-            <td class="ta-c"><div class="helperCode"><i class="f"></i></div></td>
+            <td class="qrC"><div class="helperCode"><i class="e"></i>云抵贷</div></td>
+          </tr>
+          <tr>
+              <td class="qrC"><div class="helperCode"><i class="e"></i>税金贷</div></td>
+              <td class="qrC"><div class="helperCode"><i class="e"></i>微贷卡</div></td>
+          </tr>
+          <tr>
+              <td class="ta-c"><div class="helperCode"><i class="f"></i></div></td>
           </tr>
         </table>
+        <div class="slide-wrap">
+          <span class="c-open">点击展开</span>
+        </div>
         </div>
       </div>
       <div class="area list">
@@ -80,8 +90,28 @@
 
     $('.mask2').click(function () {
         $(".mask2,.qaq").hide();
-    })
-    
+    });
+    hi_show();
+    function hi_show(){
+      var tr_len = $('.helperTable tr').length;
+      for(var b = 0; b < tr_len; b++){
+        if(b > 1){
+          $('.helperTable tr' + ':eq(' +  b + ')').hide();
+        }
+      }
+    }
+    $('.c-open').on('click',function(){
+      if($(this).hasClass('c-close')){
+        $('.c-open').text('点击展开');
+        $(this).removeClass('c-close');
+        hi_show();
+      } else {
+        $(this).addClass('c-close');
+        $(this).text('点击收起');
+        $('.helperTable tr').show();
+      }
+      
+    });
     var allQaq = $(".qaq");
     var $qrC = $(".qrC");
     len = $qrC.length;
