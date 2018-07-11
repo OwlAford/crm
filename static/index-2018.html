@@ -13,6 +13,7 @@
 <script src="../js/jquery.min.js"></script>
 <script src="../js/echarts.simple.min.js"></script>
 <script src="../js/circle-progress.min.js"></script>
+<script src="../js/multi-wave.js"></script>
 <script src="../js/swiper.min.js"></script>
 </head>
 
@@ -57,64 +58,69 @@
 			</div>
 			<div class="area previewInfo">
 				<div class="swiper-wrap">
-					<div class="swiper" id="slider">
+					<div class="wave" style="height: 60%; width: 100%;" id="multiWave"></div>
+					<div class="swiper" id="slider" style="position: absolute; left: 0; top: 0;">
 						<div class="item">
-							<div class="numCenter"><span class="num">+1,689.00</span>万元</div>
-							<div class="listDot">
-								<div class="dotItem active">
-									<div class="dot">T</div>
-									<div class="txt">今日</div>
+							<div class="infoWrap">
+								<div class="numCenter"><span class="num">+1,689.00</span>万元</div>
+								<div class="listDot">
+									<div class="dotItem active">
+										<div class="dot">T</div>
+										<div class="txt">今日</div>
+									</div>
+									<div class="dotItem">
+										<div class="dot">D</div>
+										<div class="txt">比上日</div>
+									</div>
+									<div class="dotItem">
+										<div class="dot">W</div>
+										<div class="txt">比上周</div>
+									</div>
+									<div class="dotItem">
+										<div class="dot">M</div>
+										<div class="txt">比上月</div>
+									</div>
+									<div class="dotItem">
+										<div class="dot">Y</div>
+										<div class="txt">比去年</div>
+									</div>
 								</div>
-								<div class="dotItem">
-									<div class="dot">D</div>
-									<div class="txt">比上日</div>
+								<div class="total row">
+									<div class="tt">总贷款 (万)：</div>
+									<div class="cell">36,698,456.00</div>
 								</div>
-								<div class="dotItem">
-									<div class="dot">W</div>
-									<div class="txt">比上周</div>
-								</div>
-								<div class="dotItem">
-									<div class="dot">M</div>
-									<div class="txt">比上月</div>
-								</div>
-								<div class="dotItem">
-									<div class="dot">Y</div>
-									<div class="txt">比去年</div>
-								</div>
-							</div>
-							<div class="total row">
-								<div class="tt">总贷款 (万)：</div>
-								<div class="cell">36,698,456.00</div>
 							</div>
 						</div>
 						<div class="item">
-							<div class="numCenter"><span class="num">+1,689.00</span>万元</div>
-							<div class="listDot">
-								<div class="dotItem active">
-									<div class="dot">T</div>
-									<div class="txt">今日</div>
+							<div class="infoWrap">
+								<div class="numCenter"><span class="num">+1,689.00</span>万元</div>
+								<div class="listDot">
+									<div class="dotItem active">
+										<div class="dot">T</div>
+										<div class="txt">今日</div>
+									</div>
+									<div class="dotItem">
+										<div class="dot">D</div>
+										<div class="txt">比上日</div>
+									</div>
+									<div class="dotItem">
+										<div class="dot">W</div>
+										<div class="txt">比上周</div>
+									</div>
+									<div class="dotItem">
+										<div class="dot">M</div>
+										<div class="txt">比上月</div>
+									</div>
+									<div class="dotItem">
+										<div class="dot">Y</div>
+										<div class="txt">比去年</div>
+									</div>
 								</div>
-								<div class="dotItem">
-									<div class="dot">D</div>
-									<div class="txt">比上日</div>
+								<div class="total row">
+									<div class="tt">个人贷款 (万)：</div>
+									<div class="cell">36,698,456.00</div>
 								</div>
-								<div class="dotItem">
-									<div class="dot">W</div>
-									<div class="txt">比上周</div>
-								</div>
-								<div class="dotItem">
-									<div class="dot">M</div>
-									<div class="txt">比上月</div>
-								</div>
-								<div class="dotItem">
-									<div class="dot">Y</div>
-									<div class="txt">比去年</div>
-								</div>
-							</div>
-							<div class="total row">
-								<div class="tt">个人贷款 (万)：</div>
-								<div class="cell">36,698,456.00</div>
-							</div>
+							</div>	
 						</div>
 					</div>
 				</div>
@@ -187,7 +193,7 @@
 	<script type="text/javascript">
 	$(function () {
 		// 切换皮肤
-		changeTheme()
+		// changeTheme()
 		var isLight = window.globalThemeType === 'light'
 
 		// 手动给多个元素动态添加水印
@@ -276,7 +282,47 @@
 		setCircle('#pie4', 0.42, colorsPanel[3])
 		setCircle('#pie5', 0.88, colorsPanel[0])
 		setCircle('#pie6', 0.52, colorsPanel[1])
+	
+		// 波浪特效
+		var darkWave = [{
+			color: 'rgba(255, 255, 255, 0.1)',
+			position: 0.3
+		}, {
+			color: 'rgba(255, 255, 255, 0)',
+			position: 1
+		}]
 
+		var lightWave = [{
+			color: 'rgba(96, 167, 255, 0.2)',
+			position: 0.3
+		}, {
+			color: 'rgba(255, 255, 255, 0)',
+			position: 1
+		}]
+
+		var finalColor = isLight ? lightWave : darkWave;
+
+		new MultiWave(document.getElementById('multiWave'), [{
+			id: 'wave-b',
+			waveWidth: '22%',
+			offsetX: '30%',
+			waveHeight: '15%',
+			waveColor: finalColor,
+			startFromTop: '80%',
+			endFromTop: '50%',
+			moveYStep: '0.6%',
+			moveXStep: '0.3%'
+		}, {
+			id: 'wave-c',
+			waveWidth: '22%',
+			offsetX: '80%',
+			waveHeight: '15%',
+			waveColor: finalColor,
+			startFromTop: '80%',
+			endFromTop: '50%',
+			moveYStep: '0.6%',
+			moveXStep: '0.6%'
+		}])
 	})
 	</script>
 </body>
