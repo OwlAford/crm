@@ -4934,7 +4934,13 @@ i.ico-local {
 }
 
 .deduct-page .coords-wrap {
-  padding: 15px 10px;
+  padding: 10px;
+  background-color: #05204d;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 999;
 }
 
 .deduct-page .coords-wrap .coords {
@@ -4948,6 +4954,10 @@ i.ico-local {
   background-size: 22px 64px;
   background-position: 5px -1px;
   background-color: rgba(119, 225, 250, 0.2);
+}
+
+.deduct-page .deduct-main {
+  padding-top: 54px;
 }
 
 .deduct-page .deduct-main .nums-wrap {

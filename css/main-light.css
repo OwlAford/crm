@@ -5025,6 +5025,13 @@ i.ico-local {
 
 .deduct-page .coords-wrap {
   padding: 15px 10px;
+  padding: 10px;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 999;
 }
 
 .deduct-page .coords-wrap .coords {
@@ -5041,6 +5048,7 @@ i.ico-local {
 
 .deduct-page .deduct-main {
   background: #fff;
+  padding-top: 54px;
 }
 
 .deduct-page .deduct-main .nums-wrap {
