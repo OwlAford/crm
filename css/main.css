@@ -800,7 +800,7 @@ body, .crm-wrap {
 }
 
 .mcList .area {
-  padding: 0.32rem 0.2rem 0.32rem 0.64rem;
+  padding: 0.32rem 0.32rem 0.32rem 0.64rem;
   width: 100%;
 }
 
@@ -2097,6 +2097,11 @@ body, .crm-wrap {
   background: rgba(125, 230, 255, 0.2) url(../images/koukuan.png) no-repeat;
   background-size: 100% auto;
   background-position: 0 100%;
+}
+
+.info-page .infoList > .area i.j {
+  background: rgba(125, 230, 255, 0.2) url(../images/yuqing.png) no-repeat;
+  background-size: 100% auto;
 }
 
 .info-page .infoList > .area i .tip {

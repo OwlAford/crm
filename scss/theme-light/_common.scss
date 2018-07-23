@@ -375,6 +375,7 @@
       width: 100%;
       overflow: hidden;
       padding: .2rem 0;
+  
       .btn-change {
         display: inline-block;
         padding-left: .4rem;
@@ -582,9 +583,7 @@
         min-width: 1.44rem;
         text-align: center;
         border: 1px solid #eee;
-        
-        &.active {
-        }
+
       }
     }
   }
@@ -627,7 +626,7 @@
 .mcList {
 
   .area {
-    padding: 0.32rem 0.2rem 0.32rem 0.64rem;
+    padding: 0.32rem 0.32rem 0.32rem 0.64rem;
     width: 100%;
 
     .row {

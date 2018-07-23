@@ -299,10 +299,16 @@
         &.h {
           background-position: 0 100%;
         }
+
         &.i {
           background: $bgBlue url(../images/koukuan.png) no-repeat;
           background-size: 100% auto;
           background-position: 0 100%;
+        }
+        
+        &.j {
+          background: $bgBlue url(../images/yuqing.png) no-repeat;
+          background-size: 100% auto;
         }
 
         .tip {

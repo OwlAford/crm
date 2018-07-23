@@ -805,7 +805,7 @@ body, .crm-wrap {
 }
 
 .mcList .area {
-  padding: 0.32rem 0.2rem 0.32rem 0.64rem;
+  padding: 0.32rem 0.32rem 0.32rem 0.64rem;
   width: 100%;
 }
 
@@ -2144,6 +2144,11 @@ body, .crm-wrap {
   background: #deedff url(../images/koukuan_light.png) no-repeat;
   background-size: 100% auto;
   background-position: 0 100%;
+}
+
+.info-page .infoList > .area i.j {
+  background: #deedff url(../images/yuqing_light.png) no-repeat;
+  background-size: 100% auto;
 }
 
 .info-page .infoList > .area i .tip {
