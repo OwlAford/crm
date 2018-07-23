@@ -61,6 +61,10 @@ body, .crm-wrap {
   font-weight: bold;
 }
 
+.fw-normal {
+  font-weight: normal;
+}
+
 .fc-blue {
   color: #2e98e8;
 }
@@ -1424,6 +1428,7 @@ body, .crm-wrap {
 
 .home-page .area.previewInfo .listDot .dotItem {
   text-align: center;
+  margin: 0 0.32rem;
 }
 
 .home-page .area.previewInfo .listDot .dotItem .dot {
@@ -2907,9 +2912,34 @@ body, .crm-wrap {
   border-top: 3px solid #c6e6ff;
 }
 
+.rank-page .customerList .card .tt.type2, .visit-page .customerList .card .tt.type2, .helper-page .customerList .card .tt.type2, .yunloan-page .customerList .card .tt.type2 {
+  color: #fff;
+  border: none;
+  background: #9dcaff;
+}
+
 .rank-page .customerList .card .tt .state, .visit-page .customerList .card .tt .state, .helper-page .customerList .card .tt .state, .yunloan-page .customerList .card .tt .state {
   color: #2e98e8;
   padding-left: 0.1rem;
+}
+
+.rank-page .customerList .card .tt .label, .visit-page .customerList .card .tt .label, .helper-page .customerList .card .tt .label, .yunloan-page .customerList .card .tt .label {
+  padding-left: 0.2rem;
+  margin-right: 0.16rem;
+  position: relative;
+}
+
+.rank-page .customerList .card .tt .label:after, .visit-page .customerList .card .tt .label:after, .helper-page .customerList .card .tt .label:after, .yunloan-page .customerList .card .tt .label:after {
+  content: "";
+  display: block;
+  height: 0.1rem;
+  width: 0.1rem;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -0.05rem;
+  background-color: #fff;
 }
 
 .rank-page .customerList .card .row:not(.tt) div, .visit-page .customerList .card .row:not(.tt) div, .helper-page .customerList .card .row:not(.tt) div, .yunloan-page .customerList .card .row:not(.tt) div {
@@ -4076,6 +4106,10 @@ i.ico-local {
   background-position: 100% 75%;
 }
 
+.company-page .helperI i.i {
+  background-position: 0 100%;
+}
+
 .company-page .adjust-cell {
   padding-left: 0.2rem;
   line-height: 0.5rem;
@@ -5026,7 +5060,7 @@ i.ico-local {
 .deduct-page .coords-wrap {
   padding: 15px 10px;
   padding: 10px;
-  background-color: #fff;
+  background-color: #eef7f6;
   position: fixed;
   width: 100%;
   left: 0;
