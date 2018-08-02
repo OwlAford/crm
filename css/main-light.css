@@ -4171,6 +4171,15 @@ i.ico-local {
 
 .company-page .helperContent .cell {
   color: #bfbfbf;
+  position: relative;
+}
+
+.company-page .helperContent .cell .label {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 12px;
+  color: #9e9e9e;
 }
 
 .company-page .helperContent .cell i {
@@ -4652,6 +4661,138 @@ i.ico-local {
 .company-page .btn-flex.subDel .edit:before {
   background: url(../images/pen.png) no-repeat center center;
   background-size: 18px;
+}
+
+.company-page .grp {
+  margin-bottom: 0.2rem;
+}
+
+.company-page .grp .list .item {
+  padding: 0.1rem 0.2rem;
+}
+
+.company-page .grp .handle {
+  text-align: center;
+  padding-top: 0.2rem;
+  color: #2e98e8;
+}
+
+.company-page .grp .handle:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.2rem;
+  height: 0.1rem;
+  width: 0.1rem;
+  border: 1px solid #2e98e8;
+  border-width: 1px 1px 0 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.company-page .grp .handle.spr:after {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  margin-top: -0.1rem;
+}
+
+.company-page .grp .tit {
+  background-color: #9dcaff;
+  padding: 0.24rem 0.3rem;
+  color: #fff;
+}
+
+.company-page .grp .tit.arr:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.05rem;
+  right: 0.3rem;
+  height: 0.1rem;
+  width: 0.1rem;
+  border: 1px solid #fff;
+  border-width: 1px 1px 0 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.company-page .grp .tit.arr.spr:after {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.company-page .grp .tit.order {
+  padding-left: 1.2rem;
+  background-color: #9dcaff;
+  position: relative;
+}
+
+.company-page .grp .tit.order:after {
+  content: attr(data-order);
+  position: absolute;
+  height: 0.8rem;
+  width: 0.8rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 0.8rem;
+  background-color: #bbdaff;
+  left: 0.2rem;
+  top: 50%;
+  margin-top: -0.4rem;
+  font-size: 16px;
+}
+
+.company-page .grp .tit h1, .company-page .grp .tit h2 {
+  font-weight: normal;
+  line-height: 1.8;
+}
+
+.company-page .grp .tit h1 {
+  font-size: 14px;
+}
+
+.company-page .grp .tit h2 {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.company-page .regist {
+  padding: 0.2rem;
+}
+
+.company-page .regist .info-item {
+  padding: 0.05rem 0;
+}
+
+.company-page .regist .info-item.order {
+  position: relative;
+  padding-left: 0.1rem;
+}
+
+.company-page .regist .info-item.order:after {
+  content: attr(data-order);
+  position: absolute;
+  left: -0.2rem;
+  top: 0.14rem;
+  font-size: 12px;
+  line-height: 20px;
+  color: #aeaeae;
+}
+
+.company-page .regist .info-item .itm {
+  padding: 0.05rem 0;
+}
+
+.company-page .regist .info-item .tt {
+  font-size: 12px;
+  padding: 0.1rem 0;
+  color: #aeaeae;
+}
+
+.company-page .regist .info-item .detail {
+  color: #5ba6ff;
+  padding: 0.05rem 0;
 }
 
 .cardLimit-page .switch-item {
