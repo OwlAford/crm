@@ -147,9 +147,7 @@
 
   .helperTable {
     width: 100%;
-    tr {
-      // display: none;
-    }
+
     td {
       width: 100px;
       padding: 0.1rem;  
@@ -259,6 +257,18 @@
         &.b17 {
           background-position: 57.142857% 100%;
         }
+
+        &.b18 {
+          background-position: 71.428571% 100%;
+        }
+
+        &.b19 {
+          background-position: 85.714286% 100%;
+        }
+
+        &.b20 {
+          background-position: 100% 100%;
+        }
       }
 
       &.active {
@@ -331,6 +341,18 @@
   
           &.b17 {
             background-position: 0 100%;
+          }
+
+          &.b18 {
+            background-position: 14.285714% 100%;
+          }
+
+          &.b19 {
+            background-position: 28.571429% 100%;
+          }
+
+          &.b20 {
+            background-position: 42.857143% 100%;
           }
         }
       }

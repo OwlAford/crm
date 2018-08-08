@@ -4163,6 +4163,18 @@ i.ico-local {
   background-position: 57.142857% 100%;
 }
 
+.company-page .helperContent .cell i.b18 {
+  background-position: 71.428571% 100%;
+}
+
+.company-page .helperContent .cell i.b19 {
+  background-position: 85.714286% 100%;
+}
+
+.company-page .helperContent .cell i.b20 {
+  background-position: 100% 100%;
+}
+
 .company-page .helperContent .cell.active {
   color: #fff;
 }
@@ -4233,6 +4245,18 @@ i.ico-local {
 
 .company-page .helperContent .cell.active i.b17 {
   background-position: 0 100%;
+}
+
+.company-page .helperContent .cell.active i.b18 {
+  background-position: 14.285714% 100%;
+}
+
+.company-page .helperContent .cell.active i.b19 {
+  background-position: 28.571429% 100%;
+}
+
+.company-page .helperContent .cell.active i.b20 {
+  background-position: 42.857143% 100%;
 }
 
 .company-page .phone i {
