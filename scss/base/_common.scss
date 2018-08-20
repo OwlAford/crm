@@ -380,7 +380,7 @@
         color: #fee47a;
         background: url(../../images/btn_change.png) no-repeat 0 2px;
         background-size: 14px 14px;
-        float: right;
+        // float: right;
       }
     }
     .result-wrap {
@@ -750,7 +750,7 @@
   }
 }
 
-.rank-page, .task-page, .machine-page, .visit-page {
+.rank-page, .task-page, .machine-page, .visit-page, .search-page {
   .tabs {
     background-color: rgba(196, 198, 207, 0.16);  
 
@@ -1042,5 +1042,59 @@
         }
       }
     }
+  }
+}
+
+.scrollText {
+  padding: 0 0.16rem;
+
+  .textInner {
+    width: 100%;
+    overflow: auto;
+  }
+
+  .textScroller {
+    width: 100%;
+    word-break: keep-all;
+    white-space: nowrap;
+
+    span {
+      padding: 0.1rem 0.2rem;
+
+      &.active {
+        color: #77e1fa;
+      }
+
+      & + span:after {
+        content: '';
+        width: 0;
+        height: 14px;
+        border-left: 1px solid rgba(255, 255, 255, 0.06);
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -7px;
+      }
+    }
+  }
+
+  .prevArr, .nextArr {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.25rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    right: -0.3rem;
+    font-size: 0.46rem;
+    line-height: 0.5rem;
+    text-align: center;
+
+    &:active {
+      color: #77e1fa;
+    }
+  }
+
+  .prevArr {
+    left: -0.3rem;
   }
 }

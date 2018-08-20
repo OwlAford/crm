@@ -1,15 +1,14 @@
 .task-page {
-
-  .filterList {
-    margin-bottom: 0.1rem;
-  }
-  
   .switch-content {
     padding-top: 0.1rem;
 
     .switch-item {
       display: none;
     }
+  }
+
+  .filterList {
+    margin-bottom: 0.1rem;
   }
 
   .bank-list {
@@ -127,7 +126,7 @@
 
 }
 
-.task-page, .machine-page, .visit-page {
+.task-page, .machine-page, .visit-page, .search-page {
   .tabFixedWrap {
     height: 0.88rem;
 

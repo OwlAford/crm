@@ -935,11 +935,11 @@ body, .crm-wrap {
   content: attr(data-num);
 }
 
-.rank-page .tabs, .task-page .tabs, .machine-page .tabs, .visit-page .tabs {
+.rank-page .tabs, .task-page .tabs, .machine-page .tabs, .visit-page .tabs, .search-page .tabs {
   background-color: #fff;
 }
 
-.rank-page .tabs .cell, .task-page .tabs .cell, .machine-page .tabs .cell, .visit-page .tabs .cell {
+.rank-page .tabs .cell, .task-page .tabs .cell, .machine-page .tabs .cell, .visit-page .tabs .cell, .search-page .tabs .cell {
   text-align: center;
   height: 0.88rem;
   line-height: 0.88rem;
@@ -948,7 +948,7 @@ body, .crm-wrap {
   overflow: hidden;
 }
 
-.rank-page .tabs .cell:after, .task-page .tabs .cell:after, .machine-page .tabs .cell:after, .visit-page .tabs .cell:after {
+.rank-page .tabs .cell:after, .task-page .tabs .cell:after, .machine-page .tabs .cell:after, .visit-page .tabs .cell:after, .search-page .tabs .cell:after {
   content: "";
   display: block;
   height: 0.04rem;
@@ -958,11 +958,11 @@ body, .crm-wrap {
   bottom: 0;
 }
 
-.rank-page .tabs .cell.active, .task-page .tabs .cell.active, .machine-page .tabs .cell.active, .visit-page .tabs .cell.active {
+.rank-page .tabs .cell.active, .task-page .tabs .cell.active, .machine-page .tabs .cell.active, .visit-page .tabs .cell.active, .search-page .tabs .cell.active {
   color: #2e98e8;
 }
 
-.rank-page .tabs .cell.active:after, .task-page .tabs .cell.active:after, .machine-page .tabs .cell.active:after, .visit-page .tabs .cell.active:after {
+.rank-page .tabs .cell.active:after, .task-page .tabs .cell.active:after, .machine-page .tabs .cell.active:after, .visit-page .tabs .cell.active:after, .search-page .tabs .cell.active:after {
   background-color: #2e98e8;
 }
 
@@ -1228,6 +1228,64 @@ body, .crm-wrap {
 .select-box .inner .optItem .desc .num {
   font-size: 12px;
   color: #929292;
+}
+
+.scrollTextWrap {
+  background-color: #eee;
+}
+
+.scrollText {
+  padding: 0 0.16rem;
+}
+
+.scrollText .textInner {
+  width: 100%;
+  overflow: auto;
+}
+
+.scrollText .textScroller {
+  width: 100%;
+  word-break: keep-all;
+  white-space: nowrap;
+}
+
+.scrollText .textScroller span {
+  padding: 0.1rem 0.2rem;
+}
+
+.scrollText .textScroller span.active {
+  color: #5ba6ff;
+}
+
+.scrollText .textScroller span + span:after {
+  content: '';
+  width: 0;
+  height: 14px;
+  border-left: 1px solid #b6b6b6;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -7px;
+}
+
+.scrollText .prevArr, .scrollText .nextArr {
+  position: absolute;
+  top: 50%;
+  margin-top: -0.25rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  right: -0.3rem;
+  font-size: 0.46rem;
+  line-height: 0.5rem;
+  text-align: center;
+}
+
+.scrollText .prevArr:active, .scrollText .nextArr:active {
+  color: #5ba6ff;
+}
+
+.scrollText .prevArr {
+  left: -0.3rem;
 }
 
 .home-page .menu {
@@ -3102,6 +3160,10 @@ body, .crm-wrap {
   padding-right: 0.2rem;
 }
 
+.search-page .switch-content .switch-item {
+  display: none;
+}
+
 .work-page .userDtail .baseInfo, .visit-page .userDtail .baseInfo {
   padding: 0.3rem 0.3rem 0.3rem 1.56rem;
 }
@@ -3204,16 +3266,16 @@ i.ico-local {
   width: 1.26rem;
 }
 
-.task-page .filterList {
-  margin-bottom: 0.1rem;
-}
-
 .task-page .switch-content {
   padding-top: 0.1rem;
 }
 
 .task-page .switch-content .switch-item {
   display: none;
+}
+
+.task-page .filterList {
+  margin-bottom: 0.1rem;
 }
 
 .task-page .bank-list {
@@ -3333,11 +3395,11 @@ i.ico-local {
   width: 100%;
 }
 
-.task-page .tabFixedWrap, .machine-page .tabFixedWrap, .visit-page .tabFixedWrap {
+.task-page .tabFixedWrap, .machine-page .tabFixedWrap, .visit-page .tabFixedWrap, .search-page .tabFixedWrap {
   height: 0.88rem;
 }
 
-.task-page .tabFixedWrap .tabs, .machine-page .tabFixedWrap .tabs, .visit-page .tabFixedWrap .tabs {
+.task-page .tabFixedWrap .tabs, .machine-page .tabFixedWrap .tabs, .visit-page .tabFixedWrap .tabs, .search-page .tabFixedWrap .tabs {
   width: 100%;
   position: fixed;
   left: 0;

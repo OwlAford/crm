@@ -755,7 +755,7 @@
   }
 }
 
-.rank-page, .task-page, .machine-page, .visit-page {
+.rank-page, .task-page, .machine-page, .visit-page, .search-page {
   .tabs {
     background-color: #fff;  
 
@@ -1061,5 +1061,63 @@
         }
       }
     }
+  }
+}
+
+.scrollTextWrap {
+  background-color: #eee;
+}
+
+.scrollText {
+  padding: 0 0.16rem;
+
+  .textInner {
+    width: 100%;
+    overflow: auto;
+  }
+
+  .textScroller {
+    width: 100%;
+    word-break: keep-all;
+    white-space: nowrap;
+
+    span {
+      padding: 0.1rem 0.2rem;
+
+      &.active {
+        color: #5ba6ff;
+      }
+
+      & + span:after {
+        content: '';
+        width: 0;
+        height: 14px;
+        border-left: 1px solid #b6b6b6;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -7px;
+      }
+    }
+  }
+
+  .prevArr, .nextArr {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.25rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    right: -0.3rem;
+    font-size: 0.46rem;
+    line-height: 0.5rem;
+    text-align: center;
+
+    &:active {
+      color: #5ba6ff;
+    }
+  }
+
+  .prevArr {
+    left: -0.3rem;
   }
 }
