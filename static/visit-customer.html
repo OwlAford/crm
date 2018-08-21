@@ -59,18 +59,6 @@
                   <input type="text" value="" placeholder="请输入单位名称">
                 </div>
               </div>
-              <!-- <div class="item row">
-                <div class="label">客户户名：</div>
-                <div class="ipt cell">
-                  <input type="text" value="" placeholder="请输入客户户名">
-                </div>
-              </div>
-              <div class="item row">
-                <div class="label">证件号码：</div>
-                <div class="ipt cell">
-                  <input type="text" value="" placeholder="请输入证件号码">
-                </div>
-              </div> -->
             </div>
           </div>
 
@@ -119,17 +107,188 @@
             </div>
           </div>
 
+          <div class="area">
+            <div class="list">
+              <div class="item row">
+                <div class="label">客户名称：</div>
+                <div class="ipt cell">
+                  <input type="text" value="" placeholder="支持扫描营业执照二维码输入">
+                </div>
+                <div class="crm-scan"></div>
+              </div>
+              <div class="item row">
+                <div class="label">证件号码：</div>
+                <div class="ipt cell">
+                  <input type="text" value="" placeholder="请输入证件号码">
+                </div>
+              </div>
+              <div class="item row">
+                <div class="label">办公电话：</div>
+                <div class="ipt cell">
+                  <input type="text" value="" placeholder="请输入办公电话">
+                </div>
+              </div>
+              <div class="item arr row">
+                <div class="label">上门地址：</div>
+                <div class="ipt cell">
+                  <input type="text" value="" id='area1' placeholder="请选择上门地址" readonly>
+                </div>
+              </div>
+              <div class="item row">
+                <div class="label" style="visibility: hidden;">详细地址：</div>
+                <div class="ipt cell">
+                  <input type="text" value="" placeholder="请输入详细地址，如门牌号、写字楼等">
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="btn-wrap">
             <button class="base-btn">查询</button>
           </div>
         </div>
         <!-- tab3 -->
         <div class="switch-item">
-          part3
+          <div class="area">
+            <div class="list">
+              <div class="item scrollTextWrap">
+                <div class="scrollText">
+                  <div class="prevArr">‹</div>
+                  <div class="textInner">
+                    <div class="textScroller">
+                      <span class="active">公鸡贷单位白名单</span>
+                      <span>拜访</span>
+                      <span>其他业务1</span>
+                      <span>其他业务2</span>
+                      <span>其他业务3</span>
+                      <span>其他业务4</span>
+                    </div>
+                  </div>
+                  <div class="nextArr">›</div>
+                </div>
+              </div>
+              <div class="item filterList row">
+                <div class="tt lh20" style="padding-left: 0;">客户类型</div>
+                <ul class="cell">
+                  <li class="dg active"><i class="b"></i>对公</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="area">
+            <div class="list">
+              <div class="item row">
+                <div class="label">客户名称：</div>
+                <div class="ipt cell">
+                  <input type="text" value="" placeholder="支持扫描营业执照二维码输入">
+                </div>
+                <div class="crm-scan"></div>
+              </div>
+              <div class="item row">
+                <div class="label">证件号码：</div>
+                <div class="ipt cell">
+                  <input type="text" value="" placeholder="请输入证件号码">
+                </div>
+              </div>
+              <div class="item row">
+                <div class="label">办公电话：</div>
+                <div class="ipt cell">
+                  <input type="text" value="" placeholder="请输入办公电话">
+                </div>
+              </div>
+              <div class="item arr row">
+                <div class="label">上门地址：</div>
+                <div class="ipt cell">
+                  <input type="text" value="" id='area2' placeholder="请选择上门地址" readonly>
+                </div>
+              </div>
+              <div class="item row">
+                <div class="label" style="visibility: hidden;">详细地址：</div>
+                <div class="ipt cell">
+                  <input type="text" value="" placeholder="请输入详细地址，如门牌号、写字楼等">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-wrap">
+            <button class="base-btn">查询</button>
+          </div>
         </div>
         <!-- end -->
       </div>
-		</div>
+    </div>
+    <!-- selector -->
+    <div class="areaSelector">
+      <div class="mask"></div>
+      <div class="picker">
+        <div class="title">选择国家地区</div>
+        <div class="tabs row">
+          <div class="cell active">省份</div>
+          <div class="cell">城市</div>
+          <div class="cell">地区</div>
+          <div class="cell">街道</div>
+        </div>
+        <div class="optionGroup">
+          <div class="optionItem active">
+            <div class="tit">选择省份</div>
+            <div class="listWrapper">
+              <ul>
+                <li>安徽省</li>
+                <li>安徽省1</li>
+                <li>安徽省2</li>
+                <li>安徽省3</li>
+                <li>安徽省4</li>
+                <li>安徽省4</li>
+                <li>安徽省4</li>
+                <li>安徽省4</li>
+                <li>安徽省4</li>
+                <li>安徽省4</li>
+                <li>安徽省4</li>
+              </ul>
+            </div>
+          </div>
+          <div class="optionItem">
+            <div class="tit">选择城市</div>
+            <div class="listWrapper">
+              <ul>
+                <li>北京市</li>
+                <li>北京市1</li>
+                <li>北京市2</li>
+                <li>北京市3</li>
+                <li>北京市4</li>
+              </ul>
+            </div>
+          </div>
+          <div class="optionItem">
+            <div class="tit">选择地区</div>
+            <div class="listWrapper">
+              <ul>
+                <li>上城区</li>
+                <li>上城区1</li>
+                <li>上城区2</li>
+                <li>上城区3</li>
+                <li>上城区4</li>
+              </ul>
+            </div>
+          </div>
+          <div class="optionItem">
+            <div class="tit">选择街道/镇</div>
+            <div class="listWrapper">
+              <ul>
+                <li>翠苑街道</li>
+                <li>翠苑街道1</li>
+                <li>翠苑街道2</li>
+                <li>翠苑街道3</li>
+                <li>翠苑街道4</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="app-close"></div>
+      </div>
+    </div>
 	</div>
 	<script type="text/javascript">
 		$(function () {
@@ -155,7 +314,6 @@
           $cur.removeClass('active');
           $prev.addClass('active');
           var scrollDistance = $prev.offset().left - $scrollText.find('.textScroller').offset().left;
-          // console.log(scrollDistance);
           $scrollText.find('.textInner').animate({
             scrollLeft: scrollDistance
           }, 300);
@@ -170,7 +328,6 @@
           $cur.removeClass('active');
           $next.addClass('active');
           var scrollDistance = $next.offset().left - $scrollText.find('.textScroller').offset().left;
-          // console.log(scrollDistance);
           $scrollText.find('.textInner').animate({
             scrollLeft: scrollDistance
           }, 300);
@@ -191,7 +348,83 @@
 				} else {
 					$(this).addClass('active').siblings().removeClass('active');
 				}
-			})
+      })
+
+      // 地区选择插件现场封装
+      $.fn.extend({
+
+        areaSelector: function (cb) {
+          var $el = $(this);
+          $el.on('click', function () {
+            // 变量存储地区数据
+            var areaData = [];
+            
+            // 生成保存前快照
+            var tabShot = $('.areaSelector .tabs').html();
+            var optShot = $('.areaSelector .optionGroup').html();
+
+            // 重置方法
+            var reset = function () {
+              $('.areaSelector .tabs').html(tabShot);
+              $('.areaSelector .optionGroup').html(optShot);
+              areaData = [];
+            }
+  
+            $('.areaSelector').addClass('show');
+            
+            // 关闭地区选框
+            $('.areaSelector .app-close').on('click', function () {
+              $(this).parents('.areaSelector').removeClass('show');
+              cb($el, areaData);
+              reset();
+            })
+  
+            // 切换地区选择级别
+            $('.areaSelector .tabs .cell').on('click', function () {
+              var $cur = $(this);
+              var index = $cur.index();
+              var $selector = $cur.parents('.areaSelector');
+              var $optionItems = $selector.find('.optionItem');
+              var $activeItem = $optionItems.eq(index);
+              $cur.addClass('active').siblings().removeClass('active');
+              $activeItem.addClass('active').siblings().removeClass('active');
+            })
+  
+            // 具体地区元素选中
+            $('.areaSelector .optionGroup li').on('click', function () {
+              var $cur = $(this);
+              var index = $cur.parents('.optionItem').index();
+              var $curGroup = $cur.parents('.optionItem');
+              var $selector = $cur.parents('.areaSelector');
+              var $tab = $selector.find('.tabs .cell').eq(index);
+              var $tabNext = $tab.next();
+              var $nextGroup = $curGroup.next();
+              var value = $cur.html();
+      
+              $cur.addClass('active').siblings().removeClass('active');
+              $tab.html(value);
+              areaData[index] = value;
+              
+              // 此处插入数据请求以获取下一级数据，请求到数据后，渲染列表并切换到对应tab
+              setTimeout(function () {
+                $tabNext.addClass('active').siblings().removeClass('active');
+                $nextGroup.addClass('active').siblings().removeClass('active');
+              }, 300);
+  
+              cb($el, areaData)
+            })
+          })
+        }
+      })
+      
+
+      $('#area1').areaSelector(function ($el, areaData) {
+        $el.val(areaData.join(' '))
+      })
+
+      $('#area2').areaSelector(function ($el, areaData) {
+        $el.val(areaData.join(' '))
+      })
 		})
 	</script>
 </body>
