@@ -317,7 +317,7 @@ body, .crm-wrap {
   padding-left: 0.7rem;
 }
 
-.crm-wrap i.ico-date, .crm-wrap i.ico-calendar {
+.crm-wrap i.ico-date, .crm-wrap i.ico-calendar, .crm-wrap i.ico-edit {
   height: 22px;
   width: 22px;
   display: inline-block;
@@ -330,6 +330,12 @@ body, .crm-wrap {
   height: 20px;
   width: 20px;
   background-image: url(../images/calendar.png);
+}
+
+.crm-wrap i.ico-edit {
+  height: 20px;
+  width: 20px;
+  background-image: url(../images/edit.png);
 }
 
 .crm-wrap .empty-blank {
@@ -681,8 +687,63 @@ body, .crm-wrap {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.crm-wrap .ipt.lenovo-ipt input {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.crm-wrap .ipt.lenovo-ipt input:-moz-read-only {
+  background: none;
+}
+
+.crm-wrap .ipt.lenovo-ipt input:read-only {
+  background: none;
+}
+
+.crm-wrap .ipt .lenovo {
+  position: absolute;
+  left: 0;
+  top: 22px;
+  z-index: 99;
+  font-size: 12px;
+  display: none;
+}
+
+.crm-wrap .ipt .lenovo.show {
+  display: block;
+}
+
+.crm-wrap .ipt .lenovo li {
+  padding: 0.1rem 0.2rem;
+  background-color: #5e6d91;
+}
+
+.crm-wrap .ipt .lenovo li.active, .crm-wrap .ipt .lenovo li:active {
+  background-color: #71b3d1;
+}
+
 .crm-wrap .list .item {
   padding: 0.3rem;
+}
+
+.crm-wrap .list .item.lenovo-item {
+  padding: 0 0.3rem;
+}
+
+.crm-wrap .list .item.lenovo-item .label {
+  padding: 0.3rem 0;
+}
+
+.crm-wrap .list .item.lenovo-item .ipt {
+  margin: 0.2rem 0.4rem 0.2rem 0.2rem;
+}
+
+.crm-wrap .list .item.lenovo-item .ipt input {
+  padding: 0.1rem;
+}
+
+.crm-wrap .list .item.lenovo-item i {
+  display: block;
+  margin: 0.3rem 0;
 }
 
 .crm-wrap .list .item.fold, .crm-wrap .list .item.arr {
@@ -3709,7 +3770,7 @@ i.ico-local {
   margin: -2px 4px 0 0;
 }
 
-.machine-page .setPanel i.ico-date, .machine-page .setPanel .crm-wrap i.ico-calendar, .crm-wrap .machine-page .setPanel i.ico-calendar {
+.machine-page .setPanel i.ico-date, .machine-page .setPanel .crm-wrap i.ico-calendar, .crm-wrap .machine-page .setPanel i.ico-calendar, .machine-page .setPanel .crm-wrap i.ico-edit, .crm-wrap .machine-page .setPanel i.ico-edit {
   margin: 0 0.1rem 0 0.12rem;
 }
 
@@ -3840,6 +3901,13 @@ i.ico-local {
   padding: 0.3rem 0.2rem 0.3rem 1rem;
 }
 
+.visit-page .companyTit {
+  padding: 0.3rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #7de6ff;
+  font-size: 15px;
+}
+
 .visit-page .lh-5 {
   line-height: .5rem;
 }
@@ -3872,8 +3940,8 @@ i.ico-local {
   border: 1px solid rgba(255, 255, 255, 0.2);
   margin-left: .1rem;
   -webkit-box-flex: 1;
-  -ms-flex: 1;
-      flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .visit-page .modify-area .area-wrap textarea {
@@ -5051,7 +5119,7 @@ i.ico-local {
   margin: -2px 4px 0 0;
 }
 
-.cardLimit-page .setPanel i.ico-date, .cardLimit-page .setPanel .crm-wrap i.ico-calendar, .crm-wrap .cardLimit-page .setPanel i.ico-calendar {
+.cardLimit-page .setPanel i.ico-date, .cardLimit-page .setPanel .crm-wrap i.ico-calendar, .crm-wrap .cardLimit-page .setPanel i.ico-calendar, .cardLimit-page .setPanel .crm-wrap i.ico-edit, .crm-wrap .cardLimit-page .setPanel i.ico-edit {
   margin: 0 0.1rem 0 0.12rem;
 }
 

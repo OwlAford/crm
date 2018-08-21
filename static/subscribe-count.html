@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN" xml:lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="renderer" content="webkit"/>
+<title>CRM2.0</title>
+<script src="../js/init.min.js"></script>
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/main.css" id="profile">
+<script src="../js/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="crm-wrap">
+		<div class="visit-page">
+			<div class="area">
+        <div class="companyTit">海康威视科技有限公司</div>
+				<div class="list">
+					<div class="item row">
+						<div class="label">证件号码：</div>
+						<div class="ipt cell">
+							<input type="text" value="2013089807896543" placeholder="请输入证件编号" readonly>
+						</div>
+					</div>
+					<div class="item row">
+						<div class="label">办公电话：</div>
+						<div class="ipt cell">
+							<input type="text" value="0571-88997654" placeholder="请输入办公电话" readonly>
+						</div>
+					</div>
+					<div class="item row">
+						<div class="label">上门地址：</div>
+						<div class="ipt cell">
+							<input type="text" value="杭州市滨江区详细街道详细地址" placeholder="请输入上门地址" readonly>
+						</div>
+					</div>
+					<div class="item row">
+						<div class="label">上门时间：</div>
+            <div class="cell ipt">
+              <input type="text" value="2018年08月08日 9:00-10:30" placeholder="请选择时间" readonly>
+            </div>
+            <i class="ico-calendar"></i>
+          </div>
+          <div class="item lenovo-item row">
+						<div class="label">开户网点：</div>
+						<div class="ipt lenovo-ipt cell">
+              <input type="text" value="" id="invIpt" placeholder="请输入开户网点" readonly>
+              <div class="lenovo">
+                <ul>
+                  <li>77-滨江支行</li>
+                  <li>77-拱墅支行</li>
+                  <li>77-西湖支行</li>
+                </ul>
+              </div>
+            </div>
+            <i class="ico-edit"></i>
+					</div>
+				</div>
+			</div>
+			<div class="btn-wrap">
+				<button class="base-btn">完成</button>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function () {
+			// 切换皮肤 
+			changeTheme()
+
+			$('i.ico-edit').on('click', function () {
+        var $ipt = $(this).prev().find('input');
+        $ipt.attr('readonly')
+          ? $ipt.attr('readonly', false)
+          : $ipt.attr('readonly', true)
+      })
+
+      // 输入联想
+      $('#invIpt').on('keyup', function () {
+        var tmp;
+        var $ipt = $(this);
+        var $inv = $ipt.next();
+        var $invOpt = $inv.find('li');
+        var iptVal = $ipt.val();
+        iptVal ? $inv.addClass('show') : $inv.removeClass('show');
+        $invOpt.on('click', function () {
+          $ipt.val($(this).text());
+          tmp && clearTimeout(tmp);
+          tmp = setTimeout(function () {
+            $inv.removeClass('show');
+            clearTimeout(tmp);
+          }, 300);
+        })
+      })
+		})
+	</script>
+</body>
+</html>

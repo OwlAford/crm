@@ -1,7 +1,15 @@
 .visit-page {
+  .companyTit {
+    padding: 0.3rem;
+    @include bgWhiteOpacity(10);
+    color: $fcBlue;
+    font-size: 15px;
+  }
+
   .lh-5 {
     line-height: .5rem;
   }
+
   .modify {
     padding:.1rem .4rem;
     background:#5ba6ff;
@@ -9,13 +17,13 @@
     border-radius: 4px;
     margin-left: .2rem;
   }
+
   .modify-area {
     padding: .2rem;
     color: #c5c4d5;
     font-size: 13px;
-    display: -webkit-box;
-    display: -webkit-flex;
     display: flex;
+
     & .tit {
       float: left;
     }
@@ -25,9 +33,8 @@
       width: 80%;
       border:1px solid rgba(255,255,255,.2);
       margin-left: .1rem;
-      -webkit-box-flex: 1;
-      -webkit-flex: 1;
       flex: 1;
+
       & textarea {
         width: 100%;
         background: transparent;
@@ -42,6 +49,7 @@
   .submit-wrap {
     text-align: center;
     padding:.2rem;
+
     & .submit-btn {
       background:#5ba6ff;
       color: #fff;
