@@ -34,6 +34,10 @@ body, .crm-wrap {
   font-size: 12px;
 }
 
+.ft14 {
+  font-size: 14px;
+}
+
 .ft15 {
   font-size: 15px;
 }
@@ -317,7 +321,7 @@ body, .crm-wrap {
   padding-left: 0.7rem;
 }
 
-.crm-wrap i.ico-date, .crm-wrap i.ico-calendar, .crm-wrap i.ico-edit {
+.crm-wrap i.ico-date, .crm-wrap i.ico-calendar, .crm-wrap i.ico-edit, .crm-wrap i.ico-phone {
   height: 22px;
   width: 22px;
   display: inline-block;
@@ -336,6 +340,12 @@ body, .crm-wrap {
   height: 20px;
   width: 20px;
   background-image: url(../images/edit.png);
+}
+
+.crm-wrap i.ico-phone {
+  height: 20px;
+  width: 20px;
+  background-image: url(../images/phone.png);
 }
 
 .crm-wrap .empty-blank {
@@ -3770,7 +3780,7 @@ i.ico-local {
   margin: -2px 4px 0 0;
 }
 
-.machine-page .setPanel i.ico-date, .machine-page .setPanel .crm-wrap i.ico-calendar, .crm-wrap .machine-page .setPanel i.ico-calendar, .machine-page .setPanel .crm-wrap i.ico-edit, .crm-wrap .machine-page .setPanel i.ico-edit {
+.machine-page .setPanel i.ico-date, .machine-page .setPanel .crm-wrap i.ico-calendar, .crm-wrap .machine-page .setPanel i.ico-calendar, .machine-page .setPanel .crm-wrap i.ico-edit, .crm-wrap .machine-page .setPanel i.ico-edit, .machine-page .setPanel .crm-wrap i.ico-phone, .crm-wrap .machine-page .setPanel i.ico-phone {
   margin: 0 0.1rem 0 0.12rem;
 }
 
@@ -3904,12 +3914,55 @@ i.ico-local {
 .visit-page .companyTit {
   padding: 0.3rem;
   background-color: rgba(255, 255, 255, 0.1);
-  color: #7de6ff;
-  font-size: 15px;
 }
 
 .visit-page .lh-5 {
   line-height: .5rem;
+}
+
+.visit-page .switch-content .switch-item {
+  display: none;
+}
+
+.visit-page .user-contact {
+  padding-left: 0.9rem !important;
+  line-height: 2;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.visit-page .user-contact i.ico-phone {
+  position: absolute;
+  left: 0.3rem;
+  top: 50%;
+  margin-top: -10px;
+}
+
+.visit-page .detailCnt {
+  border: none;
+  padding-top: 0.3rem;
+}
+
+.visit-page .detailCnt .cycle {
+  padding: 0.4rem 0.6rem 1.2rem;
+}
+
+.visit-page .detailCnt .cycle.step2 .line:after, .visit-page .detailCnt .cycle.step3 .line:after, .visit-page .detailCnt .cycle.step4 .line:after {
+  background-color: #77e1fa;
+}
+
+.visit-page .detailCnt .cycle.step2 .line .point:nth-child(1), .visit-page .detailCnt .cycle.step2 .line .point:nth-child(2), .visit-page .detailCnt .cycle.step3 .line .point:nth-child(1), .visit-page .detailCnt .cycle.step3 .line .point:nth-child(2), .visit-page .detailCnt .cycle.step4 .line .point:nth-child(1), .visit-page .detailCnt .cycle.step4 .line .point:nth-child(2) {
+  background-color: #77e1fa;
+  color: #77e1fa;
+}
+
+.visit-page .detailCnt .cycle.step3 .line .point:nth-child(1), .visit-page .detailCnt .cycle.step3 .line .point:nth-child(2), .visit-page .detailCnt .cycle.step3 .line .point:nth-child(3) {
+  background-color: #77e1fa;
+  color: #77e1fa;
+}
+
+.visit-page .detailCnt .cycle.step4 .line .point:nth-child(1), .visit-page .detailCnt .cycle.step4 .line .point:nth-child(2), .visit-page .detailCnt .cycle.step4 .line .point:nth-child(3), .visit-page .detailCnt .cycle.step4 .line .point:nth-child(4) {
+  background-color: #77e1fa;
+  color: #77e1fa;
 }
 
 .visit-page .modify {
@@ -4015,6 +4068,10 @@ i.ico-local {
 
 .visit-page .userList {
   margin-bottom: 0.3rem;
+}
+
+.visit-page .userList .info {
+  padding-right: 0.2rem;
 }
 
 .visit-page .searchFilter {
@@ -5119,7 +5176,7 @@ i.ico-local {
   margin: -2px 4px 0 0;
 }
 
-.cardLimit-page .setPanel i.ico-date, .cardLimit-page .setPanel .crm-wrap i.ico-calendar, .crm-wrap .cardLimit-page .setPanel i.ico-calendar, .cardLimit-page .setPanel .crm-wrap i.ico-edit, .crm-wrap .cardLimit-page .setPanel i.ico-edit {
+.cardLimit-page .setPanel i.ico-date, .cardLimit-page .setPanel .crm-wrap i.ico-calendar, .crm-wrap .cardLimit-page .setPanel i.ico-calendar, .cardLimit-page .setPanel .crm-wrap i.ico-edit, .crm-wrap .cardLimit-page .setPanel i.ico-edit, .cardLimit-page .setPanel .crm-wrap i.ico-phone, .crm-wrap .cardLimit-page .setPanel i.ico-phone {
   margin: 0 0.1rem 0 0.12rem;
 }
 

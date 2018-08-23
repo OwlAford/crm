@@ -143,12 +143,19 @@
     background-image: url(../images/calendar_light.png);
   }
 
-   i.ico-edit {
-     @extend i.ico-date;
-     height: 20px;
-     width: 20px;
-     background-image: url(../images/edit_light.png);
-   }
+  i.ico-edit {
+    @extend i.ico-date;
+    height: 20px;
+    width: 20px;
+    background-image: url(../images/edit_light.png);
+  }
+
+  i.ico-phone {
+    @extend i.ico-date;
+    height: 20px;
+    width: 20px;
+    background-image: url(../images/phone_light.png);
+  }
 
   .empty-blank {
     width: 100%;

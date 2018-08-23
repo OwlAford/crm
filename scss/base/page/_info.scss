@@ -651,7 +651,7 @@
 
   .detailCnt {
     @include opacityBorder(top, 8);
- // **********************************11.1-zbwer*****************
+    
     .detailTbl {
       padding: 0.2rem 0;
       .fullTable {
@@ -669,7 +669,7 @@
     .cycle {
       padding: 0.4rem 0.6rem 1.2rem;
 
-      &.step2, &.step3, &.step4{
+      &.step2, &.step3, &.step4 {
         .line {
           &:after {
             content: "";

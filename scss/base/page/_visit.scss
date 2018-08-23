@@ -2,12 +2,81 @@
   .companyTit {
     padding: 0.3rem;
     @include bgWhiteOpacity(10);
-    color: $fcBlue;
-    font-size: 15px;
   }
 
   .lh-5 {
     line-height: .5rem;
+  }
+
+  .switch-content  {
+    .switch-item {
+      display: none;
+    }
+  }
+
+  .user-contact {
+    padding-left: 0.9rem !important;
+    line-height: 2;
+    @include opacityBorder(top, 6);
+
+    i.ico-phone {
+      position: absolute;
+      left: 0.3rem;
+      top: 50%;
+      margin-top: -10px;
+    }
+  }
+
+  .detailCnt {
+    border: none;
+    padding-top: 0.3rem;
+  
+    .cycle {
+      padding: 0.4rem 0.6rem 1.2rem;
+  
+      &.step2, &.step3, &.step4 {
+        .line {
+          &:after {
+            background-color: #77e1fa;
+          }
+  
+          .point {
+            &:nth-child(1),
+            &:nth-child(2) {
+              background-color: #77e1fa;
+              color: #77e1fa;
+            }      
+          }
+        }
+      }
+  
+      &.step3 {
+        .line {
+          .point {
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3) {
+              background-color: #77e1fa;
+              color: #77e1fa;
+            }
+          }
+        }
+      }
+  
+      &.step4 {
+        .line {
+          .point {
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4) {
+              background-color: #77e1fa;
+              color: #77e1fa;
+            }
+          }
+        }
+      }
+    }
   }
 
   .modify {
@@ -108,6 +177,10 @@
   
   .userList {
     margin-bottom: 0.3rem;
+
+    .info {
+      padding-right: 0.2rem;
+    }
   }
 
   .searchFilter {

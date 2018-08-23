@@ -1,14 +1,84 @@
 .visit-page {
   .companyTit {
     padding: 0.3rem;
-    color: $fcBlue;
     border-bottom: 1px solid #ececec;
-    font-size: 15px;
   }
 
   .lh-5 {
     line-height: .5rem;
   }
+
+  .switch-content  {
+    .switch-item {
+      display: none;
+    }
+  }
+
+   .user-contact {
+    padding-left: 0.9rem !important;
+    line-height: 2;
+    border-top: 1px solid #ececec;
+
+    i.ico-phone {
+      position: absolute;
+      left: 0.3rem;
+      top: 50%;
+      margin-top: -10px;
+    }
+  }
+
+  .detailCnt {
+    border: none;
+    padding-top: 0.3rem;
+  
+    .cycle {
+      padding: 0.4rem 0.6rem 1.2rem;
+  
+      &.step2, &.step3, &.step4 {
+        .line {
+          &:after {
+            background-color: #5ba6ff;
+          }
+  
+          .point {
+            &:nth-child(1),
+            &:nth-child(2) {
+              background-color: #5ba6ff;
+              color: #5ba6ff;
+            }      
+          }
+        }
+      }
+  
+      &.step3 {
+        .line {
+          .point {
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3) {
+              background-color: #5ba6ff;
+              color: #5ba6ff;
+            }
+          }
+        }
+      }
+  
+      &.step4 {
+        .line {
+          .point {
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4) {
+              background-color: #5ba6ff;
+              color: #5ba6ff;
+            }
+          }
+        }
+      }
+    }
+  }
+
   .modify {
     padding:.1rem .4rem;
     background:#5ba6ff;
@@ -16,6 +86,7 @@
     border-radius: 4px;
     margin-left: .2rem;
   }
+
   .modify-area {
     padding: .2rem;
     color: #c5c4d5;
@@ -23,9 +94,11 @@
     display: -webkit-box;
     display: -webkit-flex;
     display: flex;
+
     & .tit {
       float: left;
     }
+
     & .area-wrap {
       float: left;
       padding:.1rem;
@@ -46,9 +119,11 @@
       }
     }
   }
+
   .submit-wrap {
     text-align: center;
     padding:.2rem;
+
     & .submit-btn {
       background:#5ba6ff;
       color: #fff;
@@ -56,6 +131,7 @@
       border-radius: 4px;
     }
   }
+
   .cusPhone {
     padding: 0.3rem;
   }
@@ -107,6 +183,10 @@
   
   .userList {
     margin-bottom: 0.3rem;
+
+    .info {
+      padding-right: 0.2rem;
+    }
   }
 
   .searchFilter {
