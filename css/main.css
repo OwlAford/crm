@@ -4362,7 +4362,18 @@ i.ico-local {
 
 .company-page .plana {
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.company-page .plana i.del {
+  position: absolute;
+  right: 0.2rem;
+  top: 50%;
+  margin-top: -0.25rem;
+  background-image: url(../images/del.png);
+  background-size: 0.36rem auto;
+  background-position: center center;
 }
 
 .company-page .bianju {
@@ -4379,9 +4390,9 @@ i.ico-local {
 
 .company-page .findk {
   display: inline-block;
-  background-color: #38406e;
+  background-color: rgba(255, 255, 255, 0.1);
   line-height: 0.5rem;
-  padding: 0.1rem 0.2rem;
+  padding: 0.1rem 0.3rem;
 }
 
 .company-page i {

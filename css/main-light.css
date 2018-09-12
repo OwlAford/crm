@@ -4426,7 +4426,18 @@ i.ico-local {
 
 .company-page .plana {
   border-bottom: 1px solid #ececec;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.company-page .plana i.del {
+  position: absolute;
+  right: 0.2rem;
+  top: 50%;
+  margin-top: -0.25rem;
+  background-image: url(../images/del_light.png);
+  background-size: 0.36rem auto;
+  background-position: center center;
 }
 
 .company-page .bianju {
@@ -4445,7 +4456,7 @@ i.ico-local {
   display: inline-block;
   background-color: #eee;
   line-height: 0.5rem;
-  padding: 0.1rem 0.2rem;
+  padding: 0.1rem 0.3rem;
 }
 
 .company-page i {
