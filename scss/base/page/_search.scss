@@ -36,8 +36,45 @@
 
 .search-page {
   .switch-content {
-    .switch-item {
+    .switch-item,
+    .sub-switch-item {
       display: none;
+    }
+  }
+
+  .visitType {
+    @include bgWhiteOpacity(5);
+  }
+
+  .qrcode-ipt {
+    padding: 0.3rem 0.8rem 0.3rem 0.3rem;
+    position: relative;
+    margin-bottom: 0.1rem;
+
+    .iconQrcode {
+      height: 0.4rem;
+      width: 0.4rem;
+      display: block;
+      position: absolute;
+      right: 0.3rem;
+      top: 50%;
+      margin-top: -0.2rem;
+      background: url(../images/qrcode.png) no-repeat;
+      background-size: 100% auto;
+    }
+  }
+
+  .emptyList {
+    padding: 0.6rem 0;
+    text-align: center;
+
+    .icon {
+      height: 1.2rem;
+      width: 1.2rem;
+      display: block;
+      margin: 0 auto;
+      background: url(../images/empty-list.png) no-repeat center center;
+      background-size: auto 0.9rem;
     }
   }
 }

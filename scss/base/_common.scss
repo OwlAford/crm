@@ -392,7 +392,7 @@
   }
 
   .result-list {
-    padding:0.1rem 0.3rem;
+    padding:0.1rem 0.2rem;
     
     .btn-change-wrap {
       width: 100%;
@@ -409,9 +409,15 @@
       }
     }
     .result-wrap {
+      & + .result-wrap {
+        margin-top: 0.2rem;
+      }
+      
       .result-items {
         padding: .3rem;
         background: rgba(255, 255, 255, 0.2);
+        line-height: 1;
+  
         .company-name {
           display: inline-block;
           width: 70%;
@@ -427,6 +433,10 @@
       .date {
         padding: .3rem;
         background: rgba(255, 255, 255, 0.04);
+
+        .tit {
+          opacity: .6;
+        }
       }
     }
   }
@@ -1296,6 +1306,21 @@
           display: block;
         }
       }
+    }
+  }
+}
+
+.rect-tabs {
+  padding: 0.2rem;
+  text-align: center;
+
+  > .cell {
+    padding: 0.2rem;
+    @include bgWhiteOpacity(10);
+
+    &.active {
+      @include bgWhiteOpacity(20);
+      color: $fcBlue;
     }
   }
 }

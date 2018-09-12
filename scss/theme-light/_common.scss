@@ -383,7 +383,7 @@
   }
 
   .result-list {
-    padding:0.1rem 0.3rem;
+    padding:0.1rem 0.2rem;
     
     .btn-change-wrap {
       width: 100%;
@@ -396,15 +396,20 @@
         color: #ffa452;
         background: url(../../images/btn_change_light.png) no-repeat 0 2px;
         background-size: 14px 14px;
-        float: right;
       }
     }
     .result-wrap {
+      &+.result-wrap {
+        margin-top: 0.2rem;
+      }
+
       .result-items {
         padding: .3rem;
         background: #fff;
         border-bottom: 1px solid #e5e5e5;
         border-top: 3px solid #c6e6ff;
+        line-height: 1;
+        
         .company-name {
           display: inline-block;
           width: 70%;
@@ -1305,6 +1310,21 @@
           display: block;
         }
       }
+    }
+  }
+}
+
+.rect-tabs {
+  padding: 0.2rem;
+  text-align: center;
+
+  >.cell {
+    padding: 0.2rem;
+    background-color: #fff;
+
+    &.active {
+      background-color: #5ba6ff;
+      color: #fff;
     }
   }
 }

@@ -584,7 +584,7 @@ body, .crm-wrap {
 }
 
 .crm-wrap .result-list {
-  padding: 0.1rem 0.3rem;
+  padding: 0.1rem 0.2rem;
 }
 
 .crm-wrap .result-list .btn-change-wrap {
@@ -601,9 +601,14 @@ body, .crm-wrap {
   background-size: 14px 14px;
 }
 
+.crm-wrap .result-list .result-wrap + .result-wrap {
+  margin-top: 0.2rem;
+}
+
 .crm-wrap .result-list .result-wrap .result-items {
   padding: .3rem;
   background: rgba(255, 255, 255, 0.2);
+  line-height: 1;
 }
 
 .crm-wrap .result-list .result-wrap .result-items .company-name {
@@ -622,6 +627,10 @@ body, .crm-wrap {
 .crm-wrap .result-list .result-wrap .date {
   padding: .3rem;
   background: rgba(255, 255, 255, 0.04);
+}
+
+.crm-wrap .result-list .result-wrap .date .tit {
+  opacity: .6;
 }
 
 .crm-wrap .search-detail-page .filterList {
@@ -1479,6 +1488,21 @@ body, .crm-wrap {
 
 .areaSelector .picker .optionGroup .optionItem.active {
   display: block;
+}
+
+.rect-tabs {
+  padding: 0.2rem;
+  text-align: center;
+}
+
+.rect-tabs > .cell {
+  padding: 0.2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.rect-tabs > .cell.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #7de6ff;
 }
 
 .home-page .menu {
@@ -2941,6 +2965,20 @@ body, .crm-wrap {
   top: 20%;
 }
 
+.search-page .allPanel {
+  height: 1.2rem;
+}
+
+.search-page .allPanel .inner {
+  background: none;
+  padding: 0.2rem;
+}
+
+.search-page .allPanel .inner input {
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 .rank-page .orderFilterGroup, .visit-page .orderFilterGroup, .helper-page .orderFilterGroup, .yunloan-page .orderFilterGroup {
   width: 100%;
   position: absolute;
@@ -3294,8 +3332,45 @@ body, .crm-wrap {
   padding-right: 0.2rem;
 }
 
-.search-page .switch-content .switch-item {
+.search-page .switch-content .switch-item,
+.search-page .switch-content .sub-switch-item {
   display: none;
+}
+
+.search-page .visitType {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.search-page .qrcode-ipt {
+  padding: 0.3rem 0.8rem 0.3rem 0.3rem;
+  position: relative;
+  margin-bottom: 0.1rem;
+}
+
+.search-page .qrcode-ipt .iconQrcode {
+  height: 0.4rem;
+  width: 0.4rem;
+  display: block;
+  position: absolute;
+  right: 0.3rem;
+  top: 50%;
+  margin-top: -0.2rem;
+  background: url(../images/qrcode.png) no-repeat;
+  background-size: 100% auto;
+}
+
+.search-page .emptyList {
+  padding: 0.6rem 0;
+  text-align: center;
+}
+
+.search-page .emptyList .icon {
+  height: 1.2rem;
+  width: 1.2rem;
+  display: block;
+  margin: 0 auto;
+  background: url(../images/empty-list.png) no-repeat center center;
+  background-size: auto 0.9rem;
 }
 
 .work-page .userDtail .baseInfo, .visit-page .userDtail .baseInfo {

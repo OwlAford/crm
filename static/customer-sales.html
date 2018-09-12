@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="zh-CN" xml:lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="renderer" content="webkit"/>
+<title>CRM2.0</title>
+<script src="../js/init.min.js"></script>
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/main.css" id="profile">
+<script src="../js/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="crm-wrap">
+		<div class="helper-page search-page">
+			<div class="row tabs">
+				<div class="cell active">零售</div>
+				<div class="cell">小微</div>
+				<div class="cell">公司</div>
+      </div>
+      <div class="switch-content">
+        <!-- tab1 -->
+        <div class="switch-item" style="display: block;">
+          <div class="round-pd20-30 visitType fc-blue">拜访</div>
+          <div class="allPanel">
+            <div class="inner">
+              <div class="searchIpt">
+                <input type="text" placeholder="小米科技有限责任公司">
+                <div class="icon"></div>
+              </div>
+            </div>
+          </div>
+          <div class="rect-tabs row">
+            <div class="cell active">主办客户</div>
+            <div class="cell">新增客户</div>
+          </div>
+          <div class="switch-content">
+            <div class="sub-switch-item" style="display: block;">
+              <div class="area qrcode-ipt">
+                <div class="ipt">
+                  <input type="text" placeholder="输入公司全称">
+                </div>
+                <i class="iconQrcode"></i>
+              </div>
+              <div class="result-list">
+                <div class="result-wrap">
+                  <div class="result-items">
+                    <span class="company-name fc-blue">海康威视科技有限公司</span>
+                  </div>
+                  <div class="date">
+                    <span class="tit">预约编号：</span>
+                    <span>**896543</span>
+                  </div>
+                </div>
+                <div class="result-wrap">
+                  <div class="result-items">
+                    <span class="company-name fc-blue">海康威视科技有限公司</span>
+                  </div>
+                  <div class="date">
+                    <span class="tit">预约编号：</span>
+                    <span>**896543</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ///////////////////////////////////////////// -->
+            <div class="sub-switch-item">
+              <div class="area qrcode-ipt">
+                <div class="ipt">
+                  <input type="text" placeholder="输入公司全称">
+                </div>
+                <i class="iconQrcode"></i>
+              </div>
+              <div class="emptyList">
+                <i class="icon"></i>
+                <div class="tt">暂无列表</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- tab2 -->
+        <div class="switch-item">
+        </div>
+        <!-- tab3 -->
+        <div class="switch-item">
+        </div>
+        <!-- end -->
+      </div>
+    </div>
+	</div>
+	<script type="text/javascript">
+		$(function () {
+			// 切换皮肤 
+			changeTheme()
+      
+      var allItem = $('.switch-content .switch-item');
+			$('.search-page .tabs .cell').on('click', function () {
+				$(this).addClass('active').siblings().removeClass('active');
+        allItem.hide();
+				allItem.eq($(this).index()).show();
+			});
+      
+      var subTabs = $('.search-page .rect-tabs .cell');
+      var subAllItem = subTabs.parent().next().find('.sub-switch-item');
+      subTabs.on('click', function () {
+				$(this).addClass('active').siblings().removeClass('active');
+        subAllItem.hide();
+				subAllItem.eq($(this).index()).show();
+			});
+
+		})
+	</script>
+</body>
+</html>

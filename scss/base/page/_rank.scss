@@ -168,6 +168,22 @@
   }
 }
 
+.search-page {
+  .allPanel {
+    height: 1.2rem;
+
+    .inner {
+      background: none;
+      padding: 0.2rem;
+
+      input {
+        text-align: left;
+        @include bgWhiteOpacity(10);
+      }
+    }
+  }
+}
+
 .rank-page, .visit-page, .helper-page, .yunloan-page {
   .orderFilterGroup {
     width: 100%;
