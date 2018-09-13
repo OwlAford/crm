@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="zh-CN" xml:lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="renderer" content="webkit"/>
+<title>CRM2.0</title>
+<script src="../js/init.min.js"></script>
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/swiper.css">
+<link rel="stylesheet" href="../css/main.css" id="profile">
+<script src="../js/echarts.simple.min.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+</head>
+
+<body>
+	<div class="crm-wrap">
+		<div class="info-page" style="background-image: url(../images/fage.png); background-size: 1.6rem auto;">
+			<div class="userItemsPanel">
+				<div class="tt row">
+					<div class="cell">
+						<span>浙江物产集团有限公司</span>
+						<span class="ft13">(06568949)</span>
+					</div>
+					<div class="level">公司客户</div>
+				</div>
+				<div class="swiper-wrap">
+					<div class="swiper" id="slider">
+						<div class="row timeoutPanel">
+							<div class="cell">
+								<i class="a"></i>
+								<p>网银</p>
+							</div>
+							<div class="cell">
+								<i class="b"></i>
+								<p>预警</p>
+							</div>
+							<div class="cell">
+								<i class="c"></i>
+								<p>存款</p>
+							</div>
+							<div class="cell">
+								<i class="d"></i>
+								<p>贷款</p>
+							</div>
+						</div>
+						<div class="row timeoutPanel">
+							<div class="cell">
+								<i class="a"></i>
+								<p>网银</p>
+							</div>
+							<div class="cell">
+								<i class="b"></i>
+								<p>预警</p>
+							</div>
+							<div class="cell">
+								<i class="c"></i>
+								<p>存款</p>
+							</div>
+							<div class="cell">
+								<i class="d"></i>
+								<p>贷款</p>
+							</div>
+						</div>
+					</div>
+				</div>
+      </div>
+      <div class="area trend">
+        <div class="tt row">
+          <div class="cell">客户详情</div>
+          <div class="fc-blue"><i class="to-visit"></i> 拜访</div>
+        </div>
+        <div class="userInfoList">
+          <div class="row">
+            <div>注册地址：</div>
+            <div class="cell">拱墅区科院路666号</div>
+            <i class="local"></i>
+          </div>
+          <div class="row">
+            <div>联系电话：</div>
+            <div class="cell">0571-08965263</div>
+            <i class="phone"></i>
+          </div>
+          <div class="row">
+            <div>电子渠道：</div>
+            <div class="cell">手机银行 网上银行 微信银行 直销银行</div>
+          </div>
+        </div>
+      </div>
+			<div class="area mayLike">
+				<div class="tt">TA可能感兴趣的产品</div>
+				<div class="proList">
+					<div class="item">
+						<i class="ico d"></i>
+						<div class="row">
+							<div class="cell">云抵贷循环类</div>
+							<div>最大合同期限：3年</div>
+						</div>
+						<div class="row">
+							<div class="cell">短期贷款利率：<span class="fc-yellow">3.62%</span></div>
+							<div>合同最大金额：500万</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="area assets">
+				<div class="scan">
+					<p class="tt">资产总额 (万)</p>
+					<p class="count">29,567.00</p>
+				</div>
+				<div class="detailCircle">
+					<ul class="labels" id="labels-circle1">
+						<li><i></i>结构性存款：20,000.00 (万)</li>
+						<li><i></i>大额存单：9,567.00 (万)</li>
+						<li><i></i>理财余额：567.00 (万)</li>
+						<li><i></i>开卡数量：3 (张)</li>
+					</ul>
+					<div class="circle" id="circle1"></div>
+				</div>
+			</div>
+			<div class="toTop" onclick="window.scrollTo(0, 0)"></div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	$(function () {
+		// 切换皮肤
+		changeTheme()
+
+		// 手动给多个元素动态添加水印
+		function autoAdd (els, lnk) {
+			els.forEach(function (el, i) {
+				$(el).attr('style', 'background-image: url(' + lnk + '); background-size: 1.6rem auto;')
+			})
+		}
+		autoAdd([
+			'.userItemsPanel .timeoutPanel',
+			'.area',
+			'.detailList'
+		], '../images/fage1.png')
+
+		// 初始化轮播
+		var slider = document.getElementById('slider');
+		new Swiper({
+			container: slider,
+			item: '.timeoutPanel',
+			observer: true,
+			autoplay: false,
+			duration: 500,
+			// onSwiped: function (i) {
+			// 	console.log(i)
+			// }
+		})
+
+		// 环形图参数设置
+		var setCircle = function (pie, labelIcons, params) {
+			var colors = [];
+			var datas = [];
+
+			params.forEach(function (e) {
+				colors.push(e.color)
+				datas.push({
+					value: e.value
+				})
+			})
+
+			Array.prototype.forEach.call(labelIcons, function (e, i) {
+				e.style.backgroundColor = colors[i]
+			})
+
+			var opt = {
+				color: colors,
+				series: [
+					{
+						type:'pie',
+						hoverAnimation: false,
+						radius: ['60%', '90%'],
+						label: {
+							normal: {
+								show: false,
+								position: 'center'
+							},
+							emphasis: {
+								show: false
+							}
+						},
+						labelLine: {
+							normal: {
+								show: false
+							}
+						},
+						data: datas
+					}
+				]
+			}
+			echarts.init(pie).setOption(opt)
+		}
+		// 初始化环形1
+		setCircle(document.getElementById('circle1'), document.querySelectorAll('#labels-circle1 i'), [{
+			color: '#fff66e',
+			value: 335
+		}, {
+			color: '#8e94ff',
+			value: 310
+		}, {
+			color: '#4d56ff',
+			value: 310
+		}, {
+			color: '#69b0ff',
+			value: 1240
+		}])
+
+	})
+	</script>
+</body>
+</html>

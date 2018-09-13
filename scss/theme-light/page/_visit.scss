@@ -14,6 +14,63 @@
     }
   }
 
+  .result-list {
+    padding: 0.2rem;
+
+    .result-wrap {
+      border: 1px solid #e5e5e5;
+      border-top: none;
+
+      .result-items {
+        background-color: #a7c8fb;
+        border: none;
+
+        span {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .labelManage {
+    .tt {
+      padding-right: 0.1rem;
+    }
+
+    .labelList {
+      font-size: 14px;
+
+      .itm {
+        margin: 0 0.1rem;
+      }
+    }
+
+    .add {
+      display: inline-block;
+      vertical-align: middle;
+      height: 20px;
+      width: 20px;
+      background-color: #ececec;
+      margin: 0 0.1rem;
+
+      &:after,
+      &:before {
+        content: '';
+        display: block;
+        height: 0;
+        width: 12px;
+        border-top: 1px solid #aaa;
+        position: absolute;
+        top: 50%;
+        left: 4px;
+      }
+
+      &:before {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
    .user-contact {
     padding-left: 0.9rem !important;
     line-height: 2;

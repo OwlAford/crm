@@ -609,6 +609,10 @@ body, .crm-wrap {
   border-top: 1px solid #f1fcfe;
 }
 
+.crm-wrap .result-list .result-wrap .date + .date {
+  border-top: 1px solid #eee;
+}
+
 .crm-wrap .search-detail-page .filterList {
   padding: 0;
 }
@@ -861,7 +865,7 @@ body, .crm-wrap {
 
 .filterList ul li {
   font-size: 13px;
-  padding: 0.1rem 0.4rem;
+  padding: 0.1rem 0.2rem;
   text-align: center;
   display: inline-block;
   margin: 1.64%;
@@ -3454,23 +3458,33 @@ body, .crm-wrap {
 }
 
 .work-page .userDtail .textDesc, .visit-page .userDtail .textDesc {
-  padding: 0.3rem 0.4rem;
+  padding: 0.3rem;
 }
 
 .work-page .userDtail .textDesc + .local, .visit-page .userDtail .textDesc + .local {
   border-top: 1px solid #e5e5e5;
 }
 
+.work-page .userDtail .textDesc .state, .visit-page .userDtail .textDesc .state {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  font-size: 12px;
+}
+
 .work-page .userDtail .textDesc textarea, .visit-page .userDtail .textDesc textarea {
+  font-size: 13px;
   width: 100%;
-  color: #757575;
-  background: none;
+  color: #666;
+  background: #f5f5f5;
   border: none;
+  padding: 0.2rem;
+  padding-bottom: 0.4rem;
 }
 
 .work-page .userDtail .textDesc textarea::-webkit-input-placeholder, .visit-page .userDtail .textDesc textarea::-webkit-input-placeholder {
   color: #999;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .work-page .userDtail .local, .visit-page .userDtail .local {
@@ -4055,6 +4069,61 @@ i.ico-local {
 
 .visit-page .switch-content .switch-item {
   display: none;
+}
+
+.visit-page .result-list {
+  padding: 0.2rem;
+}
+
+.visit-page .result-list .result-wrap {
+  border: 1px solid #e5e5e5;
+  border-top: none;
+}
+
+.visit-page .result-list .result-wrap .result-items {
+  background-color: #a7c8fb;
+  border: none;
+}
+
+.visit-page .result-list .result-wrap .result-items span {
+  color: #fff;
+}
+
+.visit-page .labelManage .tt {
+  padding-right: 0.1rem;
+}
+
+.visit-page .labelManage .labelList {
+  font-size: 14px;
+}
+
+.visit-page .labelManage .labelList .itm {
+  margin: 0 0.1rem;
+}
+
+.visit-page .labelManage .add {
+  display: inline-block;
+  vertical-align: middle;
+  height: 20px;
+  width: 20px;
+  background-color: #ececec;
+  margin: 0 0.1rem;
+}
+
+.visit-page .labelManage .add:after, .visit-page .labelManage .add:before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 12px;
+  border-top: 1px solid #aaa;
+  position: absolute;
+  top: 50%;
+  left: 4px;
+}
+
+.visit-page .labelManage .add:before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .visit-page .user-contact {

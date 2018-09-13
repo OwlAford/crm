@@ -24,13 +24,21 @@
     }
 
     .textDesc {
-      padding: 0.3rem 0.4rem;
-
+      padding: 0.3rem 0.4rem 0.5rem;
+      
       & + .local {
         @include opacityBorder(top, 8);
       }
-
+      
+      .state {
+        position: absolute;
+        right: 0.2rem;
+        bottom: 0.2rem;
+        font-size: 12px;
+      }
+      
       textarea {
+        font-size: 13px;
         width: 100%;
         color: #fff;
         background: none;
@@ -38,7 +46,7 @@
 
         &::-webkit-input-placeholder {
           color: rgba(255, 255, 255, .6);
-          font-size: 14px;
+          font-size: 13px;
         }
       }
     }

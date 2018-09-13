@@ -417,15 +417,21 @@
           white-space: nowrap;
           text-overflow: ellipsis;
         }
+
         .statue {
           float: right;
           color: #77e1fa;
         }
       }
+
       .date {
         padding: .3rem;
         background: #fff;
         border-top: 1px solid #f1fcfe;
+
+        & + .date {
+          border-top: 1px solid #eee;
+        }
       }
     }
   }
@@ -433,13 +439,16 @@
   .search-detail-page {
     .filterList {
       padding: 0;
-      + .filterList {
+      
+      & + .filterList {
         padding: 0rem 0.3rem 0rem;
       }
+
       .result-items {
         padding: .3rem;
         background: #fff;
         border-bottom: 1px solid #eeeeee;
+
         .company-name {
           display: inline-block;
           width: 70%;
@@ -449,11 +458,13 @@
           font-weight: bold;
           color: #5ba6ff;
         }
+
         .statue {
           float: right;
           color: #77e1fa;
         }
       }
+      
       .date {
         padding: .3rem;
         background: #fff;
@@ -673,7 +684,7 @@
 
   li {
     font-size: 13px;
-    padding: 0.1rem 0.4rem;
+    padding: 0.1rem 0.2rem;
     text-align: center;
     display: inline-block;
     // width: 30%;

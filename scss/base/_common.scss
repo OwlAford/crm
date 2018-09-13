@@ -434,7 +434,11 @@
         padding: .3rem;
         background: rgba(255, 255, 255, 0.04);
 
-        .tit {
+        & + .date {
+          @include opacityBorder(top, 6);
+        }
+
+        .tit, .label {
           opacity: .6;
         }
       }
@@ -444,12 +448,15 @@
   .search-detail-page {
     .filterList {
       padding: 0;
-      + .filterList {
+      
+      & + .filterList {
         padding: 0rem 0.3rem 0rem;
       }
+
       .result-items {
         padding: .3rem;
         background: rgba(255, 255, 255, 0.2);
+
         .company-name {
           display: inline-block;
           width: 70%;
@@ -459,6 +466,7 @@
           font-weight: bold;
           color: #fff;
         }
+
         .statue {
           float: right;
           color: #77e1fa;
@@ -687,7 +695,7 @@
 
   li {
     font-size: 13px;
-    padding: 0.1rem 0.4rem;
+    padding: 0.1rem 0.2rem;
     text-align: center;
     display: inline-block;
     // width: 30%;
@@ -983,14 +991,14 @@
     }
 
     .close {
-      height: 0.46rem;
-      width: 0.46rem;
-      background: rgba(255, 255, 255, .1) url(../images/close.png) no-repeat center center;
-      background-size: 0.2rem auto;
+      height: 0.4rem;
+      width: 0.4rem;
+      background: rgba(255, 255, 255, .4) url(../images/close.png) no-repeat center center;
+      background-size: 0.16rem auto;
       display: block;
       position: absolute;
-      right: -0.1rem;
-      top: -0.1rem;
+      right: -0.06rem;
+      top: -0.06rem;
       border-radius: 50%;
     } 
 
