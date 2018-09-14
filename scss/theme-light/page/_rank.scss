@@ -281,6 +281,10 @@
         border-bottom-color: #fff;
       }
 
+      .filterList.single:after {
+        left: 0.6rem;
+      }
+
       .orderList.al-r:after {
         left: auto;
         right: 0.2rem;

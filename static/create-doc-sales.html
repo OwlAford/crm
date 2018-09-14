@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="zh-CN" xml:lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="renderer" content="webkit"/>
+<title>CRM2.0</title>
+<script src="../js/init.min.js"></script>
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/main.css" id="profile">
+<script src="../js/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="crm-wrap">
+		<div class="rank-page visit-page search-page">
+			<div class="row tabs">
+				<div class="cell active">零售</div>
+				<div class="cell">小微</div>
+				<div class="cell">公司</div>
+      </div>
+      <div class="switch-content">
+        <!-- tab1 -->
+        <div class="switch-item" style="display: block;">
+          <div class="area">
+            <div class="list">
+              <div class="item scrollTextWrap">
+                <div class="scrollText">
+                  <div class="prevArr">‹</div>
+                  <div class="textInner">
+                    <div class="textScroller">
+                      <span class="active">名单营销</span>
+                      <span>公鸡贷单位白名单</span>
+                      <span>拜访</span>
+                    </div>
+                  </div>
+                  <div class="nextArr">›</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fnPanel row">
+            <div class="filter">筛选</div>
+            <div class="create-doc cell">
+              <i class="ico-add"></i>
+              <span>建档</span>
+            </div>
+          </div>
+
+          <div class="orderFilterGroup" style="top: 2.64rem;">
+            <div class="itemsBox">
+              <div class="filterList single">
+                <ul style="padding-bottom: 0.86rem;">
+                  <li class="active">公鸡贷</li>
+                </ul>
+                <div class="btnGrp row">
+                  <div class="cell resetBtn">重置</div>
+                  <div class="cell okBtn">确定</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="customerList preclaimList">
+            <div class="card">
+              <div class="tt">
+                <div class="name">赵红静</div>
+								<div class="subname">
+                  <span>（9088796654）</span>
+                  <span class="typeLabel">公鸡贷</span>
+                  <div class="app-tooltips">公鸡贷</div>
+                </div>
+								<div class="btnGrp">
+									<span class="cus-btn">录入</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="item">电话号码：<span>13989987667</span></div>
+								<div class="item">
+                  <div class="call-phone"></div>
+                </div>
+							</div>
+            </div>
+            <div class="card">
+							<div class="tt">
+								<div class="name">赵红静</div>
+								<div class="subname">
+                  <span>（9088796654）</span>
+                  <span class="typeLabel">公鸡贷</span>
+                  <div class="app-tooltips">公鸡贷</div>
+                </div>
+								<div class="btnGrp">
+									<span class="cus-btn">录入</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="item">电话号码：<span>13989987667</span></div>
+								<div class="item">
+                  <div class="call-phone"></div>
+                </div>
+							</div>
+            </div>
+            <div class="card">
+							<div class="tt">
+								<div class="name">赵红静</div>
+								<div class="subname">
+                  <span>（9088796654）</span>
+                  <span class="typeLabel">理财小工具</span>
+                  <div class="app-tooltips">理财小工具</div>
+                </div>
+								<div class="btnGrp">
+									<span class="cus-btn">录入</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="item">电话号码：<span>13989987667</span></div>
+								<div class="item">
+                  <div class="call-phone"></div>
+                </div>
+							</div>
+            </div>
+          </div>
+        
+        </div>
+        <!-- tab2 -->
+        <div class="switch-item">
+        </div>
+        <!-- tab3 -->
+        <div class="switch-item">
+        </div>
+        <!-- end -->
+      </div>
+    </div>
+    <!-- selector -->
+	</div>
+	<script type="text/javascript">
+		$(function () {
+			// 切换皮肤 
+      changeTheme()
+      
+      var docEl = document.documentElement;
+      $('.switch-item').css('minHeight', docEl.clientHeight - 0.88 * parseInt(docEl.style.fontSize) + 'px');
+      
+      var allItem = $('.switch-content .switch-item');
+			$('.search-page .tabs .cell').on('click', function () {
+				$(this).addClass('active').siblings().removeClass('active');
+        allItem.hide();
+        allItem.eq($(this).index()).show();
+        hideOrderFilter();
+			});
+
+      $('.scrollText .textScroller span').on('click', function () {
+				$(this).addClass('active').siblings().removeClass('active');
+			});
+
+      $('.scrollText .prevArr').on('click', function () {
+        var $scrollText = $(this).parent();
+        var $cur = $scrollText.find('.textScroller span.active');
+        var $prev = $cur.prev();
+        if ($cur.index() > 0) {
+          $cur.removeClass('active');
+          $prev.addClass('active');
+          var scrollDistance = $prev.offset().left - $scrollText.find('.textScroller').offset().left;
+          $scrollText.find('.textInner').animate({
+            scrollLeft: scrollDistance
+          }, 300);
+        }
+      })
+
+      $('.scrollText .nextArr').on('click', function () {
+        var $scrollText = $(this).parent();
+        var $cur = $scrollText.find('.textScroller span.active');
+        var $next = $cur.next();
+        if ($cur.index() < $scrollText.find('.textScroller span').length - 1) {
+          $cur.removeClass('active');
+          $next.addClass('active');
+          var scrollDistance = $next.offset().left - $scrollText.find('.textScroller').offset().left;
+          $scrollText.find('.textInner').animate({
+            scrollLeft: scrollDistance
+          }, 300);
+        }
+      })
+
+      // 定义公用切换方法
+      var activer = function (els, fn) {
+        $(els).on('click', function () {
+          $(this).addClass('active').siblings().removeClass('active');
+          fn(this, $(this).index())
+        })
+      }
+
+      // 显示排序和筛选框
+      var orderFilterGroup = $('.orderFilterGroup');
+      var orderFilterItems = orderFilterGroup.find('.itemsBox');
+      var filterOrOrderBtns = $('.fnPanel .filter');
+      activer(filterOrOrderBtns, function (e, i) {
+        orderFilterGroup.addClass('show');
+        orderFilterItems.removeClass('show');
+        orderFilterItems.eq(i).addClass('show');
+      })
+      orderFilterItems.on('click', function (ev) {
+        ev.stopPropagation();
+      })
+
+      // 隐藏选框
+      var hideTimer;
+      var hideOrderFilter = function (time) {
+        hideTimer && clearTimeout(hideTimer);
+        hideTimer = setTimeout(function () {
+          filterOrOrderBtns.removeClass('active');
+          orderFilterGroup.removeClass('show');
+          clearTimeout(hideTimer);
+        }, time || 0)
+      }
+      orderFilterGroup.on('click', hideOrderFilter);
+
+      // 过滤规则选择
+      activer('.filterList ul li', function (e, i) {
+        console.log(e.innerText, i)
+      });
+
+      // 点击确定或重置过滤规则
+      $('.btnGrp .resetBtn').on('click', function () {
+        console.log('点击了重置！');
+      })
+
+      $('.btnGrp .okBtn').on('click', function () {
+        console.log('点击了确定！');
+        hideOrderFilter();
+      })
+      
+      // 初始化所有标签位置
+      var allTypeLabel = $('.typeLabel');
+
+      allTypeLabel.each(function (e, i) {
+        var cur = $(this);
+        var par = cur.parent();
+        var nxt = cur.next();
+        nxt.css({
+          left: cur.offset().left - par.offset().left + cur.width() / 2 + 4 + 'px'
+        })
+      })
+
+      // 点击显示标签全名
+      allTypeLabel.on('click', function () {
+        var nxt = $(this).next();
+        nxt.show();
+        setTimeout(function() {
+          nxt.hide();
+        }, 3000);
+      })
+
+		})
+	</script>
+</body>
+</html>

@@ -42,6 +42,80 @@
     }
   }
 
+  .app-tooltips {
+    position: absolute;
+    left: 50%;
+    top: 0.8rem;
+    transform: translate3d(-50%, 0, 0);
+    background: rgba(0, 0, 0, .6);
+    padding: 4px 5px;
+    border-radius: 2px;
+    color: #fff;
+    z-index: 9999;
+    line-height: 1;
+    display: none;
+
+    &:after {
+      content: '';
+      display: block;
+      height: 0;
+      width: 0;
+      border: 3px solid transparent;
+      border-color: transparent transparent rgba(0, 0, 0, .6) transparent;
+      position: absolute;
+      left: 50%;
+      top: -6px;
+      margin-left: -1.5px;
+    }
+  }
+
+  .call-phone {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background: url(../images/cus_info_ico_light.png) no-repeat;
+    background-size: 100% auto;
+    vertical-align: middle;
+    background-position: 0 100%;
+    margin-top: -2px;
+  }
+
+  .typeLabel {
+    color: #5ba6ff;
+    background-color: #fff;
+    padding: 4px 5px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    max-width: 46px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: keep-all;
+    white-space: nowrap;
+    border-radius: 2px;
+  }
+
+  .create-doc {
+    text-align: right;
+    color: #ffa452;
+
+    .ico-add {
+      height: 22px;
+      width: 22px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: -2px;
+      margin-right: 2px;
+      background: url(../images/add1.png) no-repeat center center;
+      background-size: 18px auto;
+    }
+  }
+
+  .preclaimList.customerList .card .tt .btnGrp .cus-btn {
+    background-color: #ffd839;
+    color: #fff;
+  }
+
   .visitType {
     background-color: #eee;
   }

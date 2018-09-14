@@ -273,10 +273,14 @@
           top: -0.19rem;
         }
       }
-
+      
       .filterList:after {
         left: 1.8rem;
         border-bottom-color: #2E3E6A;
+      }
+      
+      .filterList.single:after {
+        left: 0.6rem;
       }
 
       .orderList.al-r:after {
