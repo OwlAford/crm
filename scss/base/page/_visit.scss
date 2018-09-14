@@ -1,4 +1,21 @@
 .visit-page {
+  .recordUser {
+    @include bgBlueOpacity(5);
+    
+    .tt {
+      padding: 0.3rem;
+      @include bgBlueOpacity(20);
+
+      .name {
+        font-size: 16px;
+      }
+
+      .number {
+        color: #c5c4d5;
+      }
+    }
+  }
+
   .companyTit {
     padding: 0.3rem;
     @include bgWhiteOpacity(10);

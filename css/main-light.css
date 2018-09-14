@@ -726,6 +726,10 @@ body, .crm-wrap {
   padding: 0.3rem;
 }
 
+.crm-wrap .list .item.nopd {
+  padding: 0;
+}
+
 .crm-wrap .list .item.lenovo-item {
   padding: 0 0.3rem;
 }
@@ -4139,6 +4143,24 @@ i.ico-local {
 .machine-page .full-mask .sidebar .rankList .item {
   background: none;
   padding: 0.3rem 0.2rem 0.3rem 1rem;
+}
+
+.visit-page .recordUser {
+  background-color: #fff;
+}
+
+.visit-page .recordUser .bold {
+  font-weight: 700;
+}
+
+.visit-page .recordUser .tt {
+  padding: 0.3rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.visit-page .recordUser .tt .name {
+  font-size: 16px;
+  color: #60a4ff;
 }
 
 .visit-page .companyTit {

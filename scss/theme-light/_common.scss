@@ -552,6 +552,10 @@
     .item {
       padding: 0.3rem;
 
+      &.nopd {
+        padding: 0;
+      }
+
       &.lenovo-item {
         padding: 0 0.3rem;
         .label {
