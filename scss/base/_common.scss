@@ -1047,6 +1047,14 @@
     }
 
     &.b:after {
+      background-position: 0 33.333333%;
+    }
+
+    &.c:after {
+      background-position: 0 66.666666%;
+    }
+
+    &.d:after {
       background-position: 0 100%;
     }
   }

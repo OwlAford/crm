@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-CN" xml:lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="renderer" content="webkit"/>
+<title>CRM2.0</title>
+<script src="../js/init.min.js"></script>
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/main.css" id="profile">
+<script src="../js/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="crm-wrap">
+		<div class="visit-page">
+			<div class="filterList">
+				<div class="title">接触方式</div>
+				<ul class="col4">
+					<li class="active">电话</li>
+					<li>上门</li>
+					<li>微信</li>
+					<li>短信</li>
+				</ul>
+			</div>
+			<div class="userDtail">
+				<div class="area textDesc">
+          <textarea rows="10" placeholder="记录今日工作 400字以内" id="userText"></textarea>
+          <div class="state">0/400</div>
+        </div>
+        <div class="list area">
+					<div class="item row">
+						<div class="label">客户姓名：</div>
+						<div class="ipt cell">刘云</div>
+					</div>
+					<div class="item row">
+						<div class="label">客户电话：</div>
+						<div class="ipt cell">13089877665</div>
+					</div>
+					<div class="item row">
+            <div class="label">建档时间：</div>
+            <div class="cell ipt">2018-01-09</div>
+            <i class="ico-calendar"></i>
+          </div>
+          <div class="item row">
+            <div class="label">客户地址：</div>
+            <div class="ipt cell">杭州市滨江区详细街道详细地址</div>
+          </div>
+				</div>
+        <div class="round-pd20 ft12">上传图片(1张)：</div>
+				<div class="area shot-add">
+					<ul class="inlineBox">
+						<li><div class="screenShot"><img src="../images/screenShot.png" alt=""></div> <span class="close"></span></li>
+					</ul>
+					<div class="addBtn"></div>
+				</div>
+				<div class="area row">
+          <div class="cell local">
+            <span>上塘街道科园路968号天瑞国际</span>
+          </div>
+          <div class="round-pd26-30 ft12 fc-blue">同步实时地址</div>
+				</div>
+        <div class="round-pd20">历史记录</div>
+				<div class="area records">
+					<div class="list">
+						<div class="item row">
+							<i class="visit-type-ico a"></i>
+							<div class="cell">电话联系</div>
+							<div class="time">2017-10-10 12:23</div>
+						</div>
+						<div class="item row">
+							<i class="visit-type-ico b"></i>
+							<div class="cell">上门联系</div>
+							<div class="time">2017-10-10 12:23</div>
+						</div>
+						<div class="item row">
+							<i class="visit-type-ico c"></i>
+							<div class="cell">微信联系</div>
+							<div class="time">2017-10-10 12:23</div>
+						</div>
+						<div class="item row">
+							<i class="visit-type-ico d"></i>
+							<div class="cell">短信联系</div>
+							<div class="time">2017-10-10 12:23</div>
+						</div>
+					</div>
+        </div>
+      </div>
+      <div class="btn-wrap">
+        <button class="base-btn">提交</button>
+      </div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function () {
+			// 切换皮肤 
+			changeTheme()
+			
+			$('.filterList li').on('click', function () {
+				$(this).addClass('active').siblings().removeClass('active')
+      })
+      
+      // 限制输入长度
+			$('.textDesc textarea').on('keyup', function () {
+				var ta = $(this);
+				var par = ta.parent();
+				var st = par.find('.state');
+				var str = ta.val();
+				var len = str.length;
+				if (len <= 400) {
+					st.text(len + '/400');
+				} else {
+					ta.val(str.substring(0, 400));
+				}
+			})
+		})
+	</script>
+</body>
+</html>
