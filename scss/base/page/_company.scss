@@ -701,29 +701,6 @@
       }
     }
 
-    .handle {
-      text-align: center;
-      padding-top: 0.2rem;
-      color: $fcBlue;
-      &:after {
-        content: "";
-        display: inline-block;
-        vertical-align: middle;
-        margin-left: 0.2rem;
-        height: 0.1rem;
-        width: 0.1rem;
-        border: 1px solid $fcBlue;
-        border-width: 1px 1px 0 0;
-        transform: rotate(-45deg);
-      }
-      &.spr {
-        &:after {
-          transform: rotate(135deg);
-          margin-top: -0.1rem;
-        }
-      }
-    }
-
     .tit {
       @include bgWhiteOpacity(16);
       padding: 0.24rem 0.3rem;
@@ -821,6 +798,43 @@
       .details {
         padding: 0.05rem 0;
       }
+    }
+  }
+}
+
+.company-page, .visit-page {
+  .handle {
+    text-align: center;
+    padding-top: 0.2rem;
+    color: $fcBlue;
+
+    &:after {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 0.2rem;
+      height: 0.1rem;
+      width: 0.1rem;
+      border: 1px solid $fcBlue;
+      border-width: 1px 1px 0 0;
+      transform: rotate(-45deg);
+    }
+
+    &.spr {
+      &:after {
+        transform: rotate(135deg);
+        margin-top: -0.1rem;
+      }
+    }
+  }
+}
+
+.visit-page {
+  .handle {
+    color: #fff;
+    
+    &:after {
+      border-color: #fff;
     }
   }
 }

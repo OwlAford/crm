@@ -170,6 +170,20 @@ body, .crm-wrap {
   display: none;
 }
 
+.label-grow:after {
+  content: '↑';
+  color: #ff4949;
+  font-weight: 700;
+  margin-left: 0.04rem;
+}
+
+.label-reduce:after {
+  content: '↓';
+  color: #65b319;
+  font-weight: 700;
+  margin-left: 0.04rem;
+}
+
 .crm-wrap {
   overflow-x: hidden;
 }
@@ -1523,6 +1537,13 @@ body, .crm-wrap {
   color: #fff;
 }
 
+.home-page .honor-tips {
+  padding: 0.1rem 0.2rem;
+  background-color: #f0dddc;
+  color: #ff4343;
+  font-size: 12px;
+}
+
 .home-page .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2189,13 +2210,13 @@ body, .crm-wrap {
   color: #fff;
 }
 
-.info-page .timeoutPanel, .info-page .approvPanel, .info-page .changePanel {
+.info-page .timeoutPanel, .info-page .approvPanel, .info-page .changePanel, .info-page .marketPanel {
   text-align: center;
   padding: 0.2rem 0;
   margin-bottom: 0.2rem;
 }
 
-.info-page .timeoutPanel .cell i, .info-page .approvPanel .cell i, .info-page .changePanel .cell i {
+.info-page .timeoutPanel .cell i, .info-page .approvPanel .cell i, .info-page .changePanel .cell i, .info-page .marketPanel .cell i {
   display: block;
   margin: 0 auto 0.2rem;
   height: 0.84rem;
@@ -2207,7 +2228,7 @@ body, .crm-wrap {
   transition: all .3s;
 }
 
-.info-page .timeoutPanel .cell i:after, .info-page .approvPanel .cell i:after, .info-page .changePanel .cell i:after {
+.info-page .timeoutPanel .cell i:after, .info-page .approvPanel .cell i:after, .info-page .changePanel .cell i:after, .info-page .marketPanel .cell i:after {
   content: "";
   display: block;
   height: 0.54rem;
@@ -2218,15 +2239,15 @@ body, .crm-wrap {
   transition: all .3s;
 }
 
-.info-page .timeoutPanel .cell i.b:after, .info-page .approvPanel .cell i.b:after, .info-page .changePanel .cell i.b:after {
+.info-page .timeoutPanel .cell i.b:after, .info-page .approvPanel .cell i.b:after, .info-page .changePanel .cell i.b:after, .info-page .marketPanel .cell i.b:after {
   background-position: 0 50%;
 }
 
-.info-page .timeoutPanel .cell i.c:after, .info-page .approvPanel .cell i.c:after, .info-page .changePanel .cell i.c:after {
+.info-page .timeoutPanel .cell i.c:after, .info-page .approvPanel .cell i.c:after, .info-page .changePanel .cell i.c:after, .info-page .marketPanel .cell i.c:after {
   background-position: 0 100%;
 }
 
-.info-page .timeoutPanel .cell h1, .info-page .approvPanel .cell h1, .info-page .changePanel .cell h1 {
+.info-page .timeoutPanel .cell h1, .info-page .approvPanel .cell h1, .info-page .changePanel .cell h1, .info-page .marketPanel .cell h1 {
   display: block;
   margin: 0 0 0 .57rem;
   height: 0.84rem;
@@ -2238,7 +2259,7 @@ body, .crm-wrap {
   transition: all .3s;
 }
 
-.info-page .timeoutPanel .cell h1:after, .info-page .approvPanel .cell h1:after, .info-page .changePanel .cell h1:after {
+.info-page .timeoutPanel .cell h1:after, .info-page .approvPanel .cell h1:after, .info-page .changePanel .cell h1:after, .info-page .marketPanel .cell h1:after {
   content: "";
   display: block;
   height: 0.54rem;
@@ -2249,54 +2270,54 @@ body, .crm-wrap {
   transition: all .3s;
 }
 
-.info-page .timeoutPanel .cell h1:after, .info-page .approvPanel .cell h1:after, .info-page .changePanel .cell h1:after {
+.info-page .timeoutPanel .cell h1:after, .info-page .approvPanel .cell h1:after, .info-page .changePanel .cell h1:after, .info-page .marketPanel .cell h1:after {
   background-position: 100% 0;
 }
 
-.info-page .timeoutPanel .cell h1.b:after, .info-page .approvPanel .cell h1.b:after, .info-page .changePanel .cell h1.b:after {
+.info-page .timeoutPanel .cell h1.b:after, .info-page .approvPanel .cell h1.b:after, .info-page .changePanel .cell h1.b:after, .info-page .marketPanel .cell h1.b:after {
   background-position: 100% 100%;
 }
 
-.info-page .timeoutPanel .cell .loanTitle, .info-page .approvPanel .cell .loanTitle, .info-page .changePanel .cell .loanTitle {
+.info-page .timeoutPanel .cell .loanTitle, .info-page .approvPanel .cell .loanTitle, .info-page .changePanel .cell .loanTitle, .info-page .marketPanel .cell .loanTitle {
   position: absolute;
   top: 0.23rem;
   left: 1.7rem;
   font-size: 0.28rem;
 }
 
-.info-page .timeoutPanel .cell.active i, .info-page .approvPanel .cell.active i, .info-page .changePanel .cell.active i {
+.info-page .timeoutPanel .cell.active i, .info-page .approvPanel .cell.active i, .info-page .changePanel .cell.active i, .info-page .marketPanel .cell.active i {
   background-color: #d5e8ff;
 }
 
-.info-page .timeoutPanel .cell.active i:after, .info-page .approvPanel .cell.active i:after, .info-page .changePanel .cell.active i:after {
+.info-page .timeoutPanel .cell.active i:after, .info-page .approvPanel .cell.active i:after, .info-page .changePanel .cell.active i:after, .info-page .marketPanel .cell.active i:after {
   background-position: 100% 0;
 }
 
-.info-page .timeoutPanel .cell.active i.b:after, .info-page .approvPanel .cell.active i.b:after, .info-page .changePanel .cell.active i.b:after {
+.info-page .timeoutPanel .cell.active i.b:after, .info-page .approvPanel .cell.active i.b:after, .info-page .changePanel .cell.active i.b:after, .info-page .marketPanel .cell.active i.b:after {
   background-position: 100% 50%;
 }
 
-.info-page .timeoutPanel .cell.active i.c:after, .info-page .approvPanel .cell.active i.c:after, .info-page .changePanel .cell.active i.c:after {
+.info-page .timeoutPanel .cell.active i.c:after, .info-page .approvPanel .cell.active i.c:after, .info-page .changePanel .cell.active i.c:after, .info-page .marketPanel .cell.active i.c:after {
   background-position: 100% 100%;
 }
 
-.info-page .timeoutPanel .cell.active p, .info-page .approvPanel .cell.active p, .info-page .changePanel .cell.active p {
+.info-page .timeoutPanel .cell.active p, .info-page .approvPanel .cell.active p, .info-page .changePanel .cell.active p, .info-page .marketPanel .cell.active p {
   color: #2e98e8;
 }
 
-.info-page .timeoutPanel .cell.active2 h1, .info-page .approvPanel .cell.active2 h1, .info-page .changePanel .cell.active2 h1 {
+.info-page .timeoutPanel .cell.active2 h1, .info-page .approvPanel .cell.active2 h1, .info-page .changePanel .cell.active2 h1, .info-page .marketPanel .cell.active2 h1 {
   background-color: rgba(125, 230, 255, 0.2);
 }
 
-.info-page .timeoutPanel .cell.active2 h1.a:after, .info-page .approvPanel .cell.active2 h1.a:after, .info-page .changePanel .cell.active2 h1.a:after {
+.info-page .timeoutPanel .cell.active2 h1.a:after, .info-page .approvPanel .cell.active2 h1.a:after, .info-page .changePanel .cell.active2 h1.a:after, .info-page .marketPanel .cell.active2 h1.a:after {
   background-position: 0 0;
 }
 
-.info-page .timeoutPanel .cell.active2 h1.b:after, .info-page .approvPanel .cell.active2 h1.b:after, .info-page .changePanel .cell.active2 h1.b:after {
+.info-page .timeoutPanel .cell.active2 h1.b:after, .info-page .approvPanel .cell.active2 h1.b:after, .info-page .changePanel .cell.active2 h1.b:after, .info-page .marketPanel .cell.active2 h1.b:after {
   background-position: 0 100%;
 }
 
-.info-page .timeoutPanel .cell.active2 div, .info-page .approvPanel .cell.active2 div, .info-page .changePanel .cell.active2 div {
+.info-page .timeoutPanel .cell.active2 div, .info-page .approvPanel .cell.active2 div, .info-page .changePanel .cell.active2 div, .info-page .marketPanel .cell.active2 div {
   color: #2e98e8;
 }
 
@@ -2494,6 +2515,79 @@ body, .crm-wrap {
   background-position: 0 100%;
 }
 
+.info-page .userItemsPanel .marketPanel .cell i:after {
+  background-image: url(../images/market_ico_light.png);
+  background-size: 200% auto;
+}
+
+.info-page .userItemsPanel .marketPanel .cell i.b:after {
+  background-position: 0 10%;
+}
+
+.info-page .userItemsPanel .marketPanel .cell i.c:after {
+  background-position: 0 20%;
+}
+
+.info-page .userItemsPanel .marketPanel .cell i.d:after {
+  background-position: 0 30%;
+}
+
+.info-page .userItemsPanel .marketPanel .cell i.e:after {
+  background-position: 0 40%;
+}
+
+.info-page .userItemsPanel .marketPanel .cell i.f:after {
+  background-position: 0 50%;
+}
+
+.info-page .userItemsPanel .marketPanel .cell i.g:after {
+  background-position: 0 60%;
+}
+
+.info-page .userItemsPanel .marketPanel .cell i.h:after {
+  background-position: 0 70%;
+}
+
+.info-page .userItemsPanel .marketPanel .cell i.i:after {
+  background-position: 0 80%;
+}
+
+.info-page .userItemsPanel .marketPanel .cell.active i:after {
+  background-size: 200% auto;
+}
+
+.info-page .userItemsPanel .marketPanel .cell.active i.b:after {
+  background-position: 100% 10%;
+}
+
+.info-page .userItemsPanel .marketPanel .cell.active i.c:after {
+  background-position: 100% 20%;
+}
+
+.info-page .userItemsPanel .marketPanel .cell.active i.d:after {
+  background-position: 100% 30%;
+}
+
+.info-page .userItemsPanel .marketPanel .cell.active i.e:after {
+  background-position: 100% 40%;
+}
+
+.info-page .userItemsPanel .marketPanel .cell.active i.f:after {
+  background-position: 100% 50%;
+}
+
+.info-page .userItemsPanel .marketPanel .cell.active i.g:after {
+  background-position: 100% 60%;
+}
+
+.info-page .userItemsPanel .marketPanel .cell.active i.h:after {
+  background-position: 100% 70%;
+}
+
+.info-page .userItemsPanel .marketPanel .cell.active i.g:after {
+  background-position: 100% 80%;
+}
+
 .info-page .userItemsPanel .swiper-wrap {
   background-color: #fff;
 }
@@ -2538,7 +2632,7 @@ body, .crm-wrap {
   padding: 0.3rem 0.3rem 0.2rem;
 }
 
-.info-page .userItemsPanel .timeoutPanel {
+.info-page .userItemsPanel .timeoutPanel, .info-page .userItemsPanel .marketPanel {
   padding: 0.3rem 0;
   width: 100%;
 }
@@ -3462,9 +3556,10 @@ body, .crm-wrap {
 }
 
 .search-page .typeLabel {
-  color: #5ba6ff;
-  background-color: #fff;
-  padding: 4px 5px;
+  font-size: 10spx;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 3px 4px;
   display: inline-block;
   vertical-align: middle;
   line-height: 1;
@@ -3490,11 +3585,6 @@ body, .crm-wrap {
   margin-right: 2px;
   background: url(../images/add1.png) no-repeat center center;
   background-size: 18px auto;
-}
-
-.search-page .preclaimList.customerList .card .tt .btnGrp .cus-btn {
-  background-color: #ffd839;
-  color: #fff;
 }
 
 .search-page .visitType {
@@ -4157,6 +4247,41 @@ i.ico-local {
   padding: 0.3rem 0.2rem 0.3rem 1rem;
 }
 
+.visit-page .resultList .card {
+  margin: 0.2rem 0;
+}
+
+.visit-page .resultList .card .row {
+  display: table;
+  width: 100%;
+}
+
+.visit-page .resultList .card .row .cell {
+  font-size: 12px;
+  display: table-cell;
+  width: 50%;
+  vertical-align: middle;
+  padding: 0.2rem 0.4rem;
+}
+
+.visit-page .resultList .card .row .cell .thin {
+  color: #bbb;
+}
+
+.visit-page .resultList .card .row .cell .btn {
+  background-color: #e5e5e5;
+  display: inline-block;
+  padding: 0.1rem 0.2rem;
+  line-height: 1;
+}
+
+.visit-page .list .item.limit {
+  overflow: hidden;
+  height: 2em;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
 .visit-page .recordUser {
   background-color: #fff;
 }
@@ -4397,6 +4522,18 @@ i.ico-local {
   height: 1.24rem;
 }
 
+.visit-page .searchFilter.nofixed {
+  height: auto;
+}
+
+.visit-page .searchFilter.nofixed .inner {
+  padding: 0;
+  position: relative;
+  left: auto;
+  top: auto;
+  background: none;
+}
+
 .visit-page .searchFilter .inner {
   width: 100%;
   padding: 0.3rem 0.16rem;
@@ -4405,6 +4542,12 @@ i.ico-local {
   top: 0.88rem;
   background-color: #f5f5f5;
   z-index: 99;
+}
+
+.visit-page .searchFilter .inner.nofixed {
+  position: relative;
+  top: auto;
+  left: auto;
 }
 
 .visit-page .searchFilter .inner .searchIpt {
@@ -5274,31 +5417,6 @@ i.ico-local {
   padding: 0.1rem 0.2rem;
 }
 
-.company-page .grp .handle {
-  text-align: center;
-  padding-top: 0.2rem;
-  color: #2e98e8;
-}
-
-.company-page .grp .handle:after {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 0.2rem;
-  height: 0.1rem;
-  width: 0.1rem;
-  border: 1px solid #2e98e8;
-  border-width: 1px 1px 0 0;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.company-page .grp .handle.spr:after {
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
-  margin-top: -0.1rem;
-}
-
 .company-page .grp .tit {
   background-color: #9dcaff;
   padding: 0.24rem 0.3rem;
@@ -5396,6 +5514,31 @@ i.ico-local {
 .company-page .regist .info-item .detail {
   color: #5ba6ff;
   padding: 0.05rem 0;
+}
+
+.company-page .handle, .visit-page .handle {
+  text-align: center;
+  padding-top: 0.2rem;
+  color: #2e98e8;
+}
+
+.company-page .handle:after, .visit-page .handle:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.2rem;
+  height: 0.1rem;
+  width: 0.1rem;
+  border: 1px solid #2e98e8;
+  border-width: 1px 1px 0 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.company-page .handle.spr:after, .visit-page .handle.spr:after {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  margin-top: -0.1rem;
 }
 
 .cardLimit-page .switch-item {
@@ -5847,12 +5990,26 @@ i.ico-local {
   background-size: 100%;
 }
 
+.deduct-page .deduct-main .nums-wrap .bg-wrap .result-detail {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 30px;
+  text-align: center;
+  color: #4f6684;
+}
+
+.deduct-page .deduct-main .nums-wrap .bg-wrap .result-detail h1 {
+  font-size: 22px;
+  color: #2e98e8;
+}
+
 .deduct-page .deduct-main .nums-wrap .bg-wrap img {
   width: 100%;
   opacity: 0;
 }
 
-.deduct-page .deduct-main .nums-wrap .bg-wrap span {
+.deduct-page .deduct-main .nums-wrap .bg-wrap > span {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -5862,7 +6019,7 @@ i.ico-local {
   color: #81b8ff;
 }
 
-.deduct-page .deduct-main .nums-wrap .bg-wrap span i {
+.deduct-page .deduct-main .nums-wrap .bg-wrap > span i {
   font-style: normal;
   font-size: 13px;
 }

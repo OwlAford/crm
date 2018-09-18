@@ -167,3 +167,21 @@ body, .crm-wrap {
 .hide {
   display: none;
 }
+
+.label-grow {
+  &:after {
+    content: '↑';
+    color: #ff4949;
+    font-weight: 700;
+    margin-left: 0.04rem;
+  }
+}
+
+.label-reduce {
+  &:after {
+    content: '↓';
+    color: #65b319;
+    font-weight: 700;
+    margin-left: 0.04rem;
+  }
+}

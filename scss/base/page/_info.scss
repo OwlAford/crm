@@ -39,7 +39,7 @@
   }
 
   // timeout
-  .timeoutPanel, .approvPanel, .changePanel {
+  .timeoutPanel, .approvPanel, .changePanel, .marketPanel {
     text-align: center;
     padding: 0.2rem 0;
     margin-bottom: 0.2rem;
@@ -362,6 +362,88 @@
 
     }
 
+    .marketPanel .cell {
+      i {
+        &:after {
+          background-image: url(../images/market_ico.png);
+          background-size: 200% auto;
+        }
+  
+        &.b:after {
+          background-position: 0 10%;
+        }
+
+        &.c:after {
+          background-position: 0 10% * 2;
+        }
+
+        &.d:after {
+          background-position: 0 10% * 3;
+        }
+
+        &.e:after {
+          background-position: 0 10% * 4;
+        }
+
+        &.f:after {
+          background-position: 0 10% * 5;
+        }
+
+        &.g:after {
+          background-position: 0 10% * 6;
+        }
+
+        &.h:after {
+          background-position: 0 10% * 7;
+        }
+
+        &.i:after {
+          background-position: 0 10% * 8;
+        }
+      }
+
+      &.active {
+        i {
+          &:after {
+            background-size: 200% auto;
+          }
+
+          &.b:after {
+            background-position: 100% 10%;
+          }
+
+          &.c:after {
+            background-position: 100% 10% * 2;
+          }
+
+          &.d:after {
+            background-position: 100% 10% * 3;
+          }
+
+          &.e:after {
+            background-position: 100% 10% * 4;
+          }
+
+          &.f:after {
+            background-position: 100% 10% * 5;
+          }
+
+          &.g:after {
+            background-position: 100% 10% * 6;
+          }
+
+          &.h:after {
+            background-position: 100% 10% * 7;
+          }
+
+          &.i:after {
+            background-position: 100% 10% * 8;
+          }
+        }
+      }
+
+    }
+
     .swiper-wrap .dotCon {
       padding: 0;
 
@@ -391,11 +473,11 @@
       padding: 0.3rem 0.3rem 0.2rem;
     }
 
-    .timeoutPanel {
+    .timeoutPanel, .marketPanel {
       padding: 0.3rem 0;
       width: 100%;
     }
- // ******************************11-1zbw********************
+
     .product-tips {
        position:absolute;
        bottom: -0.6rem;
@@ -407,17 +489,17 @@
        border-radius: 5px;
        border: none;
 
-        .em {
-          display:block; 
-          border-width:5px; 
-          position:absolute; top:-0.17rem; left:1.38rem;
-          border-style:solid dashed dashed; 
-          border-color: transparent transparent #415a7e;
-          font-size:0; line-height:0;
-        }
-        p {
-          margin:0.1rem 0.39rem;
-        }
+      .em {
+        display:block; 
+        border-width:5px; 
+        position:absolute; top:-0.17rem; left:1.38rem;
+        border-style:solid dashed dashed; 
+        border-color: transparent transparent #415a7e;
+        font-size:0; line-height:0;
+      }
+      p {
+        margin:0.1rem 0.39rem;
+      }
     }
   }
 

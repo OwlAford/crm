@@ -1,8 +1,9 @@
 .bg-deduct {
   background-color: #eef6f6;
 }
+
 .deduct-page {
-  & .coords-wrap {
+  .coords-wrap {
     padding: 15px 10px;
     padding: 10px;
     background-color: #eef7f6;
@@ -12,7 +13,7 @@
     top: 0;
     z-index: 999;
 
-    & .coords {
+    .coords {
       font-size: 13px;
       line-height: 34px;
       color: #5ba6ff;
@@ -25,24 +26,40 @@
     }
   }
 
-  & .deduct-main {
+  .deduct-main {
     background:#fff;
     padding-top: 54px;
 
-    & .nums-wrap {
+    .nums-wrap {
       padding: 20px 0;
       margin: 0 auto;
-      & .bg-wrap {
+
+      .bg-wrap {
         width: 42%;
         margin: 0 auto 15px;
         position: relative;
         background: url(../images/nums_bg_light.png) no-repeat;
         background-size: 100%;
-        & img {
+
+        .result-detail {
+          position: absolute;
+          width: 100%;
+          left: 0;
+          top: 30px;
+          text-align: center;
+          color: #4f6684;
+
+          h1 {
+            font-size: 22px;
+            color: $fcBlue;
+          }
+        }
+      
+        img {
           width: 100%;
           opacity: 0;
         }
-        & span {
+        > span {
           position: absolute;
           top: 50%;
           left: 50%;
@@ -50,21 +67,23 @@
           transform: translate(-50%,-50%)!important;
           font-size: 22px;
           color: #81b8ff;
-          & i {
+
+          i {
             font-style: normal;
             font-size: 13px;
           }
         }
       }
-      & .deduct-items {
+      .deduct-items {
         overflow: hidden;
         
-        & .list-item {
+        .list-item {
           width: 25%;
           text-align: center;
           font-size: 14px;
           float: left;
-          & .cir-item {
+
+          .cir-item {
             width: 60px;
             height:60px;
             line-height: 60px;
@@ -76,47 +95,55 @@
             font-size: 14px;
             font-weight: bold;
           }
+
           &.cur {
             color: #85baff;
-            & .cir-item {
+
+            .cir-item {
               background:#add2ff;
               color: #fff;
             }
           }
         }
         &.four-items {
-          & .list-item {
+          .list-item {
             width: 25%; 
           }  
         }
+
         &.three-items {
-          & .list-item {
+          .list-item {
             width: 33.33%; 
           }  
         }
       }
     }
   }
-  & .detail-wrap {
+  .detail-wrap {
     background:#fff;
     margin-top: 10px;
-    & .detail-main {
+
+    .detail-main {
       margin:0 6px;
       padding:10px 0;
-      & .detail-item {
+
+      .detail-item {
         width: 100%;
         margin-bottom: 8px;
+
         &:last-child {
           margin-bottom: 0;
         }
-        & .tit {
+
+        .tit {
           background:#d8eaff;
           color: #5ba6ff;
           padding:10px;
           font-size: 15px;
           font-weight: bold;
           position: relative;
-          & i {
+
+          i {
             width: 8px;
             height: 4.5px;
             position: absolute;
@@ -124,22 +151,26 @@
             right: 17px;
             background:url(../images/deduct_arrow.png) no-repeat 0px -27px;
             background-size: 8px 40px;
+
             &.active {
               background:url(../images/deduct_arrow.png) no-repeat 0px -8px;
               background-size: 8px 40px;
             }
           }
         }
-        & .txt {
+
+        .txt {
           display: none;
           background:#f7fbff;
           color: #454545;
-          padding:0 10px;
-          & p {
+          padding: 0 10px;
+
+          p {
             line-height: 2;
             border-bottom: 1px solid #e5e8ec;
             padding: 10px;
             font-size: 13px;
+
             &:last-child {
               border-bottom: none;
             }

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-CN" xml:lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="renderer" content="webkit"/>
+<title>CRM2.0</title>
+<script src="../js/init.min.js"></script>
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/main.css" id="profile">
+<script src="../js/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="crm-wrap bg-deduct">
+    <div class="deduct-page">
+      <div class="coords-wrap">
+        <span class="coords">总行 > 北京支行</span>
+      </div>
+      <div class="deduct-main">
+        <div class="nums-wrap">
+          <div class="bg-wrap">
+            <img src="../images/nums_bg_light.png" alt="">
+            <div class="result-detail">
+              <p>名单数</p>
+              <h1>
+                <span>341,689</span>
+                <span class="ft12">户</span>
+              </h1>
+              <p>已接触：50%</p>
+              <p>已建档：50%</p>
+            </div>
+          </div>
+          <div class="deduct-items four-items">
+            <div class="list-item">
+              <div class="cir-item">6789</div>
+              <span>杭州营业部</span>
+            </div>
+            <div class="list-item cur">
+              <div class="cir-item">6789</div>
+              <span>北京支行</span>
+            </div>
+            <div class="list-item">
+              <div class="cir-item">6789</div>
+              <span>西湖支行</span>
+            </div>
+            <div class="list-item">
+              <div class="cir-item">6789</div>
+              <span>绍兴支行</span>
+            </div>
+            <div class="list-item">
+              <div class="cir-item">6789</div>
+              <span>宁波支行</span>
+            </div>
+            <div class="list-item">
+              <div class="cir-item">6789</div>
+              <span>拱墅支行</span>
+            </div>
+            <div class="list-item">
+              <div class="cir-item">6789</div>
+              <span>运河支行</span>
+            </div>
+            <div class="list-item">
+              <div class="cir-item">6789</div>
+              <span>户枢支行</span>
+            </div>
+            <div class="list-item">
+              <div class="cir-item">6789</div>
+              <span>半山支行</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+  $(function () {
+    // 切换皮肤 
+    changeTheme();
+
+    $('.tit').on('click',function(){
+      $(this).find('i').toggleClass('active');
+      $(this).parent().find('.txt').slideToggle();
+    })
+  })
+  </script>
+</body>
+</html>

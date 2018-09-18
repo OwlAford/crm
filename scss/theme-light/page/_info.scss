@@ -43,7 +43,7 @@
   }
 
   // timeout
-  .timeoutPanel, .approvPanel, .changePanel {
+  .timeoutPanel, .approvPanel, .changePanel, .marketPanel {
     text-align: center;
     padding: 0.2rem 0;
     margin-bottom: 0.2rem;
@@ -367,6 +367,87 @@
 
     }
 
+    .marketPanel .cell {
+      i {
+        &:after {
+          background-image: url(../images/market_ico_light.png);
+          background-size: 200% auto;
+        }
+
+        &.b:after {
+          background-position: 0 10%;
+        }
+
+        &.c:after {
+          background-position: 0 10% * 2;
+        }
+
+        &.d:after {
+          background-position: 0 10% * 3;
+        }
+
+        &.e:after {
+          background-position: 0 10% * 4;
+        }
+
+        &.f:after {
+          background-position: 0 10% * 5;
+        }
+
+        &.g:after {
+          background-position: 0 10% * 6;
+        }
+
+        &.h:after {
+          background-position: 0 10% * 7;
+        }
+
+        &.i:after {
+          background-position: 0 10% * 8;
+        }
+      }
+
+      &.active {
+        i {
+          &:after {
+            background-size: 200% auto;
+          }
+
+          &.b:after {
+            background-position: 100% 10%;
+          }
+
+          &.c:after {
+            background-position: 100% 10% * 2;
+          }
+
+          &.d:after {
+            background-position: 100% 10% * 3;
+          }
+
+          &.e:after {
+            background-position: 100% 10% * 4;
+          }
+
+          &.f:after {
+            background-position: 100% 10% * 5;
+          }
+
+          &.g:after {
+            background-position: 100% 10% * 6;
+          }
+
+          &.h:after {
+            background-position: 100% 10% * 7;
+          }
+
+          &.g:after {
+            background-position: 100% 10% * 8;
+          }
+        }
+      }
+    }
+
     .swiper-wrap {
       background-color: #fff;
 
@@ -409,7 +490,7 @@
       padding: 0.3rem 0.3rem 0.2rem;
     }
 
-    .timeoutPanel {
+    .timeoutPanel, .marketPanel {
       padding: 0.3rem 0;
       width: 100%;
     }

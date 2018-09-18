@@ -81,9 +81,10 @@
   }
 
   .typeLabel {
-    color: #5ba6ff;
-    background-color: #fff;
-    padding: 4px 5px;
+    font-size: 10spx;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 3px 4px;
     display: inline-block;
     vertical-align: middle;
     line-height: 1;
@@ -109,11 +110,6 @@
       background: url(../images/add1.png) no-repeat center center;
       background-size: 18px auto;
     }
-  }
-
-  .preclaimList.customerList .card .tt .btnGrp .cus-btn {
-    background-color: #ffd839;
-    color: #fff;
   }
 
   .visitType {

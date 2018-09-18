@@ -1,4 +1,42 @@
 .visit-page {
+  .resultList {
+    .card {
+      margin: 0.2rem 0;
+
+      .row {
+        display: table;
+        width: 100%;
+
+        .cell {
+          font-size: 12px;
+          display: table-cell;
+          width: 50%;
+          vertical-align: middle;
+          padding: 0.2rem 0.4rem;
+          
+          .thin {
+            color: #c4c6d4;
+          }
+
+          .btn {
+            @include bgWhiteOpacity(20);
+            display: inline-block;
+            padding: 0.1rem 0.2rem;
+            line-height: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .list {
+    .item.limit {
+      overflow: hidden;
+      height: 2em;
+      box-sizing: content-box;
+    }
+  }
+
   .recordUser {
     @include bgBlueOpacity(5);
     
@@ -244,6 +282,18 @@
 
   .searchFilter {
     height: 1.24rem;
+
+    &.nofixed {
+      height: auto;
+
+      .inner {
+        padding: 0;
+        position: relative;
+        left: auto;
+        top: auto;
+        background: none;
+      }
+    }
     
     .inner {
       width: 100%;
@@ -253,6 +303,12 @@
       top: 0.88rem;
       background-color: rgba(10, 24, 75, 0.96);
       z-index: 99;
+
+      &.nofixed {
+        position: relative;
+        top: auto;
+        left: auto;
+      }
   
       .searchIpt {
         padding: 2px 0;
