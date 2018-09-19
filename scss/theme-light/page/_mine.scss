@@ -1,5 +1,82 @@
 .mine-page {
-  
+  .area.user {
+    padding: 0.4rem 0 0.4rem 1.8rem;
+
+    .medal {
+      height: 1.2rem;
+      width: 1.2rem;
+      position: absolute;
+      right: 0.3rem;
+      top: 50%;
+      margin-top: -0.6rem;
+      background: url(../images/medal_light.png) no-repeat center center;
+      background-size: auto 100%;
+    }
+  }
+
+  .theme {
+    text-align: center;
+    padding: 0.3rem 0.2rem 0.1rem;
+    line-height: 1.5;
+
+    .cell {
+      width: 50%;
+
+      p {
+        line-height: 2;
+      }
+
+      .name {
+        font-size: 14px;
+        color: #60a4ff;
+
+        &.type2 {
+          color: #404297;
+        }
+      }
+
+      .state {
+        &:after {
+          content: "未使用";
+          font-size: 12px;
+        }
+      }
+
+      &.active {
+        .state {
+          color: #fea552;
+          
+          &:after {
+            content: "正在使用";
+          }
+        }
+      }
+
+    }
+
+    .ico {
+      height: 1.2rem;
+      width: 1.2rem;
+      display: inline-block;
+      background: url(../images/theme-switch.png) no-repeat;
+      background-size: 100% auto;
+
+      &.light {
+        background-position: 0 100%;
+      }
+    }
+
+    .base-btn {
+      display: inline-block;
+      width: auto;
+      padding: 0.16rem 0.6rem;
+      font-size: 13px;
+      border-radius: 0.4rem;
+      background-image: none;
+      background-color: #60a4ff;
+    }
+  }
+
   .list {
     .item {
       padding: 0.32rem 0.32rem 0.32rem 0.86rem;

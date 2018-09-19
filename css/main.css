@@ -1876,6 +1876,69 @@ body, .crm-wrap {
   color: #d0d2e2;
 }
 
+.mine-page .area.user {
+  padding: 0.4rem 0 0.4rem 1.8rem;
+}
+
+.mine-page .area.user .medal {
+  height: 1.2rem;
+  width: 1.2rem;
+  position: absolute;
+  right: 0.3rem;
+  top: 50%;
+  margin-top: -0.6rem;
+  background: url(../images/medal.png) no-repeat center center;
+  background-size: auto 100%;
+}
+
+.mine-page .theme {
+  text-align: center;
+  padding: 0.3rem 0.2rem 0.1rem;
+  line-height: 1.5;
+}
+
+.mine-page .theme .cell {
+  width: 50%;
+}
+
+.mine-page .theme .cell p {
+  line-height: 2;
+}
+
+.mine-page .theme .cell .name {
+  font-size: 14px;
+}
+
+.mine-page .theme .cell .state:after {
+  content: "未使用";
+  font-size: 12px;
+}
+
+.mine-page .theme .cell.active .state:after {
+  content: "正在使用";
+}
+
+.mine-page .theme .ico {
+  height: 1.2rem;
+  width: 1.2rem;
+  display: inline-block;
+  background: url(../images/theme-switch.png) no-repeat;
+  background-size: 100% auto;
+}
+
+.mine-page .theme .ico.light {
+  background-position: 0 100%;
+}
+
+.mine-page .theme .base-btn {
+  display: inline-block;
+  width: auto;
+  padding: 0.16rem 0.6rem;
+  font-size: 13px;
+  border-radius: 0.4rem;
+  background-color: #3b5989;
+}
+
 .mine-page .list .item {
   padding: 0.32rem 0.32rem 0.32rem 0.86rem;
 }
