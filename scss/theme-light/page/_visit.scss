@@ -97,7 +97,22 @@
       font-size: 14px;
 
       .itm {
-        margin: 0 0.1rem;
+        margin-right: 0.2rem;
+        margin-left: 0.1rem;
+
+        .close {
+          position: absolute;
+          right: -0.2rem;
+          top: -0.14rem;
+          display: block;
+          height: 0.28rem;
+          width: 0.28rem;
+          text-align: center;
+          line-height: 0.28rem;
+          border-radius: 100%;
+          font-size: 10px;
+          background-color: #ddd;
+        }
       }
     }
 
