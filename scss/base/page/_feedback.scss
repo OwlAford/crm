@@ -26,6 +26,54 @@
       height: 1.26rem;
       width: 1.26rem;
     }
+
+    &.fbList {
+      .area {
+        padding: 0;
+
+        .cnt {
+          padding: 0.2rem 0.32rem 0.2rem 0.64rem;
+        }
+
+        .withInfo {
+          padding: 0.2rem 0.32rem;
+          display: flex;
+
+          .info {
+            padding-right: 0.3rem;
+            text-align: center;
+            line-height: 2;
+
+            .avatar {
+              position: relative;
+              top: auto;
+              left: auto;
+              margin-top: 0;
+            }
+          }
+        }
+
+        .source {
+          color: #d0d2e2;
+          padding: 0.2rem 0.34rem;
+          @include opacityBorder(top, 10);
+
+          .ico-reply {
+            height: 16px;
+            width: 16px;
+            display: inline-block;
+            vertical-align: middle;
+            background: url(../images/msg.png) no-repeat;
+            background-size: 100% auto;
+            margin-right: 0.04rem;
+          }
+
+          .num {
+            color: #fff;
+          }
+        }
+      }
+    }
   }
 
 }

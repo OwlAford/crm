@@ -3738,6 +3738,54 @@ i.ico-local {
   width: 1.26rem;
 }
 
+.feedback-page .mcList.fbList .area, .visit-page .mcList.fbList .area {
+  padding: 0;
+}
+
+.feedback-page .mcList.fbList .area .cnt, .visit-page .mcList.fbList .area .cnt {
+  padding: 0.2rem 0.32rem 0.2rem 0.64rem;
+}
+
+.feedback-page .mcList.fbList .area .withInfo, .visit-page .mcList.fbList .area .withInfo {
+  padding: 0.2rem 0.32rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.feedback-page .mcList.fbList .area .withInfo .info, .visit-page .mcList.fbList .area .withInfo .info {
+  padding-right: 0.3rem;
+  text-align: center;
+  line-height: 2;
+}
+
+.feedback-page .mcList.fbList .area .withInfo .info .avatar, .visit-page .mcList.fbList .area .withInfo .info .avatar {
+  position: relative;
+  top: auto;
+  left: auto;
+  margin-top: 0;
+}
+
+.feedback-page .mcList.fbList .area .source, .visit-page .mcList.fbList .area .source {
+  color: #d0d2e2;
+  padding: 0.2rem 0.34rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.feedback-page .mcList.fbList .area .source .ico-reply, .visit-page .mcList.fbList .area .source .ico-reply {
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../images/msg.png) no-repeat;
+  background-size: 100% auto;
+  margin-right: 0.04rem;
+}
+
+.feedback-page .mcList.fbList .area .source .num, .visit-page .mcList.fbList .area .source .num {
+  color: #fff;
+}
+
 .task-page .switch-content {
   padding-top: 0.1rem;
 }
@@ -3991,6 +4039,22 @@ i.ico-local {
 .task-page .approvalBox .control-fixed .inner,
 .visit-page .approvalBox .control-fixed .inner {
   position: relative;
+}
+
+.task-page .approvalBox.bottom,
+.visit-page .approvalBox.bottom {
+  width: 100%;
+  top: auto;
+  margin: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 0;
+  height: 4.98rem;
+}
+
+.task-page .approvalBox.bottom .cancel,
+.visit-page .approvalBox.bottom .cancel {
+  padding: 0.1rem;
 }
 
 .task-page .control-fixed,
