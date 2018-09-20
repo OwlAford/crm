@@ -7,6 +7,7 @@ html {
 button, input {
   border: none;
   outline: none;
+  line-height: 1.5;
 }
 
 body {
@@ -138,6 +139,10 @@ body, .crm-wrap {
 
 .round-pdb24 {
   padding-bottom: 0.24rem;
+}
+
+.no-pd {
+  padding: 0 !important;
 }
 
 .round-mg10 {
@@ -699,6 +704,7 @@ body, .crm-wrap {
   width: 100%;
   background: none;
   color: #757575;
+  display: block;
 }
 
 .crm-wrap .ipt input::-webkit-input-placeholder {
@@ -4023,6 +4029,20 @@ i.ico-local {
   padding: 0.24rem 0.5rem;
 }
 
+.task-page .approvalBox .ico-result,
+.visit-page .approvalBox .ico-result {
+  height: 0.64rem;
+  width: 0.64rem;
+  display: inline-block;
+  background: url(../images/result.png) no-repeat;
+  background-size: 100% auto;
+}
+
+.task-page .approvalBox .ico-result.err,
+.visit-page .approvalBox .ico-result.err {
+  background-position: 0 100%;
+}
+
 .task-page .approvalBox i.close,
 .visit-page .approvalBox i.close {
   height: 0.46rem;
@@ -4066,6 +4086,13 @@ i.ico-local {
   background-color: #e5e5e5;
   background-image: none;
   color: #757575;
+}
+
+.task-page .control-fixed .inner.single,
+.visit-page .control-fixed .inner.single {
+  background: none;
+  border-top: 1px solid #e5e5e5;
+  color: #5ba6ff;
 }
 
 .task-page .control-fixed .inner .allow,

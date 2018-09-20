@@ -6,6 +6,7 @@ html {
 button, input {
   border: none;
   outline: none;
+  line-height: 1.5;
 }
 
 body {
@@ -126,6 +127,10 @@ body, .crm-wrap {
 
 .round-pd30-0 {
   padding: 0.3rem 0;
+}
+
+.no-pd {
+  padding: 0 !important;
 }
 
 .round-pd40 {

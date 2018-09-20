@@ -202,6 +202,18 @@
       }
     }
 
+    .ico-result {
+      height: 0.64rem;
+      width: 0.64rem;
+      display: inline-block;
+      background: url(../images/result.png) no-repeat;
+      background-size: 100% auto;
+
+      &.err {
+        background-position: 0 100%;
+      }
+    }
+
     i.close {
       height: 0.46rem;
       width: 0.46rem;
@@ -227,6 +239,7 @@
   .control-fixed {
     height: 0.98rem;
     width: 100%;
+
     .inner {
       position: fixed;
       left: 0;
@@ -238,6 +251,13 @@
       background-color: #e5e5e5;
       background-image: none;
       color: #757575;
+
+      &.single {
+        background: none;
+        border-top: 1px solid #e5e5e5;
+        color: #5ba6ff;
+      }
+
       .allow {
         background-color: #006cd1;
         background-image: -webkit-linear-gradient(180deg, #29bdf1, #006cd1);

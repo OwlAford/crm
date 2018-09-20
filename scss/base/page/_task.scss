@@ -203,6 +203,18 @@
       }
     }
 
+    .ico-result {
+      height: 0.64rem;
+      width: 0.64rem;
+      display: inline-block;
+      background: url(../images/result.png) no-repeat;
+      background-size: 100% auto;
+
+      &.err {
+        background-position: 0 100%;
+      }
+    }
+
     i.close {
       height: 0.46rem;
       width: 0.46rem;
@@ -229,6 +241,7 @@
   .control-fixed {
     height: 0.98rem;
     width: 100%;
+
     .inner {
       position: fixed;
       left: 0;
@@ -239,6 +252,12 @@
       text-align: center;
       background-color: #324672;
       color: #77e1fa;
+
+      &.single {
+        background: none;
+        @include opacityBorder(top, 10);
+      }
+
       .allow {
         background-color: #11b7de;
         color: #fff;

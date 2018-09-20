@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN" xml:lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="renderer" content="webkit"/>
+<title>CRM2.0</title>
+<script src="../js/init.min.js"></script>
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/main.css" id="profile">
+<script src="../js/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="crm-wrap">
+		<div class="visit-page">
+      <div class="round-pd20-30">请输入客户端的CVN</div>
+      <div class="list area">
+        <div class="item row">
+          <div class="ipt cell">
+            <input type="text" value="" placeholder="请输入CVN" id="cvn">
+          </div>
+        </div>
+      </div>
+      <div class="btn-wrap">
+        <button class="base-btn" id="sub">提交</button>
+      </div>
+      <!-- 新增弹窗 -->
+      <div class="full-mask" style="display: none;">
+        <div class="approvalBox">
+          <div class="title"></div>
+          <div class="form ta-c lh20">
+            <div class="ico-result"></div>
+            <h1 class="ft16">提交成功</h1>
+            <p>请至手机银行或拨打客服设置交易密码</p>
+          </div>
+          <div class="control-fixed">
+            <div class="inner single">我知道了</div>
+          </div>
+          <!-- <i class="close"></i> -->
+        </div>
+      </div>
+
+      <div class="full-mask" style="display: none;">
+        <div class="approvalBox">
+          <div class="title"></div>
+          <div class="form ta-c lh20">
+            <div class="ico-result err"></div>
+            <h1 class="ft16">提交失败</h1>
+            <p>您输入的CVN错误，请确认后重新填写</p>
+          </div>
+          <div class="control-fixed">
+            <div class="inner single">我知道了</div>
+          </div>
+          <!-- <i class="close"></i> -->
+        </div>
+      </div>
+    </div>
+	</div>
+	<script type="text/javascript">
+		$(function () {
+			// 切换皮肤
+      changeTheme()
+
+      // 输入框结果
+      var allRzt = $('.full-mask');
+      $('#sub').on('click', function () {
+        allRzt.hide();
+        var cvn = $('#cvn').val();
+        if (cvn) {
+          allRzt.eq(0).show();
+        } else {
+          allRzt.eq(1).show();
+        }
+      })
+      $('.inner.single').on('click', function () {
+        allRzt.hide();
+      });
+		})
+	</script>
+</body>
+</html>
