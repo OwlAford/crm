@@ -52,45 +52,6 @@
 
   }
 
-  .fnPanel {
-    line-height: 0.78rem;
-    height: 0.78rem;
-    padding: 0 0.24rem;
-    
-    .order {
-      margin-right: 0.3rem;
-    }
-    
-    .time {
-      text-align: right;
-      // opacity: .6;
-    }
-
-    .order, .filter {
-      opacity: .6;
-
-      &:before {
-        content: "";
-        display: inline-block;
-        height: 0.36rem;
-        width: 0.36rem;
-        background: url(../images/rank_ico.png) no-repeat;
-        background-size: 100% auto;
-        vertical-align: middle;
-        margin-right: 0.1rem;
-      }
-
-      &.active {
-        opacity: 1;
-      }
-
-    }
-
-    .filter:before {
-      background-position: 0 100%;
-    }
-  }
-
   .rankList {
     .item {
       &:nth-child(1),  &:nth-child(2),  &:nth-child(3) {
@@ -185,6 +146,46 @@
 }
 
 .rank-page, .visit-page, .helper-page, .yunloan-page {
+  .fnPanel {
+    line-height: 0.78rem;
+    height: 0.78rem;
+    padding: 0 0.24rem;
+
+    .order {
+      margin-right: 0.3rem;
+    }
+
+    .time {
+      text-align: right;
+      // opacity: .6;
+    }
+
+    .order,
+    .filter {
+      opacity: .6;
+
+      &:before {
+        content: "";
+        display: inline-block;
+        height: 0.36rem;
+        width: 0.36rem;
+        background: url(../images/rank_ico.png) no-repeat;
+        background-size: 100% auto;
+        vertical-align: middle;
+        margin-right: 0.1rem;
+      }
+
+      &.active {
+        opacity: 1;
+      }
+
+    }
+
+    .filter:before {
+      background-position: 0 100%;
+    }
+  }
+  
   .orderFilterGroup {
     width: 100%;
     position: absolute;

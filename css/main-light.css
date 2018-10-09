@@ -2548,6 +2548,11 @@ body, .crm-wrap {
   background-size: 100% auto;
 }
 
+.info-page .infoList > .area i.k {
+  background: #deedff url(../images/baifang_light.png) no-repeat;
+  background-size: 100% auto;
+}
+
 .info-page .infoList > .area i .tip {
   color: #fff;
   height: 0.84rem;
@@ -3099,44 +3104,6 @@ body, .crm-wrap {
   padding-bottom: 0.58rem;
 }
 
-.rank-page .fnPanel, .helper-page .fnPanel {
-  line-height: 0.78rem;
-  height: 0.78rem;
-  padding: 0 0.24rem;
-}
-
-.rank-page .fnPanel .order, .helper-page .fnPanel .order {
-  margin-right: 0.3rem;
-}
-
-.rank-page .fnPanel .time, .helper-page .fnPanel .time {
-  text-align: right;
-  opacity: .6;
-}
-
-.rank-page .fnPanel .order, .rank-page .fnPanel .filter, .helper-page .fnPanel .order, .helper-page .fnPanel .filter {
-  opacity: .6;
-}
-
-.rank-page .fnPanel .order:before, .rank-page .fnPanel .filter:before, .helper-page .fnPanel .order:before, .helper-page .fnPanel .filter:before {
-  content: "";
-  display: inline-block;
-  height: 0.36rem;
-  width: 0.36rem;
-  background: url(../images/rank_ico_light.png) no-repeat;
-  background-size: 100% auto;
-  vertical-align: middle;
-  margin-right: 0.1rem;
-}
-
-.rank-page .fnPanel .order.active, .rank-page .fnPanel .filter.active, .helper-page .fnPanel .order.active, .helper-page .fnPanel .filter.active {
-  opacity: 1;
-}
-
-.rank-page .fnPanel .filter:before, .helper-page .fnPanel .filter:before {
-  background-position: 0 100%;
-}
-
 .rank-page .rankList .item:nth-child(1) .num, .rank-page .rankList .item:nth-child(2) .num, .rank-page .rankList .item:nth-child(3) .num, .helper-page .rankList .item:nth-child(1) .num, .helper-page .rankList .item:nth-child(2) .num, .helper-page .rankList .item:nth-child(3) .num {
   background: url(../images/top_3.png) no-repeat;
   background-size: 100% auto;
@@ -3220,6 +3187,56 @@ body, .crm-wrap {
 .search-page .allPanel .inner input {
   text-align: left;
   background-color: #fff;
+}
+
+.rank-page .fnPanel, .visit-page .fnPanel, .helper-page .fnPanel, .yunloan-page .fnPanel {
+  line-height: 0.78rem;
+  height: 0.78rem;
+  padding: 0 0.24rem;
+}
+
+.rank-page .fnPanel .order, .visit-page .fnPanel .order, .helper-page .fnPanel .order, .yunloan-page .fnPanel .order {
+  margin-right: 0.3rem;
+}
+
+.rank-page .fnPanel .time, .visit-page .fnPanel .time, .helper-page .fnPanel .time, .yunloan-page .fnPanel .time {
+  text-align: right;
+  opacity: .6;
+}
+
+.rank-page .fnPanel .order,
+.rank-page .fnPanel .filter, .visit-page .fnPanel .order,
+.visit-page .fnPanel .filter, .helper-page .fnPanel .order,
+.helper-page .fnPanel .filter, .yunloan-page .fnPanel .order,
+.yunloan-page .fnPanel .filter {
+  opacity: .6;
+}
+
+.rank-page .fnPanel .order:before,
+.rank-page .fnPanel .filter:before, .visit-page .fnPanel .order:before,
+.visit-page .fnPanel .filter:before, .helper-page .fnPanel .order:before,
+.helper-page .fnPanel .filter:before, .yunloan-page .fnPanel .order:before,
+.yunloan-page .fnPanel .filter:before {
+  content: "";
+  display: inline-block;
+  height: 0.36rem;
+  width: 0.36rem;
+  background: url(../images/rank_ico_light.png) no-repeat;
+  background-size: 100% auto;
+  vertical-align: middle;
+  margin-right: 0.1rem;
+}
+
+.rank-page .fnPanel .order.active,
+.rank-page .fnPanel .filter.active, .visit-page .fnPanel .order.active,
+.visit-page .fnPanel .filter.active, .helper-page .fnPanel .order.active,
+.helper-page .fnPanel .filter.active, .yunloan-page .fnPanel .order.active,
+.yunloan-page .fnPanel .filter.active {
+  opacity: 1;
+}
+
+.rank-page .fnPanel .filter:before, .visit-page .fnPanel .filter:before, .helper-page .fnPanel .filter:before, .yunloan-page .fnPanel .filter:before {
+  background-position: 0 100%;
 }
 
 .rank-page .orderFilterGroup, .visit-page .orderFilterGroup, .helper-page .orderFilterGroup, .yunloan-page .orderFilterGroup {
