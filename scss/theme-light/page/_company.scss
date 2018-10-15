@@ -132,6 +132,10 @@
         background-position: 0 100%;
       }
 
+      &.j {
+        background-position: 100% 100%;
+      }
+
     }
   }
 
@@ -168,13 +172,13 @@
     text-align: center;
     padding-top: .2rem;
     & .c-open {
-      background:url(../images/slide_icon.png) no-repeat 0 2px;
+      background:url(../images/slide_icon_light.png) no-repeat 0 2px;
       background-size: 12px auto;
       padding-left: 18px;
       color: #5ba6ff;
     }
     & .c-close {
-      background:url(../images/slide_icon.png) no-repeat 0 -61px;
+      background:url(../images/slide_icon_light.png) no-repeat 0 -61px;
       background-size: 12px auto;
       padding-left: 18px;
       color: #5ba6ff;

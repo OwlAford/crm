@@ -316,6 +316,11 @@
           background-size: 100% auto;
         }
 
+        &.l {
+          background: $bgBlue url(../images/yidong.png) no-repeat;
+          background-size: 100% auto;
+        }
+
         .tip {
           height: 0.84rem;
           width: 0.84rem;

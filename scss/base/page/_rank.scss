@@ -1,3 +1,27 @@
+.rank-page {
+  .lenovo-list {
+    position: fixed;
+    top: 0.98rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 999;
+
+    .list-group {
+      .itm {
+        background-color: #384a6e;
+        padding: 0.2rem;
+
+        &.active {
+          background-color: #606e8b;
+          color: #fee47a;
+        }
+      }
+    }
+  }
+}
+
 .rank-page, .helper-page {
   min-height: 8rem;
 
