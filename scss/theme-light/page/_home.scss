@@ -1,11 +1,13 @@
-.home-page {
+.home-page, .info-page {
   .honor-tips {
     padding: 0.1rem 0.2rem;
     background-color: #f0dddc;
     color: #ff4343;
     font-size: 12px;
   }
+}
 
+.home-page {
   .menu {
     display: flex;
     background-color: #fff;

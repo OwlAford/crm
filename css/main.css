@@ -166,6 +166,10 @@ body, .crm-wrap {
   background-color: rgba(125, 230, 255, 0.21);
 }
 
+.opacity80 {
+  opacity: 0.8;
+}
+
 .bd1 {
   border: 1px solid #6e8797;
 }
@@ -1545,7 +1549,7 @@ body, .crm-wrap {
   color: #7de6ff;
 }
 
-.home-page .honor-tips {
+.home-page .honor-tips, .info-page .honor-tips {
   padding: 0.1rem 0.2rem;
   background-color: #3d294b;
   color: #fcdd4a;
@@ -2517,6 +2521,11 @@ body, .crm-wrap {
 
 .info-page .infoList > .area i.l {
   background: rgba(125, 230, 255, 0.2) url(../images/yidong.png) no-repeat;
+  background-size: 100% auto;
+}
+
+.info-page .infoList > .area i.m {
+  background: rgba(125, 230, 255, 0.2) url(../images/shouyi.png) no-repeat;
   background-size: 100% auto;
 }
 
@@ -4657,7 +4666,7 @@ i.ico-local {
 
 .visit-page .card-title .visit-label {
   color: #71eef0;
-  font-size: 0.12rem;
+  font-size: 10px;
   padding: 0.06rem 0.1rem;
   border: 1px solid #71eef0;
   margin: 0 0.08rem;
@@ -5003,6 +5012,10 @@ j .company-page .helperI i.g {
 
 .company-page .helperI i.j {
   background-position: 100% 100%;
+}
+
+.company-page .helperI i.k {
+  background-image: url(../images/helper2_ico.png);
 }
 
 .company-page .adjust-cell {
@@ -5581,12 +5594,20 @@ j .company-page .helperI i.g {
   margin-bottom: 0.2rem;
 }
 
+.company-page .grp.head {
+  background-color: rgba(119, 225, 250, 0.16);
+}
+
+.company-page .grp.head .info-item {
+  padding: 0.1rem 0.24rem;
+}
+
 .company-page .grp .list .item {
   padding: 0.1rem 0.2rem;
 }
 
 .company-page .grp .tit {
-  background-color: rgba(255, 255, 255, 0.16);
+  background-color: rgba(119, 225, 250, 0.16);
   padding: 0.24rem 0.3rem;
 }
 
@@ -5647,6 +5668,20 @@ j .company-page .helperI i.g {
 
 .company-page .regist {
   padding: 0.2rem;
+}
+
+.company-page .regist table th {
+  padding: 0.1rem;
+  font-weight: normal;
+}
+
+.company-page .regist table td {
+  padding: 0.2rem 0.1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.company-page .regist table td .highlight {
+  color: #fee47a;
 }
 
 .company-page .regist .info-item {

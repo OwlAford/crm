@@ -166,6 +166,10 @@ body, .crm-wrap {
   background-color: rgba(125, 230, 255, 0.21);
 }
 
+.opacity80 {
+  opacity: 0.8;
+}
+
 .bd1 {
   border: 1px solid #e5e5e5;
   border-radius: 3px;
@@ -1543,7 +1547,7 @@ body, .crm-wrap {
   color: #fff;
 }
 
-.home-page .honor-tips {
+.home-page .honor-tips, .info-page .honor-tips {
   padding: 0.1rem 0.2rem;
   background-color: #f0dddc;
   color: #ff4343;
@@ -2555,6 +2559,11 @@ body, .crm-wrap {
 
 .info-page .infoList > .area i.l {
   background: #deedff url(../images/yidong_light.png) no-repeat;
+  background-size: 100% auto;
+}
+
+.info-page .infoList > .area i.m {
+  background: #deedff url(../images/shouyi_light.png) no-repeat;
   background-size: 100% auto;
 }
 
@@ -4746,7 +4755,7 @@ i.ico-local {
 
 .visit-page .card-title .visit-label {
   color: #5ba6ff;
-  font-size: 0.12rem;
+  font-size: 10px;
   padding: 0.06rem 0.1rem;
   border: 1px solid #5ba6ff;
   margin: 0 0.08rem;
@@ -5098,6 +5107,10 @@ i.ico-local {
 
 .company-page .helperI i.j {
   background-position: 100% 100%;
+}
+
+.company-page .helperI i.k {
+  background-image: url(../images/helper2_ico_light.png);
 }
 
 .company-page .adjust-cell {
@@ -5676,6 +5689,10 @@ i.ico-local {
   margin-bottom: 0.2rem;
 }
 
+.company-page .grp.head .info-item {
+  padding: 0.1rem 0.24rem;
+}
+
 .company-page .grp .list .item {
   padding: 0.1rem 0.2rem;
 }
@@ -5743,6 +5760,20 @@ i.ico-local {
 
 .company-page .regist {
   padding: 0.2rem;
+}
+
+.company-page .regist table th {
+  padding: 0.1rem;
+  font-weight: normal;
+}
+
+.company-page .regist table td {
+  padding: 0.2rem 0.1rem;
+  border-top: 1px solid #eee;
+}
+
+.company-page .regist table td .highlight {
+  color: #5ba6ff;
 }
 
 .company-page .regist .info-item {

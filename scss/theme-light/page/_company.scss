@@ -136,6 +136,9 @@
         background-position: 100% 100%;
       }
 
+      &.k {
+        background-image: url(../images/helper2_ico_light.png);
+      }
     }
   }
 
@@ -710,6 +713,12 @@
   .grp {
     margin-bottom: 0.2rem;
 
+    &.head {
+      .info-item {
+        padding: 0.1rem 0.24rem;
+      }
+    }
+
     .list {
       .item {
         padding: 0.1rem 0.2rem;
@@ -781,6 +790,22 @@
 
   .regist {
     padding: 0.2rem;
+
+    table {
+      th {
+        padding: 0.1rem;
+        font-weight: normal;
+      }
+
+      td {
+        padding: 0.2rem 0.1rem;
+        border-top: 1px solid #eee;
+
+        .highlight {
+          color: #5ba6ff;
+        }
+      }
+    }
 
     .info-item {
       padding: 0.05rem 0;

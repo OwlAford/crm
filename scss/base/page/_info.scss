@@ -321,6 +321,11 @@
           background-size: 100% auto;
         }
 
+        &.m {
+          background: $bgBlue url(../images/shouyi.png) no-repeat;
+          background-size: 100% auto;
+        }
+
         .tip {
           height: 0.84rem;
           width: 0.84rem;

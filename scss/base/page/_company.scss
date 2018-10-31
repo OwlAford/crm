@@ -134,6 +134,10 @@ j
         background-position: 100% 100%;
       }
 
+      &.k {
+        background-image: url(../images/helper2_ico.png);
+      }
+
     }
   }
 
@@ -527,7 +531,7 @@ j
   }
 
   .fc-blue {
-  color: $fcBlue;
+    color: $fcBlue;
   }
   .qaq {
     position:absolute;
@@ -703,6 +707,14 @@ j
   .grp {
     margin-bottom: 0.2rem;
 
+    &.head {
+      @include bgBlueOpacity(16);
+
+      .info-item {
+        padding: 0.1rem 0.24rem;
+      }
+    }
+
     .list {
       .item {
         padding: 0.1rem 0.2rem;
@@ -710,7 +722,7 @@ j
     }
 
     .tit {
-      @include bgWhiteOpacity(16);
+      @include bgBlueOpacity(16);
       padding: 0.24rem 0.3rem;
 
       &.arr {
@@ -774,6 +786,22 @@ j
 
   .regist {
     padding: 0.2rem;
+
+    table {
+      th {
+        padding: 0.1rem;
+        font-weight: normal;
+      }
+
+      td {
+        padding: 0.2rem 0.1rem;
+        @include opacityBorder(top, 10);
+        
+        .highlight {
+          color: $yellow;
+        }
+      }
+    }
 
     .info-item {
       padding: 0.1rem 0;
