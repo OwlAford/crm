@@ -1,0 +1,5 @@
+{
+  "pluginsFile": "tests/plugins/index.js",
+  "viewportWidth": 375,
+  "viewportHeight": 812
+}

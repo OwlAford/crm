@@ -1,0 +1,19 @@
+{
+  "name": "crm-builder",
+  "version": "1.0.0",
+  "description": "A Web Application",
+  "author": "Aford <zhangyh@belink.com>",
+  "private": true,
+  "scripts": {
+    "get": "node ./tests/bin.js",
+    "shot": "cypress open --config baseUrl=http://127.0.0.1:5500/"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "cypress": "^3.1.1"
+  },
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
+  }
+}
