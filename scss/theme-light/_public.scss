@@ -76,6 +76,10 @@ body, .crm-wrap {
   color: #757575;
 }
 
+.fc-light {
+  color: #999;
+}
+
 .fc-yellow {
   color: $yellow;
 }
@@ -94,7 +98,7 @@ body, .crm-wrap {
 }
 
 .round-pd10 {
-  padding:0.1rem;
+  padding: 0.1rem;
 }
 
 .round-pd20 {
@@ -127,6 +131,10 @@ body, .crm-wrap {
 
 .round-pd30-0 {
   padding: 0.3rem 0;
+}
+
+.round-pd10-0 {
+  padding: 0.1rem 0;
 }
 
 .round-pd40 {

@@ -1,7 +1,16 @@
 .info-page {
+  .switch-type-btn {
+    color: #fff;
+    padding: 0.1rem 0.2rem 0.1rem 0.6rem;
+    background: #5ba6ff url(../images/ico-line-bar.png) no-repeat 0.16rem center;
+    background-size: 0.28rem;
+    border-radius: 0.06rem;
+  }
+
   .swiper-wrap .dotCon i:after {
     background-color: #bbb;
   }
+
   .mcList {
     .item {
       width: 100%;

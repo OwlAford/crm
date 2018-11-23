@@ -78,6 +78,10 @@ body, .crm-wrap {
   color: #757575;
 }
 
+.fc-light {
+  color: #999;
+}
+
 .fc-yellow {
   color: #ffa452;
 }
@@ -129,6 +133,10 @@ body, .crm-wrap {
 
 .round-pd30-0 {
   padding: 0.3rem 0;
+}
+
+.round-pd10-0 {
+  padding: 0.1rem 0;
 }
 
 .round-pd40 {
@@ -2035,6 +2043,10 @@ body, .crm-wrap {
   background-image: url(../images/theme-ico.png);
 }
 
+.mine-page .list .item i.m {
+  background-image: url(../images/chart_line.png);
+}
+
 .mine-page .list .item .grpTitle {
   position: relative;
 }
@@ -2249,6 +2261,14 @@ body, .crm-wrap {
 
 .mine-page .area.user .base .name, .visit-page .area.user .base .name {
   margin-right: 0.2rem;
+}
+
+.info-page .switch-type-btn {
+  color: #fff;
+  padding: 0.1rem 0.2rem 0.1rem 0.6rem;
+  background: #5ba6ff url(../images/ico-line-bar.png) no-repeat 0.16rem center;
+  background-size: 0.28rem;
+  border-radius: 0.06rem;
 }
 
 .info-page .swiper-wrap .dotCon i:after {
