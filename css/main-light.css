@@ -3322,6 +3322,57 @@ body, .crm-wrap {
   border-bottom-color: #fff;
 }
 
+.rank-page .orderFilterGroup.show.full, .visit-page .orderFilterGroup.show.full, .helper-page .orderFilterGroup.show.full, .yunloan-page .orderFilterGroup.show.full {
+  top: 0;
+  padding: 0 0 0 1.2rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.rank-page .orderFilterGroup.show.full .itemsBox.show, .visit-page .orderFilterGroup.show.full .itemsBox.show, .helper-page .orderFilterGroup.show.full .itemsBox.show, .yunloan-page .orderFilterGroup.show.full .itemsBox.show {
+  overflow: auto;
+  border-radius: 0;
+  position: relative;
+}
+
+.rank-page .orderFilterGroup.show.full .itemsBox.show .filterList ul li, .visit-page .orderFilterGroup.show.full .itemsBox.show .filterList ul li, .helper-page .orderFilterGroup.show.full .itemsBox.show .filterList ul li, .yunloan-page .orderFilterGroup.show.full .itemsBox.show .filterList ul li {
+  font-size: 12px;
+}
+
+.rank-page .orderFilterGroup.show.full .itemsBox.show .filterList .spr, .visit-page .orderFilterGroup.show.full .itemsBox.show .filterList .spr, .helper-page .orderFilterGroup.show.full .itemsBox.show .filterList .spr, .yunloan-page .orderFilterGroup.show.full .itemsBox.show .filterList .spr {
+  font-size: 12px;
+  color: #888;
+}
+
+.rank-page .orderFilterGroup.show.full .itemsBox.show .filterList .spr:after, .visit-page .orderFilterGroup.show.full .itemsBox.show .filterList .spr:after, .helper-page .orderFilterGroup.show.full .itemsBox.show .filterList .spr:after, .yunloan-page .orderFilterGroup.show.full .itemsBox.show .filterList .spr:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 0.28rem;
+  width: 0.28rem;
+  margin: -2px 0 0 3px;
+  background: url(../images/fold.png) no-repeat center center;
+  background-size: 90% auto;
+}
+
+.rank-page .orderFilterGroup.show.full .itemsBox.show .filterList .spr.active:after, .visit-page .orderFilterGroup.show.full .itemsBox.show .filterList .spr.active:after, .helper-page .orderFilterGroup.show.full .itemsBox.show .filterList .spr.active:after, .yunloan-page .orderFilterGroup.show.full .itemsBox.show .filterList .spr.active:after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.rank-page .orderFilterGroup.show.full .itemsBox.show .filterList .typeGroup + .typeGroup, .visit-page .orderFilterGroup.show.full .itemsBox.show .filterList .typeGroup + .typeGroup, .helper-page .orderFilterGroup.show.full .itemsBox.show .filterList .typeGroup + .typeGroup, .yunloan-page .orderFilterGroup.show.full .itemsBox.show .filterList .typeGroup + .typeGroup {
+  padding: 0.16rem 0;
+  border-top: 1px solid #eee;
+}
+
+.rank-page .orderFilterGroup.show.full .itemsBox.show .filterList .btnGrp, .visit-page .orderFilterGroup.show.full .itemsBox.show .filterList .btnGrp, .helper-page .orderFilterGroup.show.full .itemsBox.show .filterList .btnGrp, .yunloan-page .orderFilterGroup.show.full .itemsBox.show .filterList .btnGrp {
+  position: fixed;
+  left: 1.2rem;
+  right: 0;
+  width: auto;
+}
+
 .rank-page .orderFilterGroup .itemsBox, .visit-page .orderFilterGroup .itemsBox, .helper-page .orderFilterGroup .itemsBox, .yunloan-page .orderFilterGroup .itemsBox {
   width: 100%;
   background: #fff;
@@ -3400,7 +3451,7 @@ body, .crm-wrap {
 }
 
 .rank-page .orderFilterGroup .itemsBox .filterList.type2, .visit-page .orderFilterGroup .itemsBox .filterList.type2, .helper-page .orderFilterGroup .itemsBox .filterList.type2, .yunloan-page .orderFilterGroup .itemsBox .filterList.type2 {
-  padding: 0.1rem 0.2rem 0.96rem 0.2rem;
+  padding: 0.1rem 0.2rem 1.04rem 0.2rem;
 }
 
 .rank-page .orderFilterGroup .itemsBox .filterList .btnGrp, .visit-page .orderFilterGroup .itemsBox .filterList .btnGrp, .helper-page .orderFilterGroup .itemsBox .filterList .btnGrp, .yunloan-page .orderFilterGroup .itemsBox .filterList .btnGrp {

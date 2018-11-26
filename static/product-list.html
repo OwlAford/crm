@@ -27,7 +27,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="orderFilterGroup type2">
+			<div class="orderFilterGroup type2 full">
 				<div class="itemsBox">
 					<div class="orderList">
 						<div class="item active">收益率从高到低</div>
@@ -37,19 +37,25 @@
 						<div class="item">重要推荐从高到底</div>
 					</div>
 				</div>
-				<div class="itemsBox">
+				<div class="itemsBox" style="height: 100%;">
 					<div class="filterList type2">
 						<div class="typeGroup">
-							<div class="tt">客户类型</div>
+							<div class="tt row">
+								<div class="cell">客户类型</div>
+								<div class="spr">全部</div>
+							</div>
 							<ul class="col3">
 								<li class="active">全部</li>
+								<li>理财类</li>
 								<li>存款类</li>
-								<li>财富自营类</li>
 							</ul>
 						</div>
 						<div class="typeGroup">
-							<div class="tt">起购金额</div>
-							<ul class="col4">
+							<div class="tt row">
+								<div class="cell">起购金额</div>
+								<div class="spr">全部</div>
+							</div>
+							<ul class="col3">
 								<li class="active">不限</li>
 								<li>0-5万</li>
 								<li>5-10万</li>
@@ -59,8 +65,11 @@
 							</ul>
 						</div>
 						<div class="typeGroup">
-							<div class="tt">产品持有时间</div>
-							<ul class="col4">
+							<div class="tt row">
+								<div class="cell">产品持有时间</div>
+								<div class="spr">全部</div>
+							</div>
+							<ul class="col3">
 								<li class="active">不限</li>
 								<li>1月内</li>
 								<li>1-3月</li>
@@ -69,7 +78,10 @@
 							</ul>
 						</div>
 						<div class="typeGroup">
-							<div class="tt">风险程度</div>
+							<div class="tt row">
+								<div class="cell">风险程度</div>
+								<div class="spr">全部</div>
+							</div>
 							<ul class="col4">
 								<li class="active">不限</li>
 								<li>R1</li>
@@ -80,12 +92,26 @@
 							</ul>
 						</div>
 						<div class="typeGroup">
-							<div class="tt">目标客户</div>
-							<ul class="col4">
+							<div class="tt row">
+								<div class="cell">目标客户</div>
+								<div class="spr">全部</div>
+							</div>
+							<ul class="col3">
 								<li class="active">全部</li>
 								<li>普通</li>
 								<li>高净值</li>
 								<li>私银</li>
+							</ul>
+						</div>
+						<div class="typeGroup">
+							<div class="tt row">
+								<div class="cell">条线</div>
+								<div class="spr">全部</div>
+							</div>
+							<ul class="col3">
+								<li class="active">全部</li>
+								<li>公司</li>
+								<li>小微</li>
 							</ul>
 						</div>
 						<div class="btnGrp row">
@@ -182,10 +208,17 @@
 		var orderFilterGroup = $('.orderFilterGroup');
 		var orderFilterItems = orderFilterGroup.find('.itemsBox');
 		var filterOrOrderBtns = $('.fnPanel div');
+	
 		activer(filterOrOrderBtns, function (e, i) {
+			var tar = orderFilterItems.eq(i);
 			orderFilterGroup.addClass('show');
 			orderFilterItems.removeClass('show');
-			orderFilterItems.eq(i).addClass('show');
+			tar.addClass('show');
+			if (i === 1) {
+				orderFilterGroup.addClass('full');
+			} else {
+				orderFilterGroup.removeClass('full');
+			}
 		})
 		orderFilterItems.on('click', function (ev) {
 			ev.stopPropagation();
@@ -222,6 +255,27 @@
 		$('.btnGrp .okBtn').on('click', function () {
 			console.log('点击了确定！');
 			hideOrderFilter();
+		})
+
+		// 隐藏第三个以后的筛选选项
+		$('.typeGroup ul li').each(function () {
+			var cur = $(this);
+			cur.index() < 3 ? cur.show() : cur.hide();
+		})
+
+		// 切换全部按钮
+		$('.typeGroup .tt .spr').on('click', function () {
+			var isActive = $(this).hasClass('active');
+			var allItems = $(this).parents('.typeGroup').find('ul li');
+			isActive ? $(this).removeClass('active') : $(this).addClass('active');
+			if (!isActive) {
+				allItems.show()
+			} else {
+				allItems.each(function () {
+					var cur = $(this);
+					cur.index() < 3 ? cur.show() : cur.hide();
+				})
+			}
 		})
 
 	})
