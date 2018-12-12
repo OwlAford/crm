@@ -852,6 +852,7 @@
       line-height: 0.88rem;
       transition: color .3s;
       overflow: hidden;
+      font-size: 14px;
 
       &:after {
         content: "";
@@ -865,6 +866,8 @@
 
       &.active {
         color: $fcBlue;
+        font-weight: 700;
+
         &:after {
           background-color: $fcBlue;
         }

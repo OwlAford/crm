@@ -1066,6 +1066,7 @@ body, .crm-wrap {
   -webkit-transition: color .3s;
   transition: color .3s;
   overflow: hidden;
+  font-size: 14px;
 }
 
 .rank-page .tabs .cell:after, .task-page .tabs .cell:after, .machine-page .tabs .cell:after, .visit-page .tabs .cell:after, .search-page .tabs .cell:after {
@@ -1080,6 +1081,7 @@ body, .crm-wrap {
 
 .rank-page .tabs .cell.active, .task-page .tabs .cell.active, .machine-page .tabs .cell.active, .visit-page .tabs .cell.active, .search-page .tabs .cell.active {
   color: #2e98e8;
+  font-weight: 700;
 }
 
 .rank-page .tabs .cell.active:after, .task-page .tabs .cell.active:after, .machine-page .tabs .cell.active:after, .visit-page .tabs .cell.active:after, .search-page .tabs .cell.active:after {
@@ -2584,6 +2586,11 @@ body, .crm-wrap {
 
 .info-page .infoList > .area i.m {
   background: #deedff url(../images/shouyi_light.png) no-repeat;
+  background-size: 100% auto;
+}
+
+.info-page .infoList > .area i.n {
+  background: #deedff url(../images/daily_light.png) no-repeat;
   background-size: 100% auto;
 }
 
