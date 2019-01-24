@@ -544,60 +544,67 @@
     }
   }
 }
-  .backSearchPane2 {
-    width: 100%;
-    margin-bottom:0.2rem;
 
-    .inner {
-      background-color: rgba(42, 101, 138, .8);
-      text-align: center;
-      padding: 0.2rem;
-      padding-bottom:0;
-      width: 100%;      
-        p {
-        line-height: 0.48rem;
-        }
-
-      .arrow {
-        display: inline-block;
-        height: 0.28rem;
-        width: 0.28rem;
-        background: url(../images/arrow.png) center center no-repeat;
-        background-size: 0.24rem auto;
-        margin-top: 0.14rem;
-      }
-    }
-    table {
-      text-align: center;
-      width:100%; 
-      background-color: #59a3ff;
-      background-image: -webkit-linear-gradient(270deg, #7fc8ff, #59a3ff);
-      color: #fff;
-  
-      td {
-        padding:0.13rem;
-      }
-      .ttt {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.08); 
-        th {
-           padding:.28rem .35rem .27rem .26rem;
-
-          i {
-            background:url(../images/usershow_ico_light.png);
-            display: inline-block;
-            height: 0.4rem;
-            width: 0.4rem;
-            background-size: 200% auto;
-            position: absolute;
-            left: -0.01rem;
-            top: 50%;
-            margin-top: -0.2rem;
-
-             &.b {
-              background-position: 100% 0; 
-            }
-          }
-        }       
-      }
-    }   
+.visit-page {
+  .customerList {
+    padding: 0.24rem 0;
   }
+}
+
+.backSearchPane2 {
+  width: 100%;
+  margin-bottom:0.2rem;
+
+  .inner {
+    background-color: rgba(42, 101, 138, .8);
+    text-align: center;
+    padding: 0.2rem;
+    padding-bottom:0;
+    width: 100%;      
+      p {
+      line-height: 0.48rem;
+      }
+
+    .arrow {
+      display: inline-block;
+      height: 0.28rem;
+      width: 0.28rem;
+      background: url(../images/arrow.png) center center no-repeat;
+      background-size: 0.24rem auto;
+      margin-top: 0.14rem;
+    }
+  }
+  table {
+    text-align: center;
+    width:100%; 
+    background-color: #59a3ff;
+    background-image: -webkit-linear-gradient(270deg, #7fc8ff, #59a3ff);
+    color: #fff;
+
+    td {
+      padding:0.13rem;
+    }
+    .ttt {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08); 
+      th {
+          padding:.28rem .35rem .27rem .26rem;
+
+        i {
+          background:url(../images/usershow_ico_light.png);
+          display: inline-block;
+          height: 0.4rem;
+          width: 0.4rem;
+          background-size: 200% auto;
+          position: absolute;
+          left: -0.01rem;
+          top: 50%;
+          margin-top: -0.2rem;
+
+            &.b {
+            background-position: 100% 0; 
+          }
+        }
+      }       
+    }
+  }   
+}

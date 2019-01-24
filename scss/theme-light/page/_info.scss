@@ -439,6 +439,10 @@
         &.i:after {
           background-position: 0 10% * 8;
         }
+  
+        &.j:after {
+          background-position: 0 10% * 9;
+        }
       }
 
       &.active {
@@ -475,8 +479,12 @@
             background-position: 100% 10% * 7;
           }
 
-          &.g:after {
+          &.i:after {
             background-position: 100% 10% * 8;
+          }
+
+          &.j:after {
+            background-position: 100% 10% * 9;
           }
         }
       }

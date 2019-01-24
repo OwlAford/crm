@@ -12,7 +12,7 @@ button, input {
 
 body {
   min-height: 100%;
-  background-color: #f5f5f5;
+  background-color: #f0f5f5;
   color: #454f56;
   font-size: 13px;
   line-height: 1.5;
@@ -147,6 +147,10 @@ body, .crm-wrap {
 
 .round-pdb24 {
   padding-bottom: 0.24rem;
+}
+
+.pl30 {
+  padding-left: 0.3rem;
 }
 
 .no-pd {
@@ -481,6 +485,12 @@ body, .crm-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.crm-wrap .row.ac {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .crm-wrap .row .cell {
@@ -2698,6 +2708,10 @@ body, .crm-wrap {
   background-position: 0 80%;
 }
 
+.info-page .userItemsPanel .marketPanel .cell i.j:after {
+  background-position: 0 90%;
+}
+
 .info-page .userItemsPanel .marketPanel .cell.active i:after {
   background-size: 200% auto;
 }
@@ -2730,8 +2744,12 @@ body, .crm-wrap {
   background-position: 100% 70%;
 }
 
-.info-page .userItemsPanel .marketPanel .cell.active i.g:after {
+.info-page .userItemsPanel .marketPanel .cell.active i.i:after {
   background-position: 100% 80%;
+}
+
+.info-page .userItemsPanel .marketPanel .cell.active i.j:after {
+  background-position: 100% 90%;
 }
 
 .info-page .userItemsPanel .swiper-wrap {
@@ -3644,6 +3662,10 @@ body, .crm-wrap {
   padding: 0.2rem 0.3rem;
 }
 
+.visit-page .customerList {
+  padding: 0.24rem 0;
+}
+
 .backSearchPane2 {
   width: 100%;
   margin-bottom: 0.2rem;
@@ -3786,8 +3808,8 @@ body, .crm-wrap {
 
 .search-page .typeLabel {
   font-size: 10spx;
-  color: #fff;
-  border: 1px solid #fff;
+  color: #3aa8ff;
+  border: 1px solid #3aa8ff;
   padding: 3px 4px;
   display: inline-block;
   vertical-align: middle;
@@ -4599,6 +4621,124 @@ i.ico-local {
   padding: 0.3rem 0.2rem 0.3rem 1rem;
 }
 
+.visit-page .calendar-day {
+  width: 22%;
+  margin-right: 0.2rem;
+}
+
+.visit-page .calendar-day:after {
+  content: '';
+  height: 0.4rem;
+  width: 0.4rem;
+  background: url(../images/calendar_gray.png) no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+  position: absolute;
+  right: 0.08rem;
+  top: 50%;
+  margin-top: -0.2rem;
+}
+
+.visit-page .calendar-day .ipt {
+  border: 1px solid #dcdcdc;
+  font-size: 12px;
+  padding: 0 0.6rem 0 0.1rem;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+.visit-page .calendar-day .ipt input {
+  text-align: center;
+  height: 0.6rem;
+  width: 100%;
+  color: #3aa8ff;
+}
+
+.visit-page .buz-status {
+  text-align: center;
+}
+
+.visit-page .buz-status h1 {
+  font-size: 24px;
+  color: #ff9f3b;
+  font-weight: normal;
+  padding: 0.1rem 0 0.3rem;
+}
+
+.visit-page .buz-status h2 {
+  padding-top: 0.4rem;
+  font-weight: normal;
+}
+
+.visit-page .buz-status .row {
+  border-top: 1px solid #eee;
+}
+
+.visit-page .buz-status .row .cell {
+  padding: 0.24rem;
+}
+
+.visit-page .buz-status .row .cell + .cell {
+  border-left: 1px solid #eee;
+}
+
+.visit-page .label-week {
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 100%;
+  color: #3aa8ff;
+  background-color: #d8eeff;
+  font-size: 12px;
+}
+
+.visit-page .list .item .lbl {
+  color: #888;
+}
+
+.visit-page .list.ls-member .active {
+  background-color: #e2eefa;
+  color: #3aa8ff;
+}
+
+.visit-page .list.ls-member .active .fc-light {
+  color: #3aa8ff;
+}
+
+.visit-page .btnGrp .cus-btn {
+  padding: 0.1rem 0.22rem;
+  color: #3aa8ff;
+  border: 1px solid #3aa8ff;
+  background-color: #d7edff;
+  border-radius: 0.06rem;
+}
+
+.visit-page .btnGrp .cus-btn:active, .visit-page .btnGrp .cus-btn.solid {
+  color: #fff;
+  background-color: #3aa8ff;
+}
+
+.visit-page .btnGrp .cus-btn + .cus-btn {
+  margin-left: 0.08rem;
+}
+
+.visit-page .btnGrp .cus-btn.yellow {
+  color: #ff9f3b;
+  background-color: #fff1e3;
+  border-color: #ff9f3b;
+}
+
+.visit-page .btnGrp .cus-btn.yellow:active, .visit-page .btnGrp .cus-btn.yellow.solid {
+  color: #fff;
+  background-color: #ff9f3b;
+}
+
+.visit-page .btnGrp .cus-btn.disabled {
+  color: #fff;
+  background-color: #3aa8ff;
+}
+
 .visit-page .selectOptions {
   margin-top: 0.2rem;
   display: -webkit-box;
@@ -4955,7 +5095,7 @@ i.ico-local {
   position: fixed;
   left: 0;
   top: 0.88rem;
-  background-color: #f5f5f5;
+  background-color: #f0f5f5;
   z-index: 99;
 }
 
@@ -4971,6 +5111,7 @@ i.ico-local {
 
 .visit-page .searchFilter .inner .searchIpt input {
   text-align: left;
+  background-color: #fff;
 }
 
 .visit-page .searchFilter .inner .searchIpt input::-webkit-input-placeholder {
@@ -5062,8 +5203,8 @@ i.ico-local {
   height: 0.86rem;
   line-height: 0.86rem;
   border: none;
-  background-color: #9dcaff;
-  color: #fff;
+  background-color: #ebf6ff;
+  color: #454545;
 }
 
 .visit-page .preclaimList .card .tt .name {
@@ -5072,32 +5213,26 @@ i.ico-local {
 
 .visit-page .preclaimList .card .tt .subname {
   font-size: 12px;
-  color: #fefeff;
+  color: #878787;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   padding: 0 5px;
 }
 
-.visit-page .preclaimList .card .tt .btnGrp .cus-btn {
-  padding: 0.14rem 0.22rem;
-  color: #5ba6ff;
-  background-color: #fff;
-  border-radius: 0.06rem;
+.visit-page .preclaimList .card .tt .phone {
+  color: #3aa8ff;
+  margin-left: 5px;
 }
 
-.visit-page .preclaimList .card .tt .btnGrp .cus-btn + .cus-btn {
-  margin-left: 0.08rem;
+.visit-page .preclaimList .card .tt .phone .ico-phone {
+  width: 16px;
+  height: 16px;
+  margin: -2px 0 0 5px;
 }
 
-.visit-page .preclaimList .card .tt .btnGrp .cus-btn.yellow {
-  color: #fff;
-  background-color: #ffd839;
-}
-
-.visit-page .preclaimList .card .tt .btnGrp .cus-btn.disabled {
-  color: #fff;
-  background-color: #5ba6ff;
+.visit-page .preclaimList .card .row + .row {
+  border-top: 1px solid #eee;
 }
 
 .visit-page .area.assets {

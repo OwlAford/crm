@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="zh-CN" xml:lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="renderer" content="webkit"/>
+<title>CRM2.0</title>
+<script src="../js/init.min.js"></script>
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/swiper.css">
+<link rel="stylesheet" href="../css/main.css" id="profile">
+<script src="../js/jquery.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+</head>
+
+<body>
+	<div class="crm-wrap">
+		<div class="info-page visit-page">
+      <div class="tabFixedWrap">
+        <div class="row tabs">
+          <div class="cell active">工作记录</div>
+          <div class="cell">建档维护</div>
+        </div>
+      </div>
+      <div class="switch-content">
+        <div class="switch-item" style="display: block;">
+          <div class="area userItemsPanel" style="margin: 0.2rem 0 0; padding: 0;">
+            <div class="swiper-wrap">
+              <div class="swiper" id="slider">
+                <div class="row marketPanel">
+                  <div class="cell active">
+                    <i class="j"></i>
+                    <p>社区贷</p>
+                  </div>
+                  <div class="cell">
+                    <i class="g"></i>
+                    <p>营销透视</p>
+                  </div>
+                  <div class="cell">
+                    <i class="d"></i>
+                    <p>营销成果</p>
+                  </div>
+                  <div class="cell">
+                    <i class="c"></i>
+                    <p>荣誉榜</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="area buz-status">
+            <h2>我的业绩</h2>
+            <h1>23,889.00元</h1>
+            <div class="row">
+              <div class="cell">调查任务完成量：150</div>
+              <div class="cell">交叉营销量：18</div>
+            </div>
+          </div>
+          <div class="area">
+            <div class="list">
+              <div class="item row ac">
+                <div class="label-week">周一</div>
+                <div class="cell pl30">
+                  <p>张爱珍、朱琳琳、无力</p>
+                  <p class="fc-light">2019-09-09</p>
+                </div>
+                <div class="fc-yellow">3人</div>
+              </div>
+              <div class="item row ac">
+                <div class="label-week">周一</div>
+                <div class="cell pl30">
+                  <p>张爱珍、朱琳琳、无力</p>
+                  <p class="fc-light">2019-09-09</p>
+                </div>
+                <div class="fc-yellow">3人</div>
+              </div>
+              <div class="item row ac">
+                <div class="label-week">周一</div>
+                <div class="cell pl30">
+                  <p>张爱珍、朱琳琳、无力、张爱珍、朱琳琳、无力、张爱珍、朱琳琳、无力</p>
+                  <p class="fc-light">2019-09-09</p>
+                </div>
+                <div class="fc-yellow">3人</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- //////////////////////////////////////////// -->
+        <div class="switch-item">
+					<div class="searchFilter">
+						<div class="inner row">
+							<div class="searchIpt cell">
+								<input type="text" placeholder="输入搜索条件">
+								<div class="icon"></div>
+							</div>
+							<div class="calendar row">
+								<div class="ipt cell"><input type="text" readonly value="2017/09/11"></div>
+								<span class="gap">-</span>
+								<div class="ipt cell"><input type="text" readonly value="2017/09/11"></div>
+							</div>
+						</div>
+					</div>
+					<div class="userList">
+						<div class="area user">
+							<div class="avatar">
+								<!-- <img src="../images/human.png" alt="avatar"> -->
+								<!-- <img src="../images/man.png" alt="avatar"> -->
+								<img src="../images/woman.png" alt="avatar">
+							</div>
+							<div class="info">
+								<div class="name row">
+                  <div class="cell">杭小航</div>
+                  <div class="fc-blue">电话拜访</div>
+                </div>
+								<div class="ft12 fc-light-dark">来自Android  发布时间：2017.06.08 09:06</div>
+              </div>
+						</div>
+						<div class="list">
+							<div class="area">
+                <div class="item user-contact">
+                  <div>杭州市滨江区长河街道长河路5030号xx大厦</div>
+                  <div>电话：0571-8976543</div>
+                  <div>会计计算中心(6789045667)</div>
+                  <i class="ico-phone"></i>
+                </div>
+                <div class="item">
+									<i class="ico-local"></i>
+									<span class="fc-light-dark ft13">上塘街道科园路968号天瑞国际</span>
+								</div>
+              </div>
+            </div>
+					</div>
+        </div>
+        <!-- //////////////////////////////////////////////// -->
+      </div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function () {
+			// 切换皮肤 
+			changeTheme()
+
+      // 菜单切换
+      var allCell = $('.userItemsPanel .cell');
+      allCell.on('click', function () {
+        allCell.removeClass('active');
+        $(this).addClass('active')
+      })
+
+      // 初始化轮播
+      var slider = document.getElementById('slider');
+      new Swiper({
+        container: slider,
+        item: '.marketPanel',
+        observer: true,
+        autoplay: false,
+        duration: 500,
+        // onSwiped: function (i) {
+        // 	console.log(i)
+        // }
+      })
+
+      var allItem = $('.switch-content .switch-item');
+			$('.visit-page .tabs .cell').on('click', function () {
+				$(this).addClass('active').siblings().removeClass('active');
+        allItem.hide();
+				allItem.eq($(this).index()).show();
+			});
+		})
+	</script>
+</body>
+</html>

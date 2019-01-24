@@ -280,6 +280,10 @@
   .row {
     display: flex;
 
+    &.ac {
+      align-items: center;
+    }
+
     .cell {
       flex: 1;
     }
