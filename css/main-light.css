@@ -2625,6 +2625,11 @@ body, .crm-wrap {
   background-size: 100% auto;
 }
 
+.info-page .infoList > .area i.i {
+  background: #deedff url(../images/yunloan_light.png) no-repeat;
+  background-size: 100% auto;
+}
+
 .info-page .infoList > .area i .tip {
   color: #fff;
   height: 0.84rem;
