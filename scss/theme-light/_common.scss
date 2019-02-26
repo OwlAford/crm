@@ -157,6 +157,13 @@
     background-image: url(../images/phone_light.png);
   }
 
+  i.ico-draft-box {
+    @extend i.ico-date;
+    height: 18px;
+    width: 18px;
+    background-image: url(../images/doc.png);
+  }
+
   .empty-blank {
     width: 100%;
     text-align: center;
@@ -537,7 +544,7 @@
     }
 
     &.lenovo-ipt {
-      
+
       input {
         background-color: #eee;
 
@@ -582,18 +589,34 @@
 
       &.lenovo-item {
         padding: 0 0.3rem;
+
         .label {
           padding: 0.3rem 0;
         }
+
         .ipt {
           margin: 0.2rem 0.4rem 0.2rem 0.2rem;
           input {
             padding: 0.1rem;
           }
         }
+
         i {
           display: block;
           margin: 0.3rem 0;
+        }
+        
+        .edit-btn {
+          color: #30aaff;
+          margin: 0.3rem 0;
+          font-size: 13px;
+
+          .ico-edit {
+            margin: 0;
+            display: inline-block;
+            height: 16px;
+            width: 16px;
+          }
         }
       }
       

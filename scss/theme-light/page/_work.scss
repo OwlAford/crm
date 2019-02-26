@@ -120,3 +120,7 @@ i.ico-local {
   background-size: 13px auto;
   margin: -2px 5px 0 0;
 }
+
+i.ico-local.disabled {
+  background-image: url(../images/pin_disabled.png);
+}

@@ -74,43 +74,45 @@
         </div>
         <!-- //////////////////////////////////////////// -->
         <div class="switch-item">
-					<div class="searchFilter">
-						<div class="inner row">
-							<div class="searchIpt cell">
-								<input type="text" placeholder="输入搜索条件">
-								<div class="icon"></div>
-							</div>
-						</div>
-          </div>
-          <div class="fnPanel row" style="margin: 0.1rem 0;">
-            <div class="filter cell">筛选</div>
-            <div class="searchFilter nofixed">
-              <div class="inner row">
-                <div class="calendar row">
-                  <div class="ipt cell"><input type="text" readonly value="2017/09/11"></div>
-                  <span class="gap">-</span>
-                  <div class="ipt cell"><input type="text" readonly value="2017/09/11"></div>
+          <div class="searchFilter">
+            <div class="inner row">
+              <div class="searchIpt cell">
+                <input type="text" placeholder="输入搜索条件">
+                <div class="icon"></div>
+              </div>
+              <!-- mask -->
+              <div class="orderFilterGroup" style="top: 3.04rem;">
+                <div class="itemsBox show">
+                  <div class="filterList single">
+                    <ul class="col4" style="padding-bottom: 0.86rem;">
+                      <li class="active">日常</li>
+                      <li>贷后</li>
+                      <li>意向</li>
+                      <li>陌生拜访</li>
+                    </ul>
+                    <div class="btnGrp row">
+                      <div class="cell resetBtn">重置</div>
+                      <div class="cell okBtn">确定</div>
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <!-- mask -->
+              <div class="cancel">取消</div>
+              <div class="calendar row">
+                <div class="ipt cell"><input type="text" readonly value="2017/09/11"></div>
+                <span class="gap">-</span>
+                <div class="ipt cell"><input type="text" readonly value="2017/09/11"></div>
               </div>
             </div>
           </div>
 
-          <div class="orderFilterGroup" style="top: 3.04rem;">
-            <div class="itemsBox">
-              <div class="filterList single">
-                <ul class="col4" style="padding-bottom: 0.86rem;">
-                  <li class="active">日常</li>
-                  <li>贷后</li>
-                  <li>意向</li>
-                  <li>陌生拜访</li>
-                </ul>
-                <div class="btnGrp row">
-                  <div class="cell resetBtn">重置</div>
-                  <div class="cell okBtn">确定</div>
-                </div>
-              </div>
-            </div>
+          <div class="area fnPanel row" style="margin-bottom: 0.2rem; height: 0.9rem; line-height: 0.9rem;">
+            <div class="filter">筛选</div>
+            <div class="cell"></div>
+            <div class="fc-blue"><i class="ico-draft-box"></i> 草稿箱</div>
           </div>
+
 					<div class="userList">
             <div class="list">
               <div class="area">
@@ -157,10 +159,44 @@
                   <div class="info">
                     <div class="name row">
                       <div class="cell">
-                        <span>杭小航</span>
-                        <span class="fc-blue">（已点评）</span>
+                        <span>杭州银泰有限公司</span>
+                        <span class="fc-yellow">（待审核）</span>
                       </div>
-                      <div class="fc-blue">电话拜访</div>
+                      <div class="fc-blue">陌生拜访</div>
+                    </div>
+                    <div class="ft12 fc-light-dark">来自Android  发布时间：2017.06.08 09:06</div>
+                  </div>
+                </div>
+                <div class="item lh20">
+                  <div style="padding-left: 28px;">公司性质：上市公司、房地产</div>
+                  <div>
+                    <i class="ico-local"></i>
+                    <span>杭州市滨江区长河街道长河路5030号xx大厦</span>
+                  </div>
+                </div>
+                <div class="item">
+									<span class="fw-bold ft14">领导点评：</span>
+									<span class="fc-light-dark ft13">点评信息内容点评信息内容点评信息内容...</span>
+								</div>
+              </div>
+            </div>
+					</div>
+					<div class="userList">
+            <div class="list">
+              <div class="area">
+                <div class="item area user">
+                  <div class="avatar">
+                    <!-- <img src="../images/human.png" alt="avatar"> -->
+                    <!-- <img src="../images/man.png" alt="avatar"> -->
+                    <img src="../images/woman.png" alt="avatar">
+                  </div>
+                  <div class="info">
+                    <div class="name row">
+                      <div class="cell">
+                        <span>杭州银泰有限公司</span>
+                        <span class="fc-light">（失效）</span>
+                      </div>
+                      <div class="fc-blue">意向拜访</div>
                     </div>
                     <div class="ft12 fc-light-dark">来自Android  发布时间：2017.06.08 09:06</div>
                   </div>
@@ -204,17 +240,28 @@
         })
       }
 
-      // 显示排序和筛选框
+      // 聚焦切换
+      $('.searchIpt input').on('focus', function () {
+				var par = $(this).parent();
+				var calendar = par.siblings('.calendar');
+				var cancel = par.siblings('.cancel');
+				calendar.addClass('ellipsis');
+				cancel.show();
+			});
+
+      // 取消聚焦
+      $('.searchFilter .cancel').on('click', function () {
+				var me = $(this);
+				var calendar = me.siblings('.calendar');
+				calendar.removeClass('ellipsis');
+				me.hide();
+			})
+
+      // 显示筛选框
       var orderFilterGroup = $('.orderFilterGroup');
-      var orderFilterItems = orderFilterGroup.find('.itemsBox');
       var filterOrOrderBtns = $('.fnPanel .filter');
       activer(filterOrOrderBtns, function (e, i) {
         orderFilterGroup.addClass('show');
-        orderFilterItems.removeClass('show');
-        orderFilterItems.eq(i).addClass('show');
-      })
-      orderFilterItems.on('click', function (ev) {
-        ev.stopPropagation();
       })
 
       // 隐藏选框

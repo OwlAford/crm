@@ -335,7 +335,7 @@ body, .crm-wrap {
   padding-left: 0.7rem;
 }
 
-.crm-wrap i.ico-date, .crm-wrap i.ico-calendar, .crm-wrap i.ico-edit, .crm-wrap i.ico-phone {
+.crm-wrap i.ico-date, .crm-wrap i.ico-calendar, .crm-wrap i.ico-edit, .crm-wrap i.ico-phone, .crm-wrap i.ico-draft-box {
   height: 22px;
   width: 22px;
   display: inline-block;
@@ -360,6 +360,12 @@ body, .crm-wrap {
   height: 20px;
   width: 20px;
   background-image: url(../images/phone_light.png);
+}
+
+.crm-wrap i.ico-draft-box {
+  height: 18px;
+  width: 18px;
+  background-image: url(../images/doc.png);
 }
 
 .crm-wrap .empty-blank {
@@ -810,6 +816,19 @@ body, .crm-wrap {
 .crm-wrap .list .item.lenovo-item i {
   display: block;
   margin: 0.3rem 0;
+}
+
+.crm-wrap .list .item.lenovo-item .edit-btn {
+  color: #30aaff;
+  margin: 0.3rem 0;
+  font-size: 13px;
+}
+
+.crm-wrap .list .item.lenovo-item .edit-btn .ico-edit {
+  margin: 0;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
 }
 
 .crm-wrap .list .item.fold, .crm-wrap .list .item.arr {
@@ -4000,6 +4019,10 @@ i.ico-local {
   margin: -2px 5px 0 0;
 }
 
+i.ico-local.disabled {
+  background-image: url(../images/pin_disabled.png);
+}
+
 .feedback-page .title, .visit-page .title {
   padding: 0.14rem 0;
 }
@@ -4495,7 +4518,7 @@ i.ico-local {
   margin: -2px 4px 0 0;
 }
 
-.machine-page .setPanel i.ico-date, .machine-page .setPanel .crm-wrap i.ico-calendar, .crm-wrap .machine-page .setPanel i.ico-calendar, .machine-page .setPanel .crm-wrap i.ico-edit, .crm-wrap .machine-page .setPanel i.ico-edit, .machine-page .setPanel .crm-wrap i.ico-phone, .crm-wrap .machine-page .setPanel i.ico-phone {
+.machine-page .setPanel i.ico-date, .machine-page .setPanel .crm-wrap i.ico-calendar, .crm-wrap .machine-page .setPanel i.ico-calendar, .machine-page .setPanel .crm-wrap i.ico-edit, .crm-wrap .machine-page .setPanel i.ico-edit, .machine-page .setPanel .crm-wrap i.ico-phone, .crm-wrap .machine-page .setPanel i.ico-phone, .machine-page .setPanel .crm-wrap i.ico-draft-box, .crm-wrap .machine-page .setPanel i.ico-draft-box {
   margin: 0 0.1rem 0 0.12rem;
 }
 
@@ -6238,7 +6261,7 @@ i.ico-local {
   margin: -2px 4px 0 0;
 }
 
-.cardLimit-page .setPanel i.ico-date, .cardLimit-page .setPanel .crm-wrap i.ico-calendar, .crm-wrap .cardLimit-page .setPanel i.ico-calendar, .cardLimit-page .setPanel .crm-wrap i.ico-edit, .crm-wrap .cardLimit-page .setPanel i.ico-edit, .cardLimit-page .setPanel .crm-wrap i.ico-phone, .crm-wrap .cardLimit-page .setPanel i.ico-phone {
+.cardLimit-page .setPanel i.ico-date, .cardLimit-page .setPanel .crm-wrap i.ico-calendar, .crm-wrap .cardLimit-page .setPanel i.ico-calendar, .cardLimit-page .setPanel .crm-wrap i.ico-edit, .crm-wrap .cardLimit-page .setPanel i.ico-edit, .cardLimit-page .setPanel .crm-wrap i.ico-phone, .crm-wrap .cardLimit-page .setPanel i.ico-phone, .cardLimit-page .setPanel .crm-wrap i.ico-draft-box, .crm-wrap .cardLimit-page .setPanel i.ico-draft-box {
   margin: 0 0.1rem 0 0.12rem;
 }
 
@@ -6706,4 +6729,3 @@ i.ico-local {
 .deduct-page .detail-wrap .detail-main .detail-item .txt p:last-child {
   border-bottom: none;
 }
-/*# sourceMappingURL=main-light.css.map */

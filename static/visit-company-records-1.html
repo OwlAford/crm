@@ -20,7 +20,6 @@
 				<ul class="col4">
 					<li class="active">陌生拜访</li>
 					<li>意向</li>
-					<li>转化</li>
 				</ul>
       </div>
       <div class="area list">
@@ -36,20 +35,23 @@
         </div>
 			</div>
       <div class="area list">
-        <div class="item row arr labelManage">
-          <div class="tt">行长陪同</div>
-          <div class="row">
-            <span class="labelList">
-              <span class="itm">已陪同</span>
-            </span>
-          </div>
-        </div>
+				<div class="item row arr labelManage">
+					<div class="tt">陪同人员</div>
+					<div class="row">
+						<span class="labelList">
+							<span class="itm">吴英发<i class="close">×</i></span>
+						</span>
+						<i class="add"></i>
+					</div>
+				</div>
 			</div>
 			<div class="area userDtail">
 				<div class="area textDesc">
 					<textarea rows="10" placeholder="记录主营业务情况、他行合作情况、需求与我行拟合作方案或产品等" maxlength="400" id="userText"></textarea>
 					<div class="state">0/400</div>
 				</div>
+			</div>
+			<div class="area">
 				<div class="list result-list">
 					<div class="result-wrap">
 						<div class="result-items">
@@ -68,10 +70,15 @@
 							<div class="ipt lenovo-ipt cell" style="margin-left: 0;">
                 <input type="text" value="" id="invIpt" placeholder="北京市海淀区" readonly>
               </div>
-              <i class="ico-edit"></i>
+							<div class="edit-btn">
+								<i class="ico-edit"></i>
+								修改
+							</div>
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class="area">
 				<div class="round-pd20 ft12">上传图片(1张)：</div>
 				<div class="area shot-add">
 					<ul class="inlineBox">
@@ -79,9 +86,15 @@
 					</ul>
 					<div class="addBtn"></div>
 				</div>
-				<div class="btn-wrap">
-					<button class="base-btn">提交</button>
+			</div>
+			<div class="list area">
+				<div class="item">
+					<i class="ico-local"></i>
+					<span class="fc-light-dark ft13">上塘街道科园路968号天瑞国际</span>
 				</div>
+			</div>
+			<div class="btn-wrap">
+				<button class="base-btn">提交</button>
 			</div>
 		</div>
 	</div>
@@ -104,7 +117,7 @@
 				}
 			})
 
-      $('i.ico-edit').on('click', function () {
+      $('.edit-btn').on('click', function () {
         var $ipt = $(this).prev().find('input');
         $ipt.attr('readonly')
           ? $ipt.attr('readonly', false)
